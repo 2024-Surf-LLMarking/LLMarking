@@ -21,8 +21,9 @@ __all__ = ["Qwen/Qwen1.5-14B-Chat-GPTQ-Int4",
            "01-ai/Yi-1.5-9B-Chat",
            "modelscope/Yi-1.5-34B-Chat-AWQ",
            "CohereForAI/aya-23-8B",
-           "microsoft/Phi-3-small-8k-instruct",
-           "THUDM/glm-4-9b-chat"
+           "meta-llama/Meta-Llama-3-8B-Instruct",
+           "THUDM/glm-4-9b-chat",
+           "Qwen/Qwen2-7B-Instruct"
            ]
 
 parser = argparse.ArgumentParser()
@@ -30,7 +31,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("-m", "--model", type=int, default=0)
 arg = parser.parse_args()
 
-# vLLM参数, 请勿选择6号模型
+# vLLM参数
 model_dir=__all__[arg.model]
 tensor_parallel_size=1
 gpu_memory_utilization=0.95
@@ -61,7 +62,7 @@ def load_vllm():
     # 推理终止词
     
     
-    if model_dir in __all__[:2]:
+    if model_dir in __all__[:2] or model_dir == __all__[8]:
         tokenizer.im_start_id = 151644
         tokenizer.im_end_id = 151645
         generation_config.max_window_size = 11000
