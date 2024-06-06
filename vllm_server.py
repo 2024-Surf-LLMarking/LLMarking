@@ -15,7 +15,7 @@ app=FastAPI()
 
 
 __all__ = ["Qwen/Qwen1.5-14B-Chat-GPTQ-Int4", 
-           "Qwen/Qwen1.5-32B-Chat-GPTQ-Int4", 
+           "Qwen/Qwen1.5-32B-Chat-AWQ", 
            "internlm/internlm2-chat-7b", 
            "01-ai/Yi-1.5-9B-Chat",
            ]
@@ -24,7 +24,12 @@ __all__ = ["Qwen/Qwen1.5-14B-Chat-GPTQ-Int4",
 model_dir=__all__[1]
 tensor_parallel_size=1
 gpu_memory_utilization=0.95
-quantization='gptq' if model_dir == __all__[0] or model_dir == __all__[1] else None
+if model_dir == __all__[0]:
+    quantization = 'gptq'
+elif model_dir == __all__[1]:
+    quantization = 'awq'
+else:
+    quantization = None
 dtype='float16'
 
 if model_dir not in __all__:
@@ -76,7 +81,7 @@ def load_vllm():
     args.gpu_memory_utilization=gpu_memory_utilization
     args.dtype=dtype
     args.max_num_seqs=20    # batch最大20条样本
-    args.max_model_len=generation_config.max_window_size if model_dir != __all__[1] else 5216
+    args.max_model_len=generation_config.max_window_size if model_dir != __all__[1] else 3024
     # 加载模型
     # os.environ['VLLM_USE_MODELSCOPE']='True'
     engine=AsyncLLMEngine.from_engine_args(args)
