@@ -19,7 +19,7 @@ __all__ = ["Qwen/Qwen1.5-14B-Chat-GPTQ-Int4",
            "internlm/internlm2-chat-7b", 
            "01-ai/Yi-1.5-9B-Chat",
            "modelscope/Yi-1.5-34B-Chat-AWQ",
-           "microsoft/Phi-3-small-8k-instruct",
+           "openbmb/MiniCPM-2B-dpo-bf16-llama-format",
            "mistralai/Mistral-7B-Instruct-v0.3",
            "THUDM/glm-4-9b-chat"
            ]
@@ -27,8 +27,8 @@ __all__ = ["Qwen/Qwen1.5-14B-Chat-GPTQ-Int4",
 from huggingface_hub import login
 login(token="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")
 
-# vLLM参数, 请勿选择5号和6号模型
-model_dir=__all__[6]
+# vLLM参数, 请勿选择6号模型
+model_dir=__all__[5]
 tensor_parallel_size=1
 gpu_memory_utilization=0.95
 if model_dir == __all__[0]:
@@ -78,7 +78,7 @@ def load_vllm():
     elif model_dir == __all__[5]:
         tokenizer.im_start_id = None
         tokenizer.im_end_id = None
-        generation_config.max_window_size = 8192
+        generation_config.max_window_size = 11000
     elif model_dir == __all__[6]:
         tokenizer.im_start_id = None
         tokenizer.im_end_id = None
