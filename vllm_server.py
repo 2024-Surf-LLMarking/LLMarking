@@ -6,7 +6,7 @@ from huggingface_hub import snapshot_download
 from fastapi import FastAPI, Request
 from fastapi.responses import JSONResponse, Response, StreamingResponse
 import uvicorn
-from prompt_utils import _build_prompt,remove_stop_words
+from prompt_utils import _build_prompt,remove_stop_words, _build_prompt_self
 import uuid
 import json 
 
@@ -18,6 +18,7 @@ __all__ = ["Qwen/Qwen1.5-14B-Chat-GPTQ-Int4",
            "Qwen/Qwen1.5-32B-Chat-AWQ", 
            "internlm/internlm2-chat-7b", 
            "01-ai/Yi-1.5-9B-Chat",
+           "modelscope/Yi-1.5-34B-Chat-AWQ"
            ]
 
 # vLLM参数
@@ -26,14 +27,14 @@ tensor_parallel_size=1
 gpu_memory_utilization=0.95
 if model_dir == __all__[0]:
     quantization = 'gptq'
-elif model_dir == __all__[1]:
+elif model_dir == __all__[1] or model_dir == __all__[4]:
     quantization = 'awq'
 else:
     quantization = None
 dtype='float16'
 
 if model_dir not in __all__:
-    raise Exception(f'Model selected: [{model_dir}] has not been supported by vLLM!')
+    raise NotImplementedError(f'Model selected: [{model_dir}], has not been supported by this project!')
 
 # vLLM模型加载
 def load_vllm():
@@ -55,11 +56,11 @@ def load_vllm():
     elif model_dir == __all__[2]:
         tokenizer.im_start_id = 92542
         tokenizer.im_end_id = 92543
-        generation_config.max_window_size = 11000
-        generation_config.repetition_penalty = 1.05
-        generation_config.temperature = 0.7
-        generation_config.top_p = 0.8
-        generation_config.top_k = 20
+        generation_config.max_window_size = 200000
+        # generation_config.repetition_penalty = 1.05
+        # generation_config.temperature = 0.7
+        # generation_config.top_p = 0.8
+        # generation_config.top_k = 20
     elif model_dir == __all__[3]:
         tokenizer.im_start_id = 1
         tokenizer.im_end_id = 7
@@ -118,7 +119,9 @@ async def chat(request: Request):
         user_stop_tokens.append(tokenizer.encode(words))
     
     # 构造prompt
-    prompt_text,prompt_tokens=_build_prompt(generation_config,tokenizer,query,history=history,system=system)
+    # prompt_text,prompt_tokens=_build_prompt(generation_config,tokenizer,query,history=history,system=system)
+
+    prompt_tokens=_build_prompt_self(generation_config,tokenizer,query,history=history,system=system)
         
     # vLLM请求配置
     sampling_params=SamplingParams(stop_token_ids=stop_words_ids, 

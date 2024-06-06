@@ -71,3 +71,29 @@ def remove_stop_words(token_ids,stop_words_ids):
         else:
             break
     return token_ids
+
+def _build_prompt_self(
+        generation_config,
+                tokenizer,
+                query,
+                history=None,
+                system=""):
+    if history is None:
+        history=[]
+
+    messages = [{"role": "system", "content": system}]
+
+    for hist_query,hist_response in reversed(history):
+        
+        messages.append({"role": "user", "content": hist_query})
+        messages.append({"role": "assistant", "content": hist_response})
+
+    messages.append({"role": "user", "content": query})
+
+    prompt_tokens = tokenizer.apply_chat_template(conversation=messages, tokenize=True, return_tensors='pt', add_generation_prompt=True)
+    prompt_tokens = prompt_tokens.squeeze(0).tolist()
+
+    if len(prompt_tokens) > generation_config.max_window_size:
+        raise ValueError(f"Prompt (including history) is too long: {len(prompt_tokens)} tokens, should be less than {generation_config.max_window_size} tokens.")
+
+    return prompt_tokens
