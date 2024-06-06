@@ -22,7 +22,7 @@ __all__ = ["Qwen/Qwen1.5-14B-Chat-GPTQ-Int4",
            ]
 
 # vLLM参数
-model_dir=__all__[1]
+model_dir=__all__[4]
 tensor_parallel_size=1
 gpu_memory_utilization=0.95
 if model_dir == __all__[0]:
@@ -56,12 +56,12 @@ def load_vllm():
     elif model_dir == __all__[2]:
         tokenizer.im_start_id = 92542
         tokenizer.im_end_id = 92543
-        generation_config.max_window_size = 200000
+        generation_config.max_window_size = 31648
         # generation_config.repetition_penalty = 1.05
         # generation_config.temperature = 0.7
         # generation_config.top_p = 0.8
         # generation_config.top_k = 20
-    elif model_dir == __all__[3]:
+    elif model_dir == __all__[3] or model_dir == __all__[4]:
         tokenizer.im_start_id = 1
         tokenizer.im_end_id = 7
         generation_config.max_window_size = 4096
