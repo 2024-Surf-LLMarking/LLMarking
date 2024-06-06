@@ -13,12 +13,22 @@ import json
 # http接口服务
 app=FastAPI()
 
+
+__all__ = ["Qwen/Qwen1.5-14B-Chat-GPTQ-Int4", 
+           "Qwen/Qwen1.5-32B-Chat-GPTQ-Int4", 
+           "internlm/internlm2-chat-7b", 
+           "01-ai/Yi-1.5-9B-Chat",
+           ]
+
 # vLLM参数
-model_dir="Qwen/Qwen1.5-14B-Chat-GPTQ-Int4"
+model_dir=__all__[1]
 tensor_parallel_size=1
 gpu_memory_utilization=0.95
-quantization='gptq'
+quantization='gptq' if model_dir == __all__[0] or model_dir == __all__[1] else None
 dtype='float16'
+
+if model_dir not in __all__:
+    raise Exception(f'Model selected: [{model_dir}] has not been supported by vLLM!')
 
 # vLLM模型加载
 def load_vllm():
@@ -32,9 +42,29 @@ def load_vllm():
     tokenizer.eos_token_id=generation_config.eos_token_id
     # 推理终止词
     
-    tokenizer.im_start_id = 151644
-    tokenizer.im_end_id = 151645
-    stop_words_ids=[151644,151645,tokenizer.eos_token_id]
+    
+    if model_dir in __all__[:2]:
+        tokenizer.im_start_id = 151644
+        tokenizer.im_end_id = 151645
+        generation_config.max_window_size = 11000
+    elif model_dir == __all__[2]:
+        tokenizer.im_start_id = 92542
+        tokenizer.im_end_id = 92543
+        generation_config.max_window_size = 11000
+        generation_config.repetition_penalty = 1.05
+        generation_config.temperature = 0.7
+        generation_config.top_p = 0.8
+        generation_config.top_k = 20
+    elif model_dir == __all__[3]:
+        tokenizer.im_start_id = 1
+        tokenizer.im_end_id = 7
+        generation_config.max_window_size = 4096
+        generation_config.repetition_penalty = 1.05
+        generation_config.temperature = 0.7
+        generation_config.top_p = 0.8
+        generation_config.top_k = 20
+
+    stop_words_ids=[tokenizer.im_start_id, tokenizer.im_end_id, tokenizer.eos_token_id]
     # vLLM基础配置
     args=AsyncEngineArgs(model_dir)
     args.worker_use_ray=False
@@ -46,7 +76,7 @@ def load_vllm():
     args.gpu_memory_utilization=gpu_memory_utilization
     args.dtype=dtype
     args.max_num_seqs=20    # batch最大20条样本
-    args.max_model_len=11000
+    args.max_model_len=generation_config.max_window_size if model_dir != __all__[1] else 5216
     # 加载模型
     # os.environ['VLLM_USE_MODELSCOPE']='True'
     engine=AsyncLLMEngine.from_engine_args(args)
