@@ -2,10 +2,8 @@
 
 # Deployment
 
-[Qwen official documentation](https://github.com/QwenLM/Qwen?tab=readme-ov-file#deployment)
-
 * Offline inference: vllm_wrapper.py referenced from [Qwen official implementation](https://github.com/QwenLM/Qwen/blob/main/examples/vllm_wrapper.py)
-* Online inference: vllm_server.py and vllm_client.py referenced from[vLLM official implementation - server](https://github.com/vllm-project/vllm/blob/main/vllm/entrypoints/api_server.py)、[vLLM official implementation - client](https://github.com/vllm-project/vllm/blob/main/examples/api_client.py)
+* Online inference: vllm_server.py and vllm_client.py referenced from [vLLM official implementation - server](https://github.com/vllm-project/vllm/blob/main/vllm/entrypoints/api_server.py), [vLLM official implementation - client](https://github.com/vllm-project/vllm/blob/main/examples/api_client.py)
 
 # Feature
 
@@ -39,13 +37,25 @@ Okay，if you need any help，just contact me!
 
 Launch HTTP server:
 ```
-python vllm_server.py
+python vllm_server.py -m [index of the model in the following list]
 ```
 
 Launch HTTP client
 ```
 python vllm_client.py
 ```
+
+## Supported models
+
+* `Qwen/Qwen1.5-14B-Chat-GPTQ-Int4`
+* `Qwen/Qwen1.5-32B-Chat-AWQ`
+* `internlm/internlm2-chat-7b`
+* `01-ai/Yi-1.5-9B-Chat`
+* `modelscope/Yi-1.5-34B-Chat-AWQ`
+* `CohereForAI/aya-23-8B`
+* `meta-llama/Meta-Llama-3-8B-Instruct`
+* `THUDM/glm-4-9b-chat`
+* `Qwen/Qwen2-7B-Instruct`
 
 ## webui
 
