@@ -83,7 +83,7 @@ def _build_prompt_self(
 
     messages = [{"role": "system", "content": system}]
 
-    for hist_query,hist_response in reversed(history):
+    for hist_query,hist_response in history:
         
         messages.append({"role": "user", "content": hist_query})
         messages.append({"role": "assistant", "content": hist_response})

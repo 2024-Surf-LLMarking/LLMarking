@@ -34,7 +34,7 @@ else:
 dtype='float16'
 
 if model_dir not in __all__:
-    raise NotImplementedError(f'Model selected: [{model_dir}], has not been supported by this project!')
+    raise NotImplementedError(f'Model selected: [{model_dir}], has not been implemented by this project!')
 
 # vLLM模型加载
 def load_vllm():
@@ -65,10 +65,10 @@ def load_vllm():
         tokenizer.im_start_id = 1
         tokenizer.im_end_id = 7
         generation_config.max_window_size = 4096
-        generation_config.repetition_penalty = 1.05
-        generation_config.temperature = 0.7
-        generation_config.top_p = 0.8
-        generation_config.top_k = 20
+        # generation_config.repetition_penalty = 1.05
+        # generation_config.temperature = 0.7
+        # generation_config.top_p = 0.8
+        # generation_config.top_k = 20
 
     stop_words_ids=[tokenizer.im_start_id, tokenizer.im_end_id, tokenizer.eos_token_id]
     # vLLM基础配置
