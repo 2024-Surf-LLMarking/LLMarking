@@ -25,9 +25,6 @@ __all__ = ["Qwen/Qwen1.5-14B-Chat-GPTQ-Int4",
            "THUDM/glm-4-9b-chat"
            ]
 
-from huggingface_hub import login
-login(token="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")
-
 parser = argparse.ArgumentParser()
 
 parser.add_argument("-m", "--model", type=int, default=0)
