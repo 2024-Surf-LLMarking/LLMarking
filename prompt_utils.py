@@ -83,6 +83,9 @@ def _build_prompt_self(
 
     messages = [{"role": "system", "content": system}]
 
+    if system is None:
+        messages = []
+
     for hist_query,hist_response in history:
         
         messages.append({"role": "user", "content": hist_query})

@@ -18,7 +18,10 @@ __all__ = ["Qwen/Qwen1.5-14B-Chat-GPTQ-Int4",
            "Qwen/Qwen1.5-32B-Chat-AWQ", 
            "internlm/internlm2-chat-7b", 
            "01-ai/Yi-1.5-9B-Chat",
-           "modelscope/Yi-1.5-34B-Chat-AWQ"
+           "modelscope/Yi-1.5-34B-Chat-AWQ",
+           "microsoft/Phi-3-small-8k-instruct",
+           "mistralai/Mistral-7B-Instruct-v0.3",
+           "THUDM/glm-4-9b-chat"
            ]
 
 # vLLM参数
@@ -69,6 +72,18 @@ def load_vllm():
         # generation_config.temperature = 0.7
         # generation_config.top_p = 0.8
         # generation_config.top_k = 20
+    elif model_dir == __all__[5]:
+        tokenizer.im_start_id = None
+        tokenizer.im_end_id = None
+        generation_config.max_window_size = 8192
+    elif model_dir == __all__[6]:
+        tokenizer.im_start_id = None
+        tokenizer.im_end_id = None
+        generation_config.max_window_size = 11000
+    elif model_dir == __all__[7]:
+        tokenizer.im_start_id = None
+        tokenizer.im_end_id = None
+        generation_config.max_window_size = 131072
 
     stop_words_ids=[tokenizer.im_start_id, tokenizer.im_end_id, tokenizer.eos_token_id]
     # vLLM基础配置
@@ -106,7 +121,7 @@ async def chat(request: Request):
     
     query=request.get('query',None)
     history=request.get('history',[])
-    system=request.get('system','You are a helpful assistant.')
+    system=request.get('system','You are a helpful assistant.') if model_dir != __all__[6] else None
     stream=request.get("stream",False)
     user_stop_words=request.get("user_stop_words",[])    # list[str]，用户自定义停止句，例如：['Observation: ', 'Action: ']定义了2个停止句，遇到任何一个都会停止
     
