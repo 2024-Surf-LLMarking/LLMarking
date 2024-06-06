@@ -28,10 +28,10 @@ __all__ = ["Qwen/Qwen1.5-14B-Chat-GPTQ-Int4",
 parser = argparse.ArgumentParser()
 
 parser.add_argument("-m", "--model", type=int, default=0)
-args = parser.parse_args()
+arg = parser.parse_args()
 
 # vLLM参数, 请勿选择6号模型
-model_dir=__all__[args.model]
+model_dir=__all__[arg.model]
 tensor_parallel_size=1
 gpu_memory_utilization=0.95
 if model_dir == __all__[0]:
