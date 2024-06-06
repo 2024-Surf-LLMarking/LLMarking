@@ -24,8 +24,11 @@ __all__ = ["Qwen/Qwen1.5-14B-Chat-GPTQ-Int4",
            "THUDM/glm-4-9b-chat"
            ]
 
-# vLLM参数
-model_dir=__all__[4]
+from huggingface_hub import login
+login(token="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")
+
+# vLLM参数, 请勿选择5号和6号模型
+model_dir=__all__[6]
 tensor_parallel_size=1
 gpu_memory_utilization=0.95
 if model_dir == __all__[0]:
@@ -48,7 +51,7 @@ def load_vllm():
     generation_config=GenerationConfig.from_pretrained(model_dir,trust_remote_code=True)
     # 加载分词器
     tokenizer=AutoTokenizer.from_pretrained(model_dir,trust_remote_code=True)
-    tokenizer.eos_token_id=generation_config.eos_token_id
+    tokenizer.eos_token_id=generation_config.eos_token_id if model_dir != __all__[7] else 151329
     # 推理终止词
     
     
@@ -83,9 +86,9 @@ def load_vllm():
     elif model_dir == __all__[7]:
         tokenizer.im_start_id = None
         tokenizer.im_end_id = None
-        generation_config.max_window_size = 131072
+        generation_config.max_window_size = 11000
 
-    stop_words_ids=[tokenizer.im_start_id, tokenizer.im_end_id, tokenizer.eos_token_id]
+    stop_words_ids=[tokenizer.im_start_id, tokenizer.im_end_id, tokenizer.eos_token_id] if model_dir not in __all__[5:] else [tokenizer.eos_token_id, 151336] 
     # vLLM基础配置
     args=AsyncEngineArgs(model_dir)
     args.worker_use_ray=False
