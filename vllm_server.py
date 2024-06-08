@@ -1,4 +1,3 @@
-import os 
 from vllm import AsyncEngineArgs,AsyncLLMEngine
 from vllm.sampling_params import SamplingParams
 from transformers import AutoTokenizer, GenerationConfig
@@ -6,7 +5,7 @@ from huggingface_hub import snapshot_download
 from fastapi import FastAPI, Request
 from fastapi.responses import JSONResponse, Response, StreamingResponse
 import uvicorn
-from prompt_utils import _build_prompt,remove_stop_words, _build_prompt_self
+from prompt_utils import remove_stop_words, _build_prompt_self
 import uuid
 import json 
 import argparse
@@ -23,7 +22,8 @@ __all__ = ["Qwen/Qwen1.5-14B-Chat-GPTQ-Int4",
            "CohereForAI/aya-23-8B",
            "meta-llama/Meta-Llama-3-8B-Instruct",
            "THUDM/glm-4-9b-chat",
-           "Qwen/Qwen2-7B-Instruct"
+           "Qwen/Qwen2-7B-Instruct",
+           "google/gemma-1.1-7b-it"
            ]
 
 parser = argparse.ArgumentParser()
@@ -55,7 +55,7 @@ def load_vllm():
     generation_config=GenerationConfig.from_pretrained(model_dir,trust_remote_code=True)
     # 加载分词器
     tokenizer=AutoTokenizer.from_pretrained(model_dir,trust_remote_code=True)
-    if model_dir == __all__[7] or model_dir == __all__[6]:
+    if model_dir == __all__[7] or model_dir == __all__[6] or model_dir == __all__[9]:
         pass
     else:
         tokenizer.eos_token_id=generation_config.eos_token_id
@@ -82,11 +82,7 @@ def load_vllm():
         # generation_config.temperature = 0.7
         # generation_config.top_p = 0.8
         # generation_config.top_k = 20
-    elif model_dir == __all__[5]:
-        tokenizer.im_start_id = None
-        tokenizer.im_end_id = None
-        generation_config.max_window_size = 8192
-    elif model_dir == __all__[6]:
+    elif model_dir == __all__[5] or model_dir == __all__[6] or model_dir == __all__[8]:
         tokenizer.im_start_id = None
         tokenizer.im_end_id = None
         generation_config.max_window_size = 8192
