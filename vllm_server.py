@@ -1,4 +1,5 @@
 from vllm import AsyncEngineArgs,AsyncLLMEngine
+from vllm.inputs import TokensPrompt
 from vllm.sampling_params import SamplingParams
 from transformers import AutoTokenizer, GenerationConfig
 from huggingface_hub import snapshot_download
@@ -147,7 +148,7 @@ async def chat(request: Request):
                                    )
     # vLLM异步推理（在独立线程中阻塞执行推理，主线程异步等待完成通知）
     request_id=str(uuid.uuid4().hex)
-    results_iter=engine.generate(prompt=None,sampling_params=sampling_params,prompt_token_ids=prompt_tokens,request_id=request_id)
+    results_iter=engine.generate(sampling_params=sampling_params,inputs=TokensPrompt(prompt_token_ids=prompt_tokens),request_id=request_id)
     
     # 流式返回，即迭代transformer的每一步推理结果并反复返回
     if stream:
