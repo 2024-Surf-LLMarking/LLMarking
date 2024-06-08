@@ -119,7 +119,7 @@ async def chat(request: Request):
     
     query=request.get('query',None)
     history=request.get('history',[])
-    system=request.get('system','You are a helpful assistant.') if model_dir != __all__[6] else None
+    system=request.get('system','You are a helpful assistant.') if model_dir != __all__[6] or model_dir != __all__[9] else None
     stream=request.get("stream",False)
     user_stop_words=request.get("user_stop_words",[])    # list[str]，用户自定义停止句，例如：['Observation: ', 'Action: ']定义了2个停止句，遇到任何一个都会停止
     
