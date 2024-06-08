@@ -70,19 +70,11 @@ def load_vllm():
         tokenizer.im_start_id = 92542
         tokenizer.im_end_id = 92543
         generation_config.max_window_size = 31648
-        # generation_config.repetition_penalty = 1.05
-        # generation_config.temperature = 0.7
-        # generation_config.top_p = 0.8
-        # generation_config.top_k = 20
     elif model_dir == __all__[3] or model_dir == __all__[4]:
         tokenizer.im_start_id = 1
         tokenizer.im_end_id = 7
         generation_config.max_window_size = 4096
-        # generation_config.repetition_penalty = 1.05
-        # generation_config.temperature = 0.7
-        # generation_config.top_p = 0.8
-        # generation_config.top_k = 20
-    elif model_dir == __all__[5] or model_dir == __all__[6] or model_dir == __all__[8]:
+    elif model_dir == __all__[5] or model_dir == __all__[6] or model_dir == __all__[9]:
         tokenizer.im_start_id = None
         tokenizer.im_end_id = None
         generation_config.max_window_size = 8192
