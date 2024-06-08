@@ -89,7 +89,7 @@ def load_vllm():
     if model_dir == __all__[7]:
         stop_words_ids = [tokenizer.eos_token_id, 151336]
     else:
-        [tokenizer.im_start_id, tokenizer.im_end_id, tokenizer.eos_token_id]
+        stop_words_ids = [tokenizer.im_start_id, tokenizer.im_end_id, tokenizer.eos_token_id]
 
     # vLLM基础配置
     args=AsyncEngineArgs(model_dir)
