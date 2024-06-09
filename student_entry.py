@@ -31,7 +31,7 @@ prompt_template = """
 **Feedback:**
 """
 
-with open('example.json', 'r') as file:
+with open('example/example.json', 'r') as file:
     data = json.load(file)
 
 example_list = data["examples"]
@@ -40,6 +40,7 @@ index = 0
 results = {}
 
 def get_response(stream = False):
+    global index, results
     while index < len(example_list):
         question = example_list[index]["question"]
         ref_answer = example_list[index]["referenceAnswer"]
@@ -81,7 +82,7 @@ def get_response(stream = False):
             print("Feedback:", text)
             example_list[index]["feedback"] = text
             results[index] = example_list[index]
-            model_name = json.loads(response.text)["model_name"]
+            model_name = json.loads(response.text)["model"]
         index += 1
 
     if stream:
