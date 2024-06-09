@@ -30,6 +30,21 @@ __all__ = ["Qwen/Qwen1.5-14B-Chat-GPTQ-Int4",
            "openbmb/MiniCPM-2B-dpo-bf16"
            ]
 
+model_names = ["Qwen1.5-14B",
+               "Qwen1.5-32B",
+               "internlm2-7B",
+               "Yi-1.5-9B",
+               "Yi-1.5-34B",
+               "aya-23-8B",
+               "Llama-3-8B",
+               "ChatGLM4-9B",
+               "Qwen2-7B",
+               "Gemma-1.1-7B",
+               "Mistral-7B-v0.3",
+               "Phi3-small",
+               "MiniCPM-2B"
+               ]
+
 parser = argparse.ArgumentParser()
 
 parser.add_argument("-m", "--model", type=int, default=0)
@@ -189,7 +204,7 @@ async def chat(request: Request):
             await engine.abort(request_id)   # 终止vllm后续推理
             break
 
-    ret={"text":text}
+    ret={"text":text, "model": model_names[arg.model]}
     return JSONResponse(ret)
 
 if __name__=='__main__':
