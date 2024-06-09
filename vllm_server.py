@@ -27,7 +27,7 @@ __all__ = ["Qwen/Qwen1.5-14B-Chat-GPTQ-Int4",
            "google/gemma-1.1-7b-it",
            "mistralai/Mistral-7B-Instruct-v0.3",
            "microsoft/Phi-3-small-8k-instruct",
-           "openbmb/MiniCPM-2B-dpo-bf16-llama-format"
+           "openbmb/MiniCPM-2B-dpo-bf16"
            ]
 
 parser = argparse.ArgumentParser()
@@ -82,10 +82,14 @@ def load_vllm():
         tokenizer.im_start_id = None
         tokenizer.im_end_id = None
         generation_config.max_window_size = 8192
-    elif model_dir == __all__[7] or model_dir == __all__[10] or model_dir == __all__[12]:
+    elif model_dir == __all__[7] or model_dir == __all__[10]:
         tokenizer.im_start_id = None
         tokenizer.im_end_id = None
         generation_config.max_window_size = 11000
+    elif model_dir == __all__[12]:
+        tokenizer.im_start_id = None
+        tokenizer.im_end_id = None
+        generation_config.max_window_size = 4096
 
     if model_dir == __all__[7]:
         stop_words_ids = [tokenizer.eos_token_id, 151336]
