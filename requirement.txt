@@ -1,5 +1,5 @@
 transformers>=4.40.0
-vllm>=0.4.2
+vllm>=0.4.3
 accelerate
 tiktoken
 einops

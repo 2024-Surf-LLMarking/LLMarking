@@ -19,6 +19,7 @@ This project aims to achieve high concurrency automatic short answer grading (AS
 - python=3.10
 - cuda=12.1
 - torch=2.1
+- vLLM=0.4.3
 - tiktoken
 - transformers
 
@@ -56,6 +57,10 @@ python vllm_client.py
 * `meta-llama/Meta-Llama-3-8B-Instruct`
 * `THUDM/glm-4-9b-chat`
 * `Qwen/Qwen2-7B-Instruct`
+* `Gemma-1.1-7B`
+* `Mistral-7B-v0.3`
+* `Phi3-small`
+* `MiniCPM-2B`
 
 ## webui
 
