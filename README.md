@@ -58,8 +58,6 @@ This project aims to achieve high concurrency automatic short answer grading (AS
 
 ### Quickstart
 
-**Online inference:**
-
 We first need to setup server-side to provide the service to the clients. To launch our HTTP server, simply:
 
 ```text
@@ -86,16 +84,6 @@ python student_entry.py -n [0, 1, 2]
 
 ```text
 python student_entry.py [-s]
-```
-
-**Offline inference:**
-
-```
-python vllm_offline.py
-Question: Hello.
-Hi! How can I help you?
-Question: Nothing.
-Okay，if you need any help，just contact me!
 ```
 
 **WebUI**:
