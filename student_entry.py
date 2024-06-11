@@ -52,18 +52,18 @@ def get_response(stream = False):
 
                     # 打印最新内容
                     clear_lines()
-                    print("Question:\n\n", question, '\n\n')
-                    print("Reference Answer:\n\n", ref_answer, '\n\n')
-                    print("Student Answer:\n\n", stu_answer, '\n\n')
-                    print("Feedback:\n\n", text, '\n\n\n')
+                    print("Question:", question, '\n\n')
+                    print("Reference Answer:", ref_answer, '\n\n')
+                    print("Student Answer:", stu_answer, '\n\n')
+                    print("Feedback:", text, '\n\n\n')
             example_list[index]["feedback"] = text
             results[index] = example_list[index]
         else:
             text = json.loads(response.text)["text"]
-            print("Question:\n\n", question, '\n\n')
-            print("Reference Answer:\n\n", ref_answer, '\n\n')
-            print("Student Answer:\n\n", stu_answer, '\n\n')
-            print("Feedback:\n\n", text, '\n\n\n')
+            print("Question:", question, '\n\n')
+            print("Reference Answer:", ref_answer, '\n\n')
+            print("Student Answer:", stu_answer, '\n\n')
+            print("Feedback:", text, '\n\n\n')
             example_list[index]["feedback"] = text
             results[index] = example_list[index]
             model_name = json.loads(response.text)["model"]
