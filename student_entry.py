@@ -60,10 +60,10 @@ def get_response(stream = False):
             results[index] = example_list[index]
         else:
             text = json.loads(response.text)["text"]
-            print("Question:", question)
-            print("Reference Answer:", ref_answer)
-            print("Student Answer:", stu_answer)
-            print("Feedback:", text)
+            print("Question:\n\n", question, '\n\n')
+            print("Reference Answer:\n\n", ref_answer, '\n\n')
+            print("Student Answer:\n\n", stu_answer, '\n\n')
+            print("Feedback:\n\n", text, '\n\n\n')
             example_list[index]["feedback"] = text
             results[index] = example_list[index]
             model_name = json.loads(response.text)["model"]
