@@ -28,7 +28,7 @@ zero_prompt = """
 **Please provide the feedback as follows:**
 
 1. **Final Score of the Student's Answer:** [0 to 100]
-2. **Positive Feedback:** [Highlight strengths and correct aspects of the student’s answer.]
+2. **Positive Feedback:** [Highlight strengths and correct aspects of the student's answer.]
 3. **Deduction Reason:** [Describe the reason for the deduction, including the number of deduction points. Repeat for each issue identified.]
 
 **Now, let's begin:**
@@ -57,7 +57,7 @@ one_prompt = """
 **Please provide the feedback as follows:**
 
 1. **Final Score of the Student's Answer:** [0 to 100]
-2. **Positive Feedback:** [Highlight strengths and correct aspects of the student’s answer.]
+2. **Positive Feedback:** [Highlight strengths and correct aspects of the student's answer.]
 3. **Deduction Reason:** [Describe the reason for the deduction, including the number of deduction points. Repeat for each issue identified.]
 
 **Now, let's begin:**
@@ -86,7 +86,7 @@ few_prompt = """
 **Please provide the feedback as follows:**
 
 1. **Final Score of the Student's Answer:** [0 to 100]
-2. **Positive Feedback:** [Highlight strengths and correct aspects of the student’s answer.]
+2. **Positive Feedback:** [Highlight strengths and correct aspects of the student's answer.]
 3. **Deduction Reason:** [Describe the reason for the deduction, including the number of deduction points. Repeat for each issue identified.]
 
 **Now, let's begin:**
