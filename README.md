@@ -1,6 +1,8 @@
-# ASAG
+# Automatic Short Answer Grading (ASAG) System
 
-This is the official repo for **Automatic Short Answer Grading (ASAG)** project from **Xi'an Jiaotong Liverpool University (XJTLU)**. Using [vLLM](https://github.com/vllm-project/vllm) as the Large Language Model (LLM) inference framework and [FastAPI](https://github.com/tiangolo/fastapi) as the HTTP service framework, this project can achieve high throughput of both LLM tokens delivered and request handling.
+This is the official repo for **Automatic Short Answer Grading (ASAG)** project from **Xi'an Jiaotong Liverpool University (XJTLU)**. 
+
+Using [vLLM](https://github.com/vllm-project/vllm) as the Large Language Model (LLM) inference framework and [FastAPI](https://github.com/tiangolo/fastapi) as the HTTP service framework, this project can achieve high throughput of both LLM tokens delivered and request handling.
 
 ## Deployment
 
@@ -11,9 +13,9 @@ This is the official repo for **Automatic Short Answer Grading (ASAG)** project 
 
 This project aims to achieve high concurrency automatic short answer grading (ASAG) system and implement the construction of service.
 
-* vLLM supports Continuous batching of incoming requests，using an extra thread for inferencing.
-* vLLM provides abstracts of asyncio, using asyncio http framework after abstracts of uvicorn+fastapi to achieve http api privision
-* vLLM stream response of next token，providing chunk streaming response based on fastapi.
+* vLLM supports Continuous batching of incoming requests, using an extra thread for inferencing.
+* vLLM provides abstracts of asyncio, using asyncio http framework after abstracts of uvicorn+FastAPI to achieve http api privision.
+* vLLM stream response of next token, providing chunk streaming response based on FastAPI.
 
 ## Supported models
 
@@ -36,6 +38,7 @@ This project aims to achieve high concurrency automatic short answer grading (AS
 ### Requirements
 
 > [!IMPORTANT] 
+>
 > The requirement below is mandatory. And we've only tested our project on the following platform.
 
 | Mandatory     | Recommended |
@@ -65,17 +68,23 @@ python vllm_server.py -m [index of the model in the above list]
 
 After that, we can either start the student entry or client side to pass our inputs to the server:
 
-* For student entry:
+* **For student entry:**
+
+> [!NOTE]
+>
+> `0` stands for using zero-shot prompt, while `1` for one-shot, and `2` for few-shot.
 
 ```text
-# 0 stands for using zero-shot prompt, 1 for one-shot, and 2 for few-shot.
 python student_entry.py -n [0, 1, 2]
 ```
 
-* For casual client:
+* **For casual client:**
+
+> [!NOTE]
+>
+> `-s` stands for get response in a streaming way, which is optional.
 
 ```text
-# -s stands for get response in a streaming way, which is optional.
 python student_entry.py [-s]
 ```
 
