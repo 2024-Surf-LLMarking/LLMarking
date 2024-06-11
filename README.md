@@ -1,50 +1,19 @@
 # ASAG
 
-# Deployment
+This is the official repo for **Automatic Short Answer Grading (ASAG)** project from **Xi'an Jiaotong Liverpool University (XJTLU)**. Using [vLLM](https://github.com/vllm-project/vllm) as the Large Language Model (LLM) inference framework and [FastAPI](https://github.com/tiangolo/fastapi) as the HTTP service framework, this project can achieve high throughput of both LLM tokens delivered and request handling.
+
+## Deployment
 
 * Offline inference: vllm_wrapper.py referenced from [Qwen official implementation](https://github.com/QwenLM/Qwen/blob/main/examples/vllm_wrapper.py)
 * Online inference: vllm_server.py and vllm_client.py referenced from [vLLM official implementation - server](https://github.com/vllm-project/vllm/blob/main/vllm/entrypoints/api_server.py), [vLLM official implementation - client](https://github.com/vllm-project/vllm/blob/main/examples/api_client.py)
 
-# Feature
+## Feature
 
 This project aims to achieve high concurrency automatic short answer grading (ASAG) system and implement the construction of service.
 
 * vLLM supports Continuous batching of incoming requests，using an extra thread for inferencing.
 * vLLM provides abstracts of asyncio, using asyncio http framework after abstracts of uvicorn+fastapi to achieve http api privision
 * vLLM stream response of next token，providing chunk streaming response based on fastapi.
-
-
-## Requirements
-
-- python=3.10
-- cuda=12.1
-- torch=2.1
-- vLLM=0.4.3
-- tiktoken
-- transformers
-
-## Offline inference
-
-```
-python vllm_offline.py
-Question: Hello.
-Hi! How can I help you?
-Question: Nothing.
-Okay，if you need any help，just contact me!
-```
-
-## Online inference
-
-
-Launch HTTP server:
-```
-python vllm_server.py -m [index of the model in the following list]
-```
-
-Launch HTTP client
-```
-python vllm_client.py
-```
 
 ## Supported models
 
@@ -62,7 +31,65 @@ python vllm_client.py
 * `Phi3-small`
 * `MiniCPM-2B`
 
-## webui
+## Getting Started
+
+### Requirements
+
+> [!IMPORTANT] 
+> The requirement below is mandatory. And we've only tested our project on the following platform.
+
+| Mandatory     | Recommended |
+| ------------- | ----------- |
+| Python        | 3.18        |
+| CUDA          | 12.1        |
+| torch         | 2.1         |
+| transformers  | 4.41.0      |
+| vLLM          | 0.4.3       |
+| tiktoken      | latest      |
+| sentencepiece | latest      |
+| FastAPI       | latest      |
+
+> [!TIP]
+>
+> Use `pip install -r requirement.txt` to install all the requirement.
+
+### Quickstart
+
+**Online inference:**
+
+We first need to setup server-side to provide the service to the clients. To launch our HTTP server, simply:
+
+```text
+python vllm_server.py -m [index of the model in the above list]
+```
+
+After that, we can either start the student entry or client side to pass our inputs to the server:
+
+* For student entry:
+
+```text
+# 0 stands for using zero-shot prompt, 1 for one-shot, and 2 for few-shot.
+python student_entry.py -n [0, 1, 2]
+```
+
+* For casual client:
+
+```text
+# -s stands for get response in a streaming way, which is optional.
+python student_entry.py [-s]
+```
+
+**Offline inference:**
+
+```
+python vllm_offline.py
+Question: Hello.
+Hi! How can I help you?
+Question: Nothing.
+Okay，if you need any help，just contact me!
+```
+
+**WebUI**:
 
 After launching vllm_server, you can also run gradio_webui.py which is a webui based on gradio. This can achieve a chat-liked format like ChatGPT, which is more user-friendly.
 
@@ -70,4 +97,5 @@ After launching vllm_server, you can also run gradio_webui.py which is a webui b
 python gradio_webui.py
 ```
 
-![](webui.png)
+![webui](https://s2.loli.net/2024/06/11/duwy9Q4j7JM1PVp.png)
+
