@@ -6,8 +6,8 @@ Using [vLLM](https://github.com/vllm-project/vllm) as the Large Language Model (
 
 ## Deployment
 
-* Offline inference: vllm_wrapper.py referenced from [Qwen official implementation](https://github.com/QwenLM/Qwen/blob/main/examples/vllm_wrapper.py)
-* Online inference: vllm_server.py and vllm_client.py referenced from [vLLM official implementation - server](https://github.com/vllm-project/vllm/blob/main/vllm/entrypoints/api_server.py), [vLLM official implementation - client](https://github.com/vllm-project/vllm/blob/main/examples/api_client.py)
+* Online inference: [vllm_server.py](https://github.com/BiboyQG/ASAG/blob/master/vllm_server.py) referenced from [vLLM official implementation - server](https://github.com/vllm-project/vllm/blob/main/vllm/entrypoints/api_server.py).
+* Online inference: [vllm_client.py](https://github.com/BiboyQG/ASAG/blob/master/vllm_client.py) referenced from [vLLM official implementation - client](https://github.com/vllm-project/vllm/blob/main/examples/api_client.py).
 
 ## Feature
 
@@ -107,4 +107,14 @@ python gradio_webui.py
 ```
 
 ![webui](https://s2.loli.net/2024/06/11/duwy9Q4j7JM1PVp.png)
+
+## Data and Results
+
+* Example data: [example.json](https://github.com/BiboyQG/ASAG/blob/master/data/example.json)
+
+* Zero-shot pormpt template:
+
+![image-20240611154055447](https://s2.loli.net/2024/06/11/8UOoJBshVgtKS1l.png)
+
+* Test on different LLMs with prompt template and example data: [results](https://github.com/BiboyQG/ASAG/tree/master/results).
 
