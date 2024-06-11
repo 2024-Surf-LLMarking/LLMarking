@@ -2,12 +2,12 @@ from vllm import AsyncEngineArgs,AsyncLLMEngine
 from vllm.inputs import TokensPrompt
 from vllm.sampling_params import SamplingParams
 from model import __all__, model_names
+from prompt_utils import remove_stop_words, _build_prompt_self
 from transformers import AutoTokenizer, GenerationConfig
 from huggingface_hub import snapshot_download
 from fastapi import FastAPI, Request
 from fastapi.responses import JSONResponse, Response, StreamingResponse
 import uvicorn
-from prompt_utils import remove_stop_words, _build_prompt_self
 import uuid
 import json 
 import argparse
