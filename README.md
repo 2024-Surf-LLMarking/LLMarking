@@ -80,7 +80,7 @@ After that, we can either start the student entry or client side to pass our inp
 >
 > `0` stands for using zero-shot prompt, while `1` for one-shot, and `2` for few-shot.
 
-```text
+```bash
 python student_entry.py -n [0, 1, 2]
 ```
 
@@ -90,7 +90,7 @@ python student_entry.py -n [0, 1, 2]
 >
 > `-s` stands for get response in a streaming way, which is optional.
 
-```text
+```bash
 python student_entry.py [-s]
 ```
 
@@ -98,7 +98,7 @@ python student_entry.py [-s]
 
 After launching vllm_server, you can also run gradio_webui.py which is a webui based on gradio. This can achieve a chat-liked format like ChatGPT, which is more user-friendly.
 
-```
+```bash
 python gradio_webui.py
 ```
 
