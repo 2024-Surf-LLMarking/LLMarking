@@ -4,11 +4,6 @@ This is the official repo for **Automatic Short Answer Grading (ASAG)** project 
 
 Using [vLLM](https://github.com/vllm-project/vllm) as the Large Language Model (LLM) inference framework and [FastAPI](https://github.com/tiangolo/fastapi) as the HTTP service framework, this project can achieve high throughput of both LLM tokens delivered and request handling.
 
-## Deployment
-
-* Online inference: [vllm_server.py](https://github.com/BiboyQG/ASAG/blob/master/vllm_server.py) referenced from [vLLM official implementation - server](https://github.com/vllm-project/vllm/blob/main/vllm/entrypoints/api_server.py).
-* Online inference: [vllm_client.py](https://github.com/BiboyQG/ASAG/blob/master/vllm_client.py) referenced from [vLLM official implementation - client](https://github.com/vllm-project/vllm/blob/main/examples/api_client.py).
-
 ## Feature
 
 This project aims to achieve high concurrency automatic short answer grading (ASAG) system and implement the construction of service.
@@ -108,4 +103,9 @@ python gradio_webui.py
 ![image-20240611154055447](https://s2.loli.net/2024/06/11/8UOoJBshVgtKS1l.png)
 
 * Test on different LLMs with prompt template and example data: [results](https://github.com/BiboyQG/ASAG/tree/master/results).
+
+## Acknowledgement
+
+* Online inference: [vllm_server.py](https://github.com/BiboyQG/ASAG/blob/master/vllm_server.py) referenced from [vLLM official implementation - server](https://github.com/vllm-project/vllm/blob/main/vllm/entrypoints/api_server.py).
+* Online inference: [vllm_client.py](https://github.com/BiboyQG/ASAG/blob/master/vllm_client.py) referenced from [vLLM official implementation - client](https://github.com/vllm-project/vllm/blob/main/examples/api_client.py).
 
