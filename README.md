@@ -11,6 +11,8 @@ This project aims to achieve high concurrency automatic short answer grading (AS
 * vLLM supports Continuous batching of incoming requests, using an extra thread for inferencing.
 * vLLM provides abstracts of asyncio, using asyncio http framework after abstracts of uvicorn+FastAPI to achieve http api privision.
 * vLLM stream response of next token, providing chunk streaming response based on FastAPI.
+* Prompt-learning enables LLMs to handle downstream tasks even without fintuning. We implemented zero-shot, one-shot, and few-shot to test the performances of different LLMs.
+* LoRA/QLoRA enables us to finetune to model with less GPU resources such as memory and computation capacity. This can be happening when continuous poor performances was witnessed even after trials of various prompt-learning.
 
 ## Supported models
 
@@ -56,11 +58,19 @@ This project aims to achieve high concurrency automatic short answer grading (AS
 
 ### Quickstart
 
-We first need to setup server-side to provide the service to the clients. To launch our HTTP server, simply:
+We first clone the whole project by git clone this repo:
+
+```bash
+git clone git@github.com:BiboyQG/ASAG.git && cd ASAG
+```
+
+Then we need to setup server-side to provide the service to the clients. To launch our HTTP server, simply:
 
 ```text
 python vllm_server.py -m [index of the model in the above list]
 ```
+
+If you launch the server with the specific model you specify for the first time, the server would automatically download the model and save the files to `.cache/huggingface/hub`.
 
 After that, we can either start the student entry or client side to pass our inputs to the server:
 
@@ -106,6 +116,6 @@ python gradio_webui.py
 
 ## Acknowledgement
 
-* Online inference: [vllm_server.py](https://github.com/BiboyQG/ASAG/blob/master/vllm_server.py) referenced from [vLLM official implementation - server](https://github.com/vllm-project/vllm/blob/main/vllm/entrypoints/api_server.py).
-* Online inference: [vllm_client.py](https://github.com/BiboyQG/ASAG/blob/master/vllm_client.py) referenced from [vLLM official implementation - client](https://github.com/vllm-project/vllm/blob/main/examples/api_client.py).
+* [vllm_server.py](https://github.com/BiboyQG/ASAG/blob/master/vllm_server.py) referenced from [vLLM official implementation - server](https://github.com/vllm-project/vllm/blob/main/vllm/entrypoints/api_server.py).
+* [vllm_client.py](https://github.com/BiboyQG/ASAG/blob/master/vllm_client.py) referenced from [vLLM official implementation - client](https://github.com/vllm-project/vllm/blob/main/examples/api_client.py).
 
