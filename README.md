@@ -43,7 +43,7 @@ This project aims to achieve high concurrency automatic short answer grading (AS
 
 | Mandatory     | Recommended |
 | ------------- | ----------- |
-| Python        | 3.18        |
+| Python        | 3.8         |
 | CUDA          | 12.1        |
 | torch         | 2.1         |
 | einops        | 0.8.0       |
