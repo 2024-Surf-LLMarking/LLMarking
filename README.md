@@ -91,6 +91,24 @@ python vllm_server.py -m [index of the model in the above list]
 
 If you launch the server with the specific model you specify for the first time, the server would automatically download the model and save the files to `.cache/huggingface/hub`.
 
+> [!NOTE]
+>
+> Some users may find it difficult to download model files from Huggingface due to internet issues. Hence, we provide the following solution.
+
+For users that don't have access to Huggingface, you need to do the following things:
+
+* import `snapshot_download` from modelscope instead of `huggingface_hub`:
+
+```python
+from modelscope import snapshot_download
+```
+
+* Enable `modelscope` by uncommenting this line of code within `vllm_server.py`:
+
+```python
+os.environ['VLLM_USE_MODELSCOPE']='True'
+```
+
 #### Request and Response
 
 After that, we can either start the student entry or client side to pass our inputs to the server:
