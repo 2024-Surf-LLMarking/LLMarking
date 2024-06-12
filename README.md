@@ -97,13 +97,13 @@ If you launch the server with the specific model you specify for the first time,
 
 For users that don't have access to Huggingface, you need to do the following things:
 
-* import `snapshot_download` from modelscope instead of `huggingface_hub`:
+* Import `snapshot_download` from `modelscope` instead of from `huggingface_hub`:
 
 ```python
 from modelscope import snapshot_download
 ```
 
-* Enable `modelscope` by uncommenting this line of code within `vllm_server.py`:
+* Enable the use of `modelscope` by uncommenting this line of code within `vllm_server.py`:
 
 ```python
 os.environ['VLLM_USE_MODELSCOPE']='True'
