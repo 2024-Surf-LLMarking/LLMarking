@@ -24,10 +24,10 @@ This project aims to achieve high concurrency automatic short answer grading (AS
 * `meta-llama/Meta-Llama-3-8B-Instruct`
 * `THUDM/glm-4-9b-chat`
 * `Qwen/Qwen2-7B-Instruct`
-* `Gemma-1.1-7B`
-* `Mistral-7B-v0.3`
-* `Phi3-small`
-* `MiniCPM-2B`
+* `google/gemma-1.1-7b-it`
+* `mistralai/Mistral-7B-Instruct-v0.3`
+* `microsoft/Phi-3-small-8k-instruct`
+* `openbmb/MiniCPM-2B-dpo-bf16`
 
 ## Getting Started
 
