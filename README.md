@@ -8,11 +8,10 @@ Using [vLLM](https://github.com/vllm-project/vllm) as the Large Language Model (
 
 This project aims to achieve high concurrency automatic short answer grading (ASAG) system and implement the construction of service.
 
-* vLLM supports Continuous batching of incoming requests, using an extra thread for inferencing.
-* vLLM provides abstracts of asyncio, using asyncio http framework after abstracts of uvicorn+FastAPI to achieve http api privision.
-* vLLM stream response of next token, providing chunk streaming response based on FastAPI.
 * Prompt-learning enables LLMs to handle downstream tasks even without fintuning. We implemented zero-shot, one-shot, and few-shot to test the performances of different LLMs.
 * LoRA/QLoRA enables us to finetune to model with less GPU resources such as memory and computation capacity. This can be happening when continuous poor performances was witnessed even after trials of various prompt-learning.
+* vLLM supports Continuous batching of incoming requests, using an extra thread for inferencing.
+* vLLM provides abstracts of asyncio, using asyncio http framework after abstracts of uvicorn+FastAPI to achieve http api privision.
 
 ## Supported models
 
@@ -54,15 +53,35 @@ This project aims to achieve high concurrency automatic short answer grading (AS
 
 > [!TIP]
 >
-> Use `pip install -r requirement.txt` to install all the requirement.
+> Use `pip install -r requirement.txt` to install all the requirement if you want to create a new environment on your own or stick with existing environment.
 
 ### Quickstart
+
+#### Repo Download
 
 We first clone the whole project by git clone this repo:
 
 ```bash
 git clone git@github.com:BiboyQG/ASAG.git && cd ASAG
 ```
+
+#### Environment Setup
+
+Then, it is necessary for us to setup a virtual environmrnt in order to run the project.
+
+Currently, we don't provide docker image or dockerfile, but instead we offer conda(Anaconda/Miniconda) environment config file inside `env` folder.
+
+Therefore, you can simply copy and run the following in your terminal to quickly setup the environment:
+
+> [!NOTE]
+>
+> You can rename `my_new_env` to any name you want.
+
+```bash
+conda env create -n my_new_env -f env/environment.yml && conda activate my_new_env
+```
+
+#### Launch Server
 
 Then we need to setup server-side to provide the service to the clients. To launch our HTTP server, simply:
 
@@ -71,6 +90,8 @@ python vllm_server.py -m [index of the model in the above list]
 ```
 
 If you launch the server with the specific model you specify for the first time, the server would automatically download the model and save the files to `.cache/huggingface/hub`.
+
+#### Request and Response
 
 After that, we can either start the student entry or client side to pass our inputs to the server:
 
@@ -94,7 +115,7 @@ python student_entry.py -n [0, 1, 2]
 python student_entry.py [-s]
 ```
 
-**WebUI**:
+#### WebUI
 
 After launching vllm_server, you can also run gradio_webui.py which is a webui based on gradio. This can achieve a chat-liked format like ChatGPT, which is more user-friendly.
 
