@@ -46,11 +46,14 @@ This project aims to achieve high concurrency automatic short answer grading (AS
 | Python        | 3.18        |
 | CUDA          | 12.1        |
 | torch         | 2.1         |
+| einops        | 0.8.0       |
 | transformers  | 4.41.0      |
+| accelerate    | 0.30.1      |
 | vLLM          | 0.4.3       |
-| tiktoken      | latest      |
-| sentencepiece | latest      |
-| FastAPI       | latest      |
+| tiktoken      | 0.6.0       |
+| sentencepiece | 0.2.0       |
+| scipy         | 1.13.0      |
+| FastAPI       | 0.111.0     |
 
 > [!TIP]
 >
