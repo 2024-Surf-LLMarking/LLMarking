@@ -1,6 +1,6 @@
-# Automatic Short Answer Grading (ASAG) System
+# LLMarking
 
-This is the official repo for **Automatic Short Answer Grading (ASAG)** project from **Xi'an Jiaotong Liverpool University (XJTLU)**. 
+This is the official repo for **Automatic Short Answer Grading (ASAG)** project, named **LLMarking**, from **Xi'an Jiaotong Liverpool University (XJTLU)**. 
 
 Using [vLLM](https://github.com/vllm-project/vllm) as the Large Language Model (LLM) inference framework and [FastAPI](https://github.com/tiangolo/fastapi) as the HTTP service framework, this project can achieve high throughput of both LLM tokens delivered and request handling.
 
