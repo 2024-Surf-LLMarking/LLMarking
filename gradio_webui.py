@@ -19,16 +19,16 @@ def chat_streaming(query,history):
             text=data["text"].rstrip('\r\n') # 确保末尾无换行
             yield text
 
-with gr.Blocks(css='.qwen-logo img {height:200px; width:600px; margin:0 auto;}') as app:
+with gr.Blocks(css='.logo img {height:200px; width:600px; margin:0 auto;}') as app:
     with gr.Row():
-        logo_img=gr.Image('qwen.png',elem_classes='qwen-logo')
+        logo_img=gr.Image('TBD.png',elem_classes='logo')
     with gr.Row():
-        chatbot=gr.Chatbot(label='通义千问14B-Chat-Int4')
+        chatbot=gr.Chatbot(label='LLMs',placeholder='Loading model...')
     with gr.Row():
-        query_box=gr.Textbox(label='提问',autofocus=True,lines=5)
+        query_box=gr.Textbox(label='Chat',autofocus=True,lines=5)
     with gr.Row():
-        clear_btn=gr.ClearButton([query_box,chatbot],value='清空历史')
-        submit_btn=gr.Button(value='提交')
+        clear_btn=gr.ClearButton([query_box,chatbot],value='Clear history')
+        submit_btn=gr.Button(value='Submit')
 
     def chat(query,history):
         for response in chat_streaming(query,history):
