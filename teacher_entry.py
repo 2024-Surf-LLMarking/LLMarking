@@ -171,5 +171,6 @@ if __name__ == "__main__":
     app.launch(
         server_name='0.0.0.0',
         max_threads=500, # 线程池
-        favicon_path='./favicon.png'
+        favicon_path='./favicon.png',
+        server_port=80
         )
