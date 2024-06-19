@@ -30,9 +30,8 @@ def select_data(db_file, table_name):
     c = conn.cursor()
     c.execute(f"SELECT * FROM {table_name}")
     rows = c.fetchall()
-    for row in rows:
-        print(row)
     conn.close()
+    return rows
 
 def update_data(db_file, table_name, data):
     conn = sql.connect(db_file)

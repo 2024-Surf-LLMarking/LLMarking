@@ -1,5 +1,7 @@
 from db_utils import create_table, insert_data, select_data, list_to_string
+from prompt_template import one_prompt as prompt
 import gradio as gr
+import json
 import csv
 import pathlib as pl
 import requests
@@ -47,8 +49,11 @@ columns = "question_code TEXT, question TEXT, full_mark REAL, scoring TEXT"
 p = pl.Path('data')
 if not p.exists():
     p.mkdir()
+r = pl.Path('results')
+if not r.exists():
+    r.mkdir()
 
-with gr.Blocks(css=css) as app:
+with gr.Blocks(css=css, title='LLMarking') as app:
     db_files = list(p.glob('*.db'))
     db_files = [file.name.split('.')[-2] for file in db_files]
     with gr.Row():
@@ -66,6 +71,8 @@ with gr.Blocks(css=css) as app:
     with gr.Row():
         clear_btn=gr.ClearButton([db, file_output],value='Clear')
         submit_btn=gr.Button("Submit", interactive=False)
+    with gr.Row():
+        file_download = gr.File(label="Download Grading Results", visible=False)
     with gr.Row():
         upload_to_db_ck_box = gr.Checkbox(label="Upload to database", info="Do you want to upload your data to database?")
     with gr.Row():
@@ -91,17 +98,46 @@ with gr.Blocks(css=css) as app:
                                             )
         
     def submit_for_grading(db, file_output):
-        # file_output: List
-        # for file in file_output:
-        #     csv = pd.read_csv(file)
-        #     for row in csv:
-        #         question = row['Question']
-        #         stu_answer = row['stuAnswer']
-        #         ref_answer = row['refAnswer']
         file_name_list = [file.split('/')[-1] for file in file_output]
         file_name = ', '.join(file_name_list)
         gr.Info(f"Sending file: {file_name} to server and grade answers according to {db} database...")
-        return gr.Button('Submit', interactive=False)
+        db_rows = select_data(f"data/{db}.db", db)
+        question_answer_mapping = {row[0]: (row[1], row[3]) for row in db_rows}
+        responses = []
+        gr.Info(f"Grading answers...")
+        for idx, file in enumerate(file_output):
+            with open(file, 'r') as f:
+                csv_reader = csv.reader(f)
+                headers = next(csv_reader)
+                for row in csv_reader:
+                    question_code, stu_answer, manual_score = row
+                    question = question_answer_mapping[question_code][0]
+                    ref_answer = question_answer_mapping[question_code][1]
+                    query = prompt.format(question=question, ref_answer=ref_answer, stu_answer=stu_answer)
+                    response = requests.post(
+                        "http://100.65.8.31:8000/chat",
+                        json={
+                            "query": query,
+                            "stream": False,
+                            "history": None,
+                        },
+                        stream=False,
+                    )
+                    text = json.loads(response.text)["text"]
+                    responses.append({
+                        "question_code": question_code,
+                        "question": question,
+                        "student_answer": stu_answer,
+                        "reference_answer": ref_answer,
+                        "feedback": text
+                    })
+        results_path = r / 'results.json'
+        with results_path.open('w') as file:
+            json.dump(responses, file, indent=4)
+        gr.Info(f"Data uploaded to server and graded successfully! You can download the results below by clicking the button.")
+        gr.Info(f"Results are saved in {results_path.name}!")
+        download_path = r.name + '/' + results_path.name
+        return gr.Button('Submit', interactive=True), gr.File(download_path, label="Download Grading Results", visible=True)
     
     def submit_to_db(db_data):
         file_name_list = [file.split('/')[-1].split('.')[-2] for file in db_data]
@@ -127,9 +163,13 @@ with gr.Blocks(css=css) as app:
     db_data.upload(upload_db, None, upload_to_db_submit_btn)
     clear_btn.click(disable_submit, None, submit_btn)
     upload_to_db_clear_btn.click(disable_upload, None, upload_to_db_submit_btn)
-    submit_btn.click(submit_for_grading, [db, file_output], submit_btn)
+    submit_btn.click(submit_for_grading, [db, file_output], [submit_btn, file_download])
     upload_to_db_submit_btn.click(submit_to_db, db_data, [upload_to_db_submit_btn, db])
 
 if __name__ == "__main__":
     app.queue(200)  # 请求队列
-    app.launch(server_name='0.0.0.0',max_threads=500) # 线程池
+    app.launch(
+        server_name='0.0.0.0',
+        max_threads=500, # 线程池
+        favicon_path='./favicon.png'
+        )
