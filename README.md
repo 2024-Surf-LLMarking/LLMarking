@@ -133,15 +133,15 @@ python student_entry.py -n [0, 1, 2]
 python student_entry.py [-s]
 ```
 
-#### WebUI
+#### Teacher Entry
 
-After launching vllm_server, you can also run gradio_webui.py which is a webui based on gradio. This can achieve a chat-liked format like ChatGPT, which is more user-friendly.
+After launching vllm_server, you can also run `teacher_entry.py` which is webui based on gradio. This can provide an interface where teacher can upload their questions, answers to the questions, and students' answers, which is more user-friendly.
 
 ```bash
-python gradio_webui.py
+python teacher_entry.py
 ```
 
-![webui](https://s2.loli.net/2024/06/11/duwy9Q4j7JM1PVp.png)
+![image-20240620224047630](https://s2.loli.net/2024/06/20/wzkmQq6ANWYjPbR.png)
 
 ## Data and Results
 
