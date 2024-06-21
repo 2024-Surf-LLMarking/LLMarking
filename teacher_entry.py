@@ -1,10 +1,12 @@
 from db_utils import create_table, insert_data, select_data, list_to_string
 from prompt_template import zero_prompt as prompt
+from tqdm import tqdm
 import gradio as gr
 import json
 import csv
 import pathlib as pl
 import requests
+
 
 def upload_file(db):
     if db is None:
@@ -102,7 +104,7 @@ with gr.Blocks(css=css, title='LLMarking') as app:
                                             visible=False
                                             )
         
-    def submit_for_grading(db, file_output, return_type):
+    def submit_for_grading(db, file_output, return_type, pr=gr.Progress(track_tqdm=True)):
         file_name_list = [file.split('/')[-1] for file in file_output]
         file_name = ', '.join(file_name_list)
         gr.Info(f"Sending file: {file_name} to server and grade answers according to {db} database...")
@@ -111,7 +113,7 @@ with gr.Blocks(css=css, title='LLMarking') as app:
         if return_type == 'JSON':
             responses = []
             gr.Info(f"Grading answers...")
-            for idx, file in enumerate(file_output):
+            for file in tqdm(file_output, desc="Grading...", total=len(file_output)):
                 with open(file, 'r') as f:
                     csv_reader = csv.reader(f)
                     headers = next(csv_reader)
@@ -212,5 +214,5 @@ if __name__ == "__main__":
         server_name='0.0.0.0',
         max_threads=500, # 线程池
         favicon_path='./favicon.png',
-        server_port=80
+        server_port=7860
         )
