@@ -150,7 +150,7 @@ with gr.Blocks(css=css, title='LLMarking') as app:
         elif return_type == 'CSV':
             responses = []
             gr.Info(f"Grading answers...")
-            for idx, file in enumerate(file_output):
+            for file in tqdm(file_output, desc="Grading...", total=len(file_output)):
                 with open(file, 'r') as f:
                     csv_reader = csv.reader(f)
                     headers = next(csv_reader)
@@ -214,5 +214,8 @@ if __name__ == "__main__":
         server_name='0.0.0.0',
         max_threads=500, # 线程池
         favicon_path='./favicon.png',
-        server_port=7860
+        server_port=8080,
+        ssl_verify=False, 
+        ssl_certfile="cert.pem", 
+        ssl_keyfile="key.pem"
         )
