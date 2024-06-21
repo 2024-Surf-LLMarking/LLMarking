@@ -1,5 +1,5 @@
 from db_utils import create_table, insert_data, select_data, list_to_string
-from prompt_template import one_prompt as prompt
+from prompt_template import zero_prompt as prompt
 import gradio as gr
 import json
 import csv
@@ -102,7 +102,7 @@ with gr.Blocks(css=css, title='LLMarking') as app:
         file_name = ', '.join(file_name_list)
         gr.Info(f"Sending file: {file_name} to server and grade answers according to {db} database...")
         db_rows = select_data(f"data/{db}.db", db)
-        question_answer_mapping = {row[0]: (row[1], row[3]) for row in db_rows}
+        question_answer_mapping = {row[0]: (row[1], row[2], row[3]) for row in db_rows}
         responses = []
         gr.Info(f"Grading answers...")
         for idx, file in enumerate(file_output):
@@ -112,8 +112,9 @@ with gr.Blocks(css=css, title='LLMarking') as app:
                 for row in csv_reader:
                     question_code, stu_answer, manual_score = row
                     question = question_answer_mapping[question_code][0]
-                    ref_answer = question_answer_mapping[question_code][1]
-                    query = prompt.format(question=question, ref_answer=ref_answer, stu_answer=stu_answer)
+                    full_mark = question_answer_mapping[question_code][1]
+                    ref_answer = question_answer_mapping[question_code][2]
+                    query = prompt.format(question=question, ref_answer=ref_answer, stu_answer=stu_answer, full_mark=full_mark)
                     response = requests.post(
                         "http://100.65.8.31:8000/chat",
                         json={
