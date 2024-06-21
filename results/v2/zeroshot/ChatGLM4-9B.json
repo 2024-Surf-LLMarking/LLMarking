@@ -1,0 +1,18 @@
+{
+    "0": {
+        "question": "What is the time complexity of the QuickSort algorithm in the worst case?",
+        "fullMark": "5",
+        "referenceAnswer": "In the worst case, <Point1:3>the time complexity of QuickSort is O(n^2)<Point1:3>, where n is the number of elements in the array. <Point2:2>This occurs when the pivot elements are consistently the smallest or largest element in the array<Point2:2>, leading to unbalanced partitions.",
+        "studentAnswer": "QuickSort has a time complexity of O(n log n) in the worst case because it divides the list into two halves.",
+        "teacherMark": "<Point1:0> <Deduction>,<Point2:0> <Deduction>",
+        "feedback": "\n<Point:5> <Deduction>...The student's answer inaccurately states the time complexity of QuickSort in the worst case. The correct time complexity is O(n^2), not O(n log n). This is the key aspect missing from the student's answer.\n<Point:2> <Deduction>...The student does not mention the specific conditions that lead to the worst-case time complexity, which are when the pivot elements are consistently the smallest or largest element in the array, leading to unbalanced partitions.\n\nTotal score: 0/5"
+    },
+    "1": {
+        "question": "Explain how a hash table works.",
+        "fullMark": "5",
+        "referenceAnswer": "<Point1:2>A hash table stores key-value pairs<Point1:2>. <Point2:2>It uses a hash function to compute an index into an array of buckets or slots, from which the desired value can be found<Point2:2>. <Point3:1>Ideally, the hash function will assign each key to a unique bucket, but most hash table designs employ some form of collision resolution<Point3:1>.",
+        "studentAnswer": "A hash table is just an array that stores data and uses keys for indexing.",
+        "teacherMark": "<Point1:2> <Induction>,<Point2:0> <Deduction>,<Point3:0> <Deduction>",
+        "feedback": "\n<Point:origin mark> <Induction> <Point1:2> The student correctly identifies that a hash table stores data and uses keys for indexing, which is a basic understanding of the concept<Point1:2>.\n<Point:origin mark> <Induction> <Point2:2> The student's answer, however, does not mention the use of a hash function or the organization into an array of buckets or slots, which are essential components of a hash table<Point2:2>.\n<Point:origin mark> <Induction> <Point3:1> There is no mention of collision resolution in the student's answer, which is a critical aspect of how hash tables function<Point3:1>.\nTotal score: 1/5"
+    }
+}

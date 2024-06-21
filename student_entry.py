@@ -1,9 +1,11 @@
-from prompt_template import prompt_list
+from prompt_template import prompt_list as prompt_list_v1
+from prompt_template_v2 import prompt_list as prompt_list_v2
 import requests
 import json
 import argparse
 
 parser = argparse.ArgumentParser()
+parser.add_argument("-p", "--prompt", type=int, default=1, help="Prompt type to use.", required=True, choices=[1, 2])
 parser.add_argument("-s", "--stream", action="store_true", help="Whether or not to print the response in a streaming way.")
 parser.add_argument("-n", "--shots", type=int, default=0, help="Number of shots to run.", required=True, choices=[0, 1, 2])
 
@@ -20,6 +22,11 @@ with open('data/example.json', 'r') as file:
 example_list = data["examples"]
 index = 0
 results = {}
+
+if args.prompt == 1:
+    prompt_list = prompt_list_v1
+elif args.prompt == 2:
+    prompt_list = prompt_list_v2
 prompt = prompt_list[args.shots]
 
 def get_response(stream = False):
@@ -73,7 +80,7 @@ def get_response(stream = False):
         with open('results/results.json', 'w') as file:
             json.dump(results, file, indent=4)
     else:
-        with open(f'results/{directory[args.shots]}/{model_name}.json', 'w') as file:
+        with open(f'results/v{args.prompt}/{directory[args.shots]}/{model_name}.json', 'w') as file:
             json.dump(results, file, indent=4)
     
 get_response(args.stream)

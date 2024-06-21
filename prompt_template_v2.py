@@ -7,14 +7,15 @@ zero_prompt = """
 - **Student Answer:** [The actual answer provided by the student.]
 
 **Grading Criteria:**
-- **The Grading Criteria are contained in the answer in the case of <Point:mark>answer point<Point:mark> in Reference Answer, the mark is the score of the point.**
-- **If the student's answer perfectly satisfies the Point, induct the mark of the point, If the answer does not fit well, then this part of the score then this part of the score will not be inducted.**
-- **If the student's answer does not satisfy the Point, deduct the mark of the point, origin mark for this point equals zero.**
-- **Both the Induction Point and Deduction Point could be none if the students' answer doesn't satisfy the point."
+- **The Grading Criteria are contained in the answer in the case of <Point:mark>answer point<Point:mark> in Reference Answer, the mark is the score of the point**
+- **If the student's answer perfectly satisfies the Point, induct the mark of the point, If the answer does not fit well,then this part of the score will not be indcted**
+- **If the student's answer does not satisfy the Point, deduct the mark of the point,origin mark for this point equals zero**
+- **Both the Induction Point and Deduction Point could be none if the students' answer doesn't satisfies the point."
 
-**Please provide the feedback in the following form, mention: the <Point:mark> should be only at the front of the reason, each point should be given at a new row:**
-<Point:origin mark> <Induction>...(reason, Highlight strengths and correct aspects of the student's answer, show which point the student is correct about)
-<Point:origin mark> <Deduction>...(reason, Describe the reason for the deduction)
+
+**Please provide the feedback in the following form，mention: the  <Point:mark> should be only at the front of the reason, each point should be printed at a new raw"**
+<Point:origin mark> <Induction>...(reason,Highlight strengths and correct aspects of the student's answer, show which point the student is corrent)
+<Point:origin mark> <Deduction>...(reason,Describe the reason for the deduction)
 Total score: Induction point/Full mark
 
 **Now, let's begin:**
@@ -36,14 +37,14 @@ one_prompt = """
 - **Student Answer:** [The actual answer provided by the student.]
 
 **Grading Criteria:**
-- **The Grading Criteria are contained in the answer in the case of <Point:mark>answer point<Point:mark> in Reference Answer, the mark is the score of the point.**
-- **If the student's answer perfectly satisfies the Point, induct the mark of the point, If the answer does not fit well, then this part of the score will be partially deducted depending on the student's answer.**
-- **If the student's answer does not satisfy the Point, deduct the mark of the point, origin mark for this point equals zero.**
-- **Both the Induction Point and Deduction Point could be none if the students' answer doesn't satisfy the point."
+- **The Grading Criteria are contained in the answer in the case of <Point:mark>answer point<Point:mark> in Reference Answer, the mark is the score of the point**
+- **If the student's answer perfectly satisfies the Point, induct the mark of the point, If the answer does not fit well,then this part of the score will not be indcted**
+- **If the student's answer does not satisfy the Point, deduct the mark of the point,origin mark for this point equals zero**
+- **Both the Induction Point and Deduction Point could be none if the students' answer doesn't satisfies the point."
 
-**Please provide the feedback in the following form, mention: the <Point:mark> should be only at the front of the reason, each point should be given at a new row:**
-<Point:origin mark> <Induction>...(reason, Highlight strengths and correct aspects of the student's answer, show which point the student is correct about)
-<Point:origin mark> <Deduction>...(reason, Describe the reason for the deduction)
+**Please provide the feedback in the following form，mention: the  <Point:mark> should be only at the front of the reason, each point should be printed at a new raw"**
+<Point:origin mark> <Induction>...(reason,Highlight strengths and correct aspects of the student's answer, show which point the student is corrent)
+<Point:origin mark> <Deduction>...(reason,Describe the reason for the deduction)
 Total score: Induction point/Full mark
 
 **Example**:
@@ -59,7 +60,6 @@ Total score: Induction point/Full mark
 
 **Now, let's begin:**
 - **Question:** {question}
-- **Full Mark:** {full_mark}
 - **Reference Answer:** {ref_answer}
 - **Student Answer:** {stu_answer}
 
@@ -75,14 +75,14 @@ few_prompt = """
 - **Student Answer:** [The actual answer provided by the student.]
 
 **Grading Criteria:**
-- **The Grading Criteria are contained in the answer in the case of <Point:mark>answer point<Point:mark> in Reference Answer, the mark is the score of the point.**
-- **If the student's answer perfectly satisfies the Point, induct the mark of the point, If the answer does not fit well, then this part of the score will be partially deducted depending on the student's answer.**
-- **If the student's answer does not satisfy the Point, deduct the mark of the point, origin mark for this point equals zero.**
-- **Both the Induction Point and Deduction Point could be none if the students' answer doesn't satisfy the point."
+- **The Grading Criteria are contained in the answer in the case of <Point:mark>answer point<Point:mark> in Reference Answer, the mark is the score of the point**
+- **If the student's answer perfectly satisfies the Point, induct the mark of the point, If the answer does not fit well,then this part of the score will not be indcted**
+- **If the student's answer does not satisfy the Point, deduct the mark of the point,origin mark for this point equals zero**
+- **Both the Induction Point and Deduction Point could be none if the students' answer doesn't satisfies the point."
 
-**Please provide the feedback in the following form, mention: the <Point:mark> should be only at the front of the reason, each point should be given at a new row:**
-<Point:origin mark> <Induction>...(reason, Highlight strengths and correct aspects of the student's answer, show which point the student is correct about)
-<Point:origin mark> <Deduction>...(reason, Describe the reason for the deduction)
+**Please provide the feedback in the following form，mention: the  <Point:mark> should be only at the front of the reason, each point should be printed at a new raw"**
+<Point:origin mark> <Induction>...(reason,Highlight strengths and correct aspects of the student's answer, show which point the student is corrent)
+<Point:origin mark> <Deduction>...(reason,Describe the reason for the deduction)
 Total score: Induction point/Full mark
 
 **Example**:
@@ -96,10 +96,11 @@ Total score: Induction point/Full mark
 <Point2:0> <Deduction> The explanation about using a hash function to compute an index into an array of buckets or slots is missing, which is a crucial part of how a hash table works.\n
 <Point3:0> <Deduction> There is no mention of collision resolution, which is an important aspect of hash table design.\n
 
+
+
 **Now, let's begin:**
 
 - **Question:** {question}
-- **Full Mark:** {full_mark}
 - **Reference Answer:** {ref_answer}
 - **Student Answer:** {stu_answer}
 
