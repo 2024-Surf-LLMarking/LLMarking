@@ -23,7 +23,7 @@ def build_diction(input_str):
 def extract_info_from_json(file_path):
     # Read the JSON file
     with open(file_path, 'r', encoding='utf-8') as file:
-        data = json.load(file )
+        data = json.load(file)
         ModelMark, TeacherMark = extract_info(data)
         print("ModelMark", ModelMark)
         print("TeacherMark", TeacherMark)
