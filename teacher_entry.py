@@ -77,7 +77,7 @@ with gr.Blocks(css=css, title='LLMarking') as app:
         clear_btn=gr.ClearButton([db, file_output],value='Clear')
         submit_btn=gr.Button("Submit", interactive=False)
     with gr.Row():
-        file_download = gr.File(label="Download Grading Results", visible=False)
+        file_download = gr.File(label="Download Grading Results", visible=True, interactive=False)
     with gr.Row():
         upload_to_db_ck_box = gr.Checkbox(label="Upload to database", info="Do you want to upload your data to database?")
     with gr.Row():
