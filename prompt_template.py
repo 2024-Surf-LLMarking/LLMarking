@@ -12,8 +12,8 @@ zero_prompt = """
 - **If the student's answer does not satisfy the Point, deduct the mark of the point, origin mark for this point equals zero.**
 - **Both the Induction Point and Deduction Point could be none if the students' answer doesn't satisfy the point."
 
-**Please provide the feedback in the following form, mention: the <Point:mark> should be only at the front of the reason, each point should be printed at a new row:**
-<Point:origin mark> <Induction>...(reason, Highlight strengths and correct aspects of the student's answer, show which point the student is correct)
+**Please provide the feedback in the following form, mention: the <Point:mark> should be only at the front of the reason, each point should be given at a new row:**
+<Point:origin mark> <Induction>...(reason, Highlight strengths and correct aspects of the student's answer, show which point the student is correct about)
 <Point:origin mark> <Deduction>...(reason, Describe the reason for the deduction)
 Total score: Induction point/Full mark
 
@@ -41,8 +41,8 @@ one_prompt = """
 - **If the student's answer does not satisfy the Point, deduct the mark of the point, origin mark for this point equals zero.**
 - **Both the Induction Point and Deduction Point could be none if the students' answer doesn't satisfy the point."
 
-**Please provide the feedback in the following form, mention: the <Point:mark> should be only at the front of the reason, each point should be printed at a new row:**
-<Point:origin mark> <Induction>...(reason, Highlight strengths and correct aspects of the student's answer, show which point the student is correct)
+**Please provide the feedback in the following form, mention: the <Point:mark> should be only at the front of the reason, each point should be given at a new row:**
+<Point:origin mark> <Induction>...(reason, Highlight strengths and correct aspects of the student's answer, show which point the student is correct about)
 <Point:origin mark> <Deduction>...(reason, Describe the reason for the deduction)
 Total score: Induction point/Full mark
 
@@ -59,6 +59,7 @@ Total score: Induction point/Full mark
 
 **Now, let's begin:**
 - **Question:** {question}
+- **Full Mark:** {full_mark}
 - **Reference Answer:** {ref_answer}
 - **Student Answer:** {stu_answer}
 
@@ -79,8 +80,8 @@ few_prompt = """
 - **If the student's answer does not satisfy the Point, deduct the mark of the point, origin mark for this point equals zero.**
 - **Both the Induction Point and Deduction Point could be none if the students' answer doesn't satisfy the point."
 
-**Please provide the feedback in the following form, mention: the <Point:mark> should be only at the front of the reason, each point should be printed at a new row:**
-<Point:origin mark> <Induction>...(reason, Highlight strengths and correct aspects of the student's answer, show which point the student is correct)
+**Please provide the feedback in the following form, mention: the <Point:mark> should be only at the front of the reason, each point should be given at a new row:**
+<Point:origin mark> <Induction>...(reason, Highlight strengths and correct aspects of the student's answer, show which point the student is correct about)
 <Point:origin mark> <Deduction>...(reason, Describe the reason for the deduction)
 Total score: Induction point/Full mark
 
@@ -98,6 +99,7 @@ Total score: Induction point/Full mark
 **Now, let's begin:**
 
 - **Question:** {question}
+- **Full Mark:** {full_mark}
 - **Reference Answer:** {ref_answer}
 - **Student Answer:** {stu_answer}
 

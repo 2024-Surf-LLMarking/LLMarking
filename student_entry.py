@@ -18,7 +18,6 @@ with open('data/example.json', 'r') as file:
     data = json.load(file)
 
 example_list = data["examples"]
-
 index = 0
 results = {}
 prompt = prompt_list[args.shots]
@@ -27,9 +26,10 @@ def get_response(stream = False):
     global index, results, prompt
     while index < len(example_list):
         question = example_list[index]["question"]
+        full_mark = example_list[index]["fullMark"]
         ref_answer = example_list[index]["referenceAnswer"]
         stu_answer = example_list[index]["studentAnswer"]
-        query = prompt.format(question=question, ref_answer=ref_answer, stu_answer=stu_answer)
+        query = prompt.format(question=question, ref_answer=ref_answer, stu_answer=stu_answer, full_mark=full_mark)
 
         response = requests.post(
             "http://100.65.8.31:8000/chat",
