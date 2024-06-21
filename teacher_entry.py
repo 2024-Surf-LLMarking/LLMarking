@@ -46,6 +46,7 @@ css = """footer {visibility: hidden}
 .logo img {height:100px; width:auto; margin:0 auto;}
 """
 columns = "question_code TEXT, question TEXT, full_mark REAL, scoring TEXT"
+return_type_ = ['CSV', 'JSON']
 p = pl.Path('data')
 if not p.exists():
     p.mkdir()
@@ -63,6 +64,10 @@ with gr.Blocks(css=css, title='LLMarking') as app:
     with gr.Row():
         db = gr.Dropdown(
             db_files, label="Question Database", info="Select the question database that you would like the automatically grade upon."
+        )
+    with gr.Row():
+        return_type = gr.Dropdown(
+            return_type_, label="Return Format", info="Select the data type that you would like receive as the results file."
         )
     with gr.Row():
         gr.Markdown('#### Upload your csv file that needs to be marked:')
@@ -97,48 +102,82 @@ with gr.Blocks(css=css, title='LLMarking') as app:
                                             visible=False
                                             )
         
-    def submit_for_grading(db, file_output):
+    def submit_for_grading(db, file_output, return_type):
         file_name_list = [file.split('/')[-1] for file in file_output]
         file_name = ', '.join(file_name_list)
         gr.Info(f"Sending file: {file_name} to server and grade answers according to {db} database...")
         db_rows = select_data(f"data/{db}.db", db)
         question_answer_mapping = {row[0]: (row[1], row[2], row[3]) for row in db_rows}
-        responses = []
-        gr.Info(f"Grading answers...")
-        for idx, file in enumerate(file_output):
-            with open(file, 'r') as f:
-                csv_reader = csv.reader(f)
-                headers = next(csv_reader)
-                for row in csv_reader:
-                    question_code, stu_answer, manual_score = row
-                    question = question_answer_mapping[question_code][0]
-                    full_mark = question_answer_mapping[question_code][1]
-                    ref_answer = question_answer_mapping[question_code][2]
-                    query = prompt.format(question=question, ref_answer=ref_answer, stu_answer=stu_answer, full_mark=full_mark)
-                    response = requests.post(
-                        "http://100.65.8.31:8000/chat",
-                        json={
-                            "query": query,
-                            "stream": False,
-                            "history": None,
-                        },
-                        stream=False,
-                    )
-                    text = json.loads(response.text)["text"]
-                    responses.append({
-                        "question_code": question_code,
-                        "question": question,
-                        "student_answer": stu_answer,
-                        "reference_answer": ref_answer,
-                        "feedback": text
-                    })
-        results_path = r / 'results.json'
-        with results_path.open('w') as file:
-            json.dump(responses, file, indent=4)
-        gr.Info(f"Data uploaded to server and graded successfully! You can download the results below by clicking the button.")
-        gr.Info(f"Results are saved in {results_path.name}!")
-        download_path = r.name + '/' + results_path.name
-        return gr.Button('Submit', interactive=True), gr.File(download_path, label="Download Grading Results", visible=True)
+        if return_type == 'JSON':
+            responses = []
+            gr.Info(f"Grading answers...")
+            for idx, file in enumerate(file_output):
+                with open(file, 'r') as f:
+                    csv_reader = csv.reader(f)
+                    headers = next(csv_reader)
+                    for row in csv_reader:
+                        question_code, stu_answer, manual_score = row
+                        question = question_answer_mapping[question_code][0]
+                        full_mark = question_answer_mapping[question_code][1]
+                        ref_answer = question_answer_mapping[question_code][2]
+                        query = prompt.format(question=question, ref_answer=ref_answer, stu_answer=stu_answer, full_mark=full_mark)
+                        response = requests.post(
+                            "http://100.65.8.31:8000/chat",
+                            json={
+                                "query": query,
+                                "stream": False,
+                                "history": None,
+                            },
+                            stream=False,
+                        )
+                        text = json.loads(response.text)["text"]
+                        responses.append({
+                            "question_code": question_code,
+                            "question": question,
+                            "student_answer": stu_answer,
+                            "reference_answer": ref_answer,
+                            "feedback": text
+                        })
+            results_path = r / 'results.json'
+            with results_path.open('w') as file:
+                json.dump(responses, file, indent=4)
+            gr.Info(f"Data uploaded to server and graded successfully! You can download the results below by clicking the button.")
+            gr.Info(f"Results are saved in {results_path.name}!")
+            download_path = r.name + '/' + results_path.name
+            return gr.Button('Submit', interactive=True), gr.File(download_path, label="Download Grading Results", visible=True)
+        elif return_type == 'CSV':
+            responses = []
+            gr.Info(f"Grading answers...")
+            for idx, file in enumerate(file_output):
+                with open(file, 'r') as f:
+                    csv_reader = csv.reader(f)
+                    headers = next(csv_reader)
+                    for row in csv_reader:
+                        question_code, stu_answer, manual_score = row
+                        question = question_answer_mapping[question_code][0]
+                        full_mark = question_answer_mapping[question_code][1]
+                        ref_answer = question_answer_mapping[question_code][2]
+                        query = prompt.format(question=question, ref_answer=ref_answer, stu_answer=stu_answer, full_mark=full_mark)
+                        response = requests.post(
+                            "http://100.65.8.31:8000/chat",
+                            json={
+                                "query": query,
+                                "stream": False,
+                                "history": None,
+                            },
+                            stream=False,
+                        )
+                        text = json.loads(response.text)["text"]
+                        responses.append([question_code, question, stu_answer, ref_answer, text])
+            results_path = r / 'results.csv'
+            with results_path.open('w') as file:
+                csv_writer = csv.writer(file)
+                csv_writer.writerow(['Question Code', 'Question', 'Student Answer', 'Reference Answer', 'Feedback'])
+                csv_writer.writerows(responses)
+            gr.Info(f"Data uploaded to server and graded successfully! You can download the results below by clicking the button.")
+            gr.Info(f"Results are saved in {results_path.name}!")
+            download_path = r.name + '/' + results_path.name
+            return gr.Button('Submit', interactive=True), gr.File(download_path, label="Download Grading Results", visible=True)
     
     def submit_to_db(db_data):
         file_name_list = [file.split('/')[-1].split('.')[-2] for file in db_data]
@@ -164,7 +203,7 @@ with gr.Blocks(css=css, title='LLMarking') as app:
     db_data.upload(upload_db, None, upload_to_db_submit_btn)
     clear_btn.click(disable_submit, None, submit_btn)
     upload_to_db_clear_btn.click(disable_upload, None, upload_to_db_submit_btn)
-    submit_btn.click(submit_for_grading, [db, file_output], [submit_btn, file_download])
+    submit_btn.click(submit_for_grading, [db, file_output, return_type], [submit_btn, file_download])
     upload_to_db_submit_btn.click(submit_to_db, db_data, [upload_to_db_submit_btn, db])
 
 if __name__ == "__main__":
