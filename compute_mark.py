@@ -1,5 +1,5 @@
 import json
-from sklearn.metrics import f1_score, precision_score, recall_score
+from sklearn.metrics import f1_score
 import re
 
 def extract_info(data):
@@ -32,8 +32,7 @@ def extract_info_from_json(file_path):
         model_labels = [1 if point == 'Induction' else 0 for point in model_points]
         teacher_labels = [1 if point == 'Induction' else 0 for point in teacher_points]
         f1 = F1_Score(teacher_labels,model_labels)
-        print(f1)
-        print("hello")
+        print('F1 score:', f1)
 
 
 # 提取点并将其转换为列表
