@@ -1,0 +1,18 @@
+{
+    "0": {
+        "question": "What is the time complexity of the QuickSort algorithm in the worst case?",
+        "fullMark": "5",
+        "referenceAnswer": "In the worst case, <Point1:3>the time complexity of QuickSort is O(n^2)<Point1:3>, where n is the number of elements in the array. <Point2:2>This occurs when the pivot elements are consistently the smallest or largest element in the array<Point2:2>, leading to unbalanced partitions.",
+        "studentAnswer": "QuickSort has a time complexity of O(n log n) in the worst case because it divides the list into two halves.",
+        "teacherMark": "<Point1:0> <Deduction>,<Point2:0> <Deduction>",
+        "feedback": "**Feedback:**\n\n<Point1:3> *False* (The student's answer incorrectly suggests a time complexity of O(n log n) in the worst case.)\n\n<Point2:2> *True* (The student's answer correctly mentions the unbalanced partitions causing the worst-case complexity.)\n\nTotal score: 1 / 5"
+    },
+    "1": {
+        "question": "Explain how a hash table works.",
+        "fullMark": "5",
+        "referenceAnswer": "<Point1:2>A hash table stores key-value pairs<Point1:2>. <Point2:2>It uses a hash function to compute an index into an array of buckets or slots, from which the desired value can be found<Point2:2>. <Point3:1>Ideally, the hash function will assign each key to a unique bucket, but most hash table designs employ some form of collision resolution<Point3:1>.",
+        "studentAnswer": "A hash table is just an array that stores data and uses keys for indexing.",
+        "teacherMark": "<Point1:2> <Induction>,<Point2:0> <Deduction>,<Point3:0> <Deduction>",
+        "feedback": "<Point1:2> *False* (The student's answer lacks the explanation of key-value pairs stored in a hash table.)\n\n<Point2:2> *True* (The student's answer correctly mentions the use of a hash function to compute an index.)\n\n<Point3:1> *False* (The student's answer skips the critical aspect of collision resolution in case of non-unique hash values.)\n\n**Total Score: 2/5**"
+    }
+}

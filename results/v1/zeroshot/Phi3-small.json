@@ -5,7 +5,7 @@
         "referenceAnswer": "In the worst case, <Point1:3>the time complexity of QuickSort is O(n^2)<Point1:3>, where n is the number of elements in the array. <Point2:2>This occurs when the pivot elements are consistently the smallest or largest element in the array<Point2:2>, leading to unbalanced partitions.",
         "studentAnswer": "QuickSort has a time complexity of O(n log n) in the worst case because it divides the list into two halves.",
         "teacherMark": "<Point1:0> <Deduction>,<Point2:0> <Deduction>",
-        "feedback": "<Point1:0> The answer does not mention the correct time complexity in the worst case, and therefore no mark is awarded for this point.\n<Point2:0> The answer incorrectly describes the behavior of QuickSort in the worst case, as it does not lead to unbalanced partitions and consistently choosing the smallest or largest element.\n\nTotal score: 0/5\n####Finished####"
+        "feedback": "<Point1:mark> *False*\n\n<Point2:mark> *False* (The student incorrectly states the worst case time complexity)\n\n<Point3:mark> *False* (The student should mention the reason for the worst case scenario)\n\n<Point4:mark> *False* (No mention of the pivot selection issue leading to O(n^2) complexity)"
     },
     "1": {
         "question": "Explain how a hash table works.",
@@ -13,6 +13,6 @@
         "referenceAnswer": "<Point1:2>A hash table stores key-value pairs<Point1:2>. <Point2:2>It uses a hash function to compute an index into an array of buckets or slots, from which the desired value can be found<Point2:2>. <Point3:1>Ideally, the hash function will assign each key to a unique bucket, but most hash table designs employ some form of collision resolution<Point3:1>.",
         "studentAnswer": "A hash table is just an array that stores data and uses keys for indexing.",
         "teacherMark": "<Point1:2> <Induction>,<Point2:0> <Deduction>,<Point3:0> <Deduction>",
-        "feedback": "<Point3:0>Deduction: The student's answer lacks an understanding of the role of the hash function and does not mention collision resolution, which are critical aspects of how a hash table works. While the student correctly identifies that a hash table uses keys and is an array-like structure, this answer fails to explain the process of computing indices and handling collisions.\n\n<Point1:0>Deduction: The student's answer does not make mention of key-value pairing, which is an essential part of hash tables, thus missing the full explanation of how a hash table stores data.\n\n<Point2:0>Deduction: The student's answer fails to include any explanation about the use of hash function or how it computes an index, again this aspect is a significant part of understanding how a hash table works.\n\nTotal score: 0/5"
+        "feedback": "<Point1:mark> *False* (A hash table does more than just store data in an array, it specifically stores key-value pairs.)\n\n<Point2:mark> *False* (The student's answer does not mention the use of a hash function to compute the index.)\n\n<Point3:mark> *False* (The student's answer doesn't touch on the concepts of unique bucket assignments or collision resolution.)"
     }
 }
