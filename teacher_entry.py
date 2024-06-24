@@ -1,11 +1,26 @@
 from db_utils import create_table, insert_data, select_data, list_to_string
-from prompt_template import zero_prompt as prompt
+from prompt_template import few_prompt as prompt
 from tqdm import tqdm
+import concurrent.futures
 import gradio as gr
 import json
 import csv
 import pathlib as pl
 import requests
+
+
+css = """footer {visibility: hidden}
+.logo img {height:100px; width:auto; margin:0 auto;}
+"""
+columns = "question_code TEXT, question TEXT, full_mark REAL, scoring TEXT"
+return_type_ = ['CSV', 'JSON']
+num_thread = 20
+p = pl.Path('data')
+if not p.exists():
+    p.mkdir()
+r = pl.Path('results')
+if not r.exists():
+    r.mkdir()
 
 
 def upload_file(db):
@@ -43,18 +58,20 @@ def dis_enable_upload_to_db_field(enable):
             gr.ClearButton(visible=False),
             gr.Button(visible=False)
         )
+    
+def send_request(question, ref_answer, stu_answer, full_mark):
+    query = prompt.format(question=question, ref_answer=ref_answer, stu_answer=stu_answer, full_mark=full_mark)
+    response = requests.post(
+        "http://100.65.8.31:8000/chat",
+        json={
+            "query": query,
+            "stream": False,
+            "history": None,
+        },
+        stream=False,
+    )
+    return json.loads(response.text)["text"]
 
-css = """footer {visibility: hidden}
-.logo img {height:100px; width:auto; margin:0 auto;}
-"""
-columns = "question_code TEXT, question TEXT, full_mark REAL, scoring TEXT"
-return_type_ = ['CSV', 'JSON']
-p = pl.Path('data')
-if not p.exists():
-    p.mkdir()
-r = pl.Path('results')
-if not r.exists():
-    r.mkdir()
 
 with gr.Blocks(css=css, title='LLMarking') as app:
     db_files = list(p.glob('*.db'))
@@ -104,82 +121,61 @@ with gr.Blocks(css=css, title='LLMarking') as app:
                                             visible=False
                                             )
         
-    def submit_for_grading(db, file_output, return_type, pr=gr.Progress(track_tqdm=True)):
+    def submit_for_grading(db, file_output, return_type, pr=gr.Progress()):
         file_name_list = [file.split('/')[-1] for file in file_output]
         file_name = ', '.join(file_name_list)
         gr.Info(f"Sending file: {file_name} to server and grade answers according to {db} database...")
         db_rows = select_data(f"data/{db}.db", db)
         question_answer_mapping = {row[0]: (row[1], row[2], row[3]) for row in db_rows}
-        if return_type == 'JSON':
-            responses = []
-            gr.Info(f"Grading answers...")
-            for file in tqdm(file_output, desc="Grading...", total=len(file_output)):
-                with open(file, 'r') as f:
-                    csv_reader = csv.reader(f)
-                    headers = next(csv_reader)
+        
+        responses = []
+        gr.Info(f"Grading answers...")
+
+        for file in tqdm(file_output, desc="Grading...", total=len(file_output)):
+            with open(file, 'r') as f:
+                csv_reader = csv.reader(f)
+                headers = next(csv_reader)
+                questions_batch = []
+                with concurrent.futures.ThreadPoolExecutor(max_workers=num_thread) as executor:
                     for row in csv_reader:
                         question_code, stu_answer, manual_score = row
                         question = question_answer_mapping[question_code][0]
                         full_mark = question_answer_mapping[question_code][1]
                         ref_answer = question_answer_mapping[question_code][2]
-                        query = prompt.format(question=question, ref_answer=ref_answer, stu_answer=stu_answer, full_mark=full_mark)
-                        response = requests.post(
-                            "http://100.65.8.31:8000/chat",
-                            json={
-                                "query": query,
-                                "stream": False,
-                                "history": None,
-                            },
-                            stream=False,
-                        )
-                        text = json.loads(response.text)["text"]
-                        responses.append({
-                            "question_code": question_code,
-                            "question": question,
-                            "student_answer": stu_answer,
-                            "reference_answer": ref_answer,
-                            "feedback": text
-                        })
-            results_path = r / 'results.json'
+                        questions_batch.append((question_code, question, ref_answer, stu_answer, full_mark))
+                        
+                        # Process batch of num_thread
+                        if len(questions_batch) == num_thread:
+                            future_to_question = {executor.submit(send_request, q[1], q[2], q[3], q[4]): q for q in questions_batch}
+                            for future in concurrent.futures.as_completed(future_to_question):
+                                question_data = future_to_question[future]
+                                text = future.result()
+                                responses.append([question_data[0], question_data[1], question_data[3], question_data[2], text])
+                            questions_batch = []
+                    
+                    # Process remaining questions
+                    if questions_batch:
+                        future_to_question = {executor.submit(send_request, q[1], q[2], q[3], q[4]): q for q in questions_batch}
+                        for future in concurrent.futures.as_completed(future_to_question):
+                            question_data = future_to_question[future]
+                            text = future.result()
+                            responses.append([question_data[0], question_data[1], question_data[3], question_data[2], text])
+
+        results_path = pl.Path('results') / ('results.json' if return_type == 'JSON' else 'results.csv')
+        if return_type == 'JSON':
             with results_path.open('w') as file:
                 json.dump(responses, file, indent=4)
-            gr.Info(f"Data uploaded to server and graded successfully! You can download the results below by clicking the button.")
-            gr.Info(f"Results are saved in {results_path.name}!")
-            download_path = r.name + '/' + results_path.name
-            return gr.Button('Submit', interactive=True), gr.File(download_path, label="Download Grading Results", visible=True)
         elif return_type == 'CSV':
-            responses = []
-            gr.Info(f"Grading answers...")
-            for file in tqdm(file_output, desc="Grading...", total=len(file_output)):
-                with open(file, 'r') as f:
-                    csv_reader = csv.reader(f)
-                    headers = next(csv_reader)
-                    for row in csv_reader:
-                        question_code, stu_answer, manual_score = row
-                        question = question_answer_mapping[question_code][0]
-                        full_mark = question_answer_mapping[question_code][1]
-                        ref_answer = question_answer_mapping[question_code][2]
-                        query = prompt.format(question=question, ref_answer=ref_answer, stu_answer=stu_answer, full_mark=full_mark)
-                        response = requests.post(
-                            "http://100.65.8.31:8000/chat",
-                            json={
-                                "query": query,
-                                "stream": False,
-                                "history": None,
-                            },
-                            stream=False,
-                        )
-                        text = json.loads(response.text)["text"]
-                        responses.append([question_code, question, stu_answer, ref_answer, text])
-            results_path = r / 'results.csv'
             with results_path.open('w') as file:
                 csv_writer = csv.writer(file)
                 csv_writer.writerow(['Question Code', 'Question', 'Student Answer', 'Reference Answer', 'Feedback'])
                 csv_writer.writerows(responses)
-            gr.Info(f"Data uploaded to server and graded successfully! You can download the results below by clicking the button.")
-            gr.Info(f"Results are saved in {results_path.name}!")
-            download_path = r.name + '/' + results_path.name
-            return gr.Button('Submit', interactive=True), gr.File(download_path, label="Download Grading Results", visible=True)
+    
+        gr.Info(f"Data uploaded to server and graded successfully! You can download the results below by clicking the button.")
+        gr.Info(f"Results are saved in {results_path.name}!")
+        download_path = results_path.parent.name + '/' + results_path.name
+        return gr.Button('Submit', interactive=True), gr.File(download_path, label="Download Grading Results", visible=True)
+
     
     def submit_to_db(db_data):
         file_name_list = [file.split('/')[-1].split('.')[-2] for file in db_data]
@@ -212,7 +208,7 @@ if __name__ == "__main__":
     app.queue(200)  # 请求队列
     app.launch(
         server_name='0.0.0.0',
-        max_threads=500, # 线程池
+        max_threads=20, # 线程池
         favicon_path='./favicon.png',
         server_port=8080,
         ssl_verify=False, 
