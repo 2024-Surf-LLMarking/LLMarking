@@ -80,6 +80,8 @@ def load_vllm():
         stop_words_ids = [tokenizer.eos_token_id, 151336]
     elif model_dir == __all__[11]:
         stop_words_ids = [tokenizer.eos_token_id, 100266, 100261]
+    elif model_dir == __all__[13]:
+        stop_words_ids = [tokenizer.eos_token_id]
     else:
         stop_words_ids = [tokenizer.im_start_id, tokenizer.im_end_id, tokenizer.eos_token_id]
 
