@@ -96,7 +96,12 @@ def load_vllm():
     args.gpu_memory_utilization=gpu_memory_utilization
     args.dtype=dtype
     args.max_num_seqs=20    # batch最大20条样本
-    args.max_model_len=generation_config.max_window_size if model_dir != __all__[1] else 3024
+    if model_dir == __all__[1]:
+        args.max_model_len=3024
+    elif model_dir == __all__[13]:
+        args.max_model_len=8192
+    else:
+        args.max_model_len=generation_config.max_window_size
     # 加载模型
     # os.environ['VLLM_USE_MODELSCOPE']='True'
     engine=AsyncLLMEngine.from_engine_args(args)
