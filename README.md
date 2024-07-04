@@ -85,7 +85,7 @@ conda env create -n my_new_env -f env/environment.yml && conda activate my_new_e
 
 Then we need to setup server-side to provide the service to the clients. To launch our HTTP server, simply:
 
-```text
+```bash
 python vllm_server.py -m [index of the model in the above list]
 ```
 
@@ -130,15 +130,15 @@ python student_entry.py -n [0, 1, 2]
 > `-s` stands for get response in a streaming way, which is optional.
 
 ```bash
-python student_entry.py [-s]
+python vllm_client.py [-s]
 ```
 
 #### Teacher Entry
 
-After launching vllm_server, you can also run `teacher_entry.py` which is webui based on gradio inside the `entry` folder. This can provide an interface where teacher can upload their questions, answers to the questions, and students' answers, which is more user-friendly.
+After launching vllm_server, you can also run `teacher_entry.py` which is webui based on gradio. This can provide an interface where teacher can upload their questions, answers to the questions, and students' answers, which is more user-friendly.
 
 ```bash
-cd entry && python teacher_entry.py
+python teacher_entry.py
 ```
 
 ![image-20240620224047630](https://s2.loli.net/2024/06/20/wzkmQq6ANWYjPbR.png)
