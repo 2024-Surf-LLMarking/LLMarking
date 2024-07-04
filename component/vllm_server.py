@@ -1,7 +1,7 @@
 from vllm import AsyncEngineArgs,AsyncLLMEngine
 from vllm.inputs import TokensPrompt
 from vllm.sampling_params import SamplingParams
-from model import __all__, model_names
+from .model import __all__, model_names
 from ..utils.prompt_utils import remove_stop_words, _build_prompt_self
 from transformers import AutoTokenizer, GenerationConfig
 from huggingface_hub import snapshot_download
