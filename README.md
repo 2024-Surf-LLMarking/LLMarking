@@ -62,7 +62,7 @@ This project aims to achieve high concurrency automatic short answer grading (AS
 We first clone the whole project by git clone this repo:
 
 ```bash
-git clone git@github.com:BiboyQG/ASAG.git && cd ASAG
+git clone git@github.com:BiboyQG/LLMarking.git && cd LLMarking
 ```
 
 #### Environment Setup
@@ -135,10 +135,10 @@ python student_entry.py [-s]
 
 #### Teacher Entry
 
-After launching vllm_server, you can also run `teacher_entry.py` which is webui based on gradio. This can provide an interface where teacher can upload their questions, answers to the questions, and students' answers, which is more user-friendly.
+After launching vllm_server, you can also run `teacher_entry.py` which is webui based on gradio inside the `entry` folder. This can provide an interface where teacher can upload their questions, answers to the questions, and students' answers, which is more user-friendly.
 
 ```bash
-python teacher_entry.py
+cd entry && python teacher_entry.py
 ```
 
 ![image-20240620224047630](https://s2.loli.net/2024/06/20/wzkmQq6ANWYjPbR.png)
