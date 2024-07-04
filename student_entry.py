@@ -1,4 +1,4 @@
-from ..prompt.prompt_template import prompt_list_v1, prompt_list_v2
+from prompt.prompt_template import prompt_list_v1, prompt_list_v2
 import requests
 import json
 import argparse

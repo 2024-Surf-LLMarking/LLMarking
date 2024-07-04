@@ -1,5 +1,5 @@
-from ..utils.db_utils import create_table, insert_data, select_data, list_to_string
-from ..prompt.prompt_template import few_prompt as prompt
+from utils.db_utils import create_table, insert_data, select_data, list_to_string
+from prompt.prompt_template import few_prompt as prompt
 from tqdm import tqdm
 import concurrent.futures
 import gradio as gr
