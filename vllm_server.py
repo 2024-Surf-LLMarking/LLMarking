@@ -7,6 +7,7 @@ from transformers import AutoTokenizer, GenerationConfig
 from huggingface_hub import snapshot_download
 from fastapi import FastAPI, Request
 from fastapi.responses import JSONResponse, Response, StreamingResponse
+import os
 import uvicorn
 import uuid
 import json 
@@ -37,7 +38,9 @@ if model_dir not in __all__:
 
 # vLLM模型加载
 def load_vllm():
-    global generation_config,tokenizer,stop_words_ids,engine    
+    global generation_config,tokenizer,stop_words_ids,engine
+    # For cluster
+    # os.environ['HF_HOME']='\tmp'
     # 模型下载
     snapshot_download(model_dir)
     # 模型基础配置
