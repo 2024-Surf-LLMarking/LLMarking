@@ -13,6 +13,6 @@
         "referenceAnswer": "<Point1:2>A hash table stores key-value pairs<Point1:2>. <Point2:2>It uses a hash function to compute an index into an array of buckets or slots, from which the desired value can be found<Point2:2>. <Point3:1>Ideally, the hash function will assign each key to a unique bucket, but most hash table designs employ some form of collision resolution<Point3:1>.",
         "studentAnswer": "A hash table is just an array that stores data and uses keys for indexing.",
         "teacherMark": "<Point1:2> <Induction>,<Point2:0> <Deduction>,<Point3:0> <Deduction>",
-        "feedback": "<Point1:2> *False* (The reference answer emphasizes that a hash table stores key-value pairs, while the student's answer lacks this crucial detail)\n\n<Point2:2> *True*\n\n<Point3:1> *False* (The student's answer lacks any mention of collision resolution strategies, which is an essential aspect of hash table functionality)"
+        "feedback": "<Point1:2> *False* (The reference answer emphasizes that a hash table stores key-value pairs, while the student's answer lacks this crucial detail)\n\n<Point2:2> *True*\n\n<Point3:1> *False* (The student's answer lacks any mention of collision resolution strategies, which is an essential aspect of hash table implementation)"
     }
 }

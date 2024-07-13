@@ -5,7 +5,7 @@
         "referenceAnswer": "In the worst case, <Point1:3>the time complexity of QuickSort is O(n^2)<Point1:3>, where n is the number of elements in the array. <Point2:2>This occurs when the pivot elements are consistently the smallest or largest element in the array<Point2:2>, leading to unbalanced partitions.",
         "studentAnswer": "QuickSort has a time complexity of O(n log n) in the worst case because it divides the list into two halves.",
         "teacherMark": "<Point1:0> <Deduction>,<Point2:0> <Deduction>",
-        "feedback": "<Point1 :3 > *False* (The student's answer incorrectly states that the worst-case time complexity is O(n log n), whereas it is actually O(n^2) as mentioned in the reference answer.)\n\n<Point2 :2 > *False* (The student's answer does not mention the specific condition for the worst-case scenario, such as consistently picking the smallest or largest element as the pivot, as provided in the reference answer.)\n\nTotal score: 0 / 5"
+        "feedback": "<Point1:3> *False* ((The student's answer incorrectly states the time complexity in the worst case. ))\n\n<Point2:2> *False* (The student's answer does not explain why this time complexity occurs in the worst case.)\n\n \n\n\n"
     },
     "1": {
         "question": "Explain how a hash table works.",
@@ -13,6 +13,6 @@
         "referenceAnswer": "<Point1:2>A hash table stores key-value pairs<Point1:2>. <Point2:2>It uses a hash function to compute an index into an array of buckets or slots, from which the desired value can be found<Point2:2>. <Point3:1>Ideally, the hash function will assign each key to a unique bucket, but most hash table designs employ some form of collision resolution<Point3:1>.",
         "studentAnswer": "A hash table is just an array that stores data and uses keys for indexing.",
         "teacherMark": "<Point1:2> <Induction>,<Point2:0> <Deduction>,<Point3:0> <Deduction>",
-        "feedback": "<Point1 :2 > *False* (The student's answer does not fully explain that hash tables store key-value pairs. It misses the key-value aspect.)\n\n<Point2 :2 > *False* (The student's answer does not explain the use of a hash function to compute an index into an array of buckets or slots, and how the desired value can be found.)\n\n<Point3 :1 > *False* (The student's answer does not mention the existence of collision resolution or that most hash table designs employ some form of it.)\n\nTotal score: 0 / 5"
+        "feedback": "<Point1:2> *False* (The student's answer does not mention that a hash table stores key-value pairs.)\n\n<Point2:2> *False* (The student's answer does not mention the use of a hash function to compute an index into an array of buckets.)\n\n<Point3:1> *False* (The student's answer does not mention collision resolution.) \n\n\n\nTotal score: 0 / 5 \n"
     }
 }
