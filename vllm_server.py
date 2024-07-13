@@ -66,7 +66,7 @@ def load_vllm():
         tokenizer.im_start_id = 1
         tokenizer.im_end_id = 7
         generation_config.max_window_size = 4096
-    elif model_dir == __all__[5] or model_dir == __all__[6] or model_dir == __all__[9] or model_dir == __all__[11] or model_dir == __all__[14]:
+    elif model_dir == __all__[5] or model_dir == __all__[6] or model_dir == __all__[9] or model_dir == __all__[11]:
         tokenizer.im_start_id = None
         tokenizer.im_end_id = None
         generation_config.max_window_size = 8192
@@ -82,11 +82,16 @@ def load_vllm():
         tokenizer.im_start_id = 92543
         tokenizer.im_end_id = 92542
         generation_config.max_window_size = 8192
+    elif model_dir == __all__[14]:
+        generation_config.max_window_size = 4096
 
     if model_dir == __all__[7]:
         stop_words_ids = [tokenizer.eos_token_id, 151336]
     elif model_dir == __all__[11]:
         stop_words_ids = [tokenizer.eos_token_id, 100266, 100261]
+    elif model_dir == __all__[14]:
+        stop_words_ids = [tokenizer.eos_token_id, 107]
+        os.environ['VLLM_ATTENTION_BACKEND'] = 'FLASHINFER'
     else:
         stop_words_ids = [tokenizer.im_start_id, tokenizer.im_end_id, tokenizer.eos_token_id]
 
@@ -128,7 +133,7 @@ async def chat(request: Request):
     
     query=request.get('query',None)
     history=request.get('history',[])
-    system=request.get('system','You are a helpful assistant.') if model_dir != __all__[6] and model_dir != __all__[9] and model_dir != __all__[10] else None
+    system=request.get('system','You are a helpful assistant.') if model_dir != __all__[6] and model_dir != __all__[9] and model_dir != __all__[10] and model_dir != __all__[14] else None
     stream=request.get("stream",False)
     user_stop_words=request.get("user_stop_words",[])    # list[str]，用户自定义停止句，例如：['Observation: ', 'Action: ']定义了2个停止句，遇到任何一个都会停止
     
@@ -144,7 +149,6 @@ async def chat(request: Request):
     # prompt_text,prompt_tokens=_build_prompt(generation_config,tokenizer,query,history=history,system=system)
 
     prompt_tokens=_build_prompt_self(generation_config,tokenizer,query,history=history,system=system)
-        
     # vLLM请求配置
     sampling_params=SamplingParams(stop_token_ids=stop_words_ids, 
                                     early_stopping=False,

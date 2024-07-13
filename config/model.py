@@ -12,7 +12,7 @@ __all__ = ["Qwen/Qwen1.5-14B-Chat-GPTQ-Int4",
            "microsoft/Phi-3-small-8k-instruct",
            "openbmb/MiniCPM-2B-dpo-bf16",
            "internlm/internlm2_5-7b-chat",
-           "google/gemma-2-9b"
+           "google/gemma-2-9b-it"
            ]
 
 model_names = ["Qwen1.5-14B",
