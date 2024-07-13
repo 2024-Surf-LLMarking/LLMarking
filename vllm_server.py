@@ -66,7 +66,7 @@ def load_vllm():
         tokenizer.im_start_id = 1
         tokenizer.im_end_id = 7
         generation_config.max_window_size = 4096
-    elif model_dir == __all__[5] or model_dir == __all__[6] or model_dir == __all__[9] or model_dir == __all__[11]:
+    elif model_dir == __all__[5] or model_dir == __all__[6] or model_dir == __all__[9] or model_dir == __all__[11] or model_dir == __all__[14]:
         tokenizer.im_start_id = None
         tokenizer.im_end_id = None
         generation_config.max_window_size = 8192
@@ -103,8 +103,6 @@ def load_vllm():
     args.max_num_seqs=20    # batch最大20条样本
     if model_dir == __all__[1]:
         args.max_model_len=3024
-    elif model_dir == __all__[13]:
-        args.max_model_len=8192
     else:
         args.max_model_len=generation_config.max_window_size
     # 加载模型
