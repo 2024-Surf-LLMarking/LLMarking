@@ -11,7 +11,7 @@ __all__ = ["Qwen/Qwen1.5-14B-Chat-GPTQ-Int4",
            "mistralai/Mistral-7B-Instruct-v0.3",
            "microsoft/Phi-3-small-8k-instruct",
            "openbmb/MiniCPM-2B-dpo-bf16",
-           "google/gemma-2-9b-it"
+           "internlm/internlm2_5-7b-chat"
            ]
 
 model_names = ["Qwen1.5-14B",
@@ -27,5 +27,5 @@ model_names = ["Qwen1.5-14B",
                "Mistral-7B-v0.3",
                "Phi3-small",
                "MiniCPM-2B",
-               "Gemma-2-9B"
+               "internlm2.5-7B"
                ]
