@@ -11,7 +11,7 @@ zero_prompt_v1 = """
 - **If the student's answer does not satisfy the Point, the Point is judged as 'False'.**
 - **The judgement should only be 'True' or 'False', other formats are all invalid.**
 
-**Please provide the feedback in the following form, mention: the <Point:mark> should be only at the front of the reason, each point should be given at a new row; every point that exists in reference answer should have a feedback; don't feedback on extra points:"**
+**Please provide the feedback in the following form, mention: the <Point:mark> should be only at the front of the reason, each point should be given at a new row; every point that exists in reference answer should have a feedback; don't give feedback on extra points, the number of points in the following should be the same as the number of points inside Reference Answer:"**
 <Point1:mark> *True* (reason, Highlight strengths and correct aspects of the student's answer, show which point the student is correct about)\n
 <Point2:mark> *False* (reason, Describe why this point is false)\n
 ...

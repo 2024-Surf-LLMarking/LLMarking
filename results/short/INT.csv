@@ -1,11 +1,4 @@
 Model Name,Zero-shot,One-shot,Few-shot
-Qwen1.5-14B,"F1 score:	0.7894736842105263
-Precision score: 0.7692307692307693
-Recall score:	0.8108108108108109","F1 score:	0.8554216867469879
-Precision score: 0.7717391304347826
-Recall score:	0.9594594594594594","F1 score:	0.8554216867469879
-Precision score: 0.7717391304347826
-Recall score:	0.9594594594594594"
 Qwen1.5-32B,"F1 score:	0.863905325443787
 Precision score: 0.7684210526315789
 Recall score:	0.9864864864864865","F1 score:	0.8554913294797688
@@ -13,3 +6,17 @@ Precision score: 0.7474747474747475
 Recall score:	1.0","F1 score:	0.8604651162790697
 Precision score: 0.7551020408163265
 Recall score:	1.0"
+Qwen1.5-14B,"F1 score:	0.7894736842105263
+Precision score: 0.7692307692307693
+Recall score:	0.8108108108108109","F1 score:	0.8554216867469879
+Precision score: 0.7717391304347826
+Recall score:	0.9594594594594594","F1 score:	0.8554216867469879
+Precision score: 0.7717391304347826
+Recall score:	0.9594594594594594"
+internlm2-7B,"F1 score:	None
+Precision score: None
+Recall score:	None","F1 score:	None
+Precision score: None
+Recall score:	None","F1 score:	0.7901234567901234
+Precision score: 0.7272727272727273
+Recall score:	0.8648648648648649"

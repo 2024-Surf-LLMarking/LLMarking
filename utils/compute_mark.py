@@ -1,23 +1,25 @@
 import json
 from sklearn.metrics import f1_score, precision_score, recall_score
 import re
+import os
 
 def extract_info(data):
-    Model_Marklist =[]
     Teacher_Marklist =[]
+    Model_Marklist =[]
 
     for key, value in data.items():
-        Model_Marklist.append(build_diction_from_model(value.get("feedback")))
-        Teacher_Marklist.append(build_diction_from_teacher(value.get("teacherMark")))
+        teacher_mark = build_diction_from_teacher(value.get("teacherMark"))
+        Teacher_Marklist.append(teacher_mark)
+        Model_Marklist.append(build_diction_from_model(value.get("feedback"), len(teacher_mark)))
     return Model_Marklist,Teacher_Marklist
 
-def build_diction_from_model(input_str):
+def build_diction_from_model(input_str, length):
     # 正则表达式模式来匹配 Point 和 类型
     points_dict = {}
-    pattern = re.compile(r'<(Point\d+)\s*:\d+\s*>\s*\*?(True|False)\*?\s*\n?\(?([^)]*?)\)?')
-    if len(re.findall(pattern, input_str)) == 0:
+    pattern = re.compile(r'<(Point\d+)\s*:\w+\s*>\s*\*?(True|False)\*?\s*\n?\(?([^)]*?)\)?')
+    if len(re.findall(pattern, input_str)) != length:
         print("No match found! The input string is:", input_str)
-        input_str = input("Please input the correct string:")
+        input_str = input(f"The number of teacher marks are {length}. Please input the correct string:")
     for match in re.finditer(pattern, input_str):
         point, type_, comment = match.groups()
         points_dict[point] = type_
@@ -34,6 +36,9 @@ def build_diction_from_teacher(input_str):
 
 def extract_info_from_json(file_path):
     # Read the JSON file
+    if os.path.exists(file_path) == False:
+        print("The file does not exist!")
+        return None, None, None
     with open(file_path, 'r', encoding='utf-8') as file:
         data = json.load(file)
         ModelMark, TeacherMark = extract_info(data)
@@ -55,8 +60,8 @@ def extract_points(marks):
     return [point for mark in marks for point in mark.values()]
 
 def get_score(teacher_labels,model_labels):
-    print("Teacher Labels\t", teacher_labels)
     print("Model Labels\t", model_labels)
+    print("Teacher Labels\t", teacher_labels)
     f1 = f1_score(teacher_labels, model_labels)
     precision = precision_score(teacher_labels, model_labels)
     recall = recall_score(teacher_labels, model_labels)

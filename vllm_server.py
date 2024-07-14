@@ -152,9 +152,11 @@ async def chat(request: Request):
     # vLLM请求配置
     sampling_params=SamplingParams(stop_token_ids=stop_words_ids, 
                                     early_stopping=False,
-                                    top_p=generation_config.top_p,
-                                    top_k=-1 if generation_config.top_k == 0 else generation_config.top_k,
-                                    temperature=generation_config.temperature,
+                                    # top_p=generation_config.top_p,
+                                    # top_k=-1 if generation_config.top_k == 0 else generation_config.top_k,
+                                    top_k=1,
+                                    # temperature=generation_config.temperature,
+                                    temperature=1.0,
                                     repetition_penalty=generation_config.repetition_penalty,
                                     max_tokens=generation_config.max_new_tokens
                                    )
