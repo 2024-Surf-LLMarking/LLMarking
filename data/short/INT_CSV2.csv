@@ -1,0 +1,101 @@
+﻿QuestionCode,StudentAns,ManualScore
+INT001,Supervised learning involves using input-output pairs to teach models to predict the output from new inputs.,"2/4 points
+""<Point1:False>,<Point2:True>"""
+INT001,Supervised learning is training a model on data that includes both the inputs and the outputs.,"2/4 points
+""<Point1:True>,<Point2:False>"""
+INT001,Supervised learning is a type of machine learning that involves training a model using labeled data. The model uses these labels to learn how to predict outcomes based on new inputs.,"4/4 points
+""<Point1:True>,<Point2:True>"""
+INT001,Supervised learning is a type of algorithm in artificial intelligence. It involves training the model by adjusting its parameters until it can make accurate predictions.,"0/4 points
+""<Point1:False>,<Point2:False>"""
+INT001,Supervised learning is a machine learning method. The model learns to map inputs to outputs based on example input-output pairs.,"2/4 points
+""<Point1:False>,<Point2:True>"""
+INT001,Supervised learning is a machine learning method. The model learns to map inputs to outputs based on example input-output pairs.,"4/4 points
+""<Point1:True>,<Point2:True>"""
+INT001,Supervised learning is a method where a model learns from labeled data. It uses this data to understand how to predict the correct output when given new input.,"4/4 points
+""<Point1:True>,<Point2:True>"""
+INT001,Supervised learning uses labeled data to train a machine learning model. The model then learns to associate inputs with the correct outputs based on these labels.,"4/4 points
+""<Point1:True>,<Point2:True>"""
+INT001,"In supervised learning, a model is taught using data that includes both the inputs and the desired outputs. This helps the model to make predictions by learning the relationship between the input and output.","4/4 points
+""<Point1:True>,<Point2:True>"""
+INT001,Supervised learning is a machine learning technique. The model uses labeled examples to understand the relationship between inputs and outputs.,"2/4 points
+""<Point1:True>,<Point2:False>"""
+INT002,"Regression predicts numerical outcomes, and classification predicts which category something belongs to.","2/3 points
+""<Point1:False>,<Point2:True>,<Point3:True>"""
+INT002,Regression involves equations and classification is about grouping.,"1/3 points
+""<Point1:False>,<Point2:True>,<Point3:False>"""
+INT002,"Classification and regression are different in terms of their outputs. Classification involves predicting categories or classes, while regression is used to predict numerical values.","3/3 points
+""<Point1:True>,<Point2:True>,<Point3:True>"""
+INT002,"Classification and regression serve different purposes in machine learning. Classification assigns data to specific categories, while regression estimates numerical values.","2/3 points
+""<Point1:False>,<Point2:True>,<Point3:True>"""
+INT002,"Classification and regression are used for different kinds of predictions. Classification involves sorting data into distinct groups, while regression is used to predict continuous numbers.","2/3 points
+""<Point1:False>,<Point2:True>,<Point3:True>"""
+INT002,"Classification and regression are different approaches in machine learning. Classification predicts categories or labels, while regression predicts values on a continuous scale","2/3 points
+""<Point1:False>,<Point2:True>,<Point3:True>"""
+INT002,"Classification and regression are different in terms of their predicted outputs. Classification is about predicting distinct categories, while regression focuses on predicting continuous values.","3/3 points
+""<Point1:True>,<Point2:True>,<Point3:True>"""
+INT002,Classification and regression are methods used in machine learning. Classification is for predicting categories.,"1/3 points
+""<Point1:False>,<Point2:True>,<Point3:False>"""
+INT002,"Classification and regression differ in their outputs. Classification is used for predicting categories, and regression for predicting continuous values.","3/3 points
+""<Point1:True>,<Point2:True>,<Point3:True>"""
+INT002,Classification and regression are both machine learning techniques used to analyze data.,"0/3 points
+""<Point1:False>,<Point2:False>,<Point3:False>"""
+INT003,"learning by itself without any data labels, maybe by grouping similar data points","2/4 points
+""<Point1:True>,<Point2:False>"""
+INT003,"It involves training a machine without any pre-given labels, letting it discover information within the data .","4/4 points
+""<Point1:True>,<Point2:True>"""
+INT003,Unsupervised learning is about using data that doesn't have labels to train models. The objective is for the model to find patterns and structures in this data.,"4/4 points
+""<Point1:True>,<Point2:True>"""
+INT003,"In unsupervised learning, models are trained with unlabeled data. The aim is to recognize patterns or organize the data in a meaningful way.","4/4 points
+""<Point1:True>,<Point2:True>"""
+INT003,"In unsupervised learning, the computer learns by itself without any examples.","0/4 points
+""<Point1:False>,<Point2:False>"""
+INT003,Unsupervised learning uses data that doesn't come with labels. It helps the model to identify any underlying patterns or groupings in the data.,"4/4 points
+""<Point1:True>,<Point2:True>"""
+INT003,"In unsupervised learning, data without labels is used to train models. These models then try to identify hidden structures or patterns in the data.","4/4 points
+""<Point1:True>,<Point2:True>"""
+INT003,"With unsupervised learning, models use unlabeled data for training. The purpose is to uncover patterns or structures in the data on their own.","4/4 points
+""<Point1:True>,<Point2:True>"""
+INT003,Unsupervised learning trains models using data without labels. It aims to detect unknown patterns in the data.,"4/4 points
+""<Point1:True>,<Point2:True>"""
+INT003,Unsupervised learning is a method of machine learning that does not require any training data.,"0/4 points
+""<Point1:False>,<Point2:False>"""
+INT004,"Overfitting is when your model learns too much from the training data, including the noises, so it doesn’t perform well on new data.","4/4 points
+""<Point1:True>,<Point2:True>"""
+INT004,I think overfitting is when the machine learning model is too perfect on the training data but can’t handle new data.,"2/4 points
+""<Point1:False>,<Point2:True>"""
+INT004,"Overfitting happens when a model captures too much detail and noise from the training data, making it less effective on new data.","4/4 points
+""<Point1:True>,<Point2:True>"""
+INT004,"Overfitting means a model has learned too much about the training data, including the noise, and therefore cannot generalize well to new data.","4/4 points
+""<Point1:True>,<Point2:True>"""
+INT004,"Overfitting is when a model becomes too complex and fits the training data perfectly, including any noise.","2/4 points
+""<Point1:True>,<Point2:False>"""
+INT004,Overfitting is when a model performs well on training data but fails to generalize to new data.,"2/4 points
+""<Point1:False>,<Point2:True>"""
+INT004,"In machine learning, overfitting is when a model learns too much from the training data, making it ineffective on new, unseen data.","2/4 points
+""<Point1:False>,<Point2:True>"""
+INT004,"When a model overfits, it means it has learned the training data too well, including its anomalies, which reduces its effectiveness on unseen data.","4/4 points
+""<Point1:True>,<Point2:True>"""
+INT004,"Overfitting is when a model is too simple and cannot capture the complexity of the data, leading to poor performance.","0/4 points
+""<Point1:False>,<Point2:False>"""
+INT004,"Overfitting in machine learning is when a model becomes too specific to the training data, including its noise, and fails to perform well on new data.","4/4 points
+""<Point1:True>,<Point2:True>"""
+INT005,Neural networks are is a series of algorithms these learns from data by simulating how the human brain works.,"4/4 points
+""<Point1:True>,<Point2:True>"""
+INT005,A neural network is a type of algorithm that recognizes patterns in large sets of data.,"2/4 points
+""<Point1:True>,<Point2:False>"""
+INT005,Neural networks are complex systems designed to recognize patterns in data.,"2/4 points
+""<Point1:True>,<Point2:False>"""
+INT005,"Neural networks are algorithmic systems that analyze data, mimicking human brain functions to find patterns.","2/4 points
+""<Point1:False>,<Point2:True>"""
+INT005,A neural network is a system of algorithms designed to find patterns in data by simulating how the brain works.,"4/4 points
+""<Point1:True>,<Point2:True>"""
+INT005,Neural networks are advanced algorithms that attempt to understand data patterns but do not work like the human brain.,"2/4 points
+""<Point1:True>,<Point2:False>"""
+INT005,"A neural network includes several algorithms that find relationships in data, not necessarily like the human brain.","2/4 points
+""<Point1:True>,<Point2:False>"""
+INT005,Neural networks are systems designed to understand data by finding patterns in a way that resembles the human brain.,"4/4 points
+""<Point1:True>,<Point2:True>"""
+INT005,Neural networks are made up of interconnected algorithms that analyze data. They are designed to work in a brain-like manner.,"2/4 points
+""<Point1:False>,<Point2:True>"""
+INT005,A neural network is a computer system that performs tasks without needing a specific algorithm.,"0/4 points
+""<Point1:False>,<Point2:False>"""

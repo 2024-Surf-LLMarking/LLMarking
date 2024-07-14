@@ -1,5 +1,5 @@
 import json
-from sklearn.metrics import f1_score
+from sklearn.metrics import f1_score, precision_score, recall_score
 import re
 
 def extract_info(data):
@@ -14,7 +14,10 @@ def extract_info(data):
 def build_diction_from_model(input_str):
     # 正则表达式模式来匹配 Point 和 类型
     points_dict = {}
-    pattern = re.compile(r'<(Point\d+):\d+> \*(True|False)\* \((.*?)\)')
+    pattern = re.compile(r'<(Point\d+)\s*:\d+\s*>\s*\*?(True|False)\*?\s*\n?\(?([^)]*?)\)?')
+    if len(re.findall(pattern, input_str)) == 0:
+        print("No match found! The input string is:", input_str)
+        input_str = input("Please input the correct string:")
     for match in re.finditer(pattern, input_str):
         point, type_, comment = match.groups()
         points_dict[point] = type_
@@ -23,7 +26,7 @@ def build_diction_from_model(input_str):
 def build_diction_from_teacher(input_str):
     # 正则表达式模式来匹配 Point 和 类型
     points_dict = {}
-    pattern = re.compile(r'<(Point\d+):\d+> <(Induction|Deduction)>')
+    pattern = re.compile(r'<(Point\d+):(\w+)>')
     for match in re.finditer(pattern, input_str):
         point, type_ = match.groups()
         points_dict[point] = type_
@@ -39,21 +42,26 @@ def extract_info_from_json(file_path):
         model_points = extract_points(ModelMark)
         teacher_points = extract_points(TeacherMark)
         model_labels = [1 if point == 'True' else 0 for point in model_points]
-        teacher_labels = [1 if point == 'Induction' else 0 for point in teacher_points]
-        f1 = F1_Score(teacher_labels,model_labels)
-        print('F1 score:', f1)
+        teacher_labels = [1 if point == 'True' else 0 for point in teacher_points]
+        f1, precision, recall = get_score(teacher_labels, model_labels)
+        print("F1 score:\t", f1)
+        print("Precision score:", precision)
+        print("Recall score:\t", recall)
+        return f1, precision, recall
 
 
 # 提取点并将其转换为列表
 def extract_points(marks):
     return [point for mark in marks for point in mark.values()]
 
-def F1_Score(teacher_labels,model_labels):
+def get_score(teacher_labels,model_labels):
     print("Teacher Labels\t", teacher_labels)
     print("Model Labels\t", model_labels)
     f1 = f1_score(teacher_labels, model_labels)
-    return f1
+    precision = precision_score(teacher_labels, model_labels)
+    recall = recall_score(teacher_labels, model_labels)
+    return f1, precision, recall
 
 
 if __name__ == '__main__':
-    extract_info_from_json(r"../results/v1/zeroshot/Qwen1.5-32B.json")
+    extract_info_from_json(r"../results/short/example/v1/zeroshot/Qwen1.5-14B.json")

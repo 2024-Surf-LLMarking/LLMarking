@@ -1,0 +1,17 @@
+﻿QuestionCode,Question,Fullmark,RightAnswer
+INT001,What is supervised learning?,4,"Supervised learning is <Point1:2>a
+type of machine learning where the model is trained on labeled data <Point1:2>.
+<Point2:2>The model learns to map inputs to outputs based on example
+input-output pairs <Point2:2>."
+INT002,"Explain the difference between 
+classification and regression.",3,"Classification and regression<Point1:1>differ
+in the type of output they predict <Point1:1>. <Point2:1>Classification
+predicts discrete labels (categories)<Point2:1>，whereas<Point3:1>regression
+predicts continuous quantities <Point3:1>."
+INT003,What is unsupervised learning?,4,"Unsupervised learning involves <Point1:2>training models on data without labels<Point1:2>. 
+The goal is to <Point2:2>discover patterns or structures within the data <Point2:2>. 
+"
+INT004,Define overfitting in machine learning.,4,"<Point1:2>Overfitting occurs when a machine learning model learns the details and noise in the training data to an extent<Point1:2>. 
+<Point2:2>It negatively impacts the performance of the model on new data, making it less generalizable<Point2:2>.
+"
+INT005,What is a neural network?,4,A neural network is <Point1:2>a series of algorithms that attempts to recognize underlying relationships in a set of data<Point1:2> <Point2:2>through a process that mimics the way the human brain operates<Point2:2>. 

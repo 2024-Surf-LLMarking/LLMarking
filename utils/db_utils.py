@@ -33,6 +33,14 @@ def select_data(db_file, table_name):
     conn.close()
     return rows
 
+def select_question(db_file, table_name, question_code):
+    conn = sql.connect(db_file)
+    c = conn.cursor()
+    c.execute(f"SELECT question FROM {table_name} WHERE question_code = '{question_code}'")
+    rows = c.fetchall()
+    conn.close()
+    return rows
+
 def update_data(db_file, table_name, data):
     conn = sql.connect(db_file)
     c = conn.cursor()
