@@ -10,16 +10,19 @@ def extract_info(data):
     for key, value in data.items():
         teacher_mark = build_diction_from_teacher(value.get("teacherMark"))
         Teacher_Marklist.append(teacher_mark)
-        Model_Marklist.append(build_diction_from_model(value.get("feedback"), len(teacher_mark)))
+        Model_Marklist.append(build_diction_from_model(value.get("feedback"), len(teacher_mark), teacher_mark))
     return Model_Marklist,Teacher_Marklist
 
-def build_diction_from_model(input_str, length):
+def build_diction_from_model(input_str, length, teacher_mark):
     # 正则表达式模式来匹配 Point 和 类型
     points_dict = {}
     pattern = re.compile(r'<(Point\d+)\s*:\w+\s*>\s*\*?(True|False)\*?\s*\n?\(?([^)]*?)\)?')
     if len(re.findall(pattern, input_str)) != length:
         print("No match found! The input string is:", input_str)
-        input_str = input(f"The number of teacher marks are {length}. Please input the correct string:")
+        mark_list = input(f"The number of teacher marks are {length}.\nThe teacher mark is as follow:\n {teacher_mark}\n\nPlease input the correct list of point(e.g. 01 or 110):")
+        for i in range(length):
+            points_dict[f"Point{i+1}"] = True if mark_list[i] == '1' else False
+        return points_dict
     for match in re.finditer(pattern, input_str):
         point, type_, comment = match.groups()
         points_dict[point] = type_
