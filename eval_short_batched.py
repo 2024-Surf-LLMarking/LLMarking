@@ -10,7 +10,7 @@ import os
 directory = ["zeroshot", "oneshot", "fewshot"]
 course = "CPT"
 model_name = None
-num_thread = 3
+num_thread = 10
 
 global data
 data = None

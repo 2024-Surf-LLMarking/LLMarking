@@ -2,7 +2,7 @@ from utils.compute_mark import extract_info_from_json
 import pathlib as pl
 import csv
 
-course = "INT"
+course = "CPT"
 
 model_name_list_few = pl.Path(f'results/short/{course}/fewshot').glob('*')
 model_name_list_few = [i.name.split('.jso')[0] for i in list(model_name_list_few)]
