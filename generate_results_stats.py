@@ -2,15 +2,15 @@ from utils.compute_mark import extract_info_from_json
 import pathlib as pl
 import csv
 
-course = "CPT"
+course = "INT"
 
-model_name_list_few = pl.Path(f'results/short/{course}/fewshot').rglob('*.json')
+model_name_list_few = pl.Path(f'results/short/{course}/fewshot').glob('*')
 model_name_list_few = [i.name.split('.jso')[0] for i in list(model_name_list_few)]
 
-model_name_list_one = pl.Path(f'results/short/{course}/oneshot').rglob('*.json')
+model_name_list_one = pl.Path(f'results/short/{course}/oneshot').glob('*')
 model_name_list_one = [i.name.split('.jso')[0] for i in list(model_name_list_one)]
 
-model_name_list_zero = pl.Path(f'results/short/{course}/zeroshot').rglob('*.json')
+model_name_list_zero = pl.Path(f'results/short/{course}/zeroshot').glob('*')
 model_name_list_zero = [i.name.split('.jso')[0] for i in list(model_name_list_zero)]
 
 model_name_list = list(set(model_name_list_few) | set(model_name_list_one) | set(model_name_list_zero))
