@@ -105,7 +105,7 @@ def load_vllm():
     args.quantization=quantization
     args.gpu_memory_utilization=gpu_memory_utilization
     args.dtype=dtype
-    args.max_num_seqs=20    # batch最大20条样本
+    args.max_num_seqs=15    # batch最大20条样本
     if model_dir == __all__[1]:
         args.max_model_len=3024
     else:

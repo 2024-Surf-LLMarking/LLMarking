@@ -1,0 +1,452 @@
+{
+    "0": {
+        "question_code": "INT001",
+        "question": "What is supervised learning?",
+        "fullMark": "4",
+        "referenceAnswer": "Supervised learning is <Point1:2>a\ntype of machine learning where the model is trained on labeled data <Point1:2>.\n<Point2:2>The model learns to map inputs to outputs based on example\ninput-output pairs <Point2:2>.",
+        "studentAnswer": "Supervised learning involves using input-output pairs to teach models to predict the output from new inputs.",
+        "teacherMark": "<Point1:False>,<Point2:True>",
+        "feedback": "<Point1:2> *True* (The student's answer correctly identifies supervised learning as a type of machine learning that involves training models on labeled data and mapping inputs to outputs based on example input-output pairs.)\n\n<Point2:2> *True* (The student's answer accurately describes the process of supervised learning, which is learning from labeled data to predict outputs for new inputs.)"
+    },
+    "1": {
+        "question_code": "INT001",
+        "question": "What is supervised learning?",
+        "fullMark": "4",
+        "referenceAnswer": "Supervised learning is <Point1:2>a\ntype of machine learning where the model is trained on labeled data <Point1:2>.\n<Point2:2>The model learns to map inputs to outputs based on example\ninput-output pairs <Point2:2>.",
+        "studentAnswer": "Supervised learning is training a model on data that includes both the inputs and the outputs.",
+        "teacherMark": "<Point1:True>,<Point2:False>",
+        "feedback": "<Point1:2> *True* (The student's answer correctly identifies supervised learning as a type of machine learning where the model is trained on labeled data. This aligns with the reference answer's first point.)\n\n<Point2:2> *True* (The student's answer also correctly mentions that the model learns to map inputs to outputs based on example input-output pairs, which is the second point in the reference answer.)\n\nOverall, the student's answer is accurate and covers both points in the reference answer."
+    },
+    "2": {
+        "question_code": "INT001",
+        "question": "What is supervised learning?",
+        "fullMark": "4",
+        "referenceAnswer": "Supervised learning is <Point1:2>a\ntype of machine learning where the model is trained on labeled data <Point1:2>.\n<Point2:2>The model learns to map inputs to outputs based on example\ninput-output pairs <Point2:2>.",
+        "studentAnswer": "Supervised learning is a type of machine learning that involves training a model using labeled data. The model uses these labels to learn how to predict outcomes based on new inputs.",
+        "teacherMark": "<Point1:True>,<Point2:True>",
+        "feedback": "<Point1:2> *True* (The student correctly defined supervised learning as a type of machine learning that uses labeled data for training a model.)\n\n<Point2:2> *True* (The student accurately described the process of supervised learning, where the model learns to map inputs to outputs based on example input-output pairs.)\n\nOverall, the student's answer is well-structured and accurately captures the essence of supervised learning as defined in the reference answer. The student's answer is succinct and to the point, which is commendable. However, the student could have elaborated a bit more on the concept of labeled data and how it aids in the training of the model."
+    },
+    "3": {
+        "question_code": "INT001",
+        "question": "What is supervised learning?",
+        "fullMark": "4",
+        "referenceAnswer": "Supervised learning is <Point1:2>a\ntype of machine learning where the model is trained on labeled data <Point1:2>.\n<Point2:2>The model learns to map inputs to outputs based on example\ninput-output pairs <Point2:2>.",
+        "studentAnswer": "Supervised learning is a type of algorithm in artificial intelligence. It involves training the model by adjusting its parameters until it can make accurate predictions.",
+        "teacherMark": "<Point1:False>,<Point2:False>",
+        "feedback": "<Point1:2> *True* (The student correctly identified supervised learning as a type of machine learning and mentioned the process of training the model using labeled data.)\n\n<Point2:2> *True* (The student accurately described the process of supervised learning, where the model learns to map inputs to outputs based on example input-output pairs.)\n\n<Point3:2> *False* (The student did not mention the aspect of adjusting parameters to make accurate predictions, which is an important part of supervised learning.)"
+    },
+    "4": {
+        "question_code": "INT001",
+        "question": "What is supervised learning?",
+        "fullMark": "4",
+        "referenceAnswer": "Supervised learning is <Point1:2>a\ntype of machine learning where the model is trained on labeled data <Point1:2>.\n<Point2:2>The model learns to map inputs to outputs based on example\ninput-output pairs <Point2:2>.",
+        "studentAnswer": "Supervised learning is a machine learning method. The model learns to map inputs to outputs based on example input-output pairs.",
+        "teacherMark": "<Point1:False>,<Point2:True>",
+        "feedback": "<Point1:2> *True* (The student correctly identified supervised learning as a machine learning method and mentioned that the model learns to map inputs to outputs based on example input-output pairs.)\n\n<Point2:2> *True* (The student did not mention that the model is trained on labeled data, but this is not a requirement for the point to be considered true.)"
+    },
+    "5": {
+        "question_code": "INT001",
+        "question": "What is supervised learning?",
+        "fullMark": "4",
+        "referenceAnswer": "Supervised learning is <Point1:2>a\ntype of machine learning where the model is trained on labeled data <Point1:2>.\n<Point2:2>The model learns to map inputs to outputs based on example\ninput-output pairs <Point2:2>.",
+        "studentAnswer": "Supervised learning is a machine learning method. The model learns to map inputs to outputs based on example input-output pairs.",
+        "teacherMark": "<Point1:True>,<Point2:True>",
+        "feedback": "<Point1:2> *True* (The student correctly identified supervised learning as a type of machine learning and mentioned that the model learns to map inputs to outputs based on example input-output pairs.)\n\n<Point2:2> *True* (The student did not mention that the model is trained on labeled data, but this is not a requirement for the point to be true.)"
+    },
+    "6": {
+        "question_code": "INT001",
+        "question": "What is supervised learning?",
+        "fullMark": "4",
+        "referenceAnswer": "Supervised learning is <Point1:2>a\ntype of machine learning where the model is trained on labeled data <Point1:2>.\n<Point2:2>The model learns to map inputs to outputs based on example\ninput-output pairs <Point2:2>.",
+        "studentAnswer": "Supervised learning is a method where a model learns from labeled data. It uses this data to understand how to predict the correct output when given new input.",
+        "teacherMark": "<Point1:True>,<Point2:True>",
+        "feedback": "<Point1:2> *True* (The student correctly defined supervised learning as a method where a model learns from labeled data and uses this data to predict outputs for new inputs.)\n\n<Point2:2> *True* (The student also correctly mentioned that supervised learning involves mapping inputs to outputs based on example input-output pairs.)\n\n<Point3:2> *False* (The student did not mention the aspect of the model being trained on labeled data, which is an important part of supervised learning. This point should be included in the student's answer.)\n\n<Point4:2> *False* (The student did not mention the aspect of the model learning from labeled data to make predictions. This point should be included in the student's answer.)\n\n<Point5:2> *False* (The student did not mention the aspect of the model being trained on example input-output pairs. This point should be included in the student's answer.)"
+    },
+    "7": {
+        "question_code": "INT001",
+        "question": "What is supervised learning?",
+        "fullMark": "4",
+        "referenceAnswer": "Supervised learning is <Point1:2>a\ntype of machine learning where the model is trained on labeled data <Point1:2>.\n<Point2:2>The model learns to map inputs to outputs based on example\ninput-output pairs <Point2:2>.",
+        "studentAnswer": "Supervised learning uses labeled data to train a machine learning model. The model then learns to associate inputs with the correct outputs based on these labels.",
+        "teacherMark": "<Point1:True>,<Point2:True>",
+        "feedback": "<Point1:2> *True* (The student correctly identified that supervised learning uses labeled data to train a machine learning model.)\n\n<Point2:2> *True* (The student correctly stated that the model learns to associate inputs with the correct outputs based on these labels.)"
+    },
+    "8": {
+        "question_code": "INT001",
+        "question": "What is supervised learning?",
+        "fullMark": "4",
+        "referenceAnswer": "Supervised learning is <Point1:2>a\ntype of machine learning where the model is trained on labeled data <Point1:2>.\n<Point2:2>The model learns to map inputs to outputs based on example\ninput-output pairs <Point2:2>.",
+        "studentAnswer": "In supervised learning, a model is taught using data that includes both the inputs and the desired outputs. This helps the model to make predictions by learning the relationship between the input and output.",
+        "teacherMark": "<Point1:True>,<Point2:True>",
+        "feedback": "<Point1:2> *True* (The student's answer correctly identifies supervised learning as a type of machine learning where the model is trained on labeled data. The student's answer also mentions that the model learns to map inputs to outputs based on example input-output pairs, which aligns with the reference answer.)\n\n<Point2:2> *True* (The student's answer accurately describes the process of supervised learning, where the model is taught using data that includes both the inputs and the desired outputs, and learns the relationship between the input and output to make predictions.)\n\nOverall, the student's answer is well-structured and accurately addresses the main points of the question. The student's understanding of supervised learning is demonstrated through their clear and concise explanation."
+    },
+    "9": {
+        "question_code": "INT001",
+        "question": "What is supervised learning?",
+        "fullMark": "4",
+        "referenceAnswer": "Supervised learning is <Point1:2>a\ntype of machine learning where the model is trained on labeled data <Point1:2>.\n<Point2:2>The model learns to map inputs to outputs based on example\ninput-output pairs <Point2:2>.",
+        "studentAnswer": "Supervised learning is a machine learning technique. The model uses labeled examples to understand the relationship between inputs and outputs.",
+        "teacherMark": "<Point1:True>,<Point2:False>",
+        "feedback": "<Point1:2> *True* (The student correctly identified supervised learning as a type of machine learning and mentioned the use of labeled examples to understand the relationship between inputs and outputs.)\n\n<Point2:2> *True* (The student did not mention the specific aspect of the model learning to map inputs to outputs based on example input-output pairs, but this is a reasonable interpretation of the reference answer.)"
+    },
+    "10": {
+        "question_code": "INT002",
+        "question": "Explain the difference between \nclassification and regression.",
+        "fullMark": "3",
+        "referenceAnswer": "Classification and regression<Point1:1>differ\nin the type of output they predict <Point1:1>. <Point2:1>Classification\npredicts discrete labels (categories)<Point2:1>\uff0cwhereas<Point3:1>regression\npredicts continuous quantities <Point3:1>.",
+        "studentAnswer": "Regression predicts numerical outcomes, and classification predicts which category something belongs to.",
+        "teacherMark": "<Point1:False>,<Point2:True>,<Point3:True>",
+        "feedback": "<Point1:1> *True* (The student correctly identified that regression predicts continuous quantities and classification predicts discrete labels.)\n\n<Point2:1> *False* (The student did not mention the difference in the type of output they predict.)\n\n<Point3:1> *True* (The student correctly identified that classification predicts categories, which are discrete labels.)"
+    },
+    "11": {
+        "question_code": "INT002",
+        "question": "Explain the difference between \nclassification and regression.",
+        "fullMark": "3",
+        "referenceAnswer": "Classification and regression<Point1:1>differ\nin the type of output they predict <Point1:1>. <Point2:1>Classification\npredicts discrete labels (categories)<Point2:1>\uff0cwhereas<Point3:1>regression\npredicts continuous quantities <Point3:1>.",
+        "studentAnswer": "Regression involves equations and classification is about grouping.",
+        "teacherMark": "<Point1:False>,<Point2:True>,<Point3:False>",
+        "feedback": "<Point1:1> *True* (The student correctly identified that classification and regression differ in the type of output they predict. However, the explanation could be more detailed and precise.)\n\n<Point2:1> *False* (The student did not mention the specific difference between classification and regression, which is that classification predicts discrete labels (categories) while regression predicts continuous quantities.)\n\n<Point3:1> *False* (The student did not mention the specific difference between classification and regression, which is that classification predicts discrete labels (categories) while regression predicts continuous quantities.)"
+    },
+    "12": {
+        "question_code": "INT002",
+        "question": "Explain the difference between \nclassification and regression.",
+        "fullMark": "3",
+        "referenceAnswer": "Classification and regression<Point1:1>differ\nin the type of output they predict <Point1:1>. <Point2:1>Classification\npredicts discrete labels (categories)<Point2:1>\uff0cwhereas<Point3:1>regression\npredicts continuous quantities <Point3:1>.",
+        "studentAnswer": "Classification and regression are different in terms of their outputs. Classification involves predicting categories or classes, while regression is used to predict numerical values.",
+        "teacherMark": "<Point1:True>,<Point2:True>,<Point3:True>",
+        "feedback": "<Point1:1> *True* (The student correctly identified that classification and regression differ in the type of output they predict.)\n\n<Point2:1> *True* (The student correctly stated that classification predicts discrete labels or categories.)\n\n<Point3:1> *True* (The student correctly stated that regression predicts continuous quantities.)\n\nThe student's answer is accurate and concise, covering all the key points from the reference answer. The explanation is clear and easy to understand. The student's answer is well-structured and follows the instructions given."
+    },
+    "13": {
+        "question_code": "INT002",
+        "question": "Explain the difference between \nclassification and regression.",
+        "fullMark": "3",
+        "referenceAnswer": "Classification and regression<Point1:1>differ\nin the type of output they predict <Point1:1>. <Point2:1>Classification\npredicts discrete labels (categories)<Point2:1>\uff0cwhereas<Point3:1>regression\npredicts continuous quantities <Point3:1>.",
+        "studentAnswer": "Classification and regression serve different purposes in machine learning. Classification assigns data to specific categories, while regression estimates numerical values.",
+        "teacherMark": "<Point1:False>,<Point2:True>,<Point3:True>",
+        "feedback": "<Point1:1> *True* (The student correctly identified that classification and regression differ in the type of output they predict.)\n\n<Point2:1> *False* (The student did not mention the specific types of output that classification and regression predict. They should have mentioned that classification predicts discrete labels (categories) and regression predicts continuous quantities.)\n\n<Point3:1> *False* (The student did not provide any information about the specific types of output that classification and regression predict. They should have mentioned that classification predicts discrete labels (categories) and regression predicts continuous quantities.)"
+    },
+    "14": {
+        "question_code": "INT002",
+        "question": "Explain the difference between \nclassification and regression.",
+        "fullMark": "3",
+        "referenceAnswer": "Classification and regression<Point1:1>differ\nin the type of output they predict <Point1:1>. <Point2:1>Classification\npredicts discrete labels (categories)<Point2:1>\uff0cwhereas<Point3:1>regression\npredicts continuous quantities <Point3:1>.",
+        "studentAnswer": "Classification and regression are used for different kinds of predictions. Classification involves sorting data into distinct groups, while regression is used to predict continuous numbers.",
+        "teacherMark": "<Point1:False>,<Point2:True>,<Point3:True>",
+        "feedback": "<Point1:1> *True* (The student correctly identified that classification and regression differ in the type of output they predict.)\n\n<Point2:1> *True* (The student correctly identified that classification predicts discrete labels, such as categories.)\n\n<Point3:1> *True* (The student correctly identified that regression predicts continuous quantities, such as numerical values.)\n\nOverall, the student's answer is accurate and covers all the points mentioned in the reference answer. The explanation is clear and concise, making it easy to understand the difference between classification and regression."
+    },
+    "15": {
+        "question_code": "INT002",
+        "question": "Explain the difference between \nclassification and regression.",
+        "fullMark": "3",
+        "referenceAnswer": "Classification and regression<Point1:1>differ\nin the type of output they predict <Point1:1>. <Point2:1>Classification\npredicts discrete labels (categories)<Point2:1>\uff0cwhereas<Point3:1>regression\npredicts continuous quantities <Point3:1>.",
+        "studentAnswer": "Classification and regression are different approaches in machine learning. Classification predicts categories or labels, while regression predicts values on a continuous scale",
+        "teacherMark": "<Point1:False>,<Point2:True>,<Point3:True>",
+        "feedback": "<Point1:1> *True* (The student correctly identified that classification and regression differ in the type of output they predict.)\n\n<Point2:1> *False* (The student did not mention the specific difference between classification and regression, which is that classification predicts discrete labels (categories) while regression predicts continuous quantities.)\n\n<Point3:1> *True* (The student correctly identified that regression predicts values on a continuous scale.)"
+    },
+    "16": {
+        "question_code": "INT002",
+        "question": "Explain the difference between \nclassification and regression.",
+        "fullMark": "3",
+        "referenceAnswer": "Classification and regression<Point1:1>differ\nin the type of output they predict <Point1:1>. <Point2:1>Classification\npredicts discrete labels (categories)<Point2:1>\uff0cwhereas<Point3:1>regression\npredicts continuous quantities <Point3:1>.",
+        "studentAnswer": "Classification and regression are different in terms of their predicted outputs. Classification is about predicting distinct categories, while regression focuses on predicting continuous values.",
+        "teacherMark": "<Point1:True>,<Point2:True>,<Point3:True>",
+        "feedback": "<Point1:1> *True* (The student correctly identified that classification and regression differ in the type of output they predict.)\n\n<Point2:1> *True* (The student correctly identified that classification predicts discrete labels, or categories.)\n\n<Point3:1> *True* (The student correctly identified that regression predicts continuous quantities.)\n\nThe student's answer is accurate and concise, covering all the key points from the reference answer. The explanation is clear and easy to understand. The student's answer is well-structured and follows the instructions given."
+    },
+    "17": {
+        "question_code": "INT002",
+        "question": "Explain the difference between \nclassification and regression.",
+        "fullMark": "3",
+        "referenceAnswer": "Classification and regression<Point1:1>differ\nin the type of output they predict <Point1:1>. <Point2:1>Classification\npredicts discrete labels (categories)<Point2:1>\uff0cwhereas<Point3:1>regression\npredicts continuous quantities <Point3:1>.",
+        "studentAnswer": "Classification and regression are methods used in machine learning. Classification is for predicting categories.",
+        "teacherMark": "<Point1:False>,<Point2:True>,<Point3:False>",
+        "feedback": "<Point1:1> *True* (The student correctly identified that classification and regression differ in the type of output they predict.)\n\n<Point2:1> *False* (The student did not mention the specific difference between classification and regression, which is that classification predicts discrete labels (categories) while regression predicts continuous quantities.)\n\n<Point3:1> *False* (The student did not provide any information about regression, which is a key part of the question.)\n\nOverall, the student's answer was partially correct but incomplete. They correctly identified that classification and regression differ in the type of output they predict, but they did not provide the full explanation as required by the question. The student should have mentioned that classification predicts discrete labels (categories) and regression predicts continuous quantities."
+    },
+    "18": {
+        "question_code": "INT002",
+        "question": "Explain the difference between \nclassification and regression.",
+        "fullMark": "3",
+        "referenceAnswer": "Classification and regression<Point1:1>differ\nin the type of output they predict <Point1:1>. <Point2:1>Classification\npredicts discrete labels (categories)<Point2:1>\uff0cwhereas<Point3:1>regression\npredicts continuous quantities <Point3:1>.",
+        "studentAnswer": "Classification and regression differ in their outputs. Classification is used for predicting categories, and regression for predicting continuous values.",
+        "teacherMark": "<Point1:True>,<Point2:True>,<Point3:True>",
+        "feedback": "<Point1:1> *True* (The student correctly identified that classification and regression differ in the type of output they predict.)\n\n<Point2:1> *True* (The student correctly identified that classification predicts discrete labels, or categories.)\n\n<Point3:1> *True* (The student correctly identified that regression predicts continuous quantities.)\n\nThe student's answer is accurate and concise, covering all the key points from the reference answer. The explanation is clear and easy to understand. The student's answer is well-structured and follows the instructions given."
+    },
+    "19": {
+        "question_code": "INT002",
+        "question": "Explain the difference between \nclassification and regression.",
+        "fullMark": "3",
+        "referenceAnswer": "Classification and regression<Point1:1>differ\nin the type of output they predict <Point1:1>. <Point2:1>Classification\npredicts discrete labels (categories)<Point2:1>\uff0cwhereas<Point3:1>regression\npredicts continuous quantities <Point3:1>.",
+        "studentAnswer": "Classification and regression are both machine learning techniques used to analyze data.",
+        "teacherMark": "<Point1:False>,<Point2:False>,<Point3:False>",
+        "feedback": "<Point1:1> *False* (reason, The student's answer does not mention the difference in the type of output predicted by classification and regression.)\n\n<Point2:1> *False* (reason, The student's answer does not mention that classification predicts discrete labels (categories) and regression predicts continuous quantities.)\n\n<Point3:1> *False* (reason, The student's answer does not provide any information about the difference between classification and regression.)\n\nThe student's answer is incomplete and does not address the key differences between classification and regression as required by the question. The student should mention that classification predicts discrete labels (categories) while regression predicts continuous quantities."
+    },
+    "20": {
+        "question_code": "INT003",
+        "question": "What is unsupervised learning?",
+        "fullMark": "4",
+        "referenceAnswer": "Unsupervised learning involves <Point1:2>training models on data without labels<Point1:2>. \nThe goal is to <Point2:2>discover patterns or structures within the data <Point2:2>. \n",
+        "studentAnswer": "learning by itself without any data labels, maybe by grouping similar data points",
+        "teacherMark": "<Point1:True>,<Point2:False>",
+        "feedback": "<Point1:2> *True* (The student correctly identified that unsupervised learning involves training models on data without labels.)\n\n<Point2:2> *True* (The student correctly identified that the goal of unsupervised learning is to discover patterns or structures within the data.)\n\nThe student's answer is partially correct but lacks detail and clarity. They should elaborate on the concept of unsupervised learning, mentioning that it is a machine learning technique where the model learns from the data without explicit guidance or supervision. They should also mention that it is used for tasks such as clustering, dimensionality reduction, and anomaly detection. Additionally, the student should avoid using phrases like \"maybe by grouping similar data points\" as it is vague and does not accurately describe the process of unsupervised learning."
+    },
+    "21": {
+        "question_code": "INT003",
+        "question": "What is unsupervised learning?",
+        "fullMark": "4",
+        "referenceAnswer": "Unsupervised learning involves <Point1:2>training models on data without labels<Point1:2>. \nThe goal is to <Point2:2>discover patterns or structures within the data <Point2:2>. \n",
+        "studentAnswer": "It involves training a machine without any pre-given labels, letting it discover information within the data .",
+        "teacherMark": "<Point1:True>,<Point2:True>",
+        "feedback": "<Point1:2> *True* (The student correctly identified that unsupervised learning involves training models on data without labels.)\n\n<Point2:2> *True* (The student correctly identified that the goal of unsupervised learning is to discover patterns or structures within the data.)"
+    },
+    "22": {
+        "question_code": "INT003",
+        "question": "What is unsupervised learning?",
+        "fullMark": "4",
+        "referenceAnswer": "Unsupervised learning involves <Point1:2>training models on data without labels<Point1:2>. \nThe goal is to <Point2:2>discover patterns or structures within the data <Point2:2>. \n",
+        "studentAnswer": "Unsupervised learning is about using data that doesn't have labels to train models. The objective is for the model to find patterns and structures in this data.",
+        "teacherMark": "<Point1:True>,<Point2:True>",
+        "feedback": "<Point1:2> *True* (The student correctly identified that unsupervised learning involves training models on data without labels.)\n\n<Point2:2> *True* (The student accurately stated that the goal of unsupervised learning is to discover patterns or structures within the data.)"
+    },
+    "23": {
+        "question_code": "INT003",
+        "question": "What is unsupervised learning?",
+        "fullMark": "4",
+        "referenceAnswer": "Unsupervised learning involves <Point1:2>training models on data without labels<Point1:2>. \nThe goal is to <Point2:2>discover patterns or structures within the data <Point2:2>. \n",
+        "studentAnswer": "In unsupervised learning, models are trained with unlabeled data. The aim is to recognize patterns or organize the data in a meaningful way.",
+        "teacherMark": "<Point1:True>,<Point2:True>",
+        "feedback": "<Point1:2> *True* (The student correctly identified that unsupervised learning involves training models on data without labels.)\n\n<Point2:2> *True* (The student accurately described the goal of unsupervised learning as discovering patterns or structures within the data.)"
+    },
+    "24": {
+        "question_code": "INT003",
+        "question": "What is unsupervised learning?",
+        "fullMark": "4",
+        "referenceAnswer": "Unsupervised learning involves <Point1:2>training models on data without labels<Point1:2>. \nThe goal is to <Point2:2>discover patterns or structures within the data <Point2:2>. \n",
+        "studentAnswer": "In unsupervised learning, the computer learns by itself without any examples.",
+        "teacherMark": "<Point1:False>,<Point2:False>",
+        "feedback": "<Point1:2> *True* (The student's answer correctly mentions that unsupervised learning involves training models on data without labels.)\n\n<Point2:2> *True* (The student's answer also correctly mentions that the goal of unsupervised learning is to discover patterns or structures within the data.)"
+    },
+    "25": {
+        "question_code": "INT003",
+        "question": "What is unsupervised learning?",
+        "fullMark": "4",
+        "referenceAnswer": "Unsupervised learning involves <Point1:2>training models on data without labels<Point1:2>. \nThe goal is to <Point2:2>discover patterns or structures within the data <Point2:2>. \n",
+        "studentAnswer": "Unsupervised learning uses data that doesn't come with labels. It helps the model to identify any underlying patterns or groupings in the data.",
+        "teacherMark": "<Point1:True>,<Point2:True>",
+        "feedback": "<Point1:2> *True* (The student correctly identified that unsupervised learning involves training models on data without labels.)\n\n<Point2:2> *True* (The student correctly stated that the goal of unsupervised learning is to discover patterns or structures within the data.)"
+    },
+    "26": {
+        "question_code": "INT003",
+        "question": "What is unsupervised learning?",
+        "fullMark": "4",
+        "referenceAnswer": "Unsupervised learning involves <Point1:2>training models on data without labels<Point1:2>. \nThe goal is to <Point2:2>discover patterns or structures within the data <Point2:2>. \n",
+        "studentAnswer": "In unsupervised learning, data without labels is used to train models. These models then try to identify hidden structures or patterns in the data.",
+        "teacherMark": "<Point1:True>,<Point2:True>",
+        "feedback": "<Point1:2> *True* (The student correctly identified that unsupervised learning involves training models on data without labels.)\n\n<Point2:2> *True* (The student accurately described the goal of unsupervised learning as discovering patterns or structures within the data.)"
+    },
+    "27": {
+        "question_code": "INT003",
+        "question": "What is unsupervised learning?",
+        "fullMark": "4",
+        "referenceAnswer": "Unsupervised learning involves <Point1:2>training models on data without labels<Point1:2>. \nThe goal is to <Point2:2>discover patterns or structures within the data <Point2:2>. \n",
+        "studentAnswer": "With unsupervised learning, models use unlabeled data for training. The purpose is to uncover patterns or structures in the data on their own.",
+        "teacherMark": "<Point1:True>,<Point2:True>",
+        "feedback": "<Point1:2> *True* (The student correctly identified that unsupervised learning involves training models on data without labels.)\n\n<Point2:2> *True* (The student accurately stated that the goal of unsupervised learning is to discover patterns or structures within the data.)"
+    },
+    "28": {
+        "question_code": "INT003",
+        "question": "What is unsupervised learning?",
+        "fullMark": "4",
+        "referenceAnswer": "Unsupervised learning involves <Point1:2>training models on data without labels<Point1:2>. \nThe goal is to <Point2:2>discover patterns or structures within the data <Point2:2>. \n",
+        "studentAnswer": "Unsupervised learning trains models using data without labels. It aims to detect unknown patterns in the data.",
+        "teacherMark": "<Point1:True>,<Point2:True>",
+        "feedback": "<Point1:2> *True* (The student correctly identified that unsupervised learning involves training models on data without labels.)\n\n<Point2:2> *True* (The student accurately stated that the goal of unsupervised learning is to discover patterns or structures within the data.)"
+    },
+    "29": {
+        "question_code": "INT003",
+        "question": "What is unsupervised learning?",
+        "fullMark": "4",
+        "referenceAnswer": "Unsupervised learning involves <Point1:2>training models on data without labels<Point1:2>. \nThe goal is to <Point2:2>discover patterns or structures within the data <Point2:2>. \n",
+        "studentAnswer": "Unsupervised learning is a method of machine learning that does not require any training data.",
+        "teacherMark": "<Point1:False>,<Point2:False>",
+        "feedback": "<Point1:2> *False* (reason, The student's answer is partially correct but incomplete. They correctly identified that unsupervised learning does not require training data, but they did not mention the goal of discovering patterns or structures within the data.)\n\n<Point2:2> *False* (reason, The student's answer does not mention the goal of unsupervised learning, which is to discover patterns or structures within the data.)"
+    },
+    "30": {
+        "question_code": "INT004",
+        "question": "Define overfitting in machine learning.",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:2>Overfitting occurs when a machine learning model learns the details and noise in the training data to an extent<Point1:2>. \n<Point2:2>It negatively impacts the performance of the model on new data, making it less generalizable<Point2:2>.\n",
+        "studentAnswer": "Overfitting is when your model learns too much from the training data, including the noises, so it doesn\u2019t perform well on new data.",
+        "teacherMark": "<Point1:True>,<Point2:True>",
+        "feedback": "<Point1:2> *True* (The student's answer correctly defines overfitting as learning too much from the training data, including noises, which negatively impacts the model's performance on new data.)\n\n<Point2:2> *False* (The student's answer does not mention the impact of overfitting on the model's generalizability, which is an important aspect of the reference answer.)"
+    },
+    "31": {
+        "question_code": "INT004",
+        "question": "Define overfitting in machine learning.",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:2>Overfitting occurs when a machine learning model learns the details and noise in the training data to an extent<Point1:2>. \n<Point2:2>It negatively impacts the performance of the model on new data, making it less generalizable<Point2:2>.\n",
+        "studentAnswer": "I think overfitting is when the machine learning model is too perfect on the training data but can\u2019t handle new data.",
+        "teacherMark": "<Point1:False>,<Point2:True>",
+        "feedback": "<Point1:2> *True* (The student's answer correctly identifies that overfitting occurs when a model is too perfect on the training data, which is a good start. However, it could be more specific by mentioning that it learns the details and noise in the training data.)\n\n<Point2:2> *False* (The student's answer does not mention the negative impact of overfitting on the model's performance on new data, which is an important aspect of the definition. It should be included to fully address the question.)\n\n<Point3:2> *False* (The student's answer does not mention the reduced generalizability of the model due to overfitting, which is a key point in the reference answer.)\n\n<Point4:2> *False* (The student's answer does not mention that overfitting occurs when a model learns the training data too well, which is another important aspect of the definition.)\n\n<Point5:2> *False* (The student's answer does not mention that overfitting can lead to poor performance on unseen data, which is a crucial point in the reference answer.)"
+    },
+    "32": {
+        "question_code": "INT004",
+        "question": "Define overfitting in machine learning.",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:2>Overfitting occurs when a machine learning model learns the details and noise in the training data to an extent<Point1:2>. \n<Point2:2>It negatively impacts the performance of the model on new data, making it less generalizable<Point2:2>.\n",
+        "studentAnswer": "Overfitting happens when a model captures too much detail and noise from the training data, making it less effective on new data.",
+        "teacherMark": "<Point1:True>,<Point2:True>",
+        "feedback": "<Point1:2> *True* (The student's answer correctly defines overfitting as capturing too much detail and noise from the training data, which makes the model less effective on new data.)\n\n<Point2:2> *True* (The student's answer also mentions that overfitting negatively impacts the performance of the model on new data, making it less generalizable, which is in line with the reference answer.)"
+    },
+    "33": {
+        "question_code": "INT004",
+        "question": "Define overfitting in machine learning.",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:2>Overfitting occurs when a machine learning model learns the details and noise in the training data to an extent<Point1:2>. \n<Point2:2>It negatively impacts the performance of the model on new data, making it less generalizable<Point2:2>.\n",
+        "studentAnswer": "Overfitting means a model has learned too much about the training data, including the noise, and therefore cannot generalize well to new data.",
+        "teacherMark": "<Point1:True>,<Point2:True>",
+        "feedback": "<Point1:2> *True* (The student's answer correctly defines overfitting as a model learning too much about the training data, including noise, and not generalizing well to new data.)\n\n<Point2:2> *True* (The student's answer also mentions that overfitting negatively impacts the performance of the model on new data, making it less generalizable, which is in line with the reference answer.)"
+    },
+    "34": {
+        "question_code": "INT004",
+        "question": "Define overfitting in machine learning.",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:2>Overfitting occurs when a machine learning model learns the details and noise in the training data to an extent<Point1:2>. \n<Point2:2>It negatively impacts the performance of the model on new data, making it less generalizable<Point2:2>.\n",
+        "studentAnswer": "Overfitting is when a model becomes too complex and fits the training data perfectly, including any noise.",
+        "teacherMark": "<Point1:True>,<Point2:False>",
+        "feedback": "<Point1:2> *True* (The student's answer correctly defines overfitting as a model fitting the training data too well, including noise.)\n\n<Point2:2> *True* (The student's answer also mentions that overfitting negatively impacts the model's performance on new data, making it less generalizable.)\n\nThe student's answer is accurate and concise, covering both aspects of overfitting mentioned in the reference answer."
+    },
+    "35": {
+        "question_code": "INT004",
+        "question": "Define overfitting in machine learning.",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:2>Overfitting occurs when a machine learning model learns the details and noise in the training data to an extent<Point1:2>. \n<Point2:2>It negatively impacts the performance of the model on new data, making it less generalizable<Point2:2>.\n",
+        "studentAnswer": "Overfitting is when a model performs well on training data but fails to generalize to new data.",
+        "teacherMark": "<Point1:False>,<Point2:True>",
+        "feedback": "<Point1:2> *True* (The student's answer correctly identifies that overfitting occurs when a model performs well on training data but fails to generalize to new data.)\n\n<Point2:2> *False* (The student's answer does not mention the impact of overfitting on the model's performance on new data, which is an important aspect of the reference answer.)"
+    },
+    "36": {
+        "question_code": "INT004",
+        "question": "Define overfitting in machine learning.",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:2>Overfitting occurs when a machine learning model learns the details and noise in the training data to an extent<Point1:2>. \n<Point2:2>It negatively impacts the performance of the model on new data, making it less generalizable<Point2:2>.\n",
+        "studentAnswer": "In machine learning, overfitting is when a model learns too much from the training data, making it ineffective on new, unseen data.",
+        "teacherMark": "<Point1:False>,<Point2:True>",
+        "feedback": "<Point1:2> *True* (The student's answer correctly defines overfitting as learning too much from the training data, which makes the model ineffective on new data.)\n\n<Point2:2> *False* (The student's answer does not mention the negative impact on the model's performance or its reduced generalizability, which is an important aspect of overfitting.)"
+    },
+    "37": {
+        "question_code": "INT004",
+        "question": "Define overfitting in machine learning.",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:2>Overfitting occurs when a machine learning model learns the details and noise in the training data to an extent<Point1:2>. \n<Point2:2>It negatively impacts the performance of the model on new data, making it less generalizable<Point2:2>.\n",
+        "studentAnswer": "When a model overfits, it means it has learned the training data too well, including its anomalies, which reduces its effectiveness on unseen data.",
+        "teacherMark": "<Point1:True>,<Point2:True>",
+        "feedback": "<Point1:2> *True* (The student's answer correctly defines overfitting as learning the training data too well, including its anomalies, which reduces the model's effectiveness on unseen data.)\n\n<Point2:2> *True* (The student's answer also mentions that overfitting negatively impacts the performance of the model on new data, making it less generalizable, which is in line with the reference answer.)"
+    },
+    "38": {
+        "question_code": "INT004",
+        "question": "Define overfitting in machine learning.",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:2>Overfitting occurs when a machine learning model learns the details and noise in the training data to an extent<Point1:2>. \n<Point2:2>It negatively impacts the performance of the model on new data, making it less generalizable<Point2:2>.\n",
+        "studentAnswer": "Overfitting is when a model is too simple and cannot capture the complexity of the data, leading to poor performance.",
+        "teacherMark": "<Point1:False>,<Point2:False>",
+        "feedback": "<Point1:2> *False* (reason, The student's answer incorrectly states that overfitting is caused by a model being too simple. Overfitting is actually caused by a model learning the noise in the training data to an extent, making it less generalizable to new data.)\n\n<Point2:2> *False* (reason, The student's answer does not mention the negative impact of overfitting on the model's performance on new data, which is an important aspect of the reference answer.)\n\n<Point3:2> *False* (reason, The student's answer does not mention the concept of generalization, which is a key aspect of the reference answer.)\n\n<Point4:2> *False* (reason, The student's answer does not mention the importance of avoiding overfitting in machine learning, which is a key point in the reference answer.)"
+    },
+    "39": {
+        "question_code": "INT004",
+        "question": "Define overfitting in machine learning.",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:2>Overfitting occurs when a machine learning model learns the details and noise in the training data to an extent<Point1:2>. \n<Point2:2>It negatively impacts the performance of the model on new data, making it less generalizable<Point2:2>.\n",
+        "studentAnswer": "Overfitting in machine learning is when a model becomes too specific to the training data, including its noise, and fails to perform well on new data.",
+        "teacherMark": "<Point1:True>,<Point2:True>",
+        "feedback": "<Point1:2> *True* (The student's answer correctly defines overfitting as a model becoming too specific to the training data and failing to generalize to new data.)\n\n<Point2:2> *True* (The student's answer also mentions that overfitting negatively impacts the performance of the model on new data, which is consistent with the reference answer.)"
+    },
+    "40": {
+        "question_code": "INT005",
+        "question": "What is a neural network?",
+        "fullMark": "4",
+        "referenceAnswer": "A neural network is <Point1:2>a series of algorithms that attempts to recognize underlying relationships in a set of data<Point1:2> <Point2:2>through a process that mimics the way the human brain operates<Point2:2>. ",
+        "studentAnswer": "Neural networks are is a series of algorithms these learns from data by simulating how the human brain works.",
+        "teacherMark": "<Point1:True>,<Point2:True>",
+        "feedback": "<Point1:2> *True* (The student correctly identified that neural networks are a series of algorithms that attempt to recognize underlying relationships in a set of data and that they mimic the way the human brain operates.)\n\n<Point2:2> *True* (The student correctly identified that neural networks learn from data by simulating how the human brain works.)"
+    },
+    "41": {
+        "question_code": "INT005",
+        "question": "What is a neural network?",
+        "fullMark": "4",
+        "referenceAnswer": "A neural network is <Point1:2>a series of algorithms that attempts to recognize underlying relationships in a set of data<Point1:2> <Point2:2>through a process that mimics the way the human brain operates<Point2:2>. ",
+        "studentAnswer": "A neural network is a type of algorithm that recognizes patterns in large sets of data.",
+        "teacherMark": "<Point1:True>,<Point2:False>",
+        "feedback": "<Point1:2> *True* (The student's answer correctly identifies neural networks as a type of algorithm that recognizes patterns in data, which aligns with the reference answer.)\n\n<Point2:2> *True* (The student's answer also mentions that neural networks mimic the way the human brain operates, which is a key aspect of the reference answer.)"
+    },
+    "42": {
+        "question_code": "INT005",
+        "question": "What is a neural network?",
+        "fullMark": "4",
+        "referenceAnswer": "A neural network is <Point1:2>a series of algorithms that attempts to recognize underlying relationships in a set of data<Point1:2> <Point2:2>through a process that mimics the way the human brain operates<Point2:2>. ",
+        "studentAnswer": "Neural networks are complex systems designed to recognize patterns in data.",
+        "teacherMark": "<Point1:True>,<Point2:False>",
+        "feedback": "<Point1:2> *True* (The student's answer correctly identifies neural networks as systems designed to recognize patterns in data, which aligns with the reference answer's first point.)\n\n<Point2:2> *False* (The student's answer does not mention the process of mimicking the way the human brain operates, which is a key aspect of neural networks as stated in the reference answer's second point.)"
+    },
+    "43": {
+        "question_code": "INT005",
+        "question": "What is a neural network?",
+        "fullMark": "4",
+        "referenceAnswer": "A neural network is <Point1:2>a series of algorithms that attempts to recognize underlying relationships in a set of data<Point1:2> <Point2:2>through a process that mimics the way the human brain operates<Point2:2>. ",
+        "studentAnswer": "Neural networks are algorithmic systems that analyze data, mimicking human brain functions to find patterns.",
+        "teacherMark": "<Point1:False>,<Point2:True>",
+        "feedback": "<Point1:2> *True* (The student's answer correctly identifies neural networks as algorithmic systems that analyze data and mimic human brain functions to find patterns.)\n\n<Point2:2> *True* (The student's answer also correctly mentions that neural networks attempt to recognize underlying relationships in a set of data, which is a key aspect of their function.)"
+    },
+    "44": {
+        "question_code": "INT005",
+        "question": "What is a neural network?",
+        "fullMark": "4",
+        "referenceAnswer": "A neural network is <Point1:2>a series of algorithms that attempts to recognize underlying relationships in a set of data<Point1:2> <Point2:2>through a process that mimics the way the human brain operates<Point2:2>. ",
+        "studentAnswer": "A neural network is a system of algorithms designed to find patterns in data by simulating how the brain works.",
+        "teacherMark": "<Point1:True>,<Point2:True>",
+        "feedback": "<Point1:2> *True* (The student's answer correctly identifies that a neural network is a system of algorithms designed to find patterns in data by simulating how the brain works.)\n\n<Point2:2> *True* (The student's answer also correctly mentions that a neural network mimics the way the human brain operates, which is a key aspect of the reference answer.)"
+    },
+    "45": {
+        "question_code": "INT005",
+        "question": "What is a neural network?",
+        "fullMark": "4",
+        "referenceAnswer": "A neural network is <Point1:2>a series of algorithms that attempts to recognize underlying relationships in a set of data<Point1:2> <Point2:2>through a process that mimics the way the human brain operates<Point2:2>. ",
+        "studentAnswer": "Neural networks are advanced algorithms that attempt to understand data patterns but do not work like the human brain.",
+        "teacherMark": "<Point1:True>,<Point2:False>",
+        "feedback": "<Point1:2> *True* (The student correctly identifies neural networks as a series of algorithms that attempt to recognize underlying relationships in a set of data.)\n\n<Point2:2> *False* (The student's statement that neural networks do not work like the human brain is incorrect. While they do not function exactly like the human brain, they are designed to mimic the way the brain processes information.)"
+    },
+    "46": {
+        "question_code": "INT005",
+        "question": "What is a neural network?",
+        "fullMark": "4",
+        "referenceAnswer": "A neural network is <Point1:2>a series of algorithms that attempts to recognize underlying relationships in a set of data<Point1:2> <Point2:2>through a process that mimics the way the human brain operates<Point2:2>. ",
+        "studentAnswer": "A neural network includes several algorithms that find relationships in data, not necessarily like the human brain.",
+        "teacherMark": "<Point1:True>,<Point2:False>",
+        "feedback": "<Point1:2> *True* (The student correctly identified that a neural network is a series of algorithms that attempt to recognize underlying relationships in a set of data.)\n\n<Point2:2> *True* (The student correctly noted that a neural network mimics the way the human brain operates, although not necessarily in the same way.)"
+    },
+    "47": {
+        "question_code": "INT005",
+        "question": "What is a neural network?",
+        "fullMark": "4",
+        "referenceAnswer": "A neural network is <Point1:2>a series of algorithms that attempts to recognize underlying relationships in a set of data<Point1:2> <Point2:2>through a process that mimics the way the human brain operates<Point2:2>. ",
+        "studentAnswer": "Neural networks are systems designed to understand data by finding patterns in a way that resembles the human brain.",
+        "teacherMark": "<Point1:True>,<Point2:True>",
+        "feedback": "<Point1:2> *True* (The student's answer correctly identifies neural networks as systems that attempt to recognize underlying relationships in data and mimic the way the human brain operates.)\n\n<Point2:2> *True* (The student's answer also correctly mentions that neural networks do this by finding patterns in data.)"
+    },
+    "48": {
+        "question_code": "INT005",
+        "question": "What is a neural network?",
+        "fullMark": "4",
+        "referenceAnswer": "A neural network is <Point1:2>a series of algorithms that attempts to recognize underlying relationships in a set of data<Point1:2> <Point2:2>through a process that mimics the way the human brain operates<Point2:2>. ",
+        "studentAnswer": "Neural networks are made up of interconnected algorithms that analyze data. They are designed to work in a brain-like manner.",
+        "teacherMark": "<Point1:False>,<Point2:True>",
+        "feedback": "<Point1:2> *True* (The student correctly identified that neural networks are made up of interconnected algorithms and are designed to analyze data. They also mentioned that they work in a brain-like manner, which is a good approximation of the reference answer's description of the process mimicking the human brain.)\n\n<Point2:2> *True* (The student's answer also touched on the idea of recognizing underlying relationships in a set of data, which is a key aspect of neural networks as mentioned in the reference answer.)"
+    },
+    "49": {
+        "question_code": "INT005",
+        "question": "What is a neural network?",
+        "fullMark": "4",
+        "referenceAnswer": "A neural network is <Point1:2>a series of algorithms that attempts to recognize underlying relationships in a set of data<Point1:2> <Point2:2>through a process that mimics the way the human brain operates<Point2:2>. ",
+        "studentAnswer": "A neural network is a computer system that performs tasks without needing a specific algorithm.",
+        "teacherMark": "<Point1:False>,<Point2:False>",
+        "feedback": "<Point1:2> *True* (The student's answer correctly identifies that a neural network is a computer system that performs tasks without needing a specific algorithm. This aligns with the reference answer's description of a neural network as a series of algorithms that attempt to recognize underlying relationships in a set of data.)\n\n<Point2:2> *False* (The student's answer does not mention the process that mimics the way the human brain operates, which is a key aspect of neural networks as described in the reference answer.)"
+    }
+}
