@@ -9,7 +9,7 @@ def clear_lines():
     print("\033[2J")
 
 directory = ["zeroshot", "oneshot", "fewshot"]
-course = "INT"
+course = "CPT"
 
 global data
 data = None
@@ -17,14 +17,17 @@ data = None
 if not os.path.exists('results/short'):
     print("Creating results/short directory...")
     os.makedirs('results/short')
+if not os.path.exists(f'results/short/{course}'):
+    print(f"Creating results/short/{course} directory...")
+    os.makedirs(f'results/short/{course}')
     for d in directory:
-        print(f"Creating results/short/{d} directory...")
-        os.makedirs(f'results/short/{d}')
+        print(f"Creating results/short/{course}/{d} directory...")
+        os.makedirs(f'results/short/{course}/{d}')
 else:
     for d in directory:
-        if not os.path.exists(f'results/short/{d}'):
-            print(f"Creating results/short/{d} directory...")
-            os.makedirs(f'results/short/{d}')
+        if not os.path.exists(f'results/short/{course}/{d}'):
+            print(f"Creating results/short/{course}/{d} directory...")
+            os.makedirs(f'results/short/{course}/{d}')
 
 with open(f'data/short/{course}/{course}_CSV1.csv', 'r') as file:
     csv_reader = csv.reader(file)
@@ -38,7 +41,7 @@ with open(f'data/short/{course}/{course}_CSV1.csv', 'r') as file:
             "referenceAnswer": row[3]
         }
 
-with open(f'data/short/{course}_CSV2.csv', 'r') as file:
+with open(f'data/short/{course}/{course}_CSV2.csv', 'r') as file:
     csv_reader = csv.reader(file)
     header = next(csv_reader)
     rows = list(csv_reader)

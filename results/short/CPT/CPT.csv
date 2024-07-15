@@ -1,0 +1,15 @@
+Model Name,Zero-shot,One-shot,Few-shot
+Qwen1.5-32B,"F1 score:	0.9098837209302325
+Precision score: 0.8346666666666667
+Recall score:	1.0","F1 score:	0.9046242774566474
+Precision score: 0.8258575197889182
+Recall score:	1.0","F1 score:	0.9033189033189033
+Precision score: 0.8236842105263158
+Recall score:	1.0"
+Qwen1.5-14B,"F1 score:	0.8125
+Precision score: 0.8372881355932204
+Recall score:	0.7891373801916933","F1 score:	0.8813559322033898
+Precision score: 0.8511904761904762
+Recall score:	0.9137380191693291","F1 score:	0.8830769230769231
+Precision score: 0.8516320474777448
+Recall score:	0.9169329073482428"

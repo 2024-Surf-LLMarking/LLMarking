@@ -19,6 +19,8 @@ def build_diction_from_model(input_str, length, teacher_mark):
     pattern = re.compile(r'<(Point\d+)\s*:\w+\s*>\s*\*?(True|False)\*?\s*\n?\(?([^)]*?)\)?')
     original_input_str_list = re.findall(pattern, input_str)
     if len(original_input_str_list) != length:
+        print(f'Found number of matches: {len(original_input_str_list)}, while the number of teacher marks is {length}.')
+        print('Matched list:\n', original_input_str_list)
         if len(original_input_str_list) > length:
             cut_str = '\n\n'.join(input_str.split('\n\n')[:length])
             if len(re.findall(pattern, cut_str)) != length:
