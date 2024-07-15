@@ -108,7 +108,7 @@ def get_response(i, stream = False):
         with open('results/results.json', 'w') as file:
             json.dump(results, file, indent=4)
     else:
-        with open(f'results/short/{directory[i]}/{model_name}.json', 'w') as file:
+        with open(f'results/short/{course}/{directory[i]}/{model_name}.json', 'w') as file:
             json.dump(results, file, indent=4)
     
 for i in range(len(directory)):

@@ -25,7 +25,7 @@ for model_name in model_name_list:
         cell = f"""F1 score:\t{f1}\nPrecision score: {precision}\nRecall score:\t{recall}"""
         row.append(cell)
     eval_results.append(row)
-    with open(f'results/short/{course}.csv', 'w') as file:
+    with open(f'results/short/{course}/{course}.csv', 'w') as file:
         writer = csv.writer(file)
         writer.writerow(["Model Name", "Zero-shot", "One-shot", "Few-shot"])
         writer.writerows(eval_results)
