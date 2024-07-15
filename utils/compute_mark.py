@@ -17,12 +17,23 @@ def build_diction_from_model(input_str, length, teacher_mark):
     # 正则表达式模式来匹配 Point 和 类型
     points_dict = {}
     pattern = re.compile(r'<(Point\d+)\s*:\w+\s*>\s*\*?(True|False)\*?\s*\n?\(?([^)]*?)\)?')
-    if len(re.findall(pattern, input_str)) != length:
-        print("No match found! The input string is:", input_str)
-        mark_list = input(f"The number of teacher marks are {length}.\nThe teacher mark is as follow:\n {teacher_mark}\n\nPlease input the correct list of point(e.g. 01 or 110):")
-        for i in range(length):
-            points_dict[f"Point{i+1}"] = True if mark_list[i] == '1' else False
-        return points_dict
+    original_input_str_list = re.findall(pattern, input_str)
+    if len(original_input_str_list) != length:
+        if len(original_input_str_list) > length:
+            cut_str = '\n\n'.join(input_str.split('\n\n')[:length])
+            if len(re.findall(pattern, cut_str)) != length:
+                print("No match found! The input string is:", input_str)
+                mark_list = input(f"The number of teacher marks are {length}.\nThe teacher mark is as follow:\n {teacher_mark}\n\nPlease input the correct list of point(e.g. 01 or 110):")
+                for i in range(length):
+                    points_dict[f"Point{i+1}"] = True if mark_list[i] == '1' else False
+                return points_dict
+            input_str = cut_str
+        else:
+            print("No match found! The input string is:", input_str)
+            mark_list = input(f"The number of teacher marks are {length}.\nThe teacher mark is as follow:\n {teacher_mark}\n\nPlease input the correct list of point(e.g. 01 or 110):")
+            for i in range(length):
+                points_dict[f"Point{i+1}"] = True if mark_list[i] == '1' else False
+            return points_dict
     for match in re.finditer(pattern, input_str):
         point, type_, comment = match.groups()
         points_dict[point] = type_
