@@ -8,7 +8,7 @@ import csv
 import os
 
 directory = ["zeroshot", "oneshot", "fewshot"]
-course = "INT"
+course = "CPT"
 model_name = None
 num_thread = 3
 
