@@ -19,20 +19,20 @@ def build_diction_from_model(input_str, length, teacher_mark):
     pattern = re.compile(r'<(Point\d+)\s*:\w+\s*>\s*\*?(True|False)\*?\s*\n?\(?([^)]*?)\)?')
     original_input_str_list = re.findall(pattern, input_str)
     if len(original_input_str_list) != length:
-        print(f'Found number of matches: {len(original_input_str_list)}, while the number of teacher marks is {length}.')
-        print('Matched list:\n', original_input_str_list)
+        print(f'Found number of matches: {len(original_input_str_list)}, while the number of teacher marks is {length}.\n')
+        print('Input string\'s matched list:\n', original_input_str_list)
         if len(original_input_str_list) > length:
             cut_str = '\n\n'.join(input_str.split('\n\n')[:length])
             if len(re.findall(pattern, cut_str)) != length:
-                print("No match found! The input string is:", input_str)
-                mark_list = input(f"The number of teacher marks are {length}.\nThe teacher mark is as follow:\n {teacher_mark}\n\nPlease input the correct list of point(e.g. 01 or 110):")
+                print("The input string is:\n", input_str, "\n")
+                mark_list = input(f"The teacher mark is as follow:\n {teacher_mark}\n\nPlease input the correct list of point(e.g. 01 or 110):")
                 for i in range(length):
                     points_dict[f"Point{i+1}"] = True if mark_list[i] == '1' else False
                 return points_dict
             input_str = cut_str
         else:
-            print("No match found! The input string is:", input_str)
-            mark_list = input(f"The number of teacher marks are {length}.\nThe teacher mark is as follow:\n {teacher_mark}\n\nPlease input the correct list of point(e.g. 01 or 110):")
+            print("The input string is:\n", input_str, "\n")
+            mark_list = input(f"The teacher mark is as follow:\n {teacher_mark}\n\nPlease input the correct list of point(e.g. 01 or 110):")
             for i in range(length):
                 points_dict[f"Point{i+1}"] = True if mark_list[i] == '1' else False
             return points_dict

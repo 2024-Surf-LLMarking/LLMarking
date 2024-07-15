@@ -95,8 +95,6 @@ def get_response(i, stream = False):
 
     model_name = model_name if not stream else 'streamed_model'
     index_list, results = zip(*results.items())
-    print(f'index_list: {index_list}')
-    print(f"Saving results to results/short/{course}/{directory[i]}/{model_name}.json")
     sorted_results = {index: result for index, result in sorted(zip(index_list, results), key=lambda x: x[0])}
     with open(f'results/short/{course}/{directory[i]}/{model_name}.json', 'w') as file:
         json.dump(sorted_results, file, indent=4)
