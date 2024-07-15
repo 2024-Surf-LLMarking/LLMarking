@@ -1,0 +1,78 @@
+Model Name,Zero-shot,One-shot,Few-shot
+Aya-23-8B,"F1 score:	None
+Precision score: None
+Recall score:	None","F1 score:	0.9090909090909091
+Precision score: 0.8401084010840109
+Recall score:	0.9904153354632588","F1 score:	0.9046242774566474
+Precision score: 0.8258575197889182
+Recall score:	1.0"
+Gemma-1.1-7B,"F1 score:	0.8707692307692307
+Precision score: 0.8397626112759644
+Recall score:	0.9041533546325878","F1 score:	0.8869309838472834
+Precision score: 0.8206521739130435
+Recall score:	0.9648562300319489","F1 score:	0.8924889543446245
+Precision score: 0.8278688524590164
+Recall score:	0.9680511182108626"
+Gemma-2-9B,"F1 score:	None
+Precision score: None
+Recall score:	None","F1 score:	0.9005847953216374
+Precision score: 0.8301886792452831
+Recall score:	0.9840255591054313","F1 score:	0.8693009118541033
+Precision score: 0.8289855072463768
+Recall score:	0.9137380191693291"
+Internlm2-7B,"F1 score:	None
+Precision score: None
+Recall score:	None","F1 score:	0.8670694864048338
+Precision score: 0.8223495702005731
+Recall score:	0.9169329073482428","F1 score:	None
+Precision score: None
+Recall score:	None"
+Llama-3-8B,"F1 score:	0.9035222052067381
+Precision score: 0.8676470588235294
+Recall score:	0.9424920127795527","F1 score:	0.8858447488584474
+Precision score: 0.8459302325581395
+Recall score:	0.9297124600638977","F1 score:	0.890881913303438
+Precision score: 0.8370786516853933
+Recall score:	0.952076677316294"
+Phi3-small,"F1 score:	0.8895522388059701
+Precision score: 0.834733893557423
+Recall score:	0.952076677316294","F1 score:	None
+Precision score: None
+Recall score:	None","F1 score:	0.8369905956112853
+Precision score: 0.8215384615384616
+Recall score:	0.853035143769968"
+Qwen1.5-14B,"F1 score:	0.8403908794788274
+Precision score: 0.8571428571428571
+Recall score:	0.8242811501597445","F1 score:	0.8668730650154799
+Precision score: 0.8408408408408409
+Recall score:	0.8945686900958466","F1 score:	0.8713178294573644
+Precision score: 0.8463855421686747
+Recall score:	0.8977635782747604"
+Qwen1.5-32B,"F1 score:	0.9085631349782293
+Precision score: 0.8324468085106383
+Recall score:	1.0","F1 score:	0.9046242774566474
+Precision score: 0.8258575197889182
+Recall score:	1.0","F1 score:	0.9033189033189033
+Precision score: 0.8236842105263158
+Recall score:	1.0"
+Qwen2-7B,"F1 score:	0.8013816925734024
+Precision score: 0.8721804511278195
+Recall score:	0.7412140575079872","F1 score:	0.8956127080181543
+Precision score: 0.8505747126436781
+Recall score:	0.9456869009584664","F1 score:	0.881559220389805
+Precision score: 0.8305084745762712
+Recall score:	0.939297124600639"
+Yi-1.5-34B,"F1 score:	0.8765822784810127
+Precision score: 0.8683385579937304
+Recall score:	0.8849840255591054","F1 score:	0.8971684053651267
+Precision score: 0.840782122905028
+Recall score:	0.9616613418530351","F1 score:	0.9066666666666666
+Precision score: 0.8453038674033149
+Recall score:	0.9776357827476039"
+Yi-1.5-9B,"F1 score:	None
+Precision score: None
+Recall score:	None","F1 score:	0.9056603773584906
+Precision score: 0.8297872340425532
+Recall score:	0.9968051118210862","F1 score:	0.9026548672566371
+Precision score: 0.8383561643835616
+Recall score:	0.9776357827476039"
