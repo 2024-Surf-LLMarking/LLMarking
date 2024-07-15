@@ -26,7 +26,7 @@ else:
             print(f"Creating results/short/{d} directory...")
             os.makedirs(f'results/short/{d}')
 
-with open(f'data/short/{course}_CSV1.csv', 'r') as file:
+with open(f'data/short/{course}/{course}_CSV1.csv', 'r') as file:
     csv_reader = csv.reader(file)
     header = next(csv_reader)
     rows = list(csv_reader)
