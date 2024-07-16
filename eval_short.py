@@ -1,6 +1,7 @@
 from prompt.prompt_template import prompt_list_v1
 from tqdm import tqdm
 import requests
+import argparse
 import json
 import csv
 import os
@@ -8,8 +9,12 @@ import os
 def clear_lines():
     print("\033[2J")
 
+parser = argparse.ArgumentParser()
+parser.add_argument("--course", "-c", type=str, help="Course name", required=True)
+args = parser.parse_args()
+
 directory = ["zeroshot", "oneshot", "fewshot"]
-course = "CPT"
+course = args.course
 
 global data
 data = None
