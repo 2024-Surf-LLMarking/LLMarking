@@ -1,0 +1,101 @@
+QuestionCode,StudentAns,ManualScore
+FIN001,"In the American market, the main agency problem of listed companies is the conflict of interest between company management and shareholders.In the Chinese market, the main agency problem is the conflict between controlling shareholders and minority shareholders.","4/4 points
+""<Point1:True>,<Point2:True>"""
+FIN001,"Listed companies in the United States mainly have problems between management and shareholders,In the Chinese market is the conflict between senior management and ordinary employees within the company","2/4 points
+""<Point1:True>,<Point2:False>"""
+FIN001,"In the U.S. market, the biggest agency problem involves conflicts between management and shareholders. In the Chinese market, the major agency issue arises from the struggles between controlling shareholders and minority shareholders.","4/4 points
+""<Point1:True>,<Point2:True>"""
+FIN001,"The primary agency problem in the U.S. market is the tension between company executives and shareholders. In China, the main agency issue is the conflict between majority and minority shareholders.","4/4 points
+""<Point1:True>,<Point2:True>"""
+FIN001,"For U.S. listed companies, the main agency problem is the conflict between firm managers and shareholders. In China, it revolves around the conflict between controlling and minority shareholders.","4/4 points
+""<Point1:True>,<Point2:True>"""
+FIN001,"The major agency problem in the U.S. is the clash between company directors and employees. In China, the principal agency problem is the conflict between the government and shareholders.","0/4 points
+""<Point1:False>,<Point2:False>"""
+FIN001,"The main agency problem in the U.S. market is the conflict between the government and shareholders. In China, it is the disagreement between employees and company managers.","0/4 points
+""<Point1:False>,<Point2:False>"""
+FIN001,"The primary agency problem in the U.S. market is the conflict between customers and firm managers. In the Chinese market, the key issue is the tension between suppliers and company executives.","0/4 points
+""<Point1:False>,<Point2:False>"""
+FIN001,"In the U.S. market, the main agency problem involves conflicts between shareholders and employees. In the Chinese market, the major agency issue is the struggle between controlling shareholders and minority shareholders.","2/4 points
+""<Point1:False>,<Point2:True>"""
+FIN001,"The major agency problem for U.S. listed companies is the clash between shareholders and the board of directors. In China, it is the conflict between controlling shareholders and minority stakeholders.","2/4 points
+""<Point1:False>,<Point2:True>"""
+FIN002,"The main reason for the difference in agency problems between the US and China is because in the US, companies often have many shareholders with small amounts of shares each, while in China, there are usually one or more large shareholders who control the company.","2/3 points
+""<Point1:False>,<Point2:True>,<Point3:True>"""
+FIN002,"The agency problems differ because in China, the government plays a significant role in the companies, which affects the decision-making process. In the US, companies operate more independently from government interference.","0/3 points
+""<Point1:False>,<Point2:False>,<Point3:False>"""
+FIN002,"In the US, shareholders are many and widely dispersed, which dilutes individual control. In China, however, many firms have at least a significant shareholder.","2/3 points
+""<Point1:False>,<Point2:True>,<Point3:True>"""
+FIN002,"The difference in agency problems is mostly due to the size of the firms. U.S. firms tend to be larger with more diverse shareholders, whereas Chinese firms are smaller with dominant controlling shareholders.","0/3 points
+""<Point1:False>,<Point2:False>,<Point3:False>"""
+FIN002,"The difference in agency problems arises mainly from different regulatory environments. The U.S. firms face strict regulations, while in China, the regulations are more lenient, allowing for more control by major shareholders.","0/3 points
+""<Point1:False>,<Point2:False>,<Point3:False>"""
+FIN002,"The disparity in agency problems can be attributed to different ownership structures in the U.S. and China. U.S. firms generally have a broad base of shareholders, while Chinese firms typically have one or more controlling shareholders.","3/3 points
+""<Point1:True>,<Point2:True>,<Point3:True>"""
+FIN002,"The difference in agency problems is mainly due to different ownership structures in the two countries. The U.S. listed firms have a dispersed group of shareholders, whereas in China, almost all listed firms have at least one controlling shareholder.","3/3 points
+""<Point1:True>,<Point2:True>,<Point3:True>"""
+FIN002,"The variation in agency problems is primarily due to different market dynamics. The U.S. market is more competitive with a diffused group of shareholders. In contrast, in China, most firms have controlling shareholders due to the government’s influence.","2/3 points
+""<Point1:False>,<Point2:True>,<Point3:True>"""
+FIN002,"The variation in agency problems is primarily due to different financial systems. U.S. firms have a diversified shareholder base because of a well-developed financial market. In contrast, in China, the majority of listed firms are state-owned enterprises with controlling shareholders.","1/3 points
+""<Point1:False>,<Point2:True>,<Point3:False>"""
+FIN002,"The difference in terms of agency problem is mainly due to cultural differences. U.S. listed firms have a more dispersed group of shareholders due to individualistic culture, whereas in China, the collectivist culture leads to the prevalence of controlling shareholders in listed firms.","2/3 points
+""<Point1:False>,<Point2:True>,<Point3:True>"""
+FIN003,"The bond market in China isn't growing quickly due to poor accounting and auditing systems and the lack of reliable bond rating agencies, which makes it difficult for investors to assess risks accurately.","2/4 points
+""<Point1:True>,<Point2:True>,<Point3:False>"""
+FIN003,"China's bond market struggles due to weak creditor protections and inefficient court systems, leading to low recovery rates for bondholders in cases of default, which scares away both domestic and international investors.","2/4 points
+""<Point1:False>,<Point2:False>,<Point3:True>"""
+FIN003,"The slow growth of the bond market in China can be attributed to the absence of robust accounting and auditing systems, as well as the lack of high-quality bond rating agencies. Furthermore, due to low creditor protection and inefficient courts, recovery rates during defaults are low, discouraging investment from both domestic and foreign investors.","4/4 points
+""<Point1:True>,<Point2:True>,<Point3:True>"""
+FIN003,"China's bond market suffers from slow growth mainly because of inadequate accounting and auditing systems and the absence of high-quality bond rating agencies. Moreover, the inefficiency of the court system and low creditor protection result in low recovery rates for bondholders, which deters investment.","4/4 points
+""<Point1:True>,<Point2:True>,<Point3:True>"""
+FIN003,"The bond market in China grows slowly because investors prefer to invest in the stock market, believing that stocks are more profitable than bonds. Also, the government's strict regulations on the bond market limit its development.","0/4 points
+""<Point1:False>,<Point2:False>,<Point3:False>"""
+FIN003,"The bond market in China grows slowly because the government heavily regulates it, which discourages private companies from issuing bonds. Also, the high inflation rate makes bonds unattractive to investors.","0/4 points
+""<Point1:False>,<Point2:False>,<Point3:False>"""
+FIN003,"One reason for the slow growth of the bond market in China is the lack of reliable accounting and auditing systems. Additionally, investors have little confidence in the bond market because the rating agencies are not very good.","2/4 points
+""<Point1:True>,<Point2:True>,<Point3:False>"""
+FIN003,"The slow growth of the bond market in China is due to several factors including poor accounting practices and the absence of good rating agencies. Also, investors don’t invest much because they are not well protected in case of defaults.","2/4 points
+""<Point1:True>,<Point2:True>,<Point3:False>"""
+FIN003,"The slow growth of the bond market in China is due to the lack of sound accounting and auditing systems. Additionally, the market lacks transparency, which makes investors hesitant to invest.","1/4 points
+""<Point1:True>,<Point2:False>,<Point3:False>"""
+FIN003,"The slow development of the bond market in China is due to the lack of high-quality rating agencies, and the frequent economic fluctuations in the country, which reduce investor confidence in the bond market.","1/4 points
+""<Point1:False>,<Point2:True>,<Point3:False>"""
+FIN004,Professional institutions or professionals with rich experience,"2/4 points
+""<Point1:True>,<Point2:False>,<Point3:True>,<Point4:False>"""
+FIN004,SPACs are usually set up by major financial institutions like investment banks and private equity firms due to their expertise in managing large funds and complex transactions.,"2/4 points
+""<Point1:True>,<Point2:True>,<Point3:False>,<Point4:False>"""
+FIN004,"The initial setup of a SPAC typically involves professional institutions such as investment banks and fund companies. Additionally, it may involve professionals with extensive experience in private equity mergers and acquisitions.","4/4 points
+""<Point1:True>,<Point2:True>,<Point3:True>,<Point4:True>"""
+FIN004,"The initial setup of a SPAC generally involves professional institutions such as investment banks and fund companies. Additionally, it includes professionals with rich experience in the field of private equity mergers and acquisitions.","4/4 points
+""<Point1:True>,<Point2:True>,<Point3:True>,<Point4:True>"""
+FIN004,"The initial setup of a SPAC often involves tech startups, venture capitalists, and independent financial advisors who want to diversify their investment portfolios.","0/4 points
+""<Point1:False>,<Point2:False>,<Point3:False>,<Point4:False>"""
+FIN004,"The setup of a SPAC usually includes government agencies, small retail investors, and local business owners who want to expand their operations.","0/4 points
+""<Point1:False>,<Point2:False>,<Point3:False>,<Point4:False>"""
+FIN004,"SPACs are set up by professional institutions and experienced professionals in the financial industry, particularly those familiar with private equity and mergers and acquisitions.","3/4 points
+""<Point1:True>,<Point2:False>,<Point3:True>,<Point4:True>"""
+FIN004,"Investment banks and fund companies are usually involved in creating a SPAC. Additionally, people who have worked in private equity mergers are important, but sometimes consultants are also part of the process.","1/4 points
+""<Point1:False>,<Point2:True>,<Point3:False>,<Point4:False>"""
+FIN004,Companies involved in setting up a SPAC are generally investment banks and sometimes law firms. Professionals with experience in corporate finance also play a role.,"1/4 points
+""<Point1:False>,<Point2:False>,<Point3:True>,<Point4:False>"""
+FIN004,SPACs are typically set up by professional institutions like investment banks and also involve some lawyers and accountants. Professionals with experience in mergers and acquisitions also contribute to the process.,"3/4 points
+""<Point1:True>,<Point2:False>,<Point3:True>,<Point4:True>"""
+FIN005,"The funds raised through a SPAC are primarily used to acquire private companies that show potential for growth and profitability, usually following their initial public offering.","1/2 points
+""<Point1:False>,<Point2:True>"""
+FIN005,The money collected through a SPAC is used to acquire companies that have not yet gone public but are seen as potentially valuable.,"1/2 points
+""<Point1:True>,<Point2:False>"""
+FIN005,The money raised from a SPAC is used to purchase companies that are not yet publicly traded and have growth potential after the IPO.,"2/2 points
+""<Point1:True>,<Point2:True>"""
+FIN005,The raised funds are used to acquire unlisted companies with certain development prospects after the IPO.,"2/2 points
+""<Point1:True>,<Point2:True>"""
+FIN005,"The raised funds are used for acquiring real estate and other physical assets, as well as for paying high salaries to the SPAC management team.","0/2 points
+""<Point1:False>,<Point2:False>"""
+FIN005,The funds raised by the SPAC are used to invest in the stock market and to finance other speculative ventures after the IPO.,"0/2 points
+""<Point1:False>,<Point2:False>"""
+FIN005,The raised funds are primarily used for paying dividends to the initial investors and covering the operational costs of the SPAC.,"0/2 points
+""<Point1:False>,<Point2:False>"""
+FIN005,"The funds raised by a SPAC are used to buy promising companies, and some of the money is also used for marketing and promotional activities after the IPO.","1/2 points
+""<Point1:False>,<Point2:True>"""
+FIN005,"After the IPO, the raised funds are used to acquire private companies with growth potential, and a portion may also be allocated to cover administrative expenses.","1/2 points
+""<Point1:False>,<Point2:True>"""
+FIN005,The funds from the SPAC are used to buy unlisted companies that have good growth prospects,"1/2 points
+""<Point1:True>,<Point2:False>"""
