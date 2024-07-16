@@ -3,14 +3,20 @@ from concurrent.futures import ThreadPoolExecutor
 from tqdm import tqdm
 import threading
 import requests
+import argparse
 import json
 import csv
 import os
 
+parser = argparse.ArgumentParser()
+parser.add_argument("--course", "-c", type=str, help="Course name", required=True)
+parser.add_argument("--thread", "-t", type=int, help="Number of threads", default=10)
+args = parser.parse_args()
+
 directory = ["zeroshot", "oneshot", "fewshot"]
-course = "CPT"
+course = args.course
 model_name = None
-num_thread = 10
+num_thread = args.thread
 
 global data
 data = None
