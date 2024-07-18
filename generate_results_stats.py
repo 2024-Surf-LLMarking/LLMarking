@@ -9,19 +9,17 @@ args = parser.parse_args()
 
 course = args.course
 
-# model_name_list_few = pl.Path(f'results/short/{course}/fewshot').glob('*')
-# model_name_list_few = [i.name.split('.jso')[0] for i in list(model_name_list_few)]
+model_name_list_few = pl.Path(f'results/short/{course}/fewshot').glob('*')
+model_name_list_few = [i.name.split('.jso')[0] for i in list(model_name_list_few)]
 
-# model_name_list_one = pl.Path(f'results/short/{course}/oneshot').glob('*')
-# model_name_list_one = [i.name.split('.jso')[0] for i in list(model_name_list_one)]
+model_name_list_one = pl.Path(f'results/short/{course}/oneshot').glob('*')
+model_name_list_one = [i.name.split('.jso')[0] for i in list(model_name_list_one)]
 
-# model_name_list_zero = pl.Path(f'results/short/{course}/zeroshot').glob('*')
-# model_name_list_zero = [i.name.split('.jso')[0] for i in list(model_name_list_zero)]
+model_name_list_zero = pl.Path(f'results/short/{course}/zeroshot').glob('*')
+model_name_list_zero = [i.name.split('.jso')[0] for i in list(model_name_list_zero)]
 
-# model_name_list = list(set(model_name_list_few) | set(model_name_list_one) | set(model_name_list_zero))
-# model_name_list = sorted(model_name_list)
-
-model_name_list = ["Gemma-2-27B-2"]
+model_name_list = list(set(model_name_list_few) | set(model_name_list_one) | set(model_name_list_zero))
+model_name_list = sorted(model_name_list)
 
 directory = ["zeroshot", "oneshot", "fewshot"]
 
