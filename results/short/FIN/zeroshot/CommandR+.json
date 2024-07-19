@@ -1,0 +1,452 @@
+{
+    "0": {
+        "question_code": "FIN001",
+        "question": "What is the major agency problem for listed companies in the U.S. market and China?",
+        "fullMark": "4",
+        "referenceAnswer": "The major agency problem for listed companies <Point1:2>in the U.S. market is the conflict between firm managers and shareholders<Point1:2>. The major agency problem <Point2:2>in the Chinese market is the conflict between controlling and minority shareholders<Point2:2>.",
+        "studentAnswer": "In the American market, the main agency problem of listed companies is the conflict of interest between company management and shareholders.In the Chinese market, the main agency problem is the conflict between controlling shareholders and minority shareholders.",
+        "teacherMark": "<Point1:True>,<Point2:True>",
+        "feedback": "<Point1:2> *True* (The student correctly identified the major agency problem in the U.S. market as the conflict between firm managers and shareholders. They provided a clear and concise answer, demonstrating a good understanding of the concept.)\n\n<Point2:2> *True* (The student's answer for the Chinese market is also correct and aligns with the reference answer. They identified the conflict between controlling and minority shareholders as the major agency problem, showing a comprehensive grasp of the topic.)"
+    },
+    "1": {
+        "question_code": "FIN001",
+        "question": "What is the major agency problem for listed companies in the U.S. market and China?",
+        "fullMark": "4",
+        "referenceAnswer": "The major agency problem for listed companies <Point1:2>in the U.S. market is the conflict between firm managers and shareholders<Point1:2>. The major agency problem <Point2:2>in the Chinese market is the conflict between controlling and minority shareholders<Point2:2>.",
+        "studentAnswer": "Listed companies in the United States mainly have problems between management and shareholders,In the Chinese market is the conflict between senior management and ordinary employees within the company",
+        "teacherMark": "<Point1:True>,<Point2:False>",
+        "feedback": "<Point1:2> *True* (The student correctly identified the agency problem in the U.S. market as the conflict between firm managers and shareholders, which is the key issue in the U.S. context.)\n\n<Point2:2> *False* (The student's answer partially addresses the agency problem in the Chinese market but is not entirely accurate. The main conflict in China is between controlling shareholders, who often have significant influence over the company, and minority shareholders, who may have less power. The student's mention of \"senior management and ordinary employees\" is not the primary agency problem in this context.)"
+    },
+    "2": {
+        "question_code": "FIN001",
+        "question": "What is the major agency problem for listed companies in the U.S. market and China?",
+        "fullMark": "4",
+        "referenceAnswer": "The major agency problem for listed companies <Point1:2>in the U.S. market is the conflict between firm managers and shareholders<Point1:2>. The major agency problem <Point2:2>in the Chinese market is the conflict between controlling and minority shareholders<Point2:2>.",
+        "studentAnswer": "In the U.S. market, the biggest agency problem involves conflicts between management and shareholders. In the Chinese market, the major agency issue arises from the struggles between controlling shareholders and minority shareholders.",
+        "teacherMark": "<Point1:True>,<Point2:True>",
+        "feedback": "<Point1:2> *True* (The student correctly identified the major agency problem in the U.S. market as conflicts between firm managers and shareholders.)\n\n<Point2:2> *True* (The student accurately described the primary agency challenge in the Chinese market, which is the conflict between controlling and minority shareholders.)"
+    },
+    "3": {
+        "question_code": "FIN001",
+        "question": "What is the major agency problem for listed companies in the U.S. market and China?",
+        "fullMark": "4",
+        "referenceAnswer": "The major agency problem for listed companies <Point1:2>in the U.S. market is the conflict between firm managers and shareholders<Point1:2>. The major agency problem <Point2:2>in the Chinese market is the conflict between controlling and minority shareholders<Point2:2>.",
+        "studentAnswer": "The primary agency problem in the U.S. market is the tension between company executives and shareholders. In China, the main agency issue is the conflict between majority and minority shareholders.",
+        "teacherMark": "<Point1:True>,<Point2:True>",
+        "feedback": "<Point1:2> *True* (The student correctly identified the major agency problem in the U.S. market as the conflict between firm managers and shareholders.)\n\n<Point2:2> *True* (The student's answer accurately captures the agency problem in the Chinese market, which is indeed the conflict between controlling and minority shareholders.)"
+    },
+    "4": {
+        "question_code": "FIN001",
+        "question": "What is the major agency problem for listed companies in the U.S. market and China?",
+        "fullMark": "4",
+        "referenceAnswer": "The major agency problem for listed companies <Point1:2>in the U.S. market is the conflict between firm managers and shareholders<Point1:2>. The major agency problem <Point2:2>in the Chinese market is the conflict between controlling and minority shareholders<Point2:2>.",
+        "studentAnswer": "For U.S. listed companies, the main agency problem is the conflict between firm managers and shareholders. In China, it revolves around the conflict between controlling and minority shareholders.",
+        "teacherMark": "<Point1:True>,<Point2:True>",
+        "feedback": "<Point1:2> *True* (The student correctly identified the major agency problem in the U.S. market as the conflict between firm managers and shareholders.)\n\n<Point2:2> *True* (The student also accurately stated the major agency problem in the Chinese market, which is the conflict between controlling and minority shareholders.)"
+    },
+    "5": {
+        "question_code": "FIN001",
+        "question": "What is the major agency problem for listed companies in the U.S. market and China?",
+        "fullMark": "4",
+        "referenceAnswer": "The major agency problem for listed companies <Point1:2>in the U.S. market is the conflict between firm managers and shareholders<Point1:2>. The major agency problem <Point2:2>in the Chinese market is the conflict between controlling and minority shareholders<Point2:2>.",
+        "studentAnswer": "The major agency problem in the U.S. is the clash between company directors and employees. In China, the principal agency problem is the conflict between the government and shareholders.",
+        "teacherMark": "<Point1:False>,<Point2:False>",
+        "feedback": "<Point1:2> *False* (The student has identified the agency problem in the U.S. as a clash between company directors and employees, which is not accurate. The correct issue is the conflict between firm managers and shareholders, representing a misapplication or misunderstanding of the concept.)\n\n<Point2:2> *False* (The student's answer for China is also incorrect, as the primary conflict in the Chinese market is between controlling and minority shareholders, not between the government and shareholders. This response indicates a misunderstanding of the specific context of agency issues in China.)"
+    },
+    "6": {
+        "question_code": "FIN001",
+        "question": "What is the major agency problem for listed companies in the U.S. market and China?",
+        "fullMark": "4",
+        "referenceAnswer": "The major agency problem for listed companies <Point1:2>in the U.S. market is the conflict between firm managers and shareholders<Point1:2>. The major agency problem <Point2:2>in the Chinese market is the conflict between controlling and minority shareholders<Point2:2>.",
+        "studentAnswer": "The main agency problem in the U.S. market is the conflict between the government and shareholders. In China, it is the disagreement between employees and company managers.",
+        "teacherMark": "<Point1:False>,<Point2:False>",
+        "feedback": "<Point1:2> *False* The student's answer does not identify the conflict between firm managers and shareholders as the major agency problem in the U.S. market. \n\n<Point2:2> *False* The student's answer incorrectly identifies the conflict in the Chinese market as between employees and company managers, rather than between controlling and minority shareholders."
+    },
+    "7": {
+        "question_code": "FIN001",
+        "question": "What is the major agency problem for listed companies in the U.S. market and China?",
+        "fullMark": "4",
+        "referenceAnswer": "The major agency problem for listed companies <Point1:2>in the U.S. market is the conflict between firm managers and shareholders<Point1:2>. The major agency problem <Point2:2>in the Chinese market is the conflict between controlling and minority shareholders<Point2:2>.",
+        "studentAnswer": "The primary agency problem in the U.S. market is the conflict between customers and firm managers. In the Chinese market, the key issue is the tension between suppliers and company executives.",
+        "teacherMark": "<Point1:False>,<Point2:False>",
+        "feedback": "<Point1:2> *False* The student's answer does not identify the conflict between firm managers and shareholders as the major agency problem in the U.S. market. \n\n<Point2:2> *False* The student's response does not accurately describe the agency problem in the Chinese market, which is specifically about the conflict between controlling and minority shareholders, rather than a general tension between suppliers and company executives."
+    },
+    "8": {
+        "question_code": "FIN001",
+        "question": "What is the major agency problem for listed companies in the U.S. market and China?",
+        "fullMark": "4",
+        "referenceAnswer": "The major agency problem for listed companies <Point1:2>in the U.S. market is the conflict between firm managers and shareholders<Point1:2>. The major agency problem <Point2:2>in the Chinese market is the conflict between controlling and minority shareholders<Point2:2>.",
+        "studentAnswer": "In the U.S. market, the main agency problem involves conflicts between shareholders and employees. In the Chinese market, the major agency issue is the struggle between controlling shareholders and minority shareholders.",
+        "teacherMark": "<Point1:False>,<Point2:True>",
+        "feedback": "<Point1:2> *False* (The student's answer is not entirely accurate. While it is correct that the U.S. market faces agency issues due to conflicts between shareholders and employees, the primary agency problem is specifically between firm managers and shareholders, as stated in the reference answer.)\n\n<Point2:2> *True* (The student's answer accurately identifies the major agency problem in the Chinese market, which is indeed the conflict between controlling and minority shareholders.)"
+    },
+    "9": {
+        "question_code": "FIN001",
+        "question": "What is the major agency problem for listed companies in the U.S. market and China?",
+        "fullMark": "4",
+        "referenceAnswer": "The major agency problem for listed companies <Point1:2>in the U.S. market is the conflict between firm managers and shareholders<Point1:2>. The major agency problem <Point2:2>in the Chinese market is the conflict between controlling and minority shareholders<Point2:2>.",
+        "studentAnswer": "The major agency problem for U.S. listed companies is the clash between shareholders and the board of directors. In China, it is the conflict between controlling shareholders and minority stakeholders.",
+        "teacherMark": "<Point1:False>,<Point2:True>",
+        "feedback": "<Point1:2> *False* (The student's answer does not specifically mention \"firm managers\", which is the key distinction in the U.S. market according to the reference answer. However, the student's mention of the \"board of directors\" still accurately captures a similar conflict between shareholders and those managing the company.)\n\n<Point2:2> *True* (The student's answer accurately identifies the conflict between controlling and minority shareholders in the Chinese market, which aligns with the reference answer.)"
+    },
+    "10": {
+        "question_code": "FIN002",
+        "question": "What explains the difference in agency problems in the US and China?",
+        "fullMark": "3",
+        "referenceAnswer": "The difference in terms of agency problem mainly due to <Point1:1>different ownership structures <Point1:1> in the two countries. <Point2:1>The U.S. listed firms have a diffused group of shareholders<Point2:1>. <Point3:1>China almost all listed firms have at least one controlling shareholders<Point3:1>.",
+        "studentAnswer": "The main reason for the difference in agency problems between the US and China is because in the US, companies often have many shareholders with small amounts of shares each, while in China, there are usually one or more large shareholders who control the company.",
+        "teacherMark": "<Point1:False>,<Point2:True>,<Point3:True>",
+        "feedback": "<Point1:1> *True* (The student correctly identifies the difference in ownership structures between the US and China, highlighting the diffusion of shareholders in US firms compared to the concentrated control by large shareholders in Chinese firms.)\n\n<Point2:1> *True* (The student provides an accurate description of the US firm's ownership structure, which aligns with the reference answer.)\n\n<Point3:1> *True* (The student's answer effectively conveys the key aspect of Chinese firm ownership, which is the presence of controlling shareholders, as mentioned in the reference answer.)"
+    },
+    "11": {
+        "question_code": "FIN002",
+        "question": "What explains the difference in agency problems in the US and China?",
+        "fullMark": "3",
+        "referenceAnswer": "The difference in terms of agency problem mainly due to <Point1:1>different ownership structures <Point1:1> in the two countries. <Point2:1>The U.S. listed firms have a diffused group of shareholders<Point2:1>. <Point3:1>China almost all listed firms have at least one controlling shareholders<Point3:1>.",
+        "studentAnswer": "The agency problems differ because in China, the government plays a significant role in the companies, which affects the decision-making process. In the US, companies operate more independently from government interference.",
+        "teacherMark": "<Point1:False>,<Point2:False>,<Point3:False>",
+        "feedback": "Point1:1 *False* (The student's answer does not mention the ownership structure difference, which is the key factor leading to agency problems. Instead, they focus on the government's involvement, which is not the main point here.)\n\nPoint2:1 *False* (The student's answer does not address the diffuse group of shareholders characteristic of US firms. This is an important distinction that should have been included in their response.)\n\nPoint3:1 *False* (While the student's answer hints at the idea of control, they do not explicitly mention the presence of controlling shareholders in Chinese firms, which is a crucial aspect of the reference answer.)"
+    },
+    "12": {
+        "question_code": "FIN002",
+        "question": "What explains the difference in agency problems in the US and China?",
+        "fullMark": "3",
+        "referenceAnswer": "The difference in terms of agency problem mainly due to <Point1:1>different ownership structures <Point1:1> in the two countries. <Point2:1>The U.S. listed firms have a diffused group of shareholders<Point2:1>. <Point3:1>China almost all listed firms have at least one controlling shareholders<Point3:1>.",
+        "studentAnswer": "In the US, shareholders are many and widely dispersed, which dilutes individual control. In China, however, many firms have at least a significant shareholder.",
+        "teacherMark": "<Point1:False>,<Point2:True>,<Point3:True>",
+        "feedback": "<Point1:1> *True* (The student's answer correctly identifies the key difference in ownership structures between the US and China, highlighting the diffusion of shareholders in US firms and the concentration of control in China through significant shareholders.)\n\n<Point2:1> *True* (The student provides a succinct and accurate description of the agency problem in the US, capturing the key aspect of diffused ownership and its impact on control.)\n\n<Point3:1> *True* (The student's answer effectively summarizes the agency issue in China, pinpointing the presence of significant shareholders and their influence over firm control, which aligns with the reference answer.)"
+    },
+    "13": {
+        "question_code": "FIN002",
+        "question": "What explains the difference in agency problems in the US and China?",
+        "fullMark": "3",
+        "referenceAnswer": "The difference in terms of agency problem mainly due to <Point1:1>different ownership structures <Point1:1> in the two countries. <Point2:1>The U.S. listed firms have a diffused group of shareholders<Point2:1>. <Point3:1>China almost all listed firms have at least one controlling shareholders<Point3:1>.",
+        "studentAnswer": "The difference in agency problems is mostly due to the size of the firms. U.S. firms tend to be larger with more diverse shareholders, whereas Chinese firms are smaller with dominant controlling shareholders.",
+        "teacherMark": "<Point1:False>,<Point2:False>,<Point3:False>",
+        "feedback": "Point1:1 *False* (The student's answer does not mention the term \"ownership structures\", which is the key phrase in this point. The student instead focuses on the size of the firms and the diversity of shareholders, which are related concepts but not the same as ownership structures.)\n\nPoint2:1 *True* (The student correctly identifies that U.S. firms have a diffuse group of shareholders, which is consistent with the reference answer.)\n\nPoint3:1 *True* (The student's answer accurately captures the essence of this point by mentioning that Chinese firms have dominant controlling shareholders. This is consistent with the reference answer's description of \"controlling shareholders.\")"
+    },
+    "14": {
+        "question_code": "FIN002",
+        "question": "What explains the difference in agency problems in the US and China?",
+        "fullMark": "3",
+        "referenceAnswer": "The difference in terms of agency problem mainly due to <Point1:1>different ownership structures <Point1:1> in the two countries. <Point2:1>The U.S. listed firms have a diffused group of shareholders<Point2:1>. <Point3:1>China almost all listed firms have at least one controlling shareholders<Point3:1>.",
+        "studentAnswer": "The difference in agency problems arises mainly from different regulatory environments. The U.S. firms face strict regulations, while in China, the regulations are more lenient, allowing for more control by major shareholders.",
+        "teacherMark": "<Point1:False>,<Point2:False>,<Point3:False>",
+        "feedback": "<Point1:1> *False* (The student's answer does not mention the ownership structure difference, which is the key factor leading to agency problems. Instead, they focused on the regulatory environment, which is not the main factor highlighted in the reference answer.)\n\n<Point2:1> *True* (The student correctly identifies that US firms have a diffused group of shareholders, which is a key characteristic of their regulatory environment and contributes to the agency problem.)\n\n<Point3:1> *False* (While the student mentions major shareholders having more control in China, they do not explicitly state that Chinese firms have controlling shareholders, which is a critical distinction from the US firms' structure and a key factor in the agency problem.)"
+    },
+    "15": {
+        "question_code": "FIN002",
+        "question": "What explains the difference in agency problems in the US and China?",
+        "fullMark": "3",
+        "referenceAnswer": "The difference in terms of agency problem mainly due to <Point1:1>different ownership structures <Point1:1> in the two countries. <Point2:1>The U.S. listed firms have a diffused group of shareholders<Point2:1>. <Point3:1>China almost all listed firms have at least one controlling shareholders<Point3:1>.",
+        "studentAnswer": "The disparity in agency problems can be attributed to different ownership structures in the U.S. and China. U.S. firms generally have a broad base of shareholders, while Chinese firms typically have one or more controlling shareholders.",
+        "teacherMark": "<Point1:True>,<Point2:True>,<Point3:True>",
+        "feedback": "<Point1:1> *True* (The student correctly identifies the difference in ownership structures between the US and China, which is the primary factor leading to agency problems. They also accurately describe the nature of ownership in both countries, demonstrating a good understanding of the concept.)\n\n<Point2:1> *True* (The student's answer effectively conveys the point about the diffuse group of shareholders in US firms, which is the key characteristic of US ownership structure leading to agency problems. The student provides a clear and concise explanation.)\n\n<Point3:1> *True* (The student accurately describes the presence of controlling shareholders in Chinese firms, which is the main distinction from US ownership structure. This point is well-articulated and aligns with the reference answer.)"
+    },
+    "16": {
+        "question_code": "FIN002",
+        "question": "What explains the difference in agency problems in the US and China?",
+        "fullMark": "3",
+        "referenceAnswer": "The difference in terms of agency problem mainly due to <Point1:1>different ownership structures <Point1:1> in the two countries. <Point2:1>The U.S. listed firms have a diffused group of shareholders<Point2:1>. <Point3:1>China almost all listed firms have at least one controlling shareholders<Point3:1>.",
+        "studentAnswer": "The difference in agency problems is mainly due to different ownership structures in the two countries. The U.S. listed firms have a dispersed group of shareholders, whereas in China, almost all listed firms have at least one controlling shareholder.",
+        "teacherMark": "<Point1:True>,<Point2:True>,<Point3:True>",
+        "feedback": "<Point1:1> *True* (The student correctly identifies the difference in ownership structures between the US and China, highlighting the dispersed nature of shareholders in US firms and the concentration of control in Chinese firms.)\n\n<Point2:1> *True* (The student accurately describes the shareholder composition of US firms, which is a key aspect of the agency problem discussion.)\n\n<Point3:1> *True* (The student's answer precisely captures the contrast in China, where listed firms are characterized by the presence of controlling shareholders. This understanding is essential to the context of agency problems.)"
+    },
+    "17": {
+        "question_code": "FIN002",
+        "question": "What explains the difference in agency problems in the US and China?",
+        "fullMark": "3",
+        "referenceAnswer": "The difference in terms of agency problem mainly due to <Point1:1>different ownership structures <Point1:1> in the two countries. <Point2:1>The U.S. listed firms have a diffused group of shareholders<Point2:1>. <Point3:1>China almost all listed firms have at least one controlling shareholders<Point3:1>.",
+        "studentAnswer": "The variation in agency problems is primarily due to different market dynamics. The U.S. market is more competitive with a diffused group of shareholders. In contrast, in China, most firms have controlling shareholders due to the government\u2019s influence.",
+        "teacherMark": "<Point1:False>,<Point2:True>,<Point3:True>",
+        "feedback": "<Point1:1> *True* (The student correctly identifies that the difference in agency problems is due to different ownership structures, which is the key point.)\n\n<Point2:1> *True* (The student's answer mentions that the U.S. market has a \"diffused group of shareholders\", which is consistent with the reference answer.)\n\n<Point3:1> *True* (The student identifies that China's firms have controlling shareholders, which aligns with the reference.)"
+    },
+    "18": {
+        "question_code": "FIN002",
+        "question": "What explains the difference in agency problems in the US and China?",
+        "fullMark": "3",
+        "referenceAnswer": "The difference in terms of agency problem mainly due to <Point1:1>different ownership structures <Point1:1> in the two countries. <Point2:1>The U.S. listed firms have a diffused group of shareholders<Point2:1>. <Point3:1>China almost all listed firms have at least one controlling shareholders<Point3:1>.",
+        "studentAnswer": "The variation in agency problems is primarily due to different financial systems. U.S. firms have a diversified shareholder base because of a well-developed financial market. In contrast, in China, the majority of listed firms are state-owned enterprises with controlling shareholders.",
+        "teacherMark": "<Point1:False>,<Point2:True>,<Point3:False>",
+        "feedback": "<Point1:1> *True* (The student correctly identifies that the difference in agency problems is due to different ownership structures, which is the key point.)\n\n<Point2:1> *True* (The student's answer mentions that U.S. firms have a \"diversified shareholder base\", which is consistent with the reference answer's description of a \"diffused group of shareholders\".)\n\n<Point3:1> *True* (The student points out that Chinese listed firms have \"controlling shareholders\", which is the same as the reference answer.)"
+    },
+    "19": {
+        "question_code": "FIN002",
+        "question": "What explains the difference in agency problems in the US and China?",
+        "fullMark": "3",
+        "referenceAnswer": "The difference in terms of agency problem mainly due to <Point1:1>different ownership structures <Point1:1> in the two countries. <Point2:1>The U.S. listed firms have a diffused group of shareholders<Point2:1>. <Point3:1>China almost all listed firms have at least one controlling shareholders<Point3:1>.",
+        "studentAnswer": "The difference in terms of agency problem is mainly due to cultural differences. U.S. listed firms have a more dispersed group of shareholders due to individualistic culture, whereas in China, the collectivist culture leads to the prevalence of controlling shareholders in listed firms.",
+        "teacherMark": "<Point1:False>,<Point2:True>,<Point3:True>",
+        "feedback": "<Point1:1> *True* (The student's answer touches on the key difference in ownership structures, which is the essence of the reference answer. They correctly identify the cultural underpinnings that lead to these differences, which is a valid extension of the core concept.)\n\n<Point2:1> *False* (The student does not explicitly mention that U.S. firms have a \"diffused group of shareholders,\" instead using the term \"dispersed,\" which is not an exact match but conveys a similar meaning. However, the overall concept is correctly conveyed.)\n\n<Point3:1> *False* (The student's answer does not directly state that \"China almost all listed firms have at least one controlling shareholder.\" Instead, they refer to the \"prevalence of controlling shareholders\" without specifying the extent. This is a partial but not complete fulfillment of the point.)"
+    },
+    "20": {
+        "question_code": "FIN003",
+        "question": "Why is there a relatively slow growth of the bond market in China?",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:1>lack of sound accounting and auditing systems<Point1:1> and <Point2:1>lack of high-quality bond rating agencies<Point2:1>. <Point3:2>Given the low creditor protection and court inefficiency in China, the recovery rates for bondholders during default are low, which in turn leads to underinvestment in the market by domestic and foreign investors<Point3:2>.\n",
+        "studentAnswer": "The bond market in China isn't growing quickly due to poor accounting and auditing systems and the lack of reliable bond rating agencies, which makes it difficult for investors to assess risks accurately.",
+        "teacherMark": "<Point1:True>,<Point2:True>,<Point3:False>",
+        "feedback": "<Point1:1> *True* (The student correctly identified the lack of sound accounting and auditing systems as a factor hindering the growth of China's bond market.)\n\n<Point2:1> *True* (The student also accurately mentioned the absence of reliable bond rating agencies, which is essential for investors to make informed decisions.)\n\n<Point3:2> *True* (The student provided a similar reason, stating that the difficulties in assessing risks accurately lead to underinvestment in the market, which aligns with the reference answer's point about low creditor protection and court inefficiency leading to low recovery rates for bondholders during default.)\n"
+    },
+    "21": {
+        "question_code": "FIN003",
+        "question": "Why is there a relatively slow growth of the bond market in China?",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:1>lack of sound accounting and auditing systems<Point1:1> and <Point2:1>lack of high-quality bond rating agencies<Point2:1>. <Point3:2>Given the low creditor protection and court inefficiency in China, the recovery rates for bondholders during default are low, which in turn leads to underinvestment in the market by domestic and foreign investors<Point3:2>.\n",
+        "studentAnswer": "China's bond market struggles due to weak creditor protections and inefficient court systems, leading to low recovery rates for bondholders in cases of default, which scares away both domestic and international investors.",
+        "teacherMark": "<Point1:False>,<Point2:False>,<Point3:True>",
+        "feedback": "<Point1:1> *True* (The student correctly identifies the lack of sound accounting and auditing systems as a factor contributing to the slow growth of the bond market in China. They also highlight the issue of weak creditor protections, which is in line with the reference answer.)\n\n<Point2:1> *True* (The student's answer addresses the lack of high-quality bond rating agencies, which is one of the key issues mentioned in the reference answer.)\n\n<Point3:2> *True* (The student provides a clear and concise explanation of the impact of low recovery rates during default, which aligns with the reference answer. They mention that this leads to underinvestment in the market by domestic and foreign investors, demonstrating a good understanding of the issue.)"
+    },
+    "22": {
+        "question_code": "FIN003",
+        "question": "Why is there a relatively slow growth of the bond market in China?",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:1>lack of sound accounting and auditing systems<Point1:1> and <Point2:1>lack of high-quality bond rating agencies<Point2:1>. <Point3:2>Given the low creditor protection and court inefficiency in China, the recovery rates for bondholders during default are low, which in turn leads to underinvestment in the market by domestic and foreign investors<Point3:2>.\n",
+        "studentAnswer": "The slow growth of the bond market in China can be attributed to the absence of robust accounting and auditing systems, as well as the lack of high-quality bond rating agencies. Furthermore, due to low creditor protection and inefficient courts, recovery rates during defaults are low, discouraging investment from both domestic and foreign investors.",
+        "teacherMark": "<Point1:True>,<Point2:True>,<Point3:True>",
+        "feedback": "<Point1:1> *True* (The student correctly identified the lack of sound accounting and auditing systems as a factor contributing to the slow growth of the bond market in China.)\n\n<Point2:1> *True* (The student accurately mentioned the absence of high-quality bond rating agencies as another factor hindering the development of the bond market.)\n\n<Point3:2> *True* (The student provided a clear and accurate explanation of the impact of low creditor protection and court inefficiency on recovery rates during defaults, which discourages investment and leads to slow market growth. This explanation aligns with the reference answer.)"
+    },
+    "23": {
+        "question_code": "FIN003",
+        "question": "Why is there a relatively slow growth of the bond market in China?",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:1>lack of sound accounting and auditing systems<Point1:1> and <Point2:1>lack of high-quality bond rating agencies<Point2:1>. <Point3:2>Given the low creditor protection and court inefficiency in China, the recovery rates for bondholders during default are low, which in turn leads to underinvestment in the market by domestic and foreign investors<Point3:2>.\n",
+        "studentAnswer": "China's bond market suffers from slow growth mainly because of inadequate accounting and auditing systems and the absence of high-quality bond rating agencies. Moreover, the inefficiency of the court system and low creditor protection result in low recovery rates for bondholders, which deters investment.",
+        "teacherMark": "<Point1:True>,<Point2:True>,<Point3:True>",
+        "feedback": "<Point1:1> *True* (The student correctly identified the lack of sound accounting and auditing systems as a factor contributing to the slow growth of the bond market in China.)\n\n<Point2:1> *True* (The student accurately mentioned the absence of high-quality bond rating agencies as another factor hindering the development of the bond market.)\n\n<Point3:2> *True* (The student provided a clear and accurate explanation of how low creditor protection and court inefficiency lead to low recovery rates for bondholders, which in turn discourages investment in the market. This explanation aligns with the reference answer and demonstrates a good understanding of the topic.)\n\nOverall, the student's answer fully addresses all the key points raised in the reference answer and provides a concise and insightful analysis of the factors contributing to the slow growth of the bond market in China."
+    },
+    "24": {
+        "question_code": "FIN003",
+        "question": "Why is there a relatively slow growth of the bond market in China?",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:1>lack of sound accounting and auditing systems<Point1:1> and <Point2:1>lack of high-quality bond rating agencies<Point2:1>. <Point3:2>Given the low creditor protection and court inefficiency in China, the recovery rates for bondholders during default are low, which in turn leads to underinvestment in the market by domestic and foreign investors<Point3:2>.\n",
+        "studentAnswer": "The bond market in China grows slowly because investors prefer to invest in the stock market, believing that stocks are more profitable than bonds. Also, the government's strict regulations on the bond market limit its development.",
+        "teacherMark": "<Point1:False>,<Point2:False>,<Point3:False>",
+        "feedback": "<Point1:1> *False* (The student's answer does not mention the lack of sound accounting and auditing systems or the absence of high-quality bond rating agencies, which are key factors contributing to the slow growth of the bond market in China, as outlined in the reference answer.)\n\n<Point2:1> *False* (Similar to Point 1, the student's response does not address the issue of low-quality bond rating agencies, which is a critical factor in the reference answer.)\n\n<Point3:2> *True* (The student's answer touches on the impact of government regulations, which is related to the reference answer's point about low creditor protection and court inefficiency. The student identifies that strict government regulations on the bond market limit its development, which can be seen as a factor influencing recovery rates during default and, consequently, investment decisions by domestic and foreign investors.)"
+    },
+    "25": {
+        "question_code": "FIN003",
+        "question": "Why is there a relatively slow growth of the bond market in China?",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:1>lack of sound accounting and auditing systems<Point1:1> and <Point2:1>lack of high-quality bond rating agencies<Point2:1>. <Point3:2>Given the low creditor protection and court inefficiency in China, the recovery rates for bondholders during default are low, which in turn leads to underinvestment in the market by domestic and foreign investors<Point3:2>.\n",
+        "studentAnswer": "The bond market in China grows slowly because the government heavily regulates it, which discourages private companies from issuing bonds. Also, the high inflation rate makes bonds unattractive to investors.",
+        "teacherMark": "<Point1:False>,<Point2:False>,<Point3:False>",
+        "feedback": "<Point1:1> *False* (The student's answer does not mention the lack of sound accounting and auditing systems or the absence of high-quality bond rating agencies, which are key factors contributing to the slow growth of China's bond market.)\n\n<Point2:1> *False* (While government regulation and inflation rates can impact the bond market, the student's answer does not directly address the lack of high-quality bond rating agencies in China, which is a critical factor in the reference answer.)\n\n<Point3:2> *True* (The student's answer touches on a similar point by mentioning that the high inflation rate makes bonds unattractive to investors, which aligns with the reference answer's point about low investor participation due to low creditor protection and court inefficiency.)"
+    },
+    "26": {
+        "question_code": "FIN003",
+        "question": "Why is there a relatively slow growth of the bond market in China?",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:1>lack of sound accounting and auditing systems<Point1:1> and <Point2:1>lack of high-quality bond rating agencies<Point2:1>. <Point3:2>Given the low creditor protection and court inefficiency in China, the recovery rates for bondholders during default are low, which in turn leads to underinvestment in the market by domestic and foreign investors<Point3:2>.\n",
+        "studentAnswer": "One reason for the slow growth of the bond market in China is the lack of reliable accounting and auditing systems. Additionally, investors have little confidence in the bond market because the rating agencies are not very good.",
+        "teacherMark": "<Point1:True>,<Point2:True>,<Point3:False>",
+        "feedback": "<Point1:1> *True* (The student correctly identified the lack of sound accounting and auditing systems as one of the reasons for the slow growth of the bond market in China.)\n\n<Point2:1> *True* (The student identified the issue with bond rating agencies, which is in line with the reference answer.)\n\n<Point3:2> *True* (The student's answer touches on the low confidence investors have in the market due to the issues mentioned, which aligns with the reference answer's point about underinvestment by domestic and foreign investors.)"
+    },
+    "27": {
+        "question_code": "FIN003",
+        "question": "Why is there a relatively slow growth of the bond market in China?",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:1>lack of sound accounting and auditing systems<Point1:1> and <Point2:1>lack of high-quality bond rating agencies<Point2:1>. <Point3:2>Given the low creditor protection and court inefficiency in China, the recovery rates for bondholders during default are low, which in turn leads to underinvestment in the market by domestic and foreign investors<Point3:2>.\n",
+        "studentAnswer": "The slow growth of the bond market in China is due to several factors including poor accounting practices and the absence of good rating agencies. Also, investors don\u2019t invest much because they are not well protected in case of defaults.",
+        "teacherMark": "<Point1:True>,<Point2:True>,<Point3:False>",
+        "feedback": "<Point1:1> *True* (The student correctly identifies the lack of sound accounting practices and the absence of good rating agencies as factors contributing to the slow growth of the bond market in China, which aligns with the reference answer.)\n\n<Point2:1> *True* (The student's mention of \"poor accounting practices\" and \"absence of good rating agencies\" effectively conveys the lack of high-quality bond rating agencies, as described in the reference answer.)\n\n<Point3:2> *True* (The student accurately explains that investors are hesitant to invest due to low creditor protection and the potential for low recovery rates during defaults, which aligns with the reference answer's description of court inefficiency and its impact on investment decisions.)"
+    },
+    "28": {
+        "question_code": "FIN003",
+        "question": "Why is there a relatively slow growth of the bond market in China?",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:1>lack of sound accounting and auditing systems<Point1:1> and <Point2:1>lack of high-quality bond rating agencies<Point2:1>. <Point3:2>Given the low creditor protection and court inefficiency in China, the recovery rates for bondholders during default are low, which in turn leads to underinvestment in the market by domestic and foreign investors<Point3:2>.\n",
+        "studentAnswer": "The slow growth of the bond market in China is due to the lack of sound accounting and auditing systems. Additionally, the market lacks transparency, which makes investors hesitant to invest.",
+        "teacherMark": "<Point1:True>,<Point2:False>,<Point3:False>",
+        "feedback": "<Point1:1> *True* (The student correctly identified the lack of sound accounting and auditing systems as one of the reasons for the slow growth of the bond market in China.)\n\n<Point2:1> *False* (The student did not mention the absence of high-quality bond rating agencies as a specific factor contributing to the slow growth.)\n\n<Point3:2> *True* (The student touched on the essence of this point by referring to the market's lack of transparency, which aligns with the reference answer's mention of low creditor protection and court inefficiency, all of which would make investors hesitant to invest.)\n"
+    },
+    "29": {
+        "question_code": "FIN003",
+        "question": "Why is there a relatively slow growth of the bond market in China?",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:1>lack of sound accounting and auditing systems<Point1:1> and <Point2:1>lack of high-quality bond rating agencies<Point2:1>. <Point3:2>Given the low creditor protection and court inefficiency in China, the recovery rates for bondholders during default are low, which in turn leads to underinvestment in the market by domestic and foreign investors<Point3:2>.\n",
+        "studentAnswer": "The slow development of the bond market in China is due to the lack of high-quality rating agencies, and the frequent economic fluctuations in the country, which reduce investor confidence in the bond market.",
+        "teacherMark": "<Point1:False>,<Point2:True>,<Point3:False>",
+        "feedback": "<Point1:1> *False* (The student's answer does not mention the lack of sound accounting and auditing systems, which is a key factor contributing to the slow growth of the bond market in China as mentioned in the reference answer.)\n\n<Point2:1> *True* (The student identifies the lack of high-quality bond rating agencies, which aligns with the reference answer and is an important factor affecting investor confidence.)\n\n<Point3:2> *True* (The student's answer touches on the aspect of reduced investor confidence, which is a result of frequent economic fluctuations. This indirectly addresses the low creditor protection and court inefficiency mentioned in the reference answer, leading to low recovery rates for bondholders during default.)"
+    },
+    "30": {
+        "question_code": "FIN004",
+        "question": "What kind of companies or persons are generally involved in the initial setup of the special purpose acquisition company (SPAC)?",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:1>professional institutions<Point1:1> <Point2:1>such as investment banks, fund companies<Point2:1>, or <Point3:1>professionals<Point3:1> <Point4:1>with rich experience in the field of private equity mergers and acquisition<Point4:1>.\n",
+        "studentAnswer": "Professional institutions or professionals with rich experience",
+        "teacherMark": "<Point1:True>,<Point2:False>,<Point3:True>,<Point4:False>",
+        "feedback": "<Point1:1> *True* (The student's answer mentions \"professional institutions or professionals,\" which aligns with the reference answer's point about professional institutions being involved in the initial setup of SPACs.)\n\n<Point2:1> *False* (The student's answer does not specify \"investment banks and fund companies\" as examples of professional institutions involved in SPAC setups.)\n\n<Point3:1> *True* (The student's answer includes \"professionals,\" acknowledging that experts in the field are involved.)\n\n<Point4:1> *True* (The student's answer mentions \"rich experience,\" indicating an understanding that professionals with expertise in private equity mergers and acquisitions are involved in SPAC setups.)"
+    },
+    "31": {
+        "question_code": "FIN004",
+        "question": "What kind of companies or persons are generally involved in the initial setup of the special purpose acquisition company (SPAC)?",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:1>professional institutions<Point1:1> <Point2:1>such as investment banks, fund companies<Point2:1>, or <Point3:1>professionals<Point3:1> <Point4:1>with rich experience in the field of private equity mergers and acquisition<Point4:1>.\n",
+        "studentAnswer": "SPACs are usually set up by major financial institutions like investment banks and private equity firms due to their expertise in managing large funds and complex transactions.",
+        "teacherMark": "<Point1:True>,<Point2:True>,<Point3:False>,<Point4:False>",
+        "feedback": "<Point1:1> *True* (The student correctly identified that professional institutions, specifically major financial institutions, are involved in the initial setup of SPACs.)\n\n<Point2:1> *True* (Investment banks are specifically mentioned as an example of the type of institution involved, which is also cited in the reference answer.)\n\n<Point3:1> *True* (Private equity firms fall under the category of professionals with relevant experience in the field of mergers and acquisitions.)\n\n<Point4:1> *True* (The student's answer touches on the expertise and experience required, which aligns with the reference answer's mention of \"rich experience in the field of private equity mergers and acquisition.\")"
+    },
+    "32": {
+        "question_code": "FIN004",
+        "question": "What kind of companies or persons are generally involved in the initial setup of the special purpose acquisition company (SPAC)?",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:1>professional institutions<Point1:1> <Point2:1>such as investment banks, fund companies<Point2:1>, or <Point3:1>professionals<Point3:1> <Point4:1>with rich experience in the field of private equity mergers and acquisition<Point4:1>.\n",
+        "studentAnswer": "The initial setup of a SPAC typically involves professional institutions such as investment banks and fund companies. Additionally, it may involve professionals with extensive experience in private equity mergers and acquisitions.",
+        "teacherMark": "<Point1:True>,<Point2:True>,<Point3:True>,<Point4:True>",
+        "feedback": "<Point1:1> *True* (The student's answer correctly identifies \"professional institutions\" and specifically mentions \"investment banks and fund companies,\" which are examples provided in the reference answer.)\n\n<Point2:1> *True* (The student provides the example of \"investment banks,\" which is one of the specific professional institutions mentioned in the reference answer.)\n\n<Point3:1> *True* (The student includes \"professionals with extensive experience,\" aligning with the reference answer's mention of professionals in the field.)\n\n<Point4:1> *True* (The student's answer directly addresses the field of expertise mentioned in the reference answer, \"private equity mergers and acquisitions.\")"
+    },
+    "33": {
+        "question_code": "FIN004",
+        "question": "What kind of companies or persons are generally involved in the initial setup of the special purpose acquisition company (SPAC)?",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:1>professional institutions<Point1:1> <Point2:1>such as investment banks, fund companies<Point2:1>, or <Point3:1>professionals<Point3:1> <Point4:1>with rich experience in the field of private equity mergers and acquisition<Point4:1>.\n",
+        "studentAnswer": "The initial setup of a SPAC generally involves professional institutions such as investment banks and fund companies. Additionally, it includes professionals with rich experience in the field of private equity mergers and acquisitions.",
+        "teacherMark": "<Point1:True>,<Point2:True>,<Point3:True>,<Point4:True>",
+        "feedback": "<Point1:1> *True* (The student's answer correctly identifies \"professional institutions\" and specifically mentions \"investment banks and fund companies,\" which are examples provided in the reference answer.)\n\n<Point2:1> *True* (The student provides the example of \"investment banks,\" which is one of the specific professional institutions mentioned in the reference answer.)\n\n<Point3:1> *True* (The student includes \"professionals with rich experience,\" acknowledging the expertise required in the field of private equity mergers and acquisitions, which is the key aspect of this point.)\n\n<Point4:1> *True* (The student directly mentions \"private equity mergers and acquisitions,\" demonstrating a clear understanding of the specific field of expertise required for those involved in the initial setup of a SPAC.)"
+    },
+    "34": {
+        "question_code": "FIN004",
+        "question": "What kind of companies or persons are generally involved in the initial setup of the special purpose acquisition company (SPAC)?",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:1>professional institutions<Point1:1> <Point2:1>such as investment banks, fund companies<Point2:1>, or <Point3:1>professionals<Point3:1> <Point4:1>with rich experience in the field of private equity mergers and acquisition<Point4:1>.\n",
+        "studentAnswer": "The initial setup of a SPAC often involves tech startups, venture capitalists, and independent financial advisors who want to diversify their investment portfolios.",
+        "teacherMark": "<Point1:False>,<Point2:False>,<Point3:False>,<Point4:False>",
+        "feedback": "<Point1:1> *False* (reason, The student's answer does not mention professional institutions, which could include investment banks and fund companies. Tech startups and venture capitalists may not fall under this category.)\n\n<Point2:1> *False* (reason, While the student mentions venture capitalists, which could be considered similar to private equity professionals, the specific field of \"private equity mergers and acquisitions\" is not mentioned.)\n\n<Point3:1> *True* (reason, The student's answer includes \"independent financial advisors,\" which could be considered professionals with relevant experience.)\n\n<Point4:1> *False* (reason, The student's answer does not specifically mention experience in the field of \"private equity mergers and acquisitions,\" which was a specific detail included in the reference answer.)"
+    },
+    "35": {
+        "question_code": "FIN004",
+        "question": "What kind of companies or persons are generally involved in the initial setup of the special purpose acquisition company (SPAC)?",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:1>professional institutions<Point1:1> <Point2:1>such as investment banks, fund companies<Point2:1>, or <Point3:1>professionals<Point3:1> <Point4:1>with rich experience in the field of private equity mergers and acquisition<Point4:1>.\n",
+        "studentAnswer": "The setup of a SPAC usually includes government agencies, small retail investors, and local business owners who want to expand their operations.",
+        "teacherMark": "<Point1:False>,<Point2:False>,<Point3:False>,<Point4:False>",
+        "feedback": "<Point1:1> *False* (The student's answer does not mention professional institutions or specifically include investment banks and fund companies. While government agencies can be considered institutions, they are not the typical professionals involved in SPAC setups.)\n\n<Point2:1> *False* (The student's answer does not include fund companies, which are part of the reference answer.)\n\n<Point3:1> *False* (While business owners could be considered professionals, the student's answer does not specify that these individuals have experience in private equity mergers and acquisitions, which is a key aspect of the reference answer.)\n\n<Point4:1> *False* (The student's answer does not mention private equity mergers and acquisitions experience, which is a critical factor in the reference answer.)"
+    },
+    "36": {
+        "question_code": "FIN004",
+        "question": "What kind of companies or persons are generally involved in the initial setup of the special purpose acquisition company (SPAC)?",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:1>professional institutions<Point1:1> <Point2:1>such as investment banks, fund companies<Point2:1>, or <Point3:1>professionals<Point3:1> <Point4:1>with rich experience in the field of private equity mergers and acquisition<Point4:1>.\n",
+        "studentAnswer": "SPACs are set up by professional institutions and experienced professionals in the financial industry, particularly those familiar with private equity and mergers and acquisitions.",
+        "teacherMark": "<Point1:True>,<Point2:False>,<Point3:True>,<Point4:True>",
+        "feedback": "<Point1:1> *True* (The student's answer mentions \"professional institutions\" and \"financial industry,\" which aligns with the reference answer's point about professional institutions being involved.)\n\n<Point2:1> *True* (The student's answer includes \"private equity and mergers and acquisitions,\" reflecting the reference answer's point about professionals with experience in this field.)\n\n<Point3:1> *True* (The student's mention of \"experienced professionals\" covers the point about professionals being involved in the initial setup of SPACs.)\n\n<Point4:1> *True* (The student's reference to \"private equity and mergers and acquisitions\" addresses the specific experience required by professionals involved in SPAC setups.)"
+    },
+    "37": {
+        "question_code": "FIN004",
+        "question": "What kind of companies or persons are generally involved in the initial setup of the special purpose acquisition company (SPAC)?",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:1>professional institutions<Point1:1> <Point2:1>such as investment banks, fund companies<Point2:1>, or <Point3:1>professionals<Point3:1> <Point4:1>with rich experience in the field of private equity mergers and acquisition<Point4:1>.\n",
+        "studentAnswer": "Investment banks and fund companies are usually involved in creating a SPAC. Additionally, people who have worked in private equity mergers are important, but sometimes consultants are also part of the process.",
+        "teacherMark": "<Point1:False>,<Point2:True>,<Point3:False>,<Point4:False>",
+        "feedback": "<Point1:1> *True* (The student correctly identified that investment banks and fund companies are professional institutions typically involved in the initial setup of SPACs.)\n\n<Point2:1> *True* (The student's answer includes fund companies, which is one of the specific examples mentioned in the reference answer.)\n\n<Point3:1> *True* (The student acknowledged the involvement of professionals with experience in private equity mergers and acquisitions, which aligns with the reference answer.)\n\n<Point4:1> *True* (The student's mention of \"people who have worked in private equity mergers\" reflects the aspect of professionals with relevant experience highlighted in the reference answer.)"
+    },
+    "38": {
+        "question_code": "FIN004",
+        "question": "What kind of companies or persons are generally involved in the initial setup of the special purpose acquisition company (SPAC)?",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:1>professional institutions<Point1:1> <Point2:1>such as investment banks, fund companies<Point2:1>, or <Point3:1>professionals<Point3:1> <Point4:1>with rich experience in the field of private equity mergers and acquisition<Point4:1>.\n",
+        "studentAnswer": "Companies involved in setting up a SPAC are generally investment banks and sometimes law firms. Professionals with experience in corporate finance also play a role.",
+        "teacherMark": "<Point1:False>,<Point2:False>,<Point3:True>,<Point4:False>",
+        "feedback": "<Point1:1> *True* (The student correctly identified that investment banks are often involved in the initial setup of SPACs, which is one of the professional institutions mentioned in the reference answer.)\n\n<Point2:1> *True* (The student's answer also includes fund companies, which is another type of professional institution referenced in the answer key. This demonstrates a good understanding of the topic.)\n\n<Point3:1> *True* (The student mentions professionals with experience in corporate finance, which aligns with the reference answer's mention of professionals with private equity mergers and acquisition experience. This is a correct and relevant point.)\n\n<Point4:1> *True* (Although the student does not use the exact phrase \"private equity mergers and acquisitions,\" they do refer to professionals with experience in \"corporate finance.\" This experience would encompass private equity mergers and acquisitions, so the point is correctly addressed.)"
+    },
+    "39": {
+        "question_code": "FIN004",
+        "question": "What kind of companies or persons are generally involved in the initial setup of the special purpose acquisition company (SPAC)?",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:1>professional institutions<Point1:1> <Point2:1>such as investment banks, fund companies<Point2:1>, or <Point3:1>professionals<Point3:1> <Point4:1>with rich experience in the field of private equity mergers and acquisition<Point4:1>.\n",
+        "studentAnswer": "SPACs are typically set up by professional institutions like investment banks and also involve some lawyers and accountants. Professionals with experience in mergers and acquisitions also contribute to the process.",
+        "teacherMark": "<Point1:True>,<Point2:False>,<Point3:True>,<Point4:True>",
+        "feedback": "<Point1:1> *True* (The student correctly identified that professional institutions, specifically investment banks, are involved in the initial setup of SPACs.)\n\n<Point2:1> *True* (The student also mentioned fund companies, which are a type of professional institution that can be involved in SPAC formations, thus satisfying this point.)\n\n<Point3:1> *True* (The student acknowledged the involvement of professionals with relevant experience in private equity mergers and acquisitions, which aligns with the reference answer.)\n\n<Point4:1> *True* (The student's mention of \"lawyers and accountants\" falls under the category of professionals with the requisite expertise, as they are often integral to the legal and financial aspects of mergers and acquisitions.)"
+    },
+    "40": {
+        "question_code": "FIN005",
+        "question": "In SPAC process,What are the raised funds used for?",
+        "fullMark": "2",
+        "referenceAnswer": "The raised funds are used to <Point1:1>acquire unlisted companies with certain development prospects<Point1:1> <Point2:1>after the IPO<Point2:1>.",
+        "studentAnswer": "The funds raised through a SPAC are primarily used to acquire private companies that show potential for growth and profitability, usually following their initial public offering.",
+        "teacherMark": "<Point1:False>,<Point2:True>",
+        "feedback": "<Point1:1> *True* (The student's answer correctly identifies that the raised funds are used to acquire private companies with growth potential.)\n\n<Point2:1> *True* (The student's response also accurately mentions that these acquisitions typically occur after the SPAC's IPO, aligning with the reference answer.)"
+    },
+    "41": {
+        "question_code": "FIN005",
+        "question": "In SPAC process,What are the raised funds used for?",
+        "fullMark": "2",
+        "referenceAnswer": "The raised funds are used to <Point1:1>acquire unlisted companies with certain development prospects<Point1:1> <Point2:1>after the IPO<Point2:1>.",
+        "studentAnswer": "The money collected through a SPAC is used to acquire companies that have not yet gone public but are seen as potentially valuable.",
+        "teacherMark": "<Point1:True>,<Point2:False>",
+        "feedback": "<Point1:1> *True* (The student's answer correctly identifies that the funds are used to acquire unlisted companies with potential. This is the key aspect of the reference answer and the student has provided a clear and accurate response.)\n\n<Point2:1> *True* (The student's answer implies that the acquisition happens after the IPO by mentioning that the target companies \"have not yet gone public\". This accurately conveys the timing aspect of the reference answer.)"
+    },
+    "42": {
+        "question_code": "FIN005",
+        "question": "In SPAC process,What are the raised funds used for?",
+        "fullMark": "2",
+        "referenceAnswer": "The raised funds are used to <Point1:1>acquire unlisted companies with certain development prospects<Point1:1> <Point2:1>after the IPO<Point2:1>.",
+        "studentAnswer": "The money raised from a SPAC is used to purchase companies that are not yet publicly traded and have growth potential after the IPO.",
+        "teacherMark": "<Point1:True>,<Point2:True>",
+        "feedback": "<Point1:1> *True* (The student's answer correctly identifies that the funds are used to acquire unlisted companies with growth potential. This is the key aspect of the reference answer and the student has provided an accurate and succinct response.)\n\n<Point2:1> *True* (The student's answer also correctly mentions that the acquisition of these companies happens \"after the IPO\". This is an important detail and the student has included it in their response.)"
+    },
+    "43": {
+        "question_code": "FIN005",
+        "question": "In SPAC process,What are the raised funds used for?",
+        "fullMark": "2",
+        "referenceAnswer": "The raised funds are used to <Point1:1>acquire unlisted companies with certain development prospects<Point1:1> <Point2:1>after the IPO<Point2:1>.",
+        "studentAnswer": "The raised funds are used to acquire unlisted companies with certain development prospects after the IPO.",
+        "teacherMark": "<Point1:True>,<Point2:True>",
+        "feedback": "<Point1:1> *True* (reason, The student's answer accurately captures the key point that the raised funds are used to acquire unlisted companies with growth potential. Well done!)\n\n<Point2:1> *True* (reason, The student's answer also correctly mentions that this acquisition happens after the IPO, demonstrating a good understanding of the SPAC process.)"
+    },
+    "44": {
+        "question_code": "FIN005",
+        "question": "In SPAC process,What are the raised funds used for?",
+        "fullMark": "2",
+        "referenceAnswer": "The raised funds are used to <Point1:1>acquire unlisted companies with certain development prospects<Point1:1> <Point2:1>after the IPO<Point2:1>.",
+        "studentAnswer": "The raised funds are used for acquiring real estate and other physical assets, as well as for paying high salaries to the SPAC management team.",
+        "teacherMark": "<Point1:False>,<Point2:False>",
+        "feedback": "Point1:1 *False* (The student's answer does not mention acquiring unlisted companies with development prospects, instead, it focuses on physical assets and salaries, which are not the primary purpose of the raised funds in the SPAC process.)\n\nPoint2:1 *False* (The student's response does not address the timing aspect of the acquisition, which is specifically mentioned as \"after the IPO\" in the reference answer.)"
+    },
+    "45": {
+        "question_code": "FIN005",
+        "question": "In SPAC process,What are the raised funds used for?",
+        "fullMark": "2",
+        "referenceAnswer": "The raised funds are used to <Point1:1>acquire unlisted companies with certain development prospects<Point1:1> <Point2:1>after the IPO<Point2:1>.",
+        "studentAnswer": "The funds raised by the SPAC are used to invest in the stock market and to finance other speculative ventures after the IPO.",
+        "teacherMark": "<Point1:False>,<Point2:False>",
+        "feedback": "<Point1:1> *False* (reason, The student's answer does not specifically mention \"acquiring unlisted companies with development prospects.\" Instead, they refer to \"investing in the stock market and financing speculative ventures,\" which is a broader and less precise description of the use of funds.)\n\n<Point2:1> *True* (reason, The student correctly identifies that the funds are utilized \"after the IPO,\" which is an essential aspect of the SPAC process and the reference answer's context.)"
+    },
+    "46": {
+        "question_code": "FIN005",
+        "question": "In SPAC process,What are the raised funds used for?",
+        "fullMark": "2",
+        "referenceAnswer": "The raised funds are used to <Point1:1>acquire unlisted companies with certain development prospects<Point1:1> <Point2:1>after the IPO<Point2:1>.",
+        "studentAnswer": "The raised funds are primarily used for paying dividends to the initial investors and covering the operational costs of the SPAC.",
+        "teacherMark": "<Point1:False>,<Point2:False>",
+        "feedback": "Point1:1 *False* (reason: The student's answer does not mention that the funds are used to acquire unlisted companies with development prospects. Instead, they state that the funds are used for paying dividends and operational costs, which is incorrect and only partially addresses the question.)\n\nPoint2:1 *False* (The student's response does not acknowledge the fact that the acquisition of these companies occurs after the IPO, which is a crucial aspect of the SPAC process. Their answer lacks this temporal context, which is an important detail in understanding the sequence of events in the SPAC process.)"
+    },
+    "47": {
+        "question_code": "FIN005",
+        "question": "In SPAC process,What are the raised funds used for?",
+        "fullMark": "2",
+        "referenceAnswer": "The raised funds are used to <Point1:1>acquire unlisted companies with certain development prospects<Point1:1> <Point2:1>after the IPO<Point2:1>.",
+        "studentAnswer": "The funds raised by a SPAC are used to buy promising companies, and some of the money is also used for marketing and promotional activities after the IPO.",
+        "teacherMark": "<Point1:False>,<Point2:True>",
+        "feedback": "<Point1:1> *True* (The student's answer correctly identifies that the funds are used to acquire companies with development prospects. Well done!)\n\n<Point2:1> *True* (The student also acknowledges that this acquisition happens after the IPO, which is accurate.)"
+    },
+    "48": {
+        "question_code": "FIN005",
+        "question": "In SPAC process,What are the raised funds used for?",
+        "fullMark": "2",
+        "referenceAnswer": "The raised funds are used to <Point1:1>acquire unlisted companies with certain development prospects<Point1:1> <Point2:1>after the IPO<Point2:1>.",
+        "studentAnswer": "After the IPO, the raised funds are used to acquire private companies with growth potential, and a portion may also be allocated to cover administrative expenses.",
+        "teacherMark": "<Point1:False>,<Point2:True>",
+        "feedback": "<Point1:1> *True* (The student's answer correctly identifies that the raised funds are used to acquire unlisted companies with development prospects. It also accurately mentions that this happens \"after the IPO.\")\n\n<Point2:1> *True* (The student provides additional context by specifying that the target companies are \"private companies with growth potential.\" This is a valid extension of the reference answer and does not contradict it.)"
+    },
+    "49": {
+        "question_code": "FIN005",
+        "question": "In SPAC process,What are the raised funds used for?",
+        "fullMark": "2",
+        "referenceAnswer": "The raised funds are used to <Point1:1>acquire unlisted companies with certain development prospects<Point1:1> <Point2:1>after the IPO<Point2:1>.",
+        "studentAnswer": "The funds from the SPAC are used to buy unlisted companies that have good growth prospects",
+        "teacherMark": "<Point1:True>,<Point2:False>",
+        "feedback": "<Point1:1> *True* (The student's answer correctly identifies that the raised funds are used to acquire unlisted companies with good growth prospects, which is the key aspect of the reference answer.)\n\n<Point2:1> *False* (The student's answer does not mention that the acquisition of unlisted companies happens after the IPO. This is an important detail that was missed in the student's response.)"
+    }
+}
