@@ -202,8 +202,7 @@ async def chat(request: Request):
             await engine.abort(request_id)   # 终止vllm后续推理
             break
 
-    # ret={"text":text, "model": model_names[arg.model]}
-    ret={"text":text, "model": "DeepSeek-Coder-V2-Lite"}
+    ret={"text":text, "model": model_names[arg.model]}
     return JSONResponse(ret)
 
 if __name__=='__main__':

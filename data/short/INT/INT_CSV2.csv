@@ -99,3 +99,33 @@ INT005,Neural networks are made up of interconnected algorithms that analyze dat
 ""<Point1:False>,<Point2:True>"""
 INT005,A neural network is a computer system that performs tasks without needing a specific algorithm.,"0/4 points
 ""<Point1:False>,<Point2:False>"""
+INT006,"Model performance encompasses accuracy, but it’s broader. In cases like fraud detection, an accurate model might just predict no fraud if fraud cases are few, which isn’t helpful. Thus, understanding that performance includes other factors is crucial.","5/5 points
+""<Point1:True>,<Point2:True>,<Point3:True>"""
+INT006,"Model performance is more important because accuracy is just a subset of it. For instance, in fraud detection within a large dataset, an accurate model might predict no fraud at all if fraud is very rare, which would be useless for finding fraud.","3/5 points
+""<Point1:True>,<Point2:True>,<Point3:False>"""
+INT006,"While model accuracy is important, model performance is more comprehensive. For instance, in a fraud detection system, a model that’s only accurate might not detect fraud effectively if fraud is rare. Performance includes how well the model works in real-world scenarios.","5/5 points
+""<Point1:True>,<Point2:True>,<Point3:True>"""
+INT006,"I think model accuracy is definitely important, but then again, model performance encompasses more aspects. If a model is accurate, it should perform well, but then it might miss fraud if the cases are rare, which is a performance issue.","3/5 points
+""<Point1:True>,<Point2:False>,<Point3:True>"""
+INT006,"I feel model performance is better because it includes accuracy. But in fraud detection, an accurate model might be useless if it doesn't detect fraud. So, it’s a tricky question.","3/5 points
+""<Point1:True>,<Point2:True>,<Point3:False>"""
+INT007,"I would use various methods like splitting the data and cross-validation to evaluate the model. After that, metrics such as F1 score, accuracy, and precision would be considered.","4/5 points
+""<Point1:True>,<Point2:True>,<Point3:True>,<Point4:False>"""
+INT007,"To evaluate a machine learning model, I would first split the data into training and test sets. Next, I would use metrics like accuracy and the confusion matrix to measure performance.","4/5 points
+""<Point1:True>,<Point2:False>,<Point3:True>,<Point4:True>"""
+INT007,"To evaluate the effectiveness of a machine learning model, you should first split your dataset into training and test sets. This can be done using cross-validation to create multiple training and test sets. After that, you need to choose appropriate performance metrics to assess the model. Common metrics include the F1 score, accuracy, and the confusion matrix.","5/5 points
+""<Point1:True>,<Point2:True>,<Point3:True>,<Point4:True>"""
+INT007,"To evaluate a machine learning model, you don't always need to split the dataset. Instead, you can rely on metrics like the F1 score, accuracy, and the confusion matrix. These metrics will help you understand how well the model is performing on the data.","3/5 points
+""<Point1:False>,<Point2:True>,<Point3:True>,<Point4:True>"""
+INT007,"To gauge the effectiveness of a machine learning model, you might use methods like accuracy or F1 score. Sometimes, the data is split for better assessment, but not always. Performance can also be checked using confusion matrices, although it's not always necessary.","2/5 points
+""<Point1:False>,<Point2:True>,<Point3:True>,<Point4:False>"""
+INT008,"Indeed, logistic regression is quite versatile when it comes to handling multiclass classification tasks. Unlike binary classification, where it predicts between two classes, logistic regression for multiclass problems uses various strategies to extend its application. For instance, one approach is the one-vs-rest method, where it creates separate models for each class against the rest, essentially turning the problem into multiple binary classifications. Another effective method is the multinomial approach, often implemented with softmax regression, which directly models the probabilities of each class. These techniques ensure logistic regression can effectively tackle multiclass scenarios, offering flexibility depending on the problem's complexity and data distribution.","4/4 points
+""<Point1:True>,<Point2:True>,<Point3:True>"""
+INT008,"Logistic regression is versatile when it comes to dealing with multiclass classification tasks. It utilizes methods like the one-vs-rest approach and the multinomial approach, using softmax to model probabilities for each class separately.","2/4 points
+""<Point1:False>,<Point2:True>,<Point3:True>"""
+INT008,"True, logistic regression is effective for handling multiclass classification tasks. It uses methods such as one-versus-rest and multinomial (softmax) approaches to predict class probabilities accurately.","2/4 points
+""<Point1:True>,<Point2:False>,<Point3:False>"""
+INT008,"Logistic regression might be used for some classification things, like maybe multiclass ones. It uses some methods I think, but not sure which ones exactly. Maybe it does stuff with probabilities, but I'm not really sure how.","0/4 points
+""<Point1:False>,<Point2:False>,<Point3:False>"""
+INT008,"I hardly think so, Logistic regression is great for multiclass problems because it can predict different things. It uses methods like one-versus-all or some other thing, I think. It's pretty good at guessing what might happen in different situations.","1/4 points
+""<Point1:False>,<Point2:True>,<Point3:False>"""
