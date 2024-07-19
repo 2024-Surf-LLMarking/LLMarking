@@ -25,7 +25,7 @@ arg = parser.parse_args()
 model_dir=__all__[arg.model]
 tensor_parallel_size=1 if arg.model < 15 else 4
 gpu_memory_utilization=0.95
-if model_dir == __all__[0]:
+if model_dir == __all__[0] or model_dir == __all__[18] or model_dir == __all__[20]:
     quantization = 'gptq'
 elif model_dir == __all__[1] or model_dir == __all__[4] or model_dir == __all__[15] or model_dir == __all__[16]:
     quantization = 'awq'
@@ -56,7 +56,7 @@ def load_vllm():
     # 推理终止词
     
     
-    if model_dir in __all__[:2] or model_dir == __all__[8] or model_dir == __all__[15]:
+    if model_dir in __all__[:2] or model_dir == __all__[8] or model_dir == __all__[15] or model_dir == __all__[18]:
         tokenizer.im_start_id = 151644
         tokenizer.im_end_id = 151645
         generation_config.max_window_size = 11000
@@ -88,6 +88,8 @@ def load_vllm():
         generation_config.max_window_size = 4096
     elif model_dir == __all__[17]:
         generation_config.max_window_size = 8192
+    elif model_dir == __all__[19] or model_dir == __all__[20] or model_dir == __all__[21]:
+        generation_config.max_window_size = 11000
 
     if model_dir == __all__[7]:
         stop_words_ids = [tokenizer.eos_token_id, 151336]
@@ -98,6 +100,10 @@ def load_vllm():
         os.environ['VLLM_ATTENTION_BACKEND'] = 'FLASHINFER'
     elif model_dir == __all__[16]:
         stop_words_ids = [tokenizer.eos_token_id, 128009]
+    elif model_dir == __all__[17]:
+        stop_words_ids = [tokenizer.eos_token_id]
+    elif model_dir == __all__[19] or model_dir == __all__[20] or model_dir == __all__[21]:
+        stop_words_ids = [tokenizer.eos_token_id]
     else:
         stop_words_ids = [tokenizer.im_start_id, tokenizer.im_end_id, tokenizer.eos_token_id]
 
@@ -196,7 +202,8 @@ async def chat(request: Request):
             await engine.abort(request_id)   # 终止vllm后续推理
             break
 
-    ret={"text":text, "model": model_names[arg.model]}
+    # ret={"text":text, "model": model_names[arg.model]}
+    ret={"text":text, "model": "DeepSeek-Coder-V2-Lite"}
     return JSONResponse(ret)
 
 if __name__=='__main__':

@@ -15,7 +15,11 @@ __all__ = ["Qwen/Qwen1.5-14B-Chat-GPTQ-Int4",
            "google/gemma-2-9b-it",
            "Qwen/Qwen1.5-110B-Chat-AWQ",
            "casperhansen/llama-3-70b-instruct-awq",
-           "mistralai/Mixtral-8x7B-Instruct-v0.1"
+           "mistralai/Mixtral-8x7B-Instruct-v0.1",
+           "Qwen/Qwen2-72B-Instruct-GPTQ-Int8",
+           "deepseek-ai/DeepSeek-V2-Lite-Chat",
+           "alpindale/c4ai-command-r-plus-GPTQ",
+           "deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct"
            ]
 
 model_names = ["Qwen1.5-14B",
@@ -35,5 +39,9 @@ model_names = ["Qwen1.5-14B",
                "Gemma-2-9B",
                "Qwen1.5-110B",
                "Llama-3-70B",
-               "Mixtral-8x7B"
+               "Mixtral-8x7B",
+               "Qwen2-72B",
+               "DeepSeek-V2-Lite",
+               "CommandR+"
+               "DeepSeek-Coder-V2-Lite"
                ]
