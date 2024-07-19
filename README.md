@@ -28,6 +28,15 @@ This project aims to achieve high concurrency automatic short answer grading (AS
 * `mistralai/Mistral-7B-Instruct-v0.3`
 * `microsoft/Phi-3-small-8k-instruct`
 * `openbmb/MiniCPM-2B-dpo-bf16`
+* `internlm/internlm2_5-7b-chat`
+* `google/gemma-2-9b-it`
+* `Qwen/Qwen1.5-110B-Chat-AWQ`
+* `casperhansen/llama-3-70b-instruct-awq`
+* `mistralai/Mixtral-8x7B-Instruct-v0.1`
+* `Qwen/Qwen2-72B-Instruct-GPTQ-Int8`
+* `deepseek-ai/DeepSeek-V2-Lite-Chat`
+* `alpindale/c4ai-command-r-plus-GPTQ`
+* `deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct`
 
 ## Getting Started
 
@@ -39,13 +48,13 @@ This project aims to achieve high concurrency automatic short answer grading (AS
 
 | Mandatory     | Recommended |
 | ------------- | ----------- |
-| Python        | 3.8         |
+| Python        | 3.10         |
 | CUDA          | 12.1        |
-| torch         | 2.1         |
+| torch         | 2.3         |
 | einops        | 0.8.0       |
-| transformers  | 4.41.0      |
+| transformers  | 4.42.1      |
 | accelerate    | 0.30.1      |
-| vLLM          | 0.4.3       |
+| vLLM          | 0.5.1       |
 | tiktoken      | 0.6.0       |
 | sentencepiece | 0.2.0       |
 | scipy         | 1.13.0      |
@@ -131,6 +140,18 @@ python student_entry.py -n [0, 1, 2]
 
 ```bash
 python vllm_client.py [-s]
+```
+
+* **For researcher entry:**
+
+> [!NOTE]
+>
+> `-c` stands for course name, such as MATH, CPT or INT, which is required. -t stands for number of threads, which is optional(default -> 10).
+
+After setting up the dataset and the deployment of the model, simply:
+
+```bash
+python eval_short_batched.py -c [course] [-t num_of_thread]
 ```
 
 #### Teacher Entry
