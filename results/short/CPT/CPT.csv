@@ -6,6 +6,27 @@ Precision score: 0.8346666666666667
 Recall score:	1.0","F1 score:	0.9046242774566474
 Precision score: 0.8258575197889182
 Recall score:	1.0"
+CommandR+,"F1 score:	None
+Precision score: None
+Recall score:	None","F1 score:	0.8869309838472834
+Precision score: 0.8206521739130435
+Recall score:	0.9648562300319489","F1 score:	0.9033189033189033
+Precision score: 0.8236842105263158
+Recall score:	1.0"
+DeepSeek-Coder-V2-Lite,"F1 score:	None
+Precision score: None
+Recall score:	None","F1 score:	0.9014492753623189
+Precision score: 0.8249336870026526
+Recall score:	0.9936102236421726","F1 score:	0.9059334298118669
+Precision score: 0.828042328042328
+Recall score:	1.0"
+DeepSeek-V2-Lite,"F1 score:	None
+Precision score: None
+Recall score:	None","F1 score:	0.8865979381443299
+Precision score: 0.8224043715846995
+Recall score:	0.9616613418530351","F1 score:	0.8708708708708709
+Precision score: 0.8215297450424929
+Recall score:	0.9265175718849841"
 Gemma-1.1-7B,"F1 score:	0.8575949367088608
 Precision score: 0.8495297805642633
 Recall score:	0.865814696485623","F1 score:	0.8727272727272727
@@ -83,6 +104,13 @@ Precision score: 0.853185595567867
 Recall score:	0.9840255591054313","F1 score:	0.8885542168674698
 Precision score: 0.8404558404558404
 Recall score:	0.9424920127795527"
+Qwen2-72B,"F1 score:	0.9046242774566474
+Precision score: 0.8258575197889182
+Recall score:	1.0","F1 score:	0.9037900874635568
+Precision score: 0.8310991957104558
+Recall score:	0.9904153354632588","F1 score:	0.9046242774566474
+Precision score: 0.8258575197889182
+Recall score:	1.0"
 Yi-1.5-34B,"F1 score:	None
 Precision score: None
 Recall score:	None","F1 score:	0.8831562974203339
