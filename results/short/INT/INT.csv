@@ -55,6 +55,13 @@ Precision score: 0.782608695652174
 Recall score:	0.972972972972973","F1 score:	0.8452380952380952
 Precision score: 0.7553191489361702
 Recall score:	0.9594594594594594"
+Llama-3-70B,"F1 score:	0.9
+Precision score: 0.8372093023255814
+Recall score:	0.972972972972973","F1 score:	0.9
+Precision score: 0.8372093023255814
+Recall score:	0.972972972972973","F1 score:	0.9
+Precision score: 0.8372093023255814
+Recall score:	0.972972972972973"
 Mistral-7B-v0.3,"F1 score:	0.8520710059171598
 Precision score: 0.7578947368421053
 Recall score:	0.972972972972973","F1 score:	0.8342857142857143
@@ -83,6 +90,13 @@ Precision score: 0.7474747474747475
 Recall score:	1.0","F1 score:	0.8554913294797688
 Precision score: 0.7474747474747475
 Recall score:	1.0"
+Qwen1.5-110B,"F1 score:	0.875
+Precision score: 0.813953488372093
+Recall score:	0.9459459459459459","F1 score:	0.8795180722891566
+Precision score: 0.7934782608695652
+Recall score:	0.9864864864864865","F1 score:	0.8795180722891566
+Precision score: 0.7934782608695652
+Recall score:	0.9864864864864865"
 Qwen2-7B,"F1 score:	None
 Precision score: None
 Recall score:	None","F1 score:	0.8205128205128205
