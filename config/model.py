@@ -12,7 +12,10 @@ __all__ = ["Qwen/Qwen1.5-14B-Chat-GPTQ-Int4",
            "microsoft/Phi-3-small-8k-instruct",
            "openbmb/MiniCPM-2B-dpo-bf16",
            "internlm/internlm2_5-7b-chat",
-           "google/gemma-2-9b-it"
+           "google/gemma-2-9b-it",
+           "Qwen/Qwen1.5-110B-Chat-AWQ",
+           "casperhansen/llama-3-70b-instruct-awq",
+           "mistralai/Mixtral-8x7B-Instruct-v0.1"
            ]
 
 model_names = ["Qwen1.5-14B",
@@ -29,5 +32,8 @@ model_names = ["Qwen1.5-14B",
                "Phi3-small",
                "MiniCPM-2B",
                "Internlm2.5-7B",
-               "Gemma-2-9B"
+               "Gemma-2-9B",
+               "Qwen1.5-110B",
+               "Llama-3-70B",
+               "Mixtral-8x7B"
                ]
