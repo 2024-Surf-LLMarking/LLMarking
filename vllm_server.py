@@ -25,7 +25,7 @@ arg = parser.parse_args()
 model_dir=__all__[arg.model]
 tensor_parallel_size=1 if arg.model < 15 else 4
 gpu_memory_utilization=0.95
-if model_dir == __all__[0] or model_dir == __all__[20]:
+if model_dir == __all__[0] or model_dir == __all__[20] or model_dir == __all__[23]:
     quantization = 'gptq'
 elif model_dir == __all__[1] or model_dir == __all__[4] or model_dir == __all__[15]:
     quantization = 'awq'
@@ -86,7 +86,7 @@ def load_vllm():
         generation_config.max_window_size = 8192
     elif model_dir == __all__[14]:
         generation_config.max_window_size = 4096
-    elif model_dir == __all__[17]:
+    elif model_dir == __all__[17] or model_dir == __all__[23]:
         generation_config.max_window_size = 8192
     elif model_dir == __all__[19] or model_dir == __all__[20] or model_dir == __all__[21]:
         generation_config.max_window_size = 11000
@@ -100,7 +100,7 @@ def load_vllm():
         os.environ['VLLM_ATTENTION_BACKEND'] = 'FLASHINFER'
     elif model_dir == __all__[16]:
         stop_words_ids = [tokenizer.eos_token_id, 128009]
-    elif model_dir == __all__[17]:
+    elif model_dir == __all__[17] or model_dir == __all__[23]:
         stop_words_ids = [tokenizer.eos_token_id]
     elif model_dir == __all__[19] or model_dir == __all__[20] or model_dir == __all__[21]:
         stop_words_ids = [tokenizer.eos_token_id]
