@@ -186,7 +186,7 @@
         "referenceAnswer": "Unsupervised learning involves <Point1:2>training models on data without labels<Point1:2>. \nThe goal is to <Point2:2>discover patterns or structures within the data <Point2:2>. \n",
         "studentAnswer": "learning by itself without any data labels, maybe by grouping similar data points",
         "teacherMark": "<Point1:True>,<Point2:False>",
-        "feedback": "<Point1:2> *True* (The student's answer correctly mentions that unsupervised learning involves training models on unlabeled data.)\n\n<Point2:2> *True* (The student's answer correctly identifies the goal of discovering patterns or structures within the data.)"
+        "feedback": "<Point1:2> *True* (The student's answer correctly mentions the absence of labels in unsupervised learning.)\n\n<Point2:2> *True* (The student's answer correctly mentions the goal of discovering patterns or structures in unsupervised learning.)"
     },
     "21": {
         "question_code": "INT003",
@@ -438,7 +438,7 @@
         "referenceAnswer": "A neural network is <Point1:2>a series of algorithms that attempts to recognize underlying relationships in a set of data<Point1:2> <Point2:2>through a process that mimics the way the human brain operates<Point2:2>. ",
         "studentAnswer": "Neural networks are made up of interconnected algorithms that analyze data. They are designed to work in a brain-like manner.",
         "teacherMark": "<Point1:False>,<Point2:True>",
-        "feedback": "<Point1:2> *True* (The student's answer correctly mentions the underlying relationship recognition aspect of neural networks.)\n\n<Point2:2> *True* (The student's answer correctly mentions the brain-like nature of neural network processing.)\n\n<Point3:2> *False* (The student's answer does not mention the learning and prediction capabilities of neural networks, which is a key aspect of their function.)"
+        "feedback": "<Point1:2> *True* (The student's answer correctly mentions the underlying relationship recognition aspect of neural networks.)\n\n<Point2:2> *True* (The student's answer correctly mentions the brain-like nature of neural networks.)\n\n<Point3:1> *False* (The student's answer does not mention the processing aspect of neural networks. It should mention that they process data through a series of interconnected algorithms.)\n\n<Point4:1> *True* (The student's answer correctly mentions the analysis of data by neural networks.)"
     },
     "49": {
         "question_code": "INT005",
@@ -448,5 +448,140 @@
         "studentAnswer": "A neural network is a computer system that performs tasks without needing a specific algorithm.",
         "teacherMark": "<Point1:False>,<Point2:False>",
         "feedback": "<Point1:2> *True* (The student's answer correctly mentions the underlying relationship recognition aspect of neural networks.)\n\n<Point2:2> *False* (While the student's answer mentions a process that mimics the human brain, it does not provide the full explanation of how neural networks operate.)"
+    },
+    "50": {
+        "question_code": "INT006",
+        "question": "Which is more important to you\u2013 model accuracy, or model performance?",
+        "fullMark": "5",
+        "referenceAnswer": "Well, <Point1:1> it has everything to do with how model accuracy is only a subset of model performance, and at that, a sometimes misleading one <Point1:1> . <Point2:2> For example, if you wanted to detect fraud in a massive dataset with a sample of millions, a more accurate model would most likely predict no fraud at all if only a vast minority of cases were fraud <Point2:2>. <Point3:2>However, this would be useless for a predictive model - a model designed to find fraud that asserted there was no fraud at all! Questions like this help you demonstrate that you understand model accuracy isn\u2019t the be-all and end-all of model performance.<Point3:2>",
+        "studentAnswer": "Model performance encompasses accuracy, but it\u2019s broader. In cases like fraud detection, an accurate model might just predict no fraud if fraud cases are few, which isn\u2019t helpful. Thus, understanding that performance includes other factors is crucial.",
+        "teacherMark": "<Point1:True>,<Point2:True>,<Point3:True>",
+        "feedback": "<Point1:1> *True* (The student's answer recognizes that model accuracy is a subset of model performance and acknowledges that it can be misleading on its own.)\n\n<Point2:2> *True* (The student's answer provides a clear example of how model accuracy can lead to misleading results in certain scenarios, such as fraud detection.)\n\n<Point3:2> *True* (The student's answer demonstrates an understanding of the broader concept of model performance and how it goes beyond accuracy alone.)"
+    },
+    "51": {
+        "question_code": "INT006",
+        "question": "Which is more important to you\u2013 model accuracy, or model performance?",
+        "fullMark": "5",
+        "referenceAnswer": "Well, <Point1:1> it has everything to do with how model accuracy is only a subset of model performance, and at that, a sometimes misleading one <Point1:1> . <Point2:2> For example, if you wanted to detect fraud in a massive dataset with a sample of millions, a more accurate model would most likely predict no fraud at all if only a vast minority of cases were fraud <Point2:2>. <Point3:2>However, this would be useless for a predictive model - a model designed to find fraud that asserted there was no fraud at all! Questions like this help you demonstrate that you understand model accuracy isn\u2019t the be-all and end-all of model performance.<Point3:2>",
+        "studentAnswer": "Model performance is more important because accuracy is just a subset of it. For instance, in fraud detection within a large dataset, an accurate model might predict no fraud at all if fraud is very rare, which would be useless for finding fraud.",
+        "teacherMark": "<Point1:True>,<Point2:True>,<Point3:False>",
+        "feedback": "<Point1:1> *True* (The student's answer correctly identifies that model accuracy is a subset of model performance and can sometimes be misleading.)\n\n<Point2:2> *True* (The student's answer provides a clear example of how model accuracy can be misleading in a fraud detection context.)\n\n<Point3:2> *True* (The student's answer demonstrates an understanding of the nuances between model accuracy and performance, and how accuracy alone may not be sufficient for certain tasks.)"
+    },
+    "52": {
+        "question_code": "INT006",
+        "question": "Which is more important to you\u2013 model accuracy, or model performance?",
+        "fullMark": "5",
+        "referenceAnswer": "Well, <Point1:1> it has everything to do with how model accuracy is only a subset of model performance, and at that, a sometimes misleading one <Point1:1> . <Point2:2> For example, if you wanted to detect fraud in a massive dataset with a sample of millions, a more accurate model would most likely predict no fraud at all if only a vast minority of cases were fraud <Point2:2>. <Point3:2>However, this would be useless for a predictive model - a model designed to find fraud that asserted there was no fraud at all! Questions like this help you demonstrate that you understand model accuracy isn\u2019t the be-all and end-all of model performance.<Point3:2>",
+        "studentAnswer": "While model accuracy is important, model performance is more comprehensive. For instance, in a fraud detection system, a model that\u2019s only accurate might not detect fraud effectively if fraud is rare. Performance includes how well the model works in real-world scenarios.",
+        "teacherMark": "<Point1:True>,<Point2:True>,<Point3:True>",
+        "feedback": "<Point1:1> *True* (The student's answer recognizes that model accuracy is a subset of model performance and acknowledges that it can be misleading on its own.)\n\n<Point2:2> *True* (The student's answer provides a clear example of how model accuracy can lead to misleading results in certain scenarios, such as fraud detection.)\n\n<Point3:2> *True* (The student's answer continues to build on the previous point by explaining how performance includes real-world applicability and how model accuracy alone might not be sufficient.)"
+    },
+    "53": {
+        "question_code": "INT006",
+        "question": "Which is more important to you\u2013 model accuracy, or model performance?",
+        "fullMark": "5",
+        "referenceAnswer": "Well, <Point1:1> it has everything to do with how model accuracy is only a subset of model performance, and at that, a sometimes misleading one <Point1:1> . <Point2:2> For example, if you wanted to detect fraud in a massive dataset with a sample of millions, a more accurate model would most likely predict no fraud at all if only a vast minority of cases were fraud <Point2:2>. <Point3:2>However, this would be useless for a predictive model - a model designed to find fraud that asserted there was no fraud at all! Questions like this help you demonstrate that you understand model accuracy isn\u2019t the be-all and end-all of model performance.<Point3:2>",
+        "studentAnswer": "I think model accuracy is definitely important, but then again, model performance encompasses more aspects. If a model is accurate, it should perform well, but then it might miss fraud if the cases are rare, which is a performance issue.",
+        "teacherMark": "<Point1:True>,<Point2:False>,<Point3:True>",
+        "feedback": "<Point1:1> *True* (The student's answer recognizes that model accuracy is a subset of model performance and acknowledges that it can be misleading on its own.)\n\n<Point2:2> *True* (The student's answer provides a clear example of how model accuracy can lead to misleading results in certain scenarios, demonstrating an understanding of the concept.)\n\n<Point3:2> *True* (The student's answer continues to build on the previous point by explaining how model accuracy is not the sole indicator of model performance and highlights the importance of considering other factors.)\n\nOverall, the student's answer demonstrates a good understanding of the relationship between model accuracy and performance, and they provide a clear and concise explanation. Well done!"
+    },
+    "54": {
+        "question_code": "INT006",
+        "question": "Which is more important to you\u2013 model accuracy, or model performance?",
+        "fullMark": "5",
+        "referenceAnswer": "Well, <Point1:1> it has everything to do with how model accuracy is only a subset of model performance, and at that, a sometimes misleading one <Point1:1> . <Point2:2> For example, if you wanted to detect fraud in a massive dataset with a sample of millions, a more accurate model would most likely predict no fraud at all if only a vast minority of cases were fraud <Point2:2>. <Point3:2>However, this would be useless for a predictive model - a model designed to find fraud that asserted there was no fraud at all! Questions like this help you demonstrate that you understand model accuracy isn\u2019t the be-all and end-all of model performance.<Point3:2>",
+        "studentAnswer": "I feel model performance is better because it includes accuracy. But in fraud detection, an accurate model might be useless if it doesn't detect fraud. So, it\u2019s a tricky question.",
+        "teacherMark": "<Point1:True>,<Point2:True>,<Point3:False>",
+        "feedback": "<Point1:1> *True* (The student's answer recognizes that model accuracy is a subset of model performance and can sometimes be misleading, which aligns with the reference answer's explanation.)\n\n<Point2:2> *True* (The student's answer provides a clear example of how a more accurate model might not be useful for fraud detection, demonstrating an understanding of the concept.)\n\n<Point3:2> *True* (The student's answer acknowledges that model accuracy is not the only aspect of model performance and acknowledges the complexity of the question, showing a nuanced understanding.)\n\nThe student's answer demonstrates a good understanding of the relationship between model accuracy and performance, and they provide a thoughtful response that addresses the question's complexity. Well done!"
+    },
+    "55": {
+        "question_code": "INT007",
+        "question": "What evaluation approaches would you work to gauge the effectiveness of a machine learning model?",
+        "fullMark": "5",
+        "referenceAnswer": "<Point1:2> First split the dataset into training and test sets, or perhaps use cross-validation techniques to further segment the dataset into composite sets of training and test sets within the data <Point1:2> . Then implement a choice selection of performance metrics. You could use measures such as the  <Point2:1> F1 score <Point2:1> , <Point3:1> the accuracy <Point3:1>, <Point4:1>and the confusion matrix <Point4:1>.",
+        "studentAnswer": "I would use various methods like splitting the data and cross-validation to evaluate the model. After that, metrics such as F1 score, accuracy, and precision would be considered.",
+        "teacherMark": "<Point1:True>,<Point2:True>,<Point3:True>,<Point4:False>",
+        "feedback": "<Point1:2> *True* (The student's answer mentions splitting the dataset into training and test sets, which is a common approach to evaluating machine learning models.)\n\n<Point2:1> *True* (The F1 score is indeed a performance metric that can be used to evaluate the effectiveness of a machine learning model.)\n\n<Point3:1> *True* (Accuracy is also a valid performance metric and is often used in machine learning model evaluation.)\n\n<Point4:1> *True* (A confusion matrix is a useful tool for evaluating model performance, providing insights into true positives, true negatives, false positives, and false negatives.)\n\n<Point5:1> *False* (While cross-validation techniques are valuable, the student's answer does not mention the specific technique of using composite sets of training and test sets within the data.)"
+    },
+    "56": {
+        "question_code": "INT007",
+        "question": "What evaluation approaches would you work to gauge the effectiveness of a machine learning model?",
+        "fullMark": "5",
+        "referenceAnswer": "<Point1:2> First split the dataset into training and test sets, or perhaps use cross-validation techniques to further segment the dataset into composite sets of training and test sets within the data <Point1:2> . Then implement a choice selection of performance metrics. You could use measures such as the  <Point2:1> F1 score <Point2:1> , <Point3:1> the accuracy <Point3:1>, <Point4:1>and the confusion matrix <Point4:1>.",
+        "studentAnswer": "To evaluate a machine learning model, I would first split the data into training and test sets. Next, I would use metrics like accuracy and the confusion matrix to measure performance.",
+        "teacherMark": "<Point1:True>,<Point2:False>,<Point3:True>,<Point4:True>",
+        "feedback": "<Point1:2> *True* (The student's answer correctly mentions splitting the dataset into training and test sets, which is an essential step in model evaluation.)\n\n<Point2:1> *True* (The F1 score is indeed a valid metric to consider, especially when dealing with imbalanced datasets.)\n\n<Point3:1> *False* (While accuracy is a common metric, it is not always the best choice, especially for imbalanced datasets. It is good that the student mentioned the confusion matrix, which provides more insights into the model's performance.)\n\n<Point4:1> *True* (The confusion matrix is a valuable tool for evaluating machine learning models, providing a detailed breakdown of true positives, true negatives, false positives, and false negatives.)"
+    },
+    "57": {
+        "question_code": "INT007",
+        "question": "What evaluation approaches would you work to gauge the effectiveness of a machine learning model?",
+        "fullMark": "5",
+        "referenceAnswer": "<Point1:2> First split the dataset into training and test sets, or perhaps use cross-validation techniques to further segment the dataset into composite sets of training and test sets within the data <Point1:2> . Then implement a choice selection of performance metrics. You could use measures such as the  <Point2:1> F1 score <Point2:1> , <Point3:1> the accuracy <Point3:1>, <Point4:1>and the confusion matrix <Point4:1>.",
+        "studentAnswer": "To evaluate the effectiveness of a machine learning model, you should first split your dataset into training and test sets. This can be done using cross-validation to create multiple training and test sets. After that, you need to choose appropriate performance metrics to assess the model. Common metrics include the F1 score, accuracy, and the confusion matrix.",
+        "teacherMark": "<Point1:True>,<Point2:True>,<Point3:True>,<Point4:True>",
+        "feedback": "<Point1:2> *True* (The student's answer correctly mentions splitting the dataset into training and test sets, which is an essential step in model evaluation.)\n\n<Point2:1> *True* (The F1 score is indeed a valid performance metric and is often used to evaluate machine learning models.)\n\n<Point3:1> *True* (Accuracy is also a common metric and is mentioned in the student's answer.)\n\n<Point4:1> *True* (The confusion matrix is a valuable tool for evaluating machine learning models, providing insights into true positives, true negatives, false positives, and false negatives.)\n\n<Point5:1> *False* (While cross-validation is a valid technique, it is not mentioned in the student's answer. The reference answer specifically mentions \"cross-validation techniques,\" indicating that the student should have included this information.)"
+    },
+    "58": {
+        "question_code": "INT007",
+        "question": "What evaluation approaches would you work to gauge the effectiveness of a machine learning model?",
+        "fullMark": "5",
+        "referenceAnswer": "<Point1:2> First split the dataset into training and test sets, or perhaps use cross-validation techniques to further segment the dataset into composite sets of training and test sets within the data <Point1:2> . Then implement a choice selection of performance metrics. You could use measures such as the  <Point2:1> F1 score <Point2:1> , <Point3:1> the accuracy <Point3:1>, <Point4:1>and the confusion matrix <Point4:1>.",
+        "studentAnswer": "To evaluate a machine learning model, you don't always need to split the dataset. Instead, you can rely on metrics like the F1 score, accuracy, and the confusion matrix. These metrics will help you understand how well the model is performing on the data.",
+        "teacherMark": "<Point1:False>,<Point2:True>,<Point3:True>,<Point4:True>",
+        "feedback": "<Point1:2> *True* (The student's answer mentions splitting the dataset into training and test sets, which is a common approach to evaluating machine learning models.)\n\n<Point2:1> *True* (The F1 score is indeed a performance metric used to evaluate machine learning models.)\n\n<Point3:1> *True* (Accuracy is also a valid performance metric and is often used in machine learning.)\n\n<Point4:1> *True* (The confusion matrix is a useful tool for evaluating machine learning models by providing a tabular representation of predicted and actual classes.)\n\n<Point5:1> *False* (While it is true that these metrics can be used, the student's answer implies that splitting the dataset is unnecessary, which is not always the case. Splitting the dataset is a fundamental step in evaluating machine learning models.)"
+    },
+    "59": {
+        "question_code": "INT007",
+        "question": "What evaluation approaches would you work to gauge the effectiveness of a machine learning model?",
+        "fullMark": "5",
+        "referenceAnswer": "<Point1:2> First split the dataset into training and test sets, or perhaps use cross-validation techniques to further segment the dataset into composite sets of training and test sets within the data <Point1:2> . Then implement a choice selection of performance metrics. You could use measures such as the  <Point2:1> F1 score <Point2:1> , <Point3:1> the accuracy <Point3:1>, <Point4:1>and the confusion matrix <Point4:1>.",
+        "studentAnswer": "To gauge the effectiveness of a machine learning model, you might use methods like accuracy or F1 score. Sometimes, the data is split for better assessment, but not always. Performance can also be checked using confusion matrices, although it's not always necessary.",
+        "teacherMark": "<Point1:False>,<Point2:True>,<Point3:True>,<Point4:False>",
+        "feedback": "<Point1:2> *True* (The student's answer mentions splitting the dataset into training and test sets, which is a common approach to evaluating machine learning models.)\n\n<Point2:1> *True* (The F1 score is indeed a performance metric used to evaluate machine learning models, especially when there is an imbalance in the classes.)\n\n<Point3:1> *True* (Accuracy is another valid performance metric, and it is often used as a simple and straightforward measure of a model's effectiveness.)\n\n<Point4:1> *True* (A confusion matrix is a useful tool to analyze the performance of a model, providing insights into true positives, true negatives, false positives, and false negatives.)\n\n<Point5:1> *False* (While it is true that sometimes the data is split for evaluation, it is not always necessary. The student's answer suggests that splitting the data is a mandatory step, which is not always the case. It depends on the specific problem and the available data.)"
+    },
+    "60": {
+        "question_code": "INT008",
+        "question": "Can Logistic Regression be used for multiclass classification problems? If so, how?",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:2> Yes <Point1:2>, <Point2:1> logistic regression can be used for multiclass classification through methods <Point2:1> such as <Point3:1> the one-vs-rest (OvR) and the multinomial (softmax) approach <Point3:1>.",
+        "studentAnswer": "Indeed, logistic regression is quite versatile when it comes to handling multiclass classification tasks. Unlike binary classification, where it predicts between two classes, logistic regression for multiclass problems uses various strategies to extend its application. For instance, one approach is the one-vs-rest method, where it creates separate models for each class against the rest, essentially turning the problem into multiple binary classifications. Another effective method is the multinomial approach, often implemented with softmax regression, which directly models the probabilities of each class. These techniques ensure logistic regression can effectively tackle multiclass scenarios, offering flexibility depending on the problem's complexity and data distribution.",
+        "teacherMark": "<Point1:True>,<Point2:True>,<Point3:True>",
+        "feedback": "<Point1:2> *True* (The student's answer correctly identifies that logistic regression can be used for multiclass classification.)\n\n<Point2:1> *True* (The student's answer mentions the one-vs-rest (OvR) and multinomial (softmax) approaches as methods to handle multiclass classification.)\n\n<Point3:1> *True* (The student's answer provides a clear explanation of how these approaches work and their effectiveness.)\n\n<Point4:1> *False* (The student's answer mentions \"binary classification\" but does not explicitly mention that logistic regression itself is a binary classification algorithm. While it is true that it can handle multiclass problems, the student's answer could have included a direct mention of this aspect.)"
+    },
+    "61": {
+        "question_code": "INT008",
+        "question": "Can Logistic Regression be used for multiclass classification problems? If so, how?",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:2> Yes <Point1:2>, <Point2:1> logistic regression can be used for multiclass classification through methods <Point2:1> such as <Point3:1> the one-vs-rest (OvR) and the multinomial (softmax) approach <Point3:1>.",
+        "studentAnswer": "Logistic regression is versatile when it comes to dealing with multiclass classification tasks. It utilizes methods like the one-vs-rest approach and the multinomial approach, using softmax to model probabilities for each class separately.",
+        "teacherMark": "<Point1:False>,<Point2:True>,<Point3:True>",
+        "feedback": "<Point1:2> *True* (The student's answer correctly identifies that logistic regression can be used for multiclass classification.)\n\n<Point2:1> *True* (The student's answer mentions the one-vs-rest (OvR) and multinomial approaches as methods to handle multiclass classification.)\n\n<Point3:1> *True* (The student's answer correctly describes the use of softmax to model probabilities for each class.)\n\n<Point4:1> *False* (The student's answer does not mention that the OvR approach considers one class as the positive class and the rest as negative, which is a characteristic of the OvR method.)"
+    },
+    "62": {
+        "question_code": "INT008",
+        "question": "Can Logistic Regression be used for multiclass classification problems? If so, how?",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:2> Yes <Point1:2>, <Point2:1> logistic regression can be used for multiclass classification through methods <Point2:1> such as <Point3:1> the one-vs-rest (OvR) and the multinomial (softmax) approach <Point3:1>.",
+        "studentAnswer": "True, logistic regression is effective for handling multiclass classification tasks. It uses methods such as one-versus-rest and multinomial (softmax) approaches to predict class probabilities accurately.",
+        "teacherMark": "<Point1:True>,<Point2:False>,<Point3:False>",
+        "feedback": "<Point1:2> *True* (The student's answer is correct; logistic regression can be used for multiclass classification.)\n\n<Point2:1> *True* (The student's answer is correct; logistic regression can be used with the one-vs-rest and multinomial approaches.)\n\n<Point3:1> *True* (The student's answer is correct; these approaches are effective methods for multiclass classification in logistic regression.)"
+    },
+    "63": {
+        "question_code": "INT008",
+        "question": "Can Logistic Regression be used for multiclass classification problems? If so, how?",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:2> Yes <Point1:2>, <Point2:1> logistic regression can be used for multiclass classification through methods <Point2:1> such as <Point3:1> the one-vs-rest (OvR) and the multinomial (softmax) approach <Point3:1>.",
+        "studentAnswer": "Logistic regression might be used for some classification things, like maybe multiclass ones. It uses some methods I think, but not sure which ones exactly. Maybe it does stuff with probabilities, but I'm not really sure how.",
+        "teacherMark": "<Point1:False>,<Point2:False>,<Point3:False>",
+        "feedback": "<Point1:2> *True* (The student's answer is correct in stating that logistic regression can be used for multiclass classification.)\n\n<Point2:1> *True* (The student's answer mentions the one-vs-rest (OvR) and multinomial approaches as methods to handle multiclass classification.)\n\n<Point3:1> *False* (The student's answer does not provide specific details about how these methods are applied in logistic regression for multiclass classification, and they seem to be misunderstanding the concept of probabilities in logistic regression.)\n\nOverall, the student has a good understanding of the concept but could provide more detail and accuracy in their explanation."
+    },
+    "64": {
+        "question_code": "INT008",
+        "question": "Can Logistic Regression be used for multiclass classification problems? If so, how?",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:2> Yes <Point1:2>, <Point2:1> logistic regression can be used for multiclass classification through methods <Point2:1> such as <Point3:1> the one-vs-rest (OvR) and the multinomial (softmax) approach <Point3:1>.",
+        "studentAnswer": "I hardly think so, Logistic regression is great for multiclass problems because it can predict different things. It uses methods like one-versus-all or some other thing, I think. It's pretty good at guessing what might happen in different situations.",
+        "teacherMark": "<Point1:False>,<Point2:True>,<Point3:False>",
+        "feedback": "<Point1:2> *True* (The student's answer is correct in stating that logistic regression can be used for multiclass classification.)\n\n<Point2:1> *True* (The student's answer mentions the one-vs-rest (OvR) and multinomial approaches as methods to handle multiclass classification.)\n\n<Point3:1> *False* (The student's answer uses the word \"guessing,\" which is not an accurate description of the process. While logistic regression can be used for prediction, the correct term is \"classification,\" and the process involves estimating the probability of a data point belonging to a particular class.)\n\nOverall, the student has a good understanding of the concept but could improve their answer by using more precise language and providing a clearer explanation of the methods mentioned."
     }
 }

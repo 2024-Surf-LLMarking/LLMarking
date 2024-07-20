@@ -25,9 +25,9 @@ arg = parser.parse_args()
 model_dir=__all__[arg.model]
 tensor_parallel_size=1 if arg.model < 15 else 4
 gpu_memory_utilization=0.95
-if model_dir == __all__[0] or model_dir == __all__[18] or model_dir == __all__[20]:
+if model_dir == __all__[0] or model_dir == __all__[20]:
     quantization = 'gptq'
-elif model_dir == __all__[1] or model_dir == __all__[4] or model_dir == __all__[15] or model_dir == __all__[16]:
+elif model_dir == __all__[1] or model_dir == __all__[4] or model_dir == __all__[15]:
     quantization = 'awq'
 else:
     quantization = None

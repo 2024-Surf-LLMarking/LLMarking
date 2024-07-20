@@ -95,7 +95,7 @@ def get_response(i, stream = False):
             print("Feedback:", text, '\n\n')
             data[index]["feedback"] = text
             results[index] = data[index]
-            model_name = 'Gemma-2-27B-2-modified'
+            model_name = 'Gemma-2-27B'
         index += 1
         pbar.update(1)
 
