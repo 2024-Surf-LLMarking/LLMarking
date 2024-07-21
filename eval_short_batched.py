@@ -77,7 +77,7 @@ def get_response(i, stream = False):
         query = prompt.format(question=question, ref_answer=ref_answer, stu_answer=stu_answer, full_mark=full_mark)
 
         response = requests.post(
-            "http://100.65.8.31:8000/chat",
+            "http://localhost:8888/chat",
             json={
                 "query": query,
                 "stream": stream,
