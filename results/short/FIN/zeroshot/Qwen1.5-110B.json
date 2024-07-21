@@ -51,7 +51,7 @@
         "referenceAnswer": "The major agency problem for listed companies <Point1:2>in the U.S. market is the conflict between firm managers and shareholders<Point1:2>. The major agency problem <Point2:2>in the Chinese market is the conflict between controlling and minority shareholders<Point2:2>.",
         "studentAnswer": "The major agency problem in the U.S. is the clash between company directors and employees. In China, the principal agency problem is the conflict between the government and shareholders.",
         "teacherMark": "<Point1:False>,<Point2:False>",
-        "feedback": "<Point1:mark> *False* (The student incorrectly identifies the conflict as being between company directors and employees in the U.S., rather than between managers and shareholders as stated in the reference answer.)\n\n<Point2:mark> *False* (The student mentions a conflict between the government and shareholders in China, whereas the reference answer specifies a conflict between controlling and minority shareholders.)"
+        "feedback": "<Point1:mark> *False* (reason: The student incorrectly identifies the conflict as being between company directors and employees in the U.S., rather than between managers and shareholders as stated in the reference answer.)\n\n<Point2:mark> *False* (reason: The student mentions a conflict between the government and shareholders in China, whereas the reference answer specifies a conflict between controlling and minority shareholders.)"
     },
     "6": {
         "question_code": "FIN001",
@@ -186,7 +186,7 @@
         "referenceAnswer": "<Point1:1>lack of sound accounting and auditing systems<Point1:1> and <Point2:1>lack of high-quality bond rating agencies<Point2:1>. <Point3:2>Given the low creditor protection and court inefficiency in China, the recovery rates for bondholders during default are low, which in turn leads to underinvestment in the market by domestic and foreign investors<Point3:2>.\n",
         "studentAnswer": "The bond market in China isn't growing quickly due to poor accounting and auditing systems and the lack of reliable bond rating agencies, which makes it difficult for investors to assess risks accurately.",
         "teacherMark": "<Point1:True>,<Point2:True>,<Point3:False>",
-        "feedback": "<Point1:mark> *True* (The student's answer mentions the lack of sound accounting and auditing systems, which aligns with the first point in the reference answer.)\n\n<Point2:mark> *True* (The student also addresses the absence of reliable bond rating agencies, matching the second point in the reference answer.)\n\n<Point3:mark> *False* (The student's answer does not include the details about low creditor protection, court inefficiency, and their impact on recovery rates for bondholders, which is a key part of the third point in the reference answer.)"
+        "feedback": "<Point1:mark> *True* (The student's answer acknowledges the lack of sound accounting and auditing systems, aligning with the first point in the reference answer.)\n\n<Point2:mark> *True* (The student also mentions the absence of reliable bond rating agencies, which corresponds to the second point in the reference answer.)\n\n<Point3:mark> *False* (The student's answer does not address the issue of low creditor protection, court inefficiency, and their impact on recovery rates for bondholders, which is a key aspect mentioned in the reference answer.)"
     },
     "21": {
         "question_code": "FIN003",
@@ -276,7 +276,7 @@
         "referenceAnswer": "<Point1:1>professional institutions<Point1:1> <Point2:1>such as investment banks, fund companies<Point2:1>, or <Point3:1>professionals<Point3:1> <Point4:1>with rich experience in the field of private equity mergers and acquisition<Point4:1>.\n",
         "studentAnswer": "Professional institutions or professionals with rich experience",
         "teacherMark": "<Point1:True>,<Point2:False>,<Point3:True>,<Point4:False>",
-        "feedback": "<Point1:mark> True (The student mentioned professional institutions, which aligns with the reference answer)\n\n<Point2:mark> False (The student did not specify that these institutions include investment banks and fund companies, as stated in the reference answer)\n\n<Point3:mark> True (The student correctly included professionals, though not explicitly mentioning their expertise in the field)\n\n<Point4:mark> False (The student's answer lacks the specific detail about professionals having experience in private equity mergers and acquisitions)"
+        "feedback": "<Point1:mark> True (The student mentioned professional institutions, which aligns with the reference answer)\n\n<Point2:mark> False (The student did not specify that these institutions include investment banks and fund companies, as stated in the reference answer)\n\n<Point3:mark> True (The student correctly included professionals, though not explicitly stating \"with rich experience\" as in the reference, the core concept is captured)\n\n<Point4:mark> False (The student's answer lacks the specific detail about professionals' experience in private equity mergers and acquisitions)"
     },
     "31": {
         "question_code": "FIN004",
@@ -402,7 +402,7 @@
         "referenceAnswer": "The raised funds are used to <Point1:1>acquire unlisted companies with certain development prospects<Point1:1> <Point2:1>after the IPO<Point2:1>.",
         "studentAnswer": "The raised funds are used for acquiring real estate and other physical assets, as well as for paying high salaries to the SPAC management team.",
         "teacherMark": "<Point1:False>,<Point2:False>",
-        "feedback": "<Point1:mark> *False* (The student mentioned acquiring real estate and physical assets, which is incorrect according to the reference answer. The funds are meant for acquiring unlisted companies with development prospects.)\n\n<Point2:mark> *False* (The student's answer did not address the correct timing mentioned in the reference answer, which is after the IPO, and instead included unrelated information about paying high salaries.)"
+        "feedback": "<Point1:mark> *False* (The student mentioned acquiring real estate and physical assets, which is incorrect according to the reference answer. The funds are meant for acquiring unlisted companies with development prospects.)\n\n<Point2:mark> *False* (The student's answer did not address the correct timing mentioned in the reference answer, which is after the IPO, and instead included unrelated uses like paying high salaries to the SPAC management team.)"
     },
     "45": {
         "question_code": "FIN005",

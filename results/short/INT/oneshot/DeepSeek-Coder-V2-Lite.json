@@ -24,7 +24,7 @@
         "referenceAnswer": "Supervised learning is <Point1:2>a\ntype of machine learning where the model is trained on labeled data <Point1:2>.\n<Point2:2>The model learns to map inputs to outputs based on example\ninput-output pairs <Point2:2>.",
         "studentAnswer": "Supervised learning is a type of machine learning that involves training a model using labeled data. The model uses these labels to learn how to predict outcomes based on new inputs.",
         "teacherMark": "<Point1:True>,<Point2:True>",
-        "feedback": " <Point1:2> *True* (The student's answer correctly identifies that supervised learning is a type of machine learning involving labeled data.)\n\n<Point2:2> *True* (The student's answer accurately describes how the model learns from labeled data to predict outcomes based on new inputs.)"
+        "feedback": " <Point1:2> *True* (The student's answer correctly identifies that supervised learning is a type of machine learning involving labeled data.)\n\n<Point2:2> *True* (The student's answer correctly describes how the model learns from labeled data to predict outcomes based on new inputs.)"
     },
     "3": {
         "question_code": "INT001",
@@ -393,7 +393,7 @@
         "referenceAnswer": "A neural network is <Point1:2>a series of algorithms that attempts to recognize underlying relationships in a set of data<Point1:2> <Point2:2>through a process that mimics the way the human brain operates<Point2:2>. ",
         "studentAnswer": "Neural networks are algorithmic systems that analyze data, mimicking human brain functions to find patterns.",
         "teacherMark": "<Point1:False>,<Point2:True>",
-        "feedback": " <Point1:2> *True* (The student's answer correctly describes the purpose of a neural network, which is to recognize underlying relationships in data.)\n\n<Point2:2> *True* (The student's answer correctly mentions that neural networks mimic the human brain's functions to find patterns.)"
+        "feedback": " <Point1:2> *True* (The student's answer correctly describes the purpose of a neural network, which is to recognize underlying relationships in data.)\n\n<Point2:2> *True* (The student's answer correctly mentions that neural networks mimic the human brain's functions to find patterns in data.)"
     },
     "44": {
         "question_code": "INT005",
@@ -456,7 +456,7 @@
         "referenceAnswer": "Well, <Point1:1> it has everything to do with how model accuracy is only a subset of model performance, and at that, a sometimes misleading one <Point1:1> . <Point2:2> For example, if you wanted to detect fraud in a massive dataset with a sample of millions, a more accurate model would most likely predict no fraud at all if only a vast minority of cases were fraud <Point2:2>. <Point3:2>However, this would be useless for a predictive model - a model designed to find fraud that asserted there was no fraud at all! Questions like this help you demonstrate that you understand model accuracy isn\u2019t the be-all and end-all of model performance.<Point3:2>",
         "studentAnswer": "Model performance encompasses accuracy, but it\u2019s broader. In cases like fraud detection, an accurate model might just predict no fraud if fraud cases are few, which isn\u2019t helpful. Thus, understanding that performance includes other factors is crucial.",
         "teacherMark": "<Point1:True>,<Point2:True>,<Point3:True>",
-        "feedback": " <Point1:1> *True* (The student's answer correctly states that model performance includes accuracy and that accuracy is only one aspect of performance.)\n\n<Point2:2> *True* (The student's answer correctly explains the importance of considering other aspects of model performance, such as in fraud detection scenarios.)\n\n<Point3:2> *True* (The student's answer effectively demonstrates an understanding that model accuracy is not the only factor to consider in model performance.)"
+        "feedback": " <Point1:1> *True* (The student's answer correctly states that model performance includes accuracy and that accuracy is only one aspect of performance.)\n\n<Point2:2> *True* (The student's answer correctly explains that high accuracy might not be useful if the model predicts no fraud when fraud is actually rare.)\n\n<Point3:2> *True* (The student's answer emphasizes the importance of considering broader aspects of model performance beyond just accuracy.)"
     },
     "51": {
         "question_code": "INT006",

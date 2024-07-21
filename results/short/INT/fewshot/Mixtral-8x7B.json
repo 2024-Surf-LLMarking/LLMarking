@@ -6,7 +6,7 @@
         "referenceAnswer": "Supervised learning is <Point1:2>a\ntype of machine learning where the model is trained on labeled data <Point1:2>.\n<Point2:2>The model learns to map inputs to outputs based on example\ninput-output pairs <Point2:2>.",
         "studentAnswer": "Supervised learning involves using input-output pairs to teach models to predict the output from new inputs.",
         "teacherMark": "<Point1:False>,<Point2:True>",
-        "feedback": "<Point1:2> *True* (The student's answer correctly mentions that supervised learning involves training on labeled data using input-output pairs.)\n\n<Point2:2> *True* (The student's answer correctly mentions that the model learns to map inputs to outputs based on example input-output pairs.)"
+        "feedback": "<Point1:2> *True* (The student's answer correctly mentions that supervised learning involves training on labeled data.)\n\n<Point2:2> *True* (The student's answer correctly mentions that the model learns to map inputs to outputs based on example input-output pairs.)"
     },
     "1": {
         "question_code": "INT001",
@@ -69,7 +69,7 @@
         "referenceAnswer": "Supervised learning is <Point1:2>a\ntype of machine learning where the model is trained on labeled data <Point1:2>.\n<Point2:2>The model learns to map inputs to outputs based on example\ninput-output pairs <Point2:2>.",
         "studentAnswer": "Supervised learning uses labeled data to train a machine learning model. The model then learns to associate inputs with the correct outputs based on these labels.",
         "teacherMark": "<Point1:True>,<Point2:True>",
-        "feedback": "<Point1:2> *True* (The student's answer correctly mentions that supervised learning is performed using labeled data.)\n\n<Point2:2> *True* (The student's answer correctly mentions that the model learns to map inputs to outputs based on example input-output pairs.)"
+        "feedback": "<Point1:2> *True* (The student's answer correctly mentions that supervised learning uses labeled data to train a machine learning model.)\n\n<Point2:2> *True* (The student's answer correctly mentions that the model learns to map inputs to outputs based on example input-output pairs.)"
     },
     "8": {
         "question_code": "INT001",
@@ -240,7 +240,7 @@
         "referenceAnswer": "Unsupervised learning involves <Point1:2>training models on data without labels<Point1:2>. \nThe goal is to <Point2:2>discover patterns or structures within the data <Point2:2>. \n",
         "studentAnswer": "In unsupervised learning, data without labels is used to train models. These models then try to identify hidden structures or patterns in the data.",
         "teacherMark": "<Point1:True>,<Point2:True>",
-        "feedback": "<Point1:2> *True* (The student's answer correctly mentions the use of data without labels in unsupervised learning.)\n\n<Point2:2> *True* (The student's answer correctly mentions the discovery of patterns or structures within the data as the goal of unsupervised learning.)"
+        "feedback": "<Point1:2> *True* (The student's answer correctly mentions the use of data without labels in unsupervised learning.)\n\n<Point2:2> *True* (The student's answer correctly mentions the discovery of patterns or structures within the data in unsupervised learning.)"
     },
     "27": {
         "question_code": "INT003",
@@ -312,7 +312,7 @@
         "referenceAnswer": "<Point1:2>Overfitting occurs when a machine learning model learns the details and noise in the training data to an extent<Point1:2>. \n<Point2:2>It negatively impacts the performance of the model on new data, making it less generalizable<Point2:2>.\n",
         "studentAnswer": "Overfitting is when a model becomes too complex and fits the training data perfectly, including any noise.",
         "teacherMark": "<Point1:True>,<Point2:False>",
-        "feedback": "<Point1:2> *True* (The student's answer correctly mentions the model becoming too complex and fitting the training data perfectly, including any noise.)\n\n<Point2:2> *True* (The student's answer correctly mentions the negative impact of overfitting on the model's performance on new data, making it less generalizable.)"
+        "feedback": "<Point1:2> *True* (The student's answer correctly mentions the model becoming too complex and fitting the training data perfectly, including any noise.)\n\n<Point2:2> *True* (The student's answer correctly mentions the negative impact on the model's performance on new data due to overfitting.)"
     },
     "35": {
         "question_code": "INT004",
@@ -321,7 +321,7 @@
         "referenceAnswer": "<Point1:2>Overfitting occurs when a machine learning model learns the details and noise in the training data to an extent<Point1:2>. \n<Point2:2>It negatively impacts the performance of the model on new data, making it less generalizable<Point2:2>.\n",
         "studentAnswer": "Overfitting is when a model performs well on training data but fails to generalize to new data.",
         "teacherMark": "<Point1:False>,<Point2:True>",
-        "feedback": "<Point1:2> *True* (The student's answer correctly mentions the good performance on training data and poor performance on new data.)\n\n<Point2:2> *True* (The student's answer correctly mentions the reduced generalizability of the model.)"
+        "feedback": "<Point1:2> *True* (The student's answer correctly mentions the model's good performance on training data and failure to generalize to new data.)\n\n<Point2:2> *True* (The student's answer does not explicitly mention learning details and noise in the training data, but it does imply the concept of overfitting as failing to generalize to new data.)"
     },
     "36": {
         "question_code": "INT004",
@@ -420,7 +420,7 @@
         "referenceAnswer": "A neural network is <Point1:2>a series of algorithms that attempts to recognize underlying relationships in a set of data<Point1:2> <Point2:2>through a process that mimics the way the human brain operates<Point2:2>. ",
         "studentAnswer": "A neural network includes several algorithms that find relationships in data, not necessarily like the human brain.",
         "teacherMark": "<Point1:True>,<Point2:False>",
-        "feedback": "<Point1:2> *True* (The student's answer correctly mentions the recognition of underlying relationships in data.)\n\n<Point2:2> *True* (The student's answer correctly mentions the process that mimics the way the human brain operates, but it is not necessarily required to be exactly like the human brain.)"
+        "feedback": "<Point1:2> *True* (The student's answer correctly mentions the recognition of underlying relationships in data.)\n\n<Point2:2> *True* (The student's answer correctly mentions the process that mimics the way the human brain operates, but it is not necessarily accurate to say \"not necessarily like the human brain\".)"
     },
     "47": {
         "question_code": "INT005",
@@ -456,7 +456,7 @@
         "referenceAnswer": "Well, <Point1:1> it has everything to do with how model accuracy is only a subset of model performance, and at that, a sometimes misleading one <Point1:1> . <Point2:2> For example, if you wanted to detect fraud in a massive dataset with a sample of millions, a more accurate model would most likely predict no fraud at all if only a vast minority of cases were fraud <Point2:2>. <Point3:2>However, this would be useless for a predictive model - a model designed to find fraud that asserted there was no fraud at all! Questions like this help you demonstrate that you understand model accuracy isn\u2019t the be-all and end-all of model performance.<Point3:2>",
         "studentAnswer": "Model performance encompasses accuracy, but it\u2019s broader. In cases like fraud detection, an accurate model might just predict no fraud if fraud cases are few, which isn\u2019t helpful. Thus, understanding that performance includes other factors is crucial.",
         "teacherMark": "<Point1:True>,<Point2:True>,<Point3:True>",
-        "feedback": "<Point1:1> *True* (The student's answer correctly mentions that model accuracy is a subset of model performance.)\n\n<Point2:2> *True* (The student's answer provides an example of how model accuracy can be misleading.)\n\n<Point3:2> *True* (The student's answer correctly mentions that model performance includes other factors beyond accuracy.)"
+        "feedback": "<Point1:1> *True* (The student's answer acknowledges that model accuracy is a subset of model performance.)\n\n<Point2:2> *True* (The student's answer provides an example where model accuracy might not be helpful.)\n\n<Point3:2> *True* (The student's answer demonstrates an understanding that model performance includes other factors beyond accuracy.)"
     },
     "51": {
         "question_code": "INT006",
@@ -546,7 +546,7 @@
         "referenceAnswer": "<Point1:2> Yes <Point1:2>, <Point2:1> logistic regression can be used for multiclass classification through methods <Point2:1> such as <Point3:1> the one-vs-rest (OvR) and the multinomial (softmax) approach <Point3:1>.",
         "studentAnswer": "Indeed, logistic regression is quite versatile when it comes to handling multiclass classification tasks. Unlike binary classification, where it predicts between two classes, logistic regression for multiclass problems uses various strategies to extend its application. For instance, one approach is the one-vs-rest method, where it creates separate models for each class against the rest, essentially turning the problem into multiple binary classifications. Another effective method is the multinomial approach, often implemented with softmax regression, which directly models the probabilities of each class. These techniques ensure logistic regression can effectively tackle multiclass scenarios, offering flexibility depending on the problem's complexity and data distribution.",
         "teacherMark": "<Point1:True>,<Point2:True>,<Point3:True>",
-        "feedback": "<Point1:2> *True* (The student's answer correctly states that logistic regression can be used for multiclass classification.)\n\n<Point2:1> *True* (The student's answer mentions the use of methods for multiclass classification.)\n\n<Point3:1> *True* (The student's answer correctly mentions the one-vs-rest and multinomial approaches for logistic regression in multiclass classification.)"
+        "feedback": "<Point1:2> *True* (The student's answer correctly states that logistic regression can be used for multiclass classification.)\n\n<Point2:1> *True* (The student's answer mentions the use of methods for multiclass classification.)\n\n<Point3:1> *True* (The student's answer correctly mentions the one-vs-rest and multinomial approaches for multiclass logistic regression.)"
     },
     "61": {
         "question_code": "INT008",

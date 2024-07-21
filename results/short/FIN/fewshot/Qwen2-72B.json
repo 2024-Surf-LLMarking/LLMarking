@@ -195,7 +195,7 @@
         "referenceAnswer": "<Point1:1>lack of sound accounting and auditing systems<Point1:1> and <Point2:1>lack of high-quality bond rating agencies<Point2:1>. <Point3:2>Given the low creditor protection and court inefficiency in China, the recovery rates for bondholders during default are low, which in turn leads to underinvestment in the market by domestic and foreign investors<Point3:2>.\n",
         "studentAnswer": "China's bond market struggles due to weak creditor protections and inefficient court systems, leading to low recovery rates for bondholders in cases of default, which scares away both domestic and international investors.",
         "teacherMark": "<Point1:False>,<Point2:False>,<Point3:True>",
-        "feedback": "<Point1:1> *False* (The student's answer does not mention the lack of sound accounting and auditing systems.)\n<Point2:1> *False* (The student's answer does not mention the lack of high-quality bond rating agencies.)\n<Point3:2> *True* (The student's answer correctly highlights the issues of low creditor protection, court inefficiency, and the impact on investor confidence.)"
+        "feedback": "<Point1:1> *False* (The student's answer does not mention the lack of sound accounting and auditing systems.)\n<Point2:1> *False* (The student's answer does not mention the lack of high-quality bond rating agencies.)\n<Point3:2> *True* (The student's answer correctly identifies low creditor protection, court inefficiency, low recovery rates for bondholders during default, and the impact on investment by domestic and foreign investors.)"
     },
     "22": {
         "question_code": "FIN003",
@@ -231,7 +231,7 @@
         "referenceAnswer": "<Point1:1>lack of sound accounting and auditing systems<Point1:1> and <Point2:1>lack of high-quality bond rating agencies<Point2:1>. <Point3:2>Given the low creditor protection and court inefficiency in China, the recovery rates for bondholders during default are low, which in turn leads to underinvestment in the market by domestic and foreign investors<Point3:2>.\n",
         "studentAnswer": "The bond market in China grows slowly because the government heavily regulates it, which discourages private companies from issuing bonds. Also, the high inflation rate makes bonds unattractive to investors.",
         "teacherMark": "<Point1:False>,<Point2:False>,<Point3:False>",
-        "feedback": "<Point1:1> *False* (The student's answer does not mention the lack of sound accounting and auditing systems as a reason for slow growth in the bond market.)\n\n<Point2:1> *False* (The student's answer does not mention the lack of high-quality bond rating agencies as a factor contributing to the slow growth.)\n\n<Point3:2> *False* (The student's answer does not address the issue of low recovery rates for bondholders during default due to low creditor protection and court inefficiency.)"
+        "feedback": "<Point1:1> *False* (The student's answer does not mention the lack of sound accounting and auditing systems as a reason for slow growth in the bond market.)\n\n<Point2:1> *False* (The student's answer does not mention the lack of high-quality bond rating agencies as a factor contributing to the slow growth.)\n\n<Point3:2> *False* (The student's answer does not address the issues of low creditor protection, court inefficiency, and their impact on recovery rates and investment in the bond market.)"
     },
     "26": {
         "question_code": "FIN003",
@@ -285,7 +285,7 @@
         "referenceAnswer": "<Point1:1>professional institutions<Point1:1> <Point2:1>such as investment banks, fund companies<Point2:1>, or <Point3:1>professionals<Point3:1> <Point4:1>with rich experience in the field of private equity mergers and acquisition<Point4:1>.\n",
         "studentAnswer": "SPACs are usually set up by major financial institutions like investment banks and private equity firms due to their expertise in managing large funds and complex transactions.",
         "teacherMark": "<Point1:True>,<Point2:True>,<Point3:False>,<Point4:False>",
-        "feedback": "<Point1:1> *True* (The student's answer correctly identifies professional institutions as being involved in the initial setup of SPACs.)\n<Point2:1> *True* (The student's answer includes investment banks as entities involved in setting up SPACs.)\n<Point3:1> *False* (The student's answer does not specifically mention professionals with relevant experience as being involved in the setup of SPACs.)\n<Point4:1> *False* (The student's answer does not mention the specific experience in private equity mergers and acquisitions as a qualification for those involved in setting up SPACs.)"
+        "feedback": "<Point1:1> *True* (The student's answer correctly identifies professional institutions as being involved in the initial setup of SPACs.)\n<Point2:1> *True* (The student's answer includes investment banks as entities involved in setting up SPACs.)\n<Point3:1> *False* (The student's answer does not specifically mention professionals with relevant experience.)\n<Point4:1> *False* (The student's answer does not explicitly state the involvement of individuals with rich experience in private equity mergers and acquisitions.)"
     },
     "32": {
         "question_code": "FIN004",
@@ -411,7 +411,7 @@
         "referenceAnswer": "The raised funds are used to <Point1:1>acquire unlisted companies with certain development prospects<Point1:1> <Point2:1>after the IPO<Point2:1>.",
         "studentAnswer": "The funds raised by the SPAC are used to invest in the stock market and to finance other speculative ventures after the IPO.",
         "teacherMark": "<Point1:False>,<Point2:False>",
-        "feedback": "<Point1:1> *False* (The student's answer incorrectly states that the funds are used to invest in the stock market, which is not aligned with acquiring unlisted companies with development prospects.)\n<Point2:1> *False* (The student's answer deviates from the correct use of funds after the IPO by mentioning speculative ventures instead of focusing on the acquisition purpose.)"
+        "feedback": "<Point1:1> *False* (The student's answer incorrectly states that the funds are used to invest in the stock market, which is not aligned with acquiring unlisted companies with development prospects.)\n<Point2:1> *False* (The student's answer deviates from the correct usage of funds post-IPO by mentioning speculative ventures instead of the accurate context of acquiring companies.)"
     },
     "46": {
         "question_code": "FIN005",

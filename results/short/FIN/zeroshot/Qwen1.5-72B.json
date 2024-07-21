@@ -24,7 +24,7 @@
         "referenceAnswer": "The major agency problem for listed companies <Point1:2>in the U.S. market is the conflict between firm managers and shareholders<Point1:2>. The major agency problem <Point2:2>in the Chinese market is the conflict between controlling and minority shareholders<Point2:2>.",
         "studentAnswer": "In the U.S. market, the biggest agency problem involves conflicts between management and shareholders. In the Chinese market, the major agency issue arises from the struggles between controlling shareholders and minority shareholders.",
         "teacherMark": "<Point1:True>,<Point2:True>",
-        "feedback": "<Point1:2> *True* (The student correctly identifies the conflict between firm managers and shareholders as the major agency problem in the U.S. market.)\n<Point2:2> *True* (The student accurately explains that the agency problem in the Chinese market is the conflict between controlling and minority shareholders.)"
+        "feedback": "<Point1:2> *True* (The student correctly identifies the conflict between firm managers and shareholders as the major agency problem in the U.S. market.)\n<Point2:2> *True* (The student accurately explains that the agency problem in the Chinese market concerns the conflict between controlling and minority shareholders.)"
     },
     "3": {
         "question_code": "FIN001",
@@ -105,7 +105,7 @@
         "referenceAnswer": "The difference in terms of agency problem mainly due to <Point1:1>different ownership structures <Point1:1> in the two countries. <Point2:1>The U.S. listed firms have a diffused group of shareholders<Point2:1>. <Point3:1>China almost all listed firms have at least one controlling shareholders<Point3:1>.",
         "studentAnswer": "The agency problems differ because in China, the government plays a significant role in the companies, which affects the decision-making process. In the US, companies operate more independently from government interference.",
         "teacherMark": "<Point1:False>,<Point2:False>,<Point3:False>",
-        "feedback": "<Point1:1> *True* (The student correctly identifies that ownership structures differ between the US and China)\n<Point2:1> *False* (Although the student mentions government involvement, which is related to ownership in China, they do not specifically mention the diffuse shareholder structure in the US)\n<Point3:1> *False* (The student does not mention the presence of controlling shareholders in Chinese listed firms)"
+        "feedback": "<Point1:1> *True* (The student correctly identifies that ownership structures differ between the US and China)\n<Point2:1> *False* (Although the student mentions government involvement, which is related to ownership in China, they do not specifically mention the diffuse shareholder structure in the US as in the reference answer)\n<Point3:1> *False* (The student does not mention the presence of controlling shareholders in Chinese listed firms, which is an important aspect of the reference answer)"
     },
     "12": {
         "question_code": "FIN002",
@@ -123,7 +123,7 @@
         "referenceAnswer": "The difference in terms of agency problem mainly due to <Point1:1>different ownership structures <Point1:1> in the two countries. <Point2:1>The U.S. listed firms have a diffused group of shareholders<Point2:1>. <Point3:1>China almost all listed firms have at least one controlling shareholders<Point3:1>.",
         "studentAnswer": "The difference in agency problems is mostly due to the size of the firms. U.S. firms tend to be larger with more diverse shareholders, whereas Chinese firms are smaller with dominant controlling shareholders.",
         "teacherMark": "<Point1:False>,<Point2:False>,<Point3:False>",
-        "feedback": "<Point1:mark> *False* (The student mentioned size of the firms instead of different ownership structures)\n<Point2:mark> *False* (The student didn't correctly describe the U.S. situation, mentioning size rather than a diffused group of shareholders)\n<Point3:mark> *True* (The student correctly identified that Chinese firms often have dominant controlling shareholders)"
+        "feedback": "<Point1:mark> *False* (reason: The student mentioned the size of the firms instead of ownership structures as the main cause of the difference.)\n<Point2:mark> *False* (reason: The student did not accurately describe the U.S. situation, focusing on firm size rather than the diffused group of shareholders.)\n<Point3:mark> *True* (reason: The student correctly identified that Chinese firms often have dominant controlling shareholders, which aligns with the reference answer.)"
     },
     "14": {
         "question_code": "FIN002",
@@ -249,7 +249,7 @@
         "referenceAnswer": "<Point1:1>lack of sound accounting and auditing systems<Point1:1> and <Point2:1>lack of high-quality bond rating agencies<Point2:1>. <Point3:2>Given the low creditor protection and court inefficiency in China, the recovery rates for bondholders during default are low, which in turn leads to underinvestment in the market by domestic and foreign investors<Point3:2>.\n",
         "studentAnswer": "The slow growth of the bond market in China is due to several factors including poor accounting practices and the absence of good rating agencies. Also, investors don\u2019t invest much because they are not well protected in case of defaults.",
         "teacherMark": "<Point1:True>,<Point2:True>,<Point3:False>",
-        "feedback": "<Point1:True> *True* (The student correctly identifies the issue of lack of sound accounting and auditing systems)\n<Point2:True> *True* (The student mentions the absence of high-quality bond rating agencies, which aligns with the reference answer)\n<Point3:True> *True* (Although the student's answer is concise, it captures the essence of low creditor protection and its impact on investor confidence)"
+        "feedback": "<Point1:True> *True* (The student correctly identified the lack of sound accounting and auditing systems as a reason.)\n<Point2:True> *True* (The student mentioned the absence of high-quality bond rating agencies, which aligns with the reference answer.)\n<Point3:True> *True* (Although the student didn't mention court inefficiency explicitly, they implied low creditor protection and its effect on investor confidence, which is a key aspect of Point3.)"
     },
     "28": {
         "question_code": "FIN003",

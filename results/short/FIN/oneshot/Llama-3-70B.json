@@ -321,7 +321,7 @@
         "referenceAnswer": "<Point1:1>professional institutions<Point1:1> <Point2:1>such as investment banks, fund companies<Point2:1>, or <Point3:1>professionals<Point3:1> <Point4:1>with rich experience in the field of private equity mergers and acquisition<Point4:1>.\n",
         "studentAnswer": "The setup of a SPAC usually includes government agencies, small retail investors, and local business owners who want to expand their operations.",
         "teacherMark": "<Point1:False>,<Point2:False>,<Point3:False>,<Point4:False>",
-        "feedback": "Here is the feedback:\n\n<Point1:1> *False* (The student's answer does not mention professional institutions.)\n\n<Point2:1> *False* (The student's answer does not mention investment banks or fund companies.)\n\n<Point3:1> *False* (The student's answer does not mention professionals.)\n\n<Point4:1> *False* (The student's answer does not mention individuals with rich experience in private equity mergers and acquisitions.)"
+        "feedback": "Here is the feedback:\n\n<Point1:1> *False* (The student's answer does not mention professional institutions.)\n\n<Point2:1> *False* (The student's answer does not mention investment banks or fund companies.)\n\n<Point3:1> *False* (The student's answer does not mention professionals.)\n\n<Point4:1> *False* (The student's answer does not mention experience in private equity mergers and acquisition.)"
     },
     "36": {
         "question_code": "FIN004",

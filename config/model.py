@@ -44,7 +44,7 @@ model_names = ["Qwen1.5-14B",
                "Mixtral-8x7B",
                "Qwen2-72B",
                "DeepSeek-V2-Lite",
-               "CommandR+"
+               "CommandR+",
                "DeepSeek-Coder-V2-Lite",
                "Qwen1.5-72B",
                "Mixtral-8x22B"

@@ -402,7 +402,7 @@
         "referenceAnswer": "The raised funds are used to <Point1:1>acquire unlisted companies with certain development prospects<Point1:1> <Point2:1>after the IPO<Point2:1>.",
         "studentAnswer": "The raised funds are used for acquiring real estate and other physical assets, as well as for paying high salaries to the SPAC management team.",
         "teacherMark": "<Point1:False>,<Point2:False>",
-        "feedback": "<Point1:1> *False* (The student's answer does not mention acquiring unlisted companies with development prospects.)\n\n<Point2:1> *False* (The student's answer does not mention the acquisition happening after the IPO, and instead provides unrelated uses of the funds.)"
+        "feedback": "<Point1:1> *False* (The student's answer does not mention acquiring unlisted companies with development prospects.)\n\n<Point2:1> *False* (The student's answer does not mention the timing of the acquisition as after the IPO.)"
     },
     "45": {
         "question_code": "FIN005",
@@ -420,7 +420,7 @@
         "referenceAnswer": "The raised funds are used to <Point1:1>acquire unlisted companies with certain development prospects<Point1:1> <Point2:1>after the IPO<Point2:1>.",
         "studentAnswer": "The raised funds are primarily used for paying dividends to the initial investors and covering the operational costs of the SPAC.",
         "teacherMark": "<Point1:False>,<Point2:False>",
-        "feedback": "<Point1:1> *False* (The student's answer does not mention the acquisition of unlisted companies with development prospects.)\n\n<Point2:1> *False* (The student's answer does not mention the use of funds after the IPO.)"
+        "feedback": "<Point1:1> *False* (The student's answer does not mention acquiring unlisted companies with development prospects.)\n\n<Point2:1> *False* (The student's answer does not mention the funds being used after the IPO.)"
     },
     "47": {
         "question_code": "FIN005",
@@ -447,6 +447,6 @@
         "referenceAnswer": "The raised funds are used to <Point1:1>acquire unlisted companies with certain development prospects<Point1:1> <Point2:1>after the IPO<Point2:1>.",
         "studentAnswer": "The funds from the SPAC are used to buy unlisted companies that have good growth prospects",
         "teacherMark": "<Point1:True>,<Point2:False>",
-        "feedback": "<Point1:1> *True* (The student's answer correctly mentions the acquisition of unlisted companies with certain development prospects.)\n\n<Point2:1> *False* (The student's answer does not mention that the acquisition happens after the IPO.)"
+        "feedback": "<Point1:1> *True* (The student's answer correctly mentions the acquisition of unlisted companies with certain development prospects.)\n\n<Point2:1> *False* (The student's answer does not mention that the acquisition occurs after the IPO.)"
     }
 }

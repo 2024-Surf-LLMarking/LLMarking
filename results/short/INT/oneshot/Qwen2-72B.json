@@ -69,7 +69,7 @@
         "referenceAnswer": "Supervised learning is <Point1:2>a\ntype of machine learning where the model is trained on labeled data <Point1:2>.\n<Point2:2>The model learns to map inputs to outputs based on example\ninput-output pairs <Point2:2>.",
         "studentAnswer": "Supervised learning uses labeled data to train a machine learning model. The model then learns to associate inputs with the correct outputs based on these labels.",
         "teacherMark": "<Point1:True>,<Point2:True>",
-        "feedback": "<Point1:2> *True* (The student accurately describes supervised learning as using labeled data to train a model.)\n\n<Point2:2> *True* (The student correctly explains that the model learns to map inputs to outputs based on labeled examples.)"
+        "feedback": "<Point1:2> *True* (The student accurately describes supervised learning as using labeled data to train a model.)\n\n<Point2:2> *True* (The student correctly explains that the model learns to map inputs to outputs based on example input-output pairs.)"
     },
     "8": {
         "question_code": "INT001",
@@ -348,7 +348,7 @@
         "referenceAnswer": "<Point1:2>Overfitting occurs when a machine learning model learns the details and noise in the training data to an extent<Point1:2>. \n<Point2:2>It negatively impacts the performance of the model on new data, making it less generalizable<Point2:2>.\n",
         "studentAnswer": "Overfitting is when a model is too simple and cannot capture the complexity of the data, leading to poor performance.",
         "teacherMark": "<Point1:False>,<Point2:False>",
-        "feedback": "<Point1:2> *False* (The student's answer incorrectly describes overfitting as resulting from a model being too simple, whereas overfitting typically involves a model that is too complex for the data.)\n\n<Point2:2> *False* (The student's answer does not address the negative impact of overfitting on the model's performance on new data or its lack of generalizability.)"
+        "feedback": "<Point1:2> *False* (The student's answer incorrectly describes overfitting as resulting from a model being too simple, whereas overfitting typically involves a model that is too complex for the data.)\n\n<Point2:2> *False* (The student's answer does not address the impact of overfitting on the model's performance on new data or its lack of generalizability.)"
     },
     "39": {
         "question_code": "INT004",
@@ -456,7 +456,7 @@
         "referenceAnswer": "Well, <Point1:1> it has everything to do with how model accuracy is only a subset of model performance, and at that, a sometimes misleading one <Point1:1> . <Point2:2> For example, if you wanted to detect fraud in a massive dataset with a sample of millions, a more accurate model would most likely predict no fraud at all if only a vast minority of cases were fraud <Point2:2>. <Point3:2>However, this would be useless for a predictive model - a model designed to find fraud that asserted there was no fraud at all! Questions like this help you demonstrate that you understand model accuracy isn\u2019t the be-all and end-all of model performance.<Point3:2>",
         "studentAnswer": "Model performance encompasses accuracy, but it\u2019s broader. In cases like fraud detection, an accurate model might just predict no fraud if fraud cases are few, which isn\u2019t helpful. Thus, understanding that performance includes other factors is crucial.",
         "teacherMark": "<Point1:True>,<Point2:True>,<Point3:True>",
-        "feedback": "<Point1:1> *True* (The student's answer acknowledges that model accuracy is part of model performance but can be misleading.)\n\n<Point2:2> *True* (The student's answer provides an example of fraud detection where an accurate model might not be useful, illustrating the broader context of model performance.)\n\n<Point3:2> *True* (The student's answer emphasizes the importance of understanding that model performance involves more than just accuracy, aligning with the reference answer's conclusion.)"
+        "feedback": "<Point1:1> *True* (The student's answer acknowledges that model accuracy is part of model performance but can be misleading.)\n\n<Point2:2> *True* (The student's answer provides an example of fraud detection where an accurate model might not be useful, illustrating the broader context of model performance.)\n\n<Point3:2> *True* (The student's answer emphasizes the importance of understanding that model performance involves more than just accuracy, particularly in the context of fraud detection.)"
     },
     "51": {
         "question_code": "INT006",
@@ -483,7 +483,7 @@
         "referenceAnswer": "Well, <Point1:1> it has everything to do with how model accuracy is only a subset of model performance, and at that, a sometimes misleading one <Point1:1> . <Point2:2> For example, if you wanted to detect fraud in a massive dataset with a sample of millions, a more accurate model would most likely predict no fraud at all if only a vast minority of cases were fraud <Point2:2>. <Point3:2>However, this would be useless for a predictive model - a model designed to find fraud that asserted there was no fraud at all! Questions like this help you demonstrate that you understand model accuracy isn\u2019t the be-all and end-all of model performance.<Point3:2>",
         "studentAnswer": "I think model accuracy is definitely important, but then again, model performance encompasses more aspects. If a model is accurate, it should perform well, but then it might miss fraud if the cases are rare, which is a performance issue.",
         "teacherMark": "<Point1:True>,<Point2:False>,<Point3:True>",
-        "feedback": "<Point1:1> *True* (The student acknowledges that model accuracy is a subset of model performance and can be misleading.)\n\n<Point2:2> *True* (The student provides an example where a highly accurate model might not perform well in detecting rare events like fraud.)\n\n<Point3:2> *True* (The student understands that model accuracy alone is not sufficient for evaluating model performance, especially in the context of fraud detection.)"
+        "feedback": "<Point1:1> *True* (The student acknowledges that model accuracy is a subset of model performance and can be misleading.)\n\n<Point2:2> *True* (The student provides an example where a highly accurate model might not perform well in detecting rare events like fraud.)\n\n<Point3:2> *True* (The student understands that model accuracy alone is not sufficient and that missing rare events is a performance issue.)"
     },
     "54": {
         "question_code": "INT006",
@@ -573,7 +573,7 @@
         "referenceAnswer": "<Point1:2> Yes <Point1:2>, <Point2:1> logistic regression can be used for multiclass classification through methods <Point2:1> such as <Point3:1> the one-vs-rest (OvR) and the multinomial (softmax) approach <Point3:1>.",
         "studentAnswer": "Logistic regression might be used for some classification things, like maybe multiclass ones. It uses some methods I think, but not sure which ones exactly. Maybe it does stuff with probabilities, but I'm not really sure how.",
         "teacherMark": "<Point1:False>,<Point2:False>,<Point3:False>",
-        "feedback": "<Point1:2> *True* (The student acknowledges that logistic regression can be used for multiclass classification.)\n\n<Point2:1> *True* (The student implies that there are methods to use logistic regression for multiclass classification, although not clearly stated.)\n\n<Point3:1> *False* (The student does not specify any methods such as one-vs-rest (OvR) or the multinomial (softmax) approach.)"
+        "feedback": "<Point1:2> *True* (The student acknowledges that logistic regression can be used for multiclass classification.)\n\n<Point2:1> *True* (The student implies that there are methods to adapt logistic regression for multiclass classification.)\n\n<Point3:1> *False* (The student does not specify any particular method such as one-vs-rest (OvR) or the multinomial (softmax) approach.)"
     },
     "64": {
         "question_code": "INT008",

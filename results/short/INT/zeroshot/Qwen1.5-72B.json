@@ -42,7 +42,7 @@
         "referenceAnswer": "Supervised learning is <Point1:2>a\ntype of machine learning where the model is trained on labeled data <Point1:2>.\n<Point2:2>The model learns to map inputs to outputs based on example\ninput-output pairs <Point2:2>.",
         "studentAnswer": "Supervised learning is a machine learning method. The model learns to map inputs to outputs based on example input-output pairs.",
         "teacherMark": "<Point1:False>,<Point2:True>",
-        "feedback": "<Point1:2> *True* (The student correctly identifies that supervised learning involves a model being trained on labeled data.)\n<Point2:2> *True* (The student understands that the model learns from input-output pairs, which is a key aspect of supervised learning.)"
+        "feedback": "<Point1:2> *True* (The student correctly identifies that supervised learning involves a model being trained on labeled data)\n<Point2:2> *True* (The student understands that the model learns from input-output pairs)"
     },
     "5": {
         "question_code": "INT001",
@@ -78,7 +78,7 @@
         "referenceAnswer": "Supervised learning is <Point1:2>a\ntype of machine learning where the model is trained on labeled data <Point1:2>.\n<Point2:2>The model learns to map inputs to outputs based on example\ninput-output pairs <Point2:2>.",
         "studentAnswer": "In supervised learning, a model is taught using data that includes both the inputs and the desired outputs. This helps the model to make predictions by learning the relationship between the input and output.",
         "teacherMark": "<Point1:True>,<Point2:True>",
-        "feedback": "<Point1:2> *True* (The student correctly explains that supervised learning involves training a model on labeled data.)\n<Point2:2> *True* (The student mentions that the model learns to map inputs to outputs based on example pairs, which is the core concept of supervised learning.)"
+        "feedback": "<Point1:2> *True* (The student correctly explains that supervised learning involves training a model on labeled data)\n<Point2:2> *True* (The student mentions that the model learns to map inputs to outputs based on example pairs, which is the core concept of supervised learning)"
     },
     "9": {
         "question_code": "INT001",
@@ -114,7 +114,7 @@
         "referenceAnswer": "Classification and regression<Point1:1>differ\nin the type of output they predict <Point1:1>. <Point2:1>Classification\npredicts discrete labels (categories)<Point2:1>\uff0cwhereas<Point3:1>regression\npredicts continuous quantities <Point3:1>.",
         "studentAnswer": "Classification and regression are different in terms of their outputs. Classification involves predicting categories or classes, while regression is used to predict numerical values.",
         "teacherMark": "<Point1:True>,<Point2:True>,<Point3:True>",
-        "feedback": "<Point1:1> *True* (The student correctly identifies that classification and regression differ in the type of output they predict.)\n<Point2:1> *True* (The student explains that classification predicts discrete labels, which aligns with the reference answer.)\n<Point3:1> *True* (The student mentions that regression predicts continuous quantities, which matches the reference answer.)"
+        "feedback": "<Point1:1> *True* (The student correctly identifies the difference in output types between classification and regression)\n<Point2:1> *True* (The student explains that classification predicts discrete labels, which aligns with the reference answer)\n<Point3:1> *True* (The student mentions that regression predicts continuous quantities, consistent with the reference answer)"
     },
     "13": {
         "question_code": "INT002",
@@ -132,7 +132,7 @@
         "referenceAnswer": "Classification and regression<Point1:1>differ\nin the type of output they predict <Point1:1>. <Point2:1>Classification\npredicts discrete labels (categories)<Point2:1>\uff0cwhereas<Point3:1>regression\npredicts continuous quantities <Point3:1>.",
         "studentAnswer": "Classification and regression are used for different kinds of predictions. Classification involves sorting data into distinct groups, while regression is used to predict continuous numbers.",
         "teacherMark": "<Point1:False>,<Point2:True>,<Point3:True>",
-        "feedback": "<Point1:1> *True* (The student correctly identifies that classification and regression differ in the type of output they predict.)\n<Point2:1> *True* (The student explains that classification predicts discrete labels, which aligns with the reference answer.)\n<Point3:1> *True* (The student mentions that regression predicts continuous quantities, which matches the reference answer.)"
+        "feedback": "<Point1:1> *True* (The student correctly identifies the difference in output types between classification and regression)\n<Point2:1> *True* (The student explains that classification predicts discrete labels, showing understanding of classification)\n<Point3:1> *True* (The student mentions regression predicts continuous quantities, demonstrating understanding of regression)"
     },
     "15": {
         "question_code": "INT002",
@@ -222,7 +222,7 @@
         "referenceAnswer": "Unsupervised learning involves <Point1:2>training models on data without labels<Point1:2>. \nThe goal is to <Point2:2>discover patterns or structures within the data <Point2:2>. \n",
         "studentAnswer": "In unsupervised learning, the computer learns by itself without any examples.",
         "teacherMark": "<Point1:False>,<Point2:False>",
-        "feedback": "<Point1:2> *True* (The student correctly mentioned that unsupervised learning involves training models on data without labels.)\n<Point2:2> *True* (The student's answer implies that the purpose is to find patterns, although it's not explicitly stated, the concept is understood.)"
+        "feedback": "<Point1:2> *True* (The student correctly mentioned that unsupervised learning involves training models on data without labels.)\n<Point2:2> *True* (The student's answer implies that the purpose is to find patterns, although it's not explicitly stated, the core idea is correct.)"
     },
     "25": {
         "question_code": "INT003",
@@ -240,7 +240,7 @@
         "referenceAnswer": "Unsupervised learning involves <Point1:2>training models on data without labels<Point1:2>. \nThe goal is to <Point2:2>discover patterns or structures within the data <Point2:2>. \n",
         "studentAnswer": "In unsupervised learning, data without labels is used to train models. These models then try to identify hidden structures or patterns in the data.",
         "teacherMark": "<Point1:True>,<Point2:True>",
-        "feedback": "<Point1:2> True (The student correctly explains that unsupervised learning uses unlabeled data for training.)\n<Point2:2> True (The student's answer indicates the purpose of unsupervised learning is to find patterns or structures in the data, which aligns with the reference answer.)"
+        "feedback": "<Point1:2> True (The student correctly explains that unsupervised learning uses unlabeled data for training.)\n<Point2:2> True (The student's answer indicates the purpose of unsupervised learning is to find patterns or structures in the data.)"
     },
     "27": {
         "question_code": "INT003",
@@ -393,7 +393,7 @@
         "referenceAnswer": "A neural network is <Point1:2>a series of algorithms that attempts to recognize underlying relationships in a set of data<Point1:2> <Point2:2>through a process that mimics the way the human brain operates<Point2:2>. ",
         "studentAnswer": "Neural networks are algorithmic systems that analyze data, mimicking human brain functions to find patterns.",
         "teacherMark": "<Point1:False>,<Point2:True>",
-        "feedback": "<Point1:2> *True* (The student correctly explains that neural networks are algorithms that analyze data and identify patterns)\n<Point2:2> *True* (The student mentions that these algorithms mimic human brain functions, which is an essential aspect of neural networks)"
+        "feedback": "<Point1:2> *True* (The student correctly explains that neural networks are algorithms that find relationships in data)\n<Point2:2> *True* (The student's answer indicates the\u6a21\u4effhuman brain operation aspect, although it's not stated explicitly, the essence is captured in \"mimicking human brain functions\")"
     },
     "44": {
         "question_code": "INT005",
@@ -465,7 +465,7 @@
         "referenceAnswer": "Well, <Point1:1> it has everything to do with how model accuracy is only a subset of model performance, and at that, a sometimes misleading one <Point1:1> . <Point2:2> For example, if you wanted to detect fraud in a massive dataset with a sample of millions, a more accurate model would most likely predict no fraud at all if only a vast minority of cases were fraud <Point2:2>. <Point3:2>However, this would be useless for a predictive model - a model designed to find fraud that asserted there was no fraud at all! Questions like this help you demonstrate that you understand model accuracy isn\u2019t the be-all and end-all of model performance.<Point3:2>",
         "studentAnswer": "Model performance is more important because accuracy is just a subset of it. For instance, in fraud detection within a large dataset, an accurate model might predict no fraud at all if fraud is very rare, which would be useless for finding fraud.",
         "teacherMark": "<Point1:True>,<Point2:True>,<Point3:False>",
-        "feedback": "<Point1:1> *True* (The student correctly identifies that model accuracy is a subset of model performance and can be misleading.)\n<Point2:2> *True* (The student provides a relevant example of fraud detection, illustrating how accuracy might not be sufficient.)\n<Point3:2> *True* (The student understands that a model's usefulness is crucial, not just accuracy, and connects it back to the importance of model performance.)"
+        "feedback": "<Point1:1> *True* (The student correctly identifies that model accuracy is a subset of model performance and can be misleading.)\n<Point2:2> *True* (The student provides a relevant example of fraud detection, illustrating how high accuracy may not be useful in certain scenarios.)\n<Point3:2> *True* (The student understands that the purpose of the model is crucial, implying that accuracy alone is not sufficient for good performance.)"
     },
     "52": {
         "question_code": "INT006",
@@ -474,7 +474,7 @@
         "referenceAnswer": "Well, <Point1:1> it has everything to do with how model accuracy is only a subset of model performance, and at that, a sometimes misleading one <Point1:1> . <Point2:2> For example, if you wanted to detect fraud in a massive dataset with a sample of millions, a more accurate model would most likely predict no fraud at all if only a vast minority of cases were fraud <Point2:2>. <Point3:2>However, this would be useless for a predictive model - a model designed to find fraud that asserted there was no fraud at all! Questions like this help you demonstrate that you understand model accuracy isn\u2019t the be-all and end-all of model performance.<Point3:2>",
         "studentAnswer": "While model accuracy is important, model performance is more comprehensive. For instance, in a fraud detection system, a model that\u2019s only accurate might not detect fraud effectively if fraud is rare. Performance includes how well the model works in real-world scenarios.",
         "teacherMark": "<Point1:True>,<Point2:True>,<Point3:True>",
-        "feedback": "<Point1:1> *True* (The student understands that model accuracy is a part of model performance and can be misleading.)\n<Point2:2> *True* (The student gives an example similar to the reference answer, illustrating how a highly accurate model may not be useful in certain situations.)\n<Point3:2> *True* (The student emphasizes the importance of real-world effectiveness, which aligns with the reference answer's point about model usefulness.)"
+        "feedback": "<Point1:1> *True* (The student understands that model accuracy is a part of model performance and can be misleading.)\n<Point2:2> *True* (The student gives an example similar to the reference answer, illustrating how a highly accurate model may not be useful in certain situations.)\n<Point3:2> *True* (The student emphasizes the importance of considering real-world effectiveness, which aligns with the reference answer's point about model usefulness.)"
     },
     "53": {
         "question_code": "INT006",

@@ -15,7 +15,7 @@
         "referenceAnswer": "The major agency problem for listed companies <Point1:2>in the U.S. market is the conflict between firm managers and shareholders<Point1:2>. The major agency problem <Point2:2>in the Chinese market is the conflict between controlling and minority shareholders<Point2:2>.",
         "studentAnswer": "Listed companies in the United States mainly have problems between management and shareholders,In the Chinese market is the conflict between senior management and ordinary employees within the company",
         "teacherMark": "<Point1:True>,<Point2:False>",
-        "feedback": "<Point1:2> *False* (The student's answer correctly identifies the agency problem in the U.S. market as a conflict between management and shareholders, but does not provide a clear definition of the problem.)\n\n<Point2:2> *False* (The student's answer incorrectly identifies the agency problem in the Chinese market as a conflict between senior management and ordinary employees, rather than between controlling and minority shareholders.)"
+        "feedback": "<Point1:2> *False* (The student's answer incorrectly identifies the agency problem in the U.S. market as conflict between management and shareholders. It should be conflict between firm managers and shareholders.)\n\n<Point2:2> *False* (The student's answer incorrectly identifies the agency problem in the Chinese market as conflict between senior management and ordinary employees. It should be conflict between controlling and minority shareholders.)"
     },
     "2": {
         "question_code": "FIN001",
@@ -123,7 +123,7 @@
         "referenceAnswer": "The difference in terms of agency problem mainly due to <Point1:1>different ownership structures <Point1:1> in the two countries. <Point2:1>The U.S. listed firms have a diffused group of shareholders<Point2:1>. <Point3:1>China almost all listed firms have at least one controlling shareholders<Point3:1>.",
         "studentAnswer": "The difference in agency problems is mostly due to the size of the firms. U.S. firms tend to be larger with more diverse shareholders, whereas Chinese firms are smaller with dominant controlling shareholders.",
         "teacherMark": "<Point1:False>,<Point2:False>,<Point3:False>",
-        "feedback": "<Point1:1> *False* (The student's answer does not correctly mention different ownership structures between the two countries.)\n\n<Point2:1> *True* (The student's answer correctly mentions U.S. listed firms having a diffused group of shareholders.)\n\n<Point3:1> *True* (The student's answer correctly mentions Chinese listed firms having at least one controlling shareholder, even though the size of the firms is not the main reason for the difference in agency problems.)"
+        "feedback": "<Point1:1> *False* (The student's answer does not correctly mention different ownership structures between the two countries.)\n\n<Point2:1> *True* (The student's answer correctly mentions U.S. listed firms having a diffused group of shareholders.)\n\n<Point3:1> *True* (The student's answer correctly mentions Chinese listed firms having at least one controlling shareholder, but they fail to mention that Chinese firms are generally smaller.)"
     },
     "14": {
         "question_code": "FIN002",
@@ -195,7 +195,7 @@
         "referenceAnswer": "<Point1:1>lack of sound accounting and auditing systems<Point1:1> and <Point2:1>lack of high-quality bond rating agencies<Point2:1>. <Point3:2>Given the low creditor protection and court inefficiency in China, the recovery rates for bondholders during default are low, which in turn leads to underinvestment in the market by domestic and foreign investors<Point3:2>.\n",
         "studentAnswer": "China's bond market struggles due to weak creditor protections and inefficient court systems, leading to low recovery rates for bondholders in cases of default, which scares away both domestic and international investors.",
         "teacherMark": "<Point1:False>,<Point2:False>,<Point3:True>",
-        "feedback": "<Point1:1> *True* (The student's answer implies the lack of sound accounting and auditing systems in China.)\n\n<Point2:1> *False* (The student's answer does not directly mention the lack of high-quality bond rating agencies.)\n\n<Point3:2> *True* (The student's answer correctly mentions the weak creditor protections and inefficient court systems leading to low recovery rates for bondholders during default, which in turn leads to underinvestment in the market.)"
+        "feedback": "<Point1:1> *True* (The student's answer implies the lack of sound accounting and auditing systems in China.)\n\n<Point2:1> *False* (The student's answer does not directly mention the lack of high-quality bond rating agencies.)\n\n<Point3:2> *True* (The student's answer correctly mentions the weak creditor protections and inefficient court systems leading to low recovery rates for bondholders during default, which in turn leads to underinvestment in the market by domestic and foreign investors.)"
     },
     "22": {
         "question_code": "FIN003",
@@ -285,7 +285,7 @@
         "referenceAnswer": "<Point1:1>professional institutions<Point1:1> <Point2:1>such as investment banks, fund companies<Point2:1>, or <Point3:1>professionals<Point3:1> <Point4:1>with rich experience in the field of private equity mergers and acquisition<Point4:1>.\n",
         "studentAnswer": "SPACs are usually set up by major financial institutions like investment banks and private equity firms due to their expertise in managing large funds and complex transactions.",
         "teacherMark": "<Point1:True>,<Point2:True>,<Point3:False>,<Point4:False>",
-        "feedback": "<Point1:1> *True* (The student's answer correctly mentions professional institutions.)\n\n<Point2:1> *True* (The student's answer correctly mentions financial institutions such as investment banks and private equity firms.)\n\n<Point3:1> *False* (The student's answer does not explicitly mention professionals.)\n\n<Point4:1> *True* (The student's answer implies rich experience in the field of private equity mergers and acquisition.)"
+        "feedback": "<Point1:1> *True* (The student's answer correctly mentions professional institutions.)\n\n<Point2:1> *True* (The student's answer correctly mentions financial institutions like investment banks.)\n\n<Point3:1> *False* (The student's answer does not explicitly mention professionals, but it can be inferred from the context.)\n\n<Point4:1> *True* (The student's answer correctly mentions the expertise in managing large funds and complex transactions, which implies rich experience in private equity mergers and acquisition.)"
     },
     "32": {
         "question_code": "FIN004",

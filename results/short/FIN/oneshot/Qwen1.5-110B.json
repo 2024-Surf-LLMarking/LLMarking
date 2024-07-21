@@ -339,7 +339,7 @@
         "referenceAnswer": "<Point1:1>professional institutions<Point1:1> <Point2:1>such as investment banks, fund companies<Point2:1>, or <Point3:1>professionals<Point3:1> <Point4:1>with rich experience in the field of private equity mergers and acquisition<Point4:1>.\n",
         "studentAnswer": "Investment banks and fund companies are usually involved in creating a SPAC. Additionally, people who have worked in private equity mergers are important, but sometimes consultants are also part of the process.",
         "teacherMark": "<Point1:False>,<Point2:True>,<Point3:False>,<Point4:False>",
-        "feedback": "<Point1:1> *True* (The student's answer includes professional institutions like investment banks, which aligns with Point1.)\n\n<Point2:1> *True* (The student mentions fund companies, matching the content of Point2.)\n\n<Point3:1> *Partially True* (The student refers to \"people\" with specific experience, which is close to professionals but does not explicitly mention \"professionals.\" Hence, it's not entirely accurate but captures a similar idea.)\n\n<Point4:1> *Partially True* (The student mentions individuals with experience in private equity mergers, aligning with the essence of Point4, but omits the term \"professionals\" and adds \"consultants,\" slightly deviating from the reference.)"
+        "feedback": "<Point1:1> *True* (The student's answer includes professional institutions like investment banks, which aligns with Point1.)\n\n<Point2:1> *True* (The mention of fund companies aligns with the reference answer's Point2, though it's implied rather than explicit about fund companies.)\n\n<Point3:1> *Partially True* (The student refers to \"people\" with specific experience, which overlaps with professionals but does not explicitly state \"professionals.\" Hence, it's not a full match but acknowledges a similar category.)\n\n<Point4:1> *Partially True* (The student mentions individuals with experience in private equity mergers, aligning with the experienced professionals aspect of Point4, but does not specifically mention the field of private equity mergers and acquisitions.)"
     },
     "38": {
         "question_code": "FIN004",
@@ -384,7 +384,7 @@
         "referenceAnswer": "The raised funds are used to <Point1:1>acquire unlisted companies with certain development prospects<Point1:1> <Point2:1>after the IPO<Point2:1>.",
         "studentAnswer": "The money raised from a SPAC is used to purchase companies that are not yet publicly traded and have growth potential after the IPO.",
         "teacherMark": "<Point1:True>,<Point2:True>",
-        "feedback": "<Point1:1> *True* (The student's answer correctly states that the funds are used to acquire unlisted companies with growth potential, aligning with the reference answer.)\n\n<Point2:1> *True* (The student's answer implies the post-IPO action by mentioning \"after the IPO\" when describing the use of funds, which is consistent with the reference answer.)"
+        "feedback": "<Point1:1> *True* (The student's answer correctly states that the funds are used to acquire unlisted companies with growth potential, aligning with the reference answer.)\n\n<Point2:1> *True* (The student's answer implies that the acquisitions happen after the IPO, which is correct according to the reference answer.)"
     },
     "43": {
         "question_code": "FIN005",

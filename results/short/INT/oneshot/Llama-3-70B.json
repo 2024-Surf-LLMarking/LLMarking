@@ -402,7 +402,7 @@
         "referenceAnswer": "A neural network is <Point1:2>a series of algorithms that attempts to recognize underlying relationships in a set of data<Point1:2> <Point2:2>through a process that mimics the way the human brain operates<Point2:2>. ",
         "studentAnswer": "A neural network is a system of algorithms designed to find patterns in data by simulating how the brain works.",
         "teacherMark": "<Point1:True>,<Point2:True>",
-        "feedback": "Here is the feedback:\n\n<Point1:2> *True* (The student's answer correctly mentions that a neural network is a series of algorithms that attempts to recognize underlying relationships in a set of data.)\n\n<Point2:2> *True* (The student's answer correctly mentions that the process mimics the way the human brain operates.)"
+        "feedback": "Here is the feedback:\n\n<Point1:2> *True* (The student's answer correctly mentions that a neural network attempts to recognize underlying relationships in a set of data.)\n\n<Point2:2> *True* (The student's answer correctly mentions that a neural network simulates how the brain works.)"
     },
     "45": {
         "question_code": "INT005",

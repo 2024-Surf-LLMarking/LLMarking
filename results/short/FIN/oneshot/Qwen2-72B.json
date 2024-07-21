@@ -195,7 +195,7 @@
         "referenceAnswer": "<Point1:1>lack of sound accounting and auditing systems<Point1:1> and <Point2:1>lack of high-quality bond rating agencies<Point2:1>. <Point3:2>Given the low creditor protection and court inefficiency in China, the recovery rates for bondholders during default are low, which in turn leads to underinvestment in the market by domestic and foreign investors<Point3:2>.\n",
         "studentAnswer": "China's bond market struggles due to weak creditor protections and inefficient court systems, leading to low recovery rates for bondholders in cases of default, which scares away both domestic and international investors.",
         "teacherMark": "<Point1:False>,<Point2:False>,<Point3:True>",
-        "feedback": "<Point1:1> *True* (The student's answer indirectly acknowledges the lack of sound accounting and auditing systems by referring to weak creditor protections, which can be associated with poor accounting practices.)\n\n<Point2:1> *False* (The student's answer does not mention the lack of high-quality bond rating agencies.)\n\n<Point3:2> *True* (The student's answer accurately describes the impact of low creditor protection and court inefficiency on recovery rates and investor behavior.)"
+        "feedback": "<Point1:1> *True* (The student's answer indirectly acknowledges the lack of sound accounting and auditing systems by referring to weak creditor protections, which can be associated with broader issues in financial oversight and regulation.)\n\n<Point2:1> *False* (The student's answer does not mention the lack of high-quality bond rating agencies, focusing instead on creditor protections and court efficiency.)\n\n<Point3:2> *True* (The student's answer accurately describes the impact of low recovery rates for bondholders during default on investment levels in the Chinese bond market.)"
     },
     "22": {
         "question_code": "FIN003",
@@ -222,7 +222,7 @@
         "referenceAnswer": "<Point1:1>lack of sound accounting and auditing systems<Point1:1> and <Point2:1>lack of high-quality bond rating agencies<Point2:1>. <Point3:2>Given the low creditor protection and court inefficiency in China, the recovery rates for bondholders during default are low, which in turn leads to underinvestment in the market by domestic and foreign investors<Point3:2>.\n",
         "studentAnswer": "The bond market in China grows slowly because investors prefer to invest in the stock market, believing that stocks are more profitable than bonds. Also, the government's strict regulations on the bond market limit its development.",
         "teacherMark": "<Point1:False>,<Point2:False>,<Point3:False>",
-        "feedback": "<Point1:1> *False* (The student's answer does not mention the lack of sound accounting and auditing systems as a reason for the slow growth of the bond market in China.)\n<Point2:1> *False* (The student's answer does not address the lack of high-quality bond rating agencies as a contributing factor to the slow growth.)\n<Point3:2> *False* (The student's answer does not discuss the impact of low creditor protection and court inefficiency on recovery rates for bondholders during default, nor does it mention the effect on investment by domestic and foreign investors.)"
+        "feedback": "<Point1:1> *False* (The student's answer does not mention the lack of sound accounting and auditing systems as a reason for the slow growth of the bond market in China.)\n<Point2:1> *False* (The student's answer does not address the lack of high-quality bond rating agencies as a contributing factor to the slow growth.)\n<Point3:2> *False* (The student's answer does not discuss the impact of low creditor protection and court inefficiency on recovery rates and investment in the bond market.)"
     },
     "25": {
         "question_code": "FIN003",
@@ -240,7 +240,7 @@
         "referenceAnswer": "<Point1:1>lack of sound accounting and auditing systems<Point1:1> and <Point2:1>lack of high-quality bond rating agencies<Point2:1>. <Point3:2>Given the low creditor protection and court inefficiency in China, the recovery rates for bondholders during default are low, which in turn leads to underinvestment in the market by domestic and foreign investors<Point3:2>.\n",
         "studentAnswer": "One reason for the slow growth of the bond market in China is the lack of reliable accounting and auditing systems. Additionally, investors have little confidence in the bond market because the rating agencies are not very good.",
         "teacherMark": "<Point1:True>,<Point2:True>,<Point3:False>",
-        "feedback": "<Point1:1> *True* (The student accurately identified the lack of sound accounting and auditing systems as a reason for the slow growth of the bond market in China.)\n\n<Point2:1> *True* (The student correctly mentioned the issue with bond rating agencies contributing to the problem.)\n\n<Point3:2> *False* (The student's answer does not address the impact of low creditor protection and court inefficiency on recovery rates and investment in the Chinese bond market.)"
+        "feedback": "<Point1:1> *True* (The student accurately identified the lack of sound accounting and auditing systems as a factor contributing to the slow growth of the bond market in China.)\n\n<Point2:1> *True* (The student correctly mentioned the issue with bond rating agencies affecting investor confidence and market growth.)\n\n<Point3:2> *False* (The student's answer did not address the impact of low creditor protection, court inefficiency, and low recovery rates for bondholders during defaults on the investment levels in the Chinese bond market.)"
     },
     "27": {
         "question_code": "FIN003",
@@ -285,7 +285,7 @@
         "referenceAnswer": "<Point1:1>professional institutions<Point1:1> <Point2:1>such as investment banks, fund companies<Point2:1>, or <Point3:1>professionals<Point3:1> <Point4:1>with rich experience in the field of private equity mergers and acquisition<Point4:1>.\n",
         "studentAnswer": "SPACs are usually set up by major financial institutions like investment banks and private equity firms due to their expertise in managing large funds and complex transactions.",
         "teacherMark": "<Point1:True>,<Point2:True>,<Point3:False>,<Point4:False>",
-        "feedback": "<Point1:1> *True* (The student's answer correctly identifies professional institutions as being involved in the initial setup of SPACs.)\n<Point2:1> *True* (The student's answer includes investment banks as entities involved in setting up SPACs.)\n<Point3:1> *False* (The student's answer does not specifically mention professionals with relevant experience.)\n<Point4:1> *False* (The student's answer does not explicitly state the involvement of individuals with rich experience in private equity mergers and acquisitions.)"
+        "feedback": "<Point1:1> *True* (The student's answer includes professional institutions as being involved in the initial setup of a SPAC.)\n<Point2:1> *True* (The student's answer specifies investment banks and private equity firms, which fall under the category of professional institutions mentioned in the reference answer.)\n<Point3:1> *False* (The student's answer does not mention professionals with specific expertise in private equity mergers and acquisitions.)\n<Point4:1> *False* (The student's answer does not explicitly state the requirement for rich experience in the field of private equity mergers and acquisitions.)"
     },
     "32": {
         "question_code": "FIN004",
@@ -375,7 +375,7 @@
         "referenceAnswer": "The raised funds are used to <Point1:1>acquire unlisted companies with certain development prospects<Point1:1> <Point2:1>after the IPO<Point2:1>.",
         "studentAnswer": "The money collected through a SPAC is used to acquire companies that have not yet gone public but are seen as potentially valuable.",
         "teacherMark": "<Point1:True>,<Point2:False>",
-        "feedback": "<Point1:1> *True* (The student correctly identifies that the funds are used to acquire unlisted companies with potential value.)\n<Point2:1> *True* (The student implicitly acknowledges that this acquisition happens after the IPO, as they mention collecting money through a SPAC, which occurs post-IPO.)"
+        "feedback": "<Point1:1> *True* (The student accurately explains that the funds are used to acquire unlisted companies with potential value.)\n<Point2:1> *True* (The student correctly states that this acquisition happens after the IPO.)"
     },
     "42": {
         "question_code": "FIN005",

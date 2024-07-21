@@ -33,7 +33,7 @@
         "referenceAnswer": "The major agency problem for listed companies <Point1:2>in the U.S. market is the conflict between firm managers and shareholders<Point1:2>. The major agency problem <Point2:2>in the Chinese market is the conflict between controlling and minority shareholders<Point2:2>.",
         "studentAnswer": "The primary agency problem in the U.S. market is the tension between company executives and shareholders. In China, the main agency issue is the conflict between majority and minority shareholders.",
         "teacherMark": "<Point1:True>,<Point2:True>",
-        "feedback": "<Point1:2> *True* (The student correctly identified the agency problem in the U.S. market as the conflict between firm managers and shareholders.)\n\n<Point2:2> *True* (The student correctly identified the agency problem in China's market as the conflict between controlling and minority shareholders.)"
+        "feedback": "<Point1:2> True (The student correctly identified the agency problem in the U.S. market.)\n<Point2:2> True (The student correctly identified the agency problem in China.)"
     },
     "4": {
         "question_code": "FIN001",
@@ -42,7 +42,7 @@
         "referenceAnswer": "The major agency problem for listed companies <Point1:2>in the U.S. market is the conflict between firm managers and shareholders<Point1:2>. The major agency problem <Point2:2>in the Chinese market is the conflict between controlling and minority shareholders<Point2:2>.",
         "studentAnswer": "For U.S. listed companies, the main agency problem is the conflict between firm managers and shareholders. In China, it revolves around the conflict between controlling and minority shareholders.",
         "teacherMark": "<Point1:True>,<Point2:True>",
-        "feedback": "<Point1:2> *True* (The student correctly identified the agency problem in the U.S. market.)\n\n<Point2:2> *True* (The student correctly identified the agency problem in China's market.)"
+        "feedback": "<Point1:2> *True* (The student correctly identified the agency problem in the U.S. market.)\n\n<Point2:2> *True* (The student correctly identified the agency problem in the Chinese market.)"
     },
     "5": {
         "question_code": "FIN001",
@@ -69,7 +69,7 @@
         "referenceAnswer": "The major agency problem for listed companies <Point1:2>in the U.S. market is the conflict between firm managers and shareholders<Point1:2>. The major agency problem <Point2:2>in the Chinese market is the conflict between controlling and minority shareholders<Point2:2>.",
         "studentAnswer": "The primary agency problem in the U.S. market is the conflict between customers and firm managers. In the Chinese market, the key issue is the tension between suppliers and company executives.",
         "teacherMark": "<Point1:False>,<Point2:False>",
-        "feedback": "<Point1:2> False (reason, Describe why this point is false)\nThe student's answer is not accurate. The conflict in the U.S. market is not between firm managers and customers, but between firm managers and shareholders.\n\n<Point2:2> False (reason, Describe why this point is false)\nThe student's answer is not accurate. The conflict in the Chinese market is not between suppliers and company executives, but between controlling and minority shareholders."
+        "feedback": "<Point1:2> False (The student's answer is not about the conflict between firm managers and shareholders, which is the actual major agency problem in the U.S. market.)\n\n<Point2:2> False (The student's answer is not about the conflict between controlling and minority shareholders, which is the actual major agency problem in the Chinese market.)"
     },
     "8": {
         "question_code": "FIN001",
@@ -78,7 +78,7 @@
         "referenceAnswer": "The major agency problem for listed companies <Point1:2>in the U.S. market is the conflict between firm managers and shareholders<Point1:2>. The major agency problem <Point2:2>in the Chinese market is the conflict between controlling and minority shareholders<Point2:2>.",
         "studentAnswer": "In the U.S. market, the main agency problem involves conflicts between shareholders and employees. In the Chinese market, the major agency issue is the struggle between controlling shareholders and minority shareholders.",
         "teacherMark": "<Point1:False>,<Point2:True>",
-        "feedback": "<Point1:2> False (The student mentioned a conflict between shareholders and employees, while the reference answer refers to a conflict between firm managers and shareholders.)\n\n<Point2:2> True (The student correctly identified the conflict between controlling shareholders and minority shareholders as the major agency problem in the Chinese market.)"
+        "feedback": "<Point1:2> False (reason, Describe why this point is false)\nThe student's answer is not completely accurate. While there are conflicts between shareholders and employees in general, the major agency problem in the U.S. market is specifically between firm managers and shareholders.\n\n<Point2:2> True (reason, Highlight strengths and correct aspects of the student's answer, show which point the student is correct about)\nThe student's answer is correct about the agency problem in the Chinese market being between controlling shareholders and minority shareholders."
     },
     "9": {
         "question_code": "FIN001",
@@ -87,7 +87,7 @@
         "referenceAnswer": "The major agency problem for listed companies <Point1:2>in the U.S. market is the conflict between firm managers and shareholders<Point1:2>. The major agency problem <Point2:2>in the Chinese market is the conflict between controlling and minority shareholders<Point2:2>.",
         "studentAnswer": "The major agency problem for U.S. listed companies is the clash between shareholders and the board of directors. In China, it is the conflict between controlling shareholders and minority stakeholders.",
         "teacherMark": "<Point1:False>,<Point2:True>",
-        "feedback": "<Point1:2> *True* (The student correctly identified the agency problem in the U.S. market as the conflict between shareholders and the board of directors, which is in line with Point1 of the reference answer.)\n\n<Point2:2> *True* (The student correctly identified the agency problem in the Chinese market as the conflict between controlling shareholders and minority stakeholders, which is in line with Point2 of the reference answer.)"
+        "feedback": "<Point1:2> True (The student correctly identified the agency problem in the U.S. market as the conflict between shareholders and the board of directors, which is in line with Point1 of the reference answer.)\n\n<Point2:2> True (The student correctly identified the agency problem in the Chinese market as the conflict between controlling shareholders and minority stakeholders, which is in line with Point2 of the reference answer.)"
     },
     "10": {
         "question_code": "FIN002",
@@ -123,7 +123,7 @@
         "referenceAnswer": "The difference in terms of agency problem mainly due to <Point1:1>different ownership structures <Point1:1> in the two countries. <Point2:1>The U.S. listed firms have a diffused group of shareholders<Point2:1>. <Point3:1>China almost all listed firms have at least one controlling shareholders<Point3:1>.",
         "studentAnswer": "The difference in agency problems is mostly due to the size of the firms. U.S. firms tend to be larger with more diverse shareholders, whereas Chinese firms are smaller with dominant controlling shareholders.",
         "teacherMark": "<Point1:False>,<Point2:False>,<Point3:False>",
-        "feedback": "<Point1:1> *False* (reason, The student's answer does not address the difference in ownership structures between the two countries.)\n\n<Point2:1> *True* (reason, The student's answer correctly points out that U.S. listed firms have a diffused group of shareholders.)\n\n<Point3:1> *True* (reason, The student's answer correctly points out that Chinese firms have dominant controlling shareholders.)"
+        "feedback": "<Point1:1> *False* (reason, The student's answer does not address the difference in ownership structures between the two countries.)\n\n<Point2:1> *True* (reason, The student's answer correctly identifies that U.S. listed firms have a diffused group of shareholders, highlighting strengths and correct aspects of the student's answer.)\n\n<Point3:1> *True* (reason, The student's answer correctly identifies that Chinese firms often have dominant controlling shareholders, showing which point the student is correct about.)"
     },
     "14": {
         "question_code": "FIN002",
@@ -132,7 +132,7 @@
         "referenceAnswer": "The difference in terms of agency problem mainly due to <Point1:1>different ownership structures <Point1:1> in the two countries. <Point2:1>The U.S. listed firms have a diffused group of shareholders<Point2:1>. <Point3:1>China almost all listed firms have at least one controlling shareholders<Point3:1>.",
         "studentAnswer": "The difference in agency problems arises mainly from different regulatory environments. The U.S. firms face strict regulations, while in China, the regulations are more lenient, allowing for more control by major shareholders.",
         "teacherMark": "<Point1:False>,<Point2:False>,<Point3:False>",
-        "feedback": "<Point2:1> False\n(reason, Describe why this point is false)\nThe student's answer is not aligned with the reference answer. The reference answer points out that the difference in agency problems is due to ownership structures, not regulatory environments.\n\n<Point1:1> False\n(reason, Describe why this point is false)\nThe student's answer is not aligned with the reference answer. The reference answer points out that the difference in agency problems is due to ownership structures, not regulatory environments.\n\n<Point3:1> False\n(reason, Describe why this point is false)\nThe student does not address the fact that China almost all listed firms have at least one controlling shareholder, which is a key point in the reference answer."
+        "feedback": "<Point2:1> False\n(reason, Describe why this point is false)\nThe student's answer is not aligned with the reference answer. The reference answer points out the difference in ownership structures, while the student's answer discusses regulatory environments.\n\n<Point1:1> False\n(reason, Describe why this point is false)\nThe student's answer does not address the difference in ownership structures, which is the main point in the reference answer.\n\n<Point3:1> False\n(reason, Describe why this point is false)\nThe student's answer does not mention the controlling shareholders in China, which is a crucial point in the reference answer."
     },
     "15": {
         "question_code": "FIN002",
@@ -177,7 +177,7 @@
         "referenceAnswer": "The difference in terms of agency problem mainly due to <Point1:1>different ownership structures <Point1:1> in the two countries. <Point2:1>The U.S. listed firms have a diffused group of shareholders<Point2:1>. <Point3:1>China almost all listed firms have at least one controlling shareholders<Point3:1>.",
         "studentAnswer": "The difference in terms of agency problem is mainly due to cultural differences. U.S. listed firms have a more dispersed group of shareholders due to individualistic culture, whereas in China, the collectivist culture leads to the prevalence of controlling shareholders in listed firms.",
         "teacherMark": "<Point1:False>,<Point2:True>,<Point3:True>",
-        "feedback": "<Point1:1> *True* (The student correctly identified that different ownership structures between the two countries contribute to the agency problem, which aligns with Point 1 in the reference answer.)\n\n<Point2:1> *False* (The student's answer suggests that cultural differences are the primary reason for different ownership structures, while the reference answer points to specific ownership structures as the cause. The student's answer does not directly address the point about the U.S. listed firms having a diffused group of shareholders.)\n\n<Point3:1> *True* (The student correctly identified that China has controlling shareholders in most listed firms, which aligns with Point 3 in the reference answer.)"
+        "feedback": "<Point1:1> *True* (The student correctly identified that different ownership structures between the two countries contribute to the agency problem, which aligns with Point 1 in the reference answer.)\n\n<Point2:1> *False* (The student's answer suggests that cultural differences are the primary reason for different ownership structures, while the reference answer points to specific ownership structures as the cause. The student's answer does not directly address the point about the U.S. listed firms having a dispersed group of shareholders.)\n\n<Point3:1> *True* (The student correctly identified that China has controlling shareholders in most listed firms, which aligns with Point 3 in the reference answer.)"
     },
     "20": {
         "question_code": "FIN003",
@@ -366,7 +366,7 @@
         "referenceAnswer": "The raised funds are used to <Point1:1>acquire unlisted companies with certain development prospects<Point1:1> <Point2:1>after the IPO<Point2:1>.",
         "studentAnswer": "The funds raised through a SPAC are primarily used to acquire private companies that show potential for growth and profitability, usually following their initial public offering.",
         "teacherMark": "<Point1:False>,<Point2:True>",
-        "feedback": "<Point1:1> True (The student's answer correctly identifies that the funds are used to acquire private companies with growth potential. This is in line with the reference answer.)\n\n<Point2:1> True (The student's answer correctly identifies that the acquisitions typically occur following the SPAC's IPO, which matches the reference answer.)"
+        "feedback": "<Point1:1> True (The student's answer correctly identifies that the funds are used to acquire private companies with growth potential. This aligns with the reference answer.)\n\n<Point2:1> True (The student's answer states that the acquisitions occur following the IPO, which matches the reference answer.)"
     },
     "41": {
         "question_code": "FIN005",
@@ -393,7 +393,7 @@
         "referenceAnswer": "The raised funds are used to <Point1:1>acquire unlisted companies with certain development prospects<Point1:1> <Point2:1>after the IPO<Point2:1>.",
         "studentAnswer": "The raised funds are used to acquire unlisted companies with certain development prospects after the IPO.",
         "teacherMark": "<Point1:True>,<Point2:True>",
-        "feedback": "<Point1:1> True (The student's answer correctly mentions that the funds are used to acquire unlisted companies with development prospects.)\n<Point2:1> True (The student's answer correctly mentions that the acquisition happens after the IPO.)"
+        "feedback": "<Point1:1> True (The student's answer matches the reference answer for this point, demonstrating understanding of using funds to acquire unlisted companies with development prospects.)\n\n<Point2:1> True (The student's answer matches the reference answer for this point, demonstrating understanding of using funds after the IPO.)"
     },
     "44": {
         "question_code": "FIN005",
@@ -420,7 +420,7 @@
         "referenceAnswer": "The raised funds are used to <Point1:1>acquire unlisted companies with certain development prospects<Point1:1> <Point2:1>after the IPO<Point2:1>.",
         "studentAnswer": "The raised funds are primarily used for paying dividends to the initial investors and covering the operational costs of the SPAC.",
         "teacherMark": "<Point1:False>,<Point2:False>",
-        "feedback": "<Point2:false> *False* (reason, Describe why this point is false)\nThe student's answer is not in line with the reference answer. The student mentioned that the raised funds are primarily used for paying dividends to the initial investors and covering operational costs, but the reference answer states that the funds are used to acquire unlisted companies with certain development prospects after the IPO.\n\n<Point1:false> *False* (reason, Describe why this point is false)\nThe student's answer does not cover this point. The student mentioned that the raised funds are used for paying dividends to the initial investors and covering operational costs, but the reference answer states that the funds are used to acquire unlisted companies with certain development prospects after the IPO."
+        "feedback": "<Point2:false> False\nThe student's answer is not in line with the reference answer. The student mentioned that the funds are used for paying dividends to initial investors and covering operational costs, but the reference answer states that the funds are used to acquire unlisted companies with development prospects after the IPO.\n\n<Point1:false> False\nThe student's answer does not cover this point. The reference answer states that the funds are used to acquire unlisted companies with development prospects after the IPO, but the student did not mention this."
     },
     "47": {
         "question_code": "FIN005",

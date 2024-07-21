@@ -267,7 +267,7 @@
         "referenceAnswer": "Unsupervised learning involves <Point1:2>training models on data without labels<Point1:2>. \nThe goal is to <Point2:2>discover patterns or structures within the data <Point2:2>. \n",
         "studentAnswer": "Unsupervised learning is a method of machine learning that does not require any training data.",
         "teacherMark": "<Point1:False>,<Point2:False>",
-        "feedback": "<Point1:2> *False* (The student's answer implies that no data is used in unsupervised learning, but it's the lack of labeled data that characterizes it, not the absence of data entirely.)\n\n<Point2:2> *True* (The student's answer correctly mentions the objective of finding patterns or structures in the data.)"
+        "feedback": "<Point1:2> *False* (The student's answer implies that no training data is used in unsupervised learning, but it's not accurate; unsupervised learning uses data without labels, not no data at all.)\n\n<Point2:2> *True* (The student's answer correctly states that the purpose is to discover patterns or structures in the data.)"
     },
     "30": {
         "question_code": "INT004",

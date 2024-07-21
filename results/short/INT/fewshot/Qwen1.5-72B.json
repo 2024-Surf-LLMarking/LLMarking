@@ -564,7 +564,7 @@
         "referenceAnswer": "<Point1:2> Yes <Point1:2>, <Point2:1> logistic regression can be used for multiclass classification through methods <Point2:1> such as <Point3:1> the one-vs-rest (OvR) and the multinomial (softmax) approach <Point3:1>.",
         "studentAnswer": "True, logistic regression is effective for handling multiclass classification tasks. It uses methods such as one-versus-rest and multinomial (softmax) approaches to predict class probabilities accurately.",
         "teacherMark": "<Point1:True>,<Point2:False>,<Point3:False>",
-        "feedback": "<Point1:2> *True* (The student's answer correctly confirms that logistic regression can be used for multiclass classification.)\n\n<Point2:1> *True* (The student's answer correctly implies that logistic regression employs methods for multiclass classification.)\n\n<Point3:1> *True* (The student's answer correctly identifies both the one-vs-rest (OvR) and multinomial (softmax) approaches as methods used in logistic regression for multiclass classification.)"
+        "feedback": "<Point1:2> *True* (The student's answer correctly confirms that logistic regression can be used for multiclass classification.)\n\n<Point2:1> *True* (The student's answer correctly implies that logistic regression employs methods for multiclass classification.)\n\n<Point3:1> *True* (The student's answer correctly mentions the one-vs-rest (OvR) and multinomial (softmax) approaches as methods used in logistic regression for multiclass classification.)"
     },
     "63": {
         "question_code": "INT008",

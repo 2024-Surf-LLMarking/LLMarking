@@ -510,7 +510,7 @@
         "referenceAnswer": "<Point1:2> First split the dataset into training and test sets, or perhaps use cross-validation techniques to further segment the dataset into composite sets of training and test sets within the data <Point1:2> . Then implement a choice selection of performance metrics. You could use measures such as the  <Point2:1> F1 score <Point2:1> , <Point3:1> the accuracy <Point3:1>, <Point4:1>and the confusion matrix <Point4:1>.",
         "studentAnswer": "To evaluate a machine learning model, I would first split the data into training and test sets. Next, I would use metrics like accuracy and the confusion matrix to measure performance.",
         "teacherMark": "<Point1:True>,<Point2:False>,<Point3:True>,<Point4:True>",
-        "feedback": "<Point1:2> *True* (The student's answer correctly mentions splitting the dataset into training and test sets, which is a part of the evaluation process.)\n\n<Point2:1> *False* (The student's answer does not mention the F1 score, which is one of the performance metrics listed in the reference answer.)\n\n<Point3:1> *True* (The student correctly includes accuracy as a performance metric.)\n\n<Point4:1> *True* (The student correctly includes the confusion matrix as a performance metric.)"
+        "feedback": "<Point1:2> *True* (The student's answer correctly mentions splitting the dataset into training and test sets, which is part of the evaluation process.)\n\n<Point2:1> *False* (The F1 score is not mentioned in the student's answer.)\n\n<Point3:1> *True* (The student correctly mentions accuracy as a performance metric.)\n\n<Point4:1> *True* (The student correctly mentions the confusion matrix as a performance metric.)"
     },
     "57": {
         "question_code": "INT007",
@@ -564,7 +564,7 @@
         "referenceAnswer": "<Point1:2> Yes <Point1:2>, <Point2:1> logistic regression can be used for multiclass classification through methods <Point2:1> such as <Point3:1> the one-vs-rest (OvR) and the multinomial (softmax) approach <Point3:1>.",
         "studentAnswer": "True, logistic regression is effective for handling multiclass classification tasks. It uses methods such as one-versus-rest and multinomial (softmax) approaches to predict class probabilities accurately.",
         "teacherMark": "<Point1:True>,<Point2:False>,<Point3:False>",
-        "feedback": "<Point1:2> *True* (The student correctly answers that logistic regression can be used for multiclass classification.)\n\n<Point2:1> *True* (The student's answer acknowledges the existence of methods for logistic regression to handle multiclass problems.)\n\n<Point3:1> *True* (The student correctly identifies the specific methods - one-vs-rest and multinomial - used in logistic regression for multiclass classification.)"
+        "feedback": "<Point1:2> *True* (The student correctly answers that logistic regression can be used for multiclass classification.)\n\n<Point2:1> *True* (The student's answer implies that there are methods by which logistic regression handles multiclass problems, aligning with the reference.)\n\n<Point3:1> *True* (The student accurately mentions the specific methods: one-vs-rest and multinomial softmax approaches.)"
     },
     "63": {
         "question_code": "INT008",
