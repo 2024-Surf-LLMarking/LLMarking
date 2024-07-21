@@ -56,7 +56,7 @@ def load_vllm():
     # 推理终止词
     
     
-    if model_dir in __all__[:2] or model_dir == __all__[8] or model_dir == __all__[15] or model_dir == __all__[18]:
+    if model_dir in __all__[:2] or model_dir == __all__[8] or model_dir == __all__[15] or model_dir == __all__[18] or model_dir == __all__[22]:
         tokenizer.im_start_id = 151644
         tokenizer.im_end_id = 151645
         generation_config.max_window_size = 11000
