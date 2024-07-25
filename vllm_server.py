@@ -27,7 +27,7 @@ tensor_parallel_size=1 if arg.model < 15 else 4
 gpu_memory_utilization=0.98
 if model_dir == __all__[0] or model_dir == __all__[20] or model_dir == __all__[23]:
     quantization = 'gptq'
-elif model_dir == __all__[1] or model_dir == __all__[4] or model_dir == __all__[15]:
+elif model_dir == __all__[1] or model_dir == __all__[4] or model_dir == __all__[15] or model_dir == __all__[26]:
     quantization = 'awq'
 else:
     quantization = None
@@ -68,7 +68,7 @@ def load_vllm():
         tokenizer.im_start_id = 1
         tokenizer.im_end_id = 7
         generation_config.max_window_size = 4096
-    elif model_dir == __all__[5] or model_dir == __all__[6] or model_dir == __all__[9] or model_dir == __all__[11] or model_dir == __all__[16] or model_dir == __all__[24]:
+    elif model_dir == __all__[5] or model_dir == __all__[6] or model_dir == __all__[9] or model_dir == __all__[11] or model_dir == __all__[16] or model_dir == __all__[24] or model_dir == __all__[25]:
         tokenizer.im_start_id = None
         tokenizer.im_end_id = None
         generation_config.max_window_size = 8192
@@ -86,7 +86,7 @@ def load_vllm():
         generation_config.max_window_size = 8192
     elif model_dir == __all__[14]:
         generation_config.max_window_size = 4096
-    elif model_dir == __all__[17] or model_dir == __all__[23]:
+    elif model_dir == __all__[17] or model_dir == __all__[23] or model_dir == __all__[26]:
         generation_config.max_window_size = 8192
     elif model_dir == __all__[19] or model_dir == __all__[20] or model_dir == __all__[21]:
         generation_config.max_window_size = 11000
@@ -98,9 +98,9 @@ def load_vllm():
     elif model_dir == __all__[14]:
         stop_words_ids = [tokenizer.eos_token_id, 107]
         os.environ['VLLM_ATTENTION_BACKEND'] = 'FLASHINFER'
-    elif model_dir == __all__[16] or model_dir == __all__[24]:
+    elif model_dir == __all__[16] or model_dir == __all__[24] or model_dir == __all__[25]:
         stop_words_ids = [tokenizer.eos_token_id, 128009]
-    elif model_dir == __all__[17] or model_dir == __all__[23]:
+    elif model_dir == __all__[17] or model_dir == __all__[23] or model_dir == __all__[26]:
         stop_words_ids = [tokenizer.eos_token_id]
     elif model_dir == __all__[19] or model_dir == __all__[20] or model_dir == __all__[21]:
         stop_words_ids = [tokenizer.eos_token_id]
@@ -147,7 +147,7 @@ async def chat(request: Request):
     
     query=request.get('query',None)
     history=request.get('history',[])
-    system=request.get('system','You are a helpful assistant.') if model_dir != __all__[6] and model_dir != __all__[9] and model_dir != __all__[10] and model_dir != __all__[14] and model_dir != __all__[23] else None
+    system=request.get('system','You are a helpful assistant.') if model_dir != __all__[6] and model_dir != __all__[9] and model_dir != __all__[10] and model_dir != __all__[14] and model_dir != __all__[23] or model_dir != __all__[26] else None
     stream=request.get("stream",False)
     user_stop_words=request.get("user_stop_words",[])    # list[str]，用户自定义停止句，例如：['Observation: ', 'Action: ']定义了2个停止句，遇到任何一个都会停止
     
