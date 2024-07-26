@@ -37,6 +37,9 @@ This project aims to achieve high concurrency automatic short answer grading (AS
 * `deepseek-ai/DeepSeek-V2-Lite-Chat`
 * `alpindale/c4ai-command-r-plus-GPTQ`
 * `deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct`
+* `Nexusflow/Athene-70B`
+* `meta-llama/Meta-Llama-3.1-70B-Instruct`
+* `casperhansen/mistral-large-instruct-2407-awq`
 
 ## Getting Started
 
@@ -48,13 +51,13 @@ This project aims to achieve high concurrency automatic short answer grading (AS
 
 | Mandatory     | Recommended |
 | ------------- | ----------- |
-| Python        | 3.10         |
+| Python        | 3.10        |
 | CUDA          | 12.1        |
 | torch         | 2.3         |
 | einops        | 0.8.0       |
 | transformers  | 4.42.1      |
 | accelerate    | 0.30.1      |
-| vLLM          | 0.5.1       |
+| vLLM          | 0.5.3.post1 |
 | tiktoken      | 0.6.0       |
 | sentencepiece | 0.2.0       |
 | scipy         | 1.13.0      |
