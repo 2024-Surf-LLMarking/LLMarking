@@ -21,8 +21,6 @@ model_name_list_zero = [i.name.split('.jso')[0] for i in list(model_name_list_ze
 model_name_list = list(set(model_name_list_few) | set(model_name_list_one) | set(model_name_list_zero))
 model_name_list = sorted(model_name_list)
 
-model_name_list = ['Llama-3.1-70B']
-
 directory = ["zeroshot", "oneshot", "fewshot"]
 
 eval_results = []
