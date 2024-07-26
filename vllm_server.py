@@ -24,7 +24,7 @@ arg = parser.parse_args()
 # vLLM参数
 model_dir=__all__[arg.model]
 tensor_parallel_size=1 if arg.model < 15 else 4
-gpu_memory_utilization=0.98
+gpu_memory_utilization=0.95
 if model_dir == __all__[0] or model_dir == __all__[20] or model_dir == __all__[23]:
     quantization = 'gptq'
 elif model_dir == __all__[1] or model_dir == __all__[4] or model_dir == __all__[15] or model_dir == __all__[26] or model_dir == __all__[27]:
