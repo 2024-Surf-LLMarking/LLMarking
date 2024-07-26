@@ -27,7 +27,7 @@ tensor_parallel_size=1 if arg.model < 15 else 4
 gpu_memory_utilization=0.98
 if model_dir == __all__[0] or model_dir == __all__[20] or model_dir == __all__[23]:
     quantization = 'gptq'
-elif model_dir == __all__[1] or model_dir == __all__[4] or model_dir == __all__[15] or model_dir == __all__[26]:
+elif model_dir == __all__[1] or model_dir == __all__[4] or model_dir == __all__[15] or model_dir == __all__[26] or model_dir == __all__[27]:
     quantization = 'awq'
 else:
     quantization = None
@@ -88,7 +88,7 @@ def load_vllm():
         generation_config.max_window_size = 4096
     elif model_dir == __all__[17] or model_dir == __all__[23] or model_dir == __all__[26]:
         generation_config.max_window_size = 8192
-    elif model_dir == __all__[19] or model_dir == __all__[20] or model_dir == __all__[21]:
+    elif model_dir == __all__[19] or model_dir == __all__[20] or model_dir == __all__[21] or model_dir == __all__[27]:
         generation_config.max_window_size = 11000
 
     if model_dir == __all__[7]:
@@ -102,7 +102,7 @@ def load_vllm():
         stop_words_ids = [tokenizer.eos_token_id, 128009]
     elif model_dir == __all__[17] or model_dir == __all__[23] or model_dir == __all__[26]:
         stop_words_ids = [tokenizer.eos_token_id]
-    elif model_dir == __all__[19] or model_dir == __all__[20] or model_dir == __all__[21]:
+    elif model_dir == __all__[19] or model_dir == __all__[20] or model_dir == __all__[21] or model_dir == __all__[27]:
         stop_words_ids = [tokenizer.eos_token_id]
     else:
         stop_words_ids = [tokenizer.im_start_id, tokenizer.im_end_id, tokenizer.eos_token_id]

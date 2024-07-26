@@ -24,7 +24,8 @@ __all__ = ["Qwen/Qwen1.5-14B-Chat-GPTQ-Int4",
            "jarrelscy/Mixtral-8x22B-Instruct-v0.1-GPTQ-8bit",
            "Nexusflow/Athene-70B",
            "meta-llama/Meta-Llama-3.1-70B-Instruct",
-           "casperhansen/mistral-large-instruct-2407-awq"
+           "casperhansen/mistral-large-instruct-2407-awq",
+           "casperhansen/deepseek-coder-v2-instruct-awq"
            ]
 
 model_names = ["Qwen1.5-14B",
@@ -53,5 +54,6 @@ model_names = ["Qwen1.5-14B",
                "Mixtral-8x22B",
                "Athene-70B",
                "Llama-3.1-70B",
-               "Mistral-Large-2"
+               "Mistral-Large-2",
+                "DeepSeek-Coder-V2"
                ]
