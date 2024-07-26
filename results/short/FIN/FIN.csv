@@ -1,4 +1,11 @@
 Model Name,Zero-shot,One-shot,Few-shot
+Athene-70B,"F1 score:	0.8181818181818182
+Precision score: 0.75
+Recall score:	0.9","F1 score:	0.8625
+Precision score: 0.7666666666666667
+Recall score:	0.9857142857142858","F1 score:	0.8734177215189873
+Precision score: 0.7840909090909091
+Recall score:	0.9857142857142858"
 Aya-23-8B,"F1 score:	None
 Precision score: None
 Recall score:	None","F1 score:	0.6777777777777778
@@ -62,6 +69,20 @@ Precision score: 0.7341772151898734
 Recall score:	0.8285714285714286","F1 score:	0.7712418300653595
 Precision score: 0.7108433734939759
 Recall score:	0.8428571428571429"
+Llama-3.1-70B,"F1 score:	0.8717948717948718
+Precision score: 0.7906976744186046
+Recall score:	0.9714285714285714","F1 score:	0.8903225806451613
+Precision score: 0.8117647058823529
+Recall score:	0.9857142857142858","F1 score:	0.8903225806451613
+Precision score: 0.8117647058823529
+Recall score:	0.9857142857142858"
+Mistral-Large-2,"F1 score:	0.8625
+Precision score: 0.7666666666666667
+Recall score:	0.9857142857142858","F1 score:	0.8518518518518519
+Precision score: 0.75
+Recall score:	0.9857142857142858","F1 score:	0.8625
+Precision score: 0.7666666666666667
+Recall score:	0.9857142857142858"
 Mistral-7B-v0.3,"F1 score:	0.7607361963190185
 Precision score: 0.6666666666666666
 Recall score:	0.8857142857142857","F1 score:	0.7831325301204819

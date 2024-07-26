@@ -13,7 +13,7 @@ while True:
 
     # 调用api_server
     response = requests.post(
-        "http://100.65.8.31:8000/chat",
+        "http://localhost:8888/chat",
         json={
             "query": query,
             "stream": True,
