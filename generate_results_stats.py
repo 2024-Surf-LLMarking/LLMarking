@@ -29,7 +29,7 @@ for model_name in model_name_list:
     for d in directory:
         print(f"Processing {d} for {model_name}")
         f1, precision, recall = extract_info_from_json(f'results/short/{course}/{d}/{model_name}.json')
-        cell = f"""F1 score:\t{f1}\nPrecision score: {precision}\nRecall score:\t{recall}"""
+        cell = f"""F1 score:        {f1:.4f}\nPrecision score: {precision:.4f}\nRecall score:    {recall:.4f}"""
         row.append(cell)
     eval_results.append(row)
     with open(f'results/short/{course}/{course}.csv', 'w') as file:
