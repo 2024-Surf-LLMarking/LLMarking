@@ -21,8 +21,6 @@ model_name_list_zero = [i.name.split('.jso')[0] for i in list(model_name_list_ze
 model_name_list = list(set(model_name_list_few) | set(model_name_list_one) | set(model_name_list_zero))
 model_name_list = sorted(model_name_list)
 
-model_name_list = ["Qwen1.5-14B", "Qwen1.5-32B", "Qwen1.5-72B", "Qwen2-72B", "Qwen2-7B", "Yi-1.5-34B", "Yi-1.5-9B"]
-
 directory = ["zeroshot", "oneshot", "fewshot"]
 
 eval_results = []
