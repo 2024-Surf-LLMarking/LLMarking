@@ -116,12 +116,10 @@ def load_vllm():
     args.quantization=quantization
     args.gpu_memory_utilization=gpu_memory_utilization
     args.dtype=dtype
-    if model_dir != __all__[14] and model_dir != __all__[23]:
+    if model_dir != __all__[14] and model_dir != __all__[22] and model_dir != __all__[23]:
         args.max_num_seqs=1
     elif model_dir == __all__[18]:
         args.max_num_seqs=3
-    elif model_dir != __all__[22]:
-        args.max_num_seqs=2
     else:
         args.max_num_seqs=10
     if model_dir == __all__[1]:
