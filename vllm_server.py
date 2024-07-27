@@ -41,7 +41,6 @@ def load_vllm():
     global generation_config,tokenizer,stop_words_ids,engine
     # For cluster
     if arg.model >= 15:
-        os.environ['HF_HOME']='/tmp/hf'
         os.environ['CUDA_VISIBLE_DEVICES']='0,1,2,3'
     # 模型下载
     snapshot_download(model_dir)
@@ -117,7 +116,14 @@ def load_vllm():
     args.quantization=quantization
     args.gpu_memory_utilization=gpu_memory_utilization
     args.dtype=dtype
-    args.max_num_seqs=10 if model_dir != __all__[14] and model_dir != __all__[22] and model_dir != __all__[23] else 1  # batch最大10条样本
+    if model_dir != __all__[14] and model_dir != __all__[23]:
+        args.max_num_seqs=1
+    elif model_dir == __all__[18]:
+        args.max_num_seqs=3
+    elif model_dir != __all__[22]:
+        args.max_num_seqs=2
+    else:
+        args.max_num_seqs=10
     if model_dir == __all__[1]:
         args.max_model_len=3024
     elif model_dir == __all__[22] or model_dir == __all__[23]:
