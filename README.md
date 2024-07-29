@@ -53,7 +53,7 @@ This project aims to achieve high concurrency automatic short answer grading (AS
 | ------------- | ----------- |
 | Python        | 3.10        |
 | CUDA          | 12.1        |
-| torch         | 2.3         |
+| torch         | 2.3.1       |
 | einops        | 0.8.0       |
 | transformers  | 4.42.1      |
 | accelerate    | 0.30.1      |
