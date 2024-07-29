@@ -122,10 +122,10 @@ def load_vllm():
         args.max_num_seqs=3
     else:
         args.max_num_seqs=10
-    if model_dir == __all__[1]:
+    if model_dir == __all__[1] or model_dir == __all__[18]:
         args.max_model_len=3024
     elif model_dir == __all__[22] or model_dir == __all__[23]:
-        args.max_model_len=2256
+        args.max_model_len=2224
     else:
         args.max_model_len=generation_config.max_window_size
     # 加载模型
