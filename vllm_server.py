@@ -85,9 +85,9 @@ def load_vllm():
         tokenizer.im_start_id = 92543
         tokenizer.im_end_id = 92542
         generation_config.max_window_size = 8192
-    elif model_dir == __all__[14]:
+    elif model_dir == __all__[14] or model_dir == __all__[28]:
         generation_config.max_window_size = 4096
-    elif model_dir == __all__[17] or model_dir == __all__[23] or model_dir == __all__[26] or model_dir == __all__[28]:
+    elif model_dir == __all__[17] or model_dir == __all__[23] or model_dir == __all__[26]:
         generation_config.max_window_size = 8192
     elif model_dir == __all__[19] or model_dir == __all__[20] or model_dir == __all__[21] or model_dir == __all__[27]:
         generation_config.max_window_size = 11000
@@ -153,7 +153,7 @@ async def chat(request: Request):
     
     query=request.get('query',None)
     history=request.get('history',[])
-    system=request.get('system','You are a helpful assistant.') if model_dir != __all__[6] and model_dir != __all__[9] and model_dir != __all__[10] and model_dir != __all__[14] and model_dir != __all__[23] and model_dir != __all__[26] else None
+    system=request.get('system','You are a helpful assistant.') if model_dir != __all__[6] and model_dir != __all__[9] and model_dir != __all__[10] and model_dir != __all__[14] and model_dir != __all__[23] and model_dir != __all__[26] and model_dir != __all__[28] else None
     stream=request.get("stream",False)
     user_stop_words=request.get("user_stop_words",[])    # list[str]，用户自定义停止句，例如：['Observation: ', 'Action: ']定义了2个停止句，遇到任何一个都会停止
     
