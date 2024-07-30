@@ -25,7 +25,8 @@ __all__ = ["Qwen/Qwen1.5-14B-Chat-GPTQ-Int4",
            "Nexusflow/Athene-70B",
            "meta-llama/Meta-Llama-3.1-70B-Instruct",
            "casperhansen/mistral-large-instruct-2407-awq",
-           "casperhansen/deepseek-coder-v2-instruct-awq" # todo: wait for vLLM to be updated
+           "casperhansen/deepseek-coder-v2-instruct-awq", # todo: wait for vLLM to be updated
+           "google/gemma-2-27b-it",
            ]
 
 model_names = ["Qwen1.5-14B",
@@ -55,5 +56,6 @@ model_names = ["Qwen1.5-14B",
                "Athene-70B",
                "Llama-3.1-70B",
                "Mistral-Large-2",
-               "DeepSeek-Coder-V2" # todo: wait for vLLM to be updated
+               "DeepSeek-Coder-V2", # todo: wait for vLLM to be updated
+               "Gemma-2-27B",
                ]

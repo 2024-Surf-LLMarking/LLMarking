@@ -42,6 +42,8 @@ def load_vllm():
     # For cluster
     if arg.model >= 15:
         os.environ['CUDA_VISIBLE_DEVICES']='0,1,2,3'
+    if arg.model == 28:
+        os.environ['VLLM_ATTENTION_BACKEND']='FLASHINFER'
     # 模型下载
     snapshot_download(model_dir)
     # 模型基础配置
@@ -85,7 +87,7 @@ def load_vllm():
         generation_config.max_window_size = 8192
     elif model_dir == __all__[14]:
         generation_config.max_window_size = 4096
-    elif model_dir == __all__[17] or model_dir == __all__[23] or model_dir == __all__[26]:
+    elif model_dir == __all__[17] or model_dir == __all__[23] or model_dir == __all__[26] or model_dir == __all__[28]:
         generation_config.max_window_size = 8192
     elif model_dir == __all__[19] or model_dir == __all__[20] or model_dir == __all__[21] or model_dir == __all__[27]:
         generation_config.max_window_size = 11000
@@ -94,7 +96,7 @@ def load_vllm():
         stop_words_ids = [tokenizer.eos_token_id, 151336]
     elif model_dir == __all__[11]:
         stop_words_ids = [tokenizer.eos_token_id, 100266, 100261]
-    elif model_dir == __all__[14]:
+    elif model_dir == __all__[14] or model_dir == __all__[28]:
         stop_words_ids = [tokenizer.eos_token_id, 107]
         os.environ['VLLM_ATTENTION_BACKEND'] = 'FLASHINFER'
     elif model_dir == __all__[16] or model_dir == __all__[24] or model_dir == __all__[25]:
