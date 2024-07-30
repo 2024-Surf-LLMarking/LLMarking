@@ -1,10 +1,10 @@
-from prompt.prompt_template import prompt_list_v1, prompt_list_v2
+from prompt.prompt_template import prompt_list_v1, prompt_list_v2, prompt_list_v3
 import requests
 import json
 import argparse
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-p", "--prompt", type=int, default=1, help="Prompt type to use.", required=True, choices=[1, 2])
+parser.add_argument("-p", "--prompt", type=int, default=1, help="Prompt type to use.", required=True, choices=[1, 2, 3])
 parser.add_argument("-s", "--stream", action="store_true", help="Whether or not to print the response in a streaming way.")
 parser.add_argument("-n", "--shots", type=int, default=0, help="Number of shots to run.", required=True, choices=[0, 1, 2])
 
@@ -36,6 +36,8 @@ if args.prompt == 1:
     prompt_list = prompt_list_v1
 elif args.prompt == 2:
     prompt_list = prompt_list_v2
+elif args.prompt == 3:
+    prompt_list = prompt_list_v3
 prompt = prompt_list[args.shots]
 
 print(f"Prompt:\n\n{prompt}")
