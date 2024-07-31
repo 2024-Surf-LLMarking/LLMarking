@@ -2,11 +2,14 @@ import gradio as gr
 import requests
 import json
 
+css = """footer {visibility: hidden}
+.logo img {height:100px; width:auto; margin:0 auto;}
+"""
 MAX_HISTORY_LEN=50
 
 def chat_streaming(query,history):
     # 调用api_server
-    response=requests.post('http://localhost:8000/chat',json={
+    response=requests.post('http://localhost:8888/chat',json={
         'query':query,
         'stream': True,
         'history':history
@@ -19,9 +22,9 @@ def chat_streaming(query,history):
             text=data["text"].rstrip('\r\n') # 确保末尾无换行
             yield text
 
-with gr.Blocks(css='.logo img {height:200px; width:600px; margin:0 auto;}') as app:
+with gr.Blocks(css=css, title='Chat Space') as app:
     with gr.Row():
-        logo_img=gr.Image('TBD.png',elem_classes='logo')
+        logo_img=gr.Image('https://s2.loli.net/2024/06/18/kbRqVAKdnFEhLj8.png',elem_classes='logo', show_download_button=False, show_label=False, container=False)
     with gr.Row():
         chatbot=gr.Chatbot(label='LLMs',placeholder='Loading model...')
     with gr.Row():
