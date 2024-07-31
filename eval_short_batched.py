@@ -1,4 +1,4 @@
-from prompt.prompt_template import prompt_list_v1
+from prompt.prompt_template import prompt_list_v1, prompt_list_v3
 from concurrent.futures import ThreadPoolExecutor
 from tqdm import tqdm
 import threading
@@ -11,6 +11,7 @@ import os
 parser = argparse.ArgumentParser()
 parser.add_argument("--course", "-c", type=str, help="Course name", required=True)
 parser.add_argument("--thread", "-t", type=int, help="Number of threads", default=10)
+parser.add_argument("--prompt", "-p", type=int, help="Prompt type to use.", required=True, choices=[1, 3])
 args = parser.parse_args()
 
 directory = ["zeroshot", "oneshot", "fewshot"]
@@ -21,20 +22,27 @@ num_thread = args.thread
 global data
 data = None
 
-if not os.path.exists('results/short'):
-    print("Creating results/short directory...")
-    os.makedirs('results/short')
-if not os.path.exists(f'results/short/{course}'):
-    print(f"Creating results/short/{course} directory...")
-    os.makedirs(f'results/short/{course}')
+if not os.path.exists('results'):
+    print("Creating results directory...")
+    os.makedirs('results')
+if not os.path.exists(f'results/v{args.prompt}'):
+    print(f"Creating results/v{args.prompt} directory...")
+    os.makedirs(f'results/v{args.prompt}')
+
+if not os.path.exists(f'results/v{args.prompt}/short'):
+    print(f"Creating results/v{args.prompt}/short directory...")
+    os.makedirs(f'results/v{args.prompt}/short')
+if not os.path.exists(f'results/v{args.prompt}/short/{course}'):
+    print(f"Creating results/v{args.prompt}/short/{course} directory...")
+    os.makedirs(f'results/v{args.prompt}/short/{course}')
     for d in directory:
-        print(f"Creating results/short/{course}/{d} directory...")
-        os.makedirs(f'results/short/{course}/{d}')
+        print(f"Creating results/v{args.prompt}/short/{course}/{d} directory...")
+        os.makedirs(f'results/v{args.prompt}/short/{course}/{d}')
 else:
     for d in directory:
-        if not os.path.exists(f'results/short/{course}/{d}'):
-            print(f"Creating results/short/{course}/{d} directory...")
-            os.makedirs(f'results/short/{course}/{d}')
+        if not os.path.exists(f'results/v{args.prompt}/short/{course}/{d}'):
+            print(f"Creating results/v{args.prompt}/short/{course}/{d} directory...")
+            os.makedirs(f'results/v{args.prompt}/short/{course}/{d}')
 
 with open(f'data/short/{course}/{course}_CSV1.csv', 'r') as file:
     csv_reader = csv.reader(file)
@@ -102,9 +110,10 @@ def get_response(i, stream = False):
     model_name = model_name if not stream else 'streamed_model'
     index_list, results = zip(*results.items())
     sorted_results = {index: result for index, result in sorted(zip(index_list, results), key=lambda x: x[0])}
-    with open(f'results/short/{course}/{directory[i]}/{model_name}.json', 'w') as file:
+    with open(f'results/v{args.prompt}/short/{course}/{directory[i]}/{model_name}.json', 'w') as file:
         json.dump(sorted_results, file, indent=4)
-    
+
+prompt_list = prompt_list_v1 if args.prompt == 1 else prompt_list_v3    
 for i in range(len(directory)):
-    prompt = prompt_list_v1[i]
+    prompt = prompt_list[i]
     get_response(i, False)
