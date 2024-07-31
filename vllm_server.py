@@ -31,7 +31,7 @@ elif model_dir == __all__[1] or model_dir == __all__[4] or model_dir == __all__[
     quantization = 'awq'
 else:
     quantization = None
-dtype='float16'
+dtype='float16' if arg.model != 28 else 'bfloat16'
 
 if model_dir not in __all__:
     raise NotImplementedError(f'Model selected: [{model_dir}], has not been implemented by this project!')
@@ -154,6 +154,7 @@ async def chat(request: Request):
     query=request.get('query',None)
     history=request.get('history',[])
     system=request.get('system','You are a helpful assistant.') if model_dir != __all__[6] and model_dir != __all__[9] and model_dir != __all__[10] and model_dir != __all__[14] and model_dir != __all__[23] and model_dir != __all__[26] and model_dir != __all__[28] else None
+    # system=request.get('system','You are an impartial, objective AI grading assistant. Your task is to evaluate student answers based solely on their content and accuracy, comparing them to provided reference answers.') if model_dir != __all__[6] and model_dir != __all__[9] and model_dir != __all__[10] and model_dir != __all__[14] and model_dir != __all__[23] and model_dir != __all__[26] and model_dir != __all__[28] else None
     stream=request.get("stream",False)
     user_stop_words=request.get("user_stop_words",[])    # list[str]，用户自定义停止句，例如：['Observation: ', 'Action: ']定义了2个停止句，遇到任何一个都会停止
     
