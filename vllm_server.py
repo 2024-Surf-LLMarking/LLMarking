@@ -60,11 +60,11 @@ def load_vllm():
     if model_dir in __all__[:2] or model_dir == __all__[8] or model_dir == __all__[15] or model_dir == __all__[18] or model_dir == __all__[22]:
         tokenizer.im_start_id = 151644
         tokenizer.im_end_id = 151645
-        generation_config.max_window_size = 11000
+        generation_config.max_window_size = 8192
     elif model_dir == __all__[2]:
         tokenizer.im_start_id = 92542
         tokenizer.im_end_id = 92543
-        generation_config.max_window_size = 31648
+        generation_config.max_window_size = 8192
     elif model_dir == __all__[3] or model_dir == __all__[4]:
         tokenizer.im_start_id = 1
         tokenizer.im_end_id = 7
@@ -76,7 +76,7 @@ def load_vllm():
     elif model_dir == __all__[7] or model_dir == __all__[10]:
         tokenizer.im_start_id = None
         tokenizer.im_end_id = None
-        generation_config.max_window_size = 11000
+        generation_config.max_window_size = 8192
     elif model_dir == __all__[12]:
         tokenizer.im_start_id = None
         tokenizer.im_end_id = None
@@ -90,7 +90,7 @@ def load_vllm():
     elif model_dir == __all__[17] or model_dir == __all__[23] or model_dir == __all__[26]:
         generation_config.max_window_size = 8192
     elif model_dir == __all__[19] or model_dir == __all__[20] or model_dir == __all__[21] or model_dir == __all__[27]:
-        generation_config.max_window_size = 11000
+        generation_config.max_window_size = 8192
 
     if model_dir == __all__[7]:
         stop_words_ids = [tokenizer.eos_token_id, 151336]
