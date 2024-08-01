@@ -33,9 +33,9 @@ for model_name in model_name_list:
         print(f"Processing {d} for {model_name}")
         f1, precision, recall, mismatch_percentage = extract_info_from_json(f'results/v{args.prompt}/short/{course}/{d}/{model_name}.json')
         if f1 is None:
-            cell = f"F1 score:        None\nPrecision score: None\nRecall score:    None\nMismatch percentage: None"
+            cell = f"F1 score:                None\nPrecision score: None\nRecall score:        None\nMismatch percentage: None"
         else:
-            cell = f"F1 score:        {f1:.4f}\nPrecision score: {precision:.4f}\nRecall score:    {recall:.4f}\nMismatch percentage: {mismatch_percentage:.2f}%"
+            cell = f"F1 score:                {f1:.4f}\nPrecision score: {precision:.4f}\nRecall score:        {recall:.4f}\nMismatch percentage: {mismatch_percentage:.2f}%"
         row.append(cell)
     eval_results.append(row)
     with open(f'results/v{args.prompt}/short/{course}/{course}.csv', 'w') as file:
