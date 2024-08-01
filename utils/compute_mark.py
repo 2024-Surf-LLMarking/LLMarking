@@ -66,7 +66,7 @@ def build_diction_from_teacher(input_str):
 def extract_info_from_json(file_path):
     # Read the JSON file
     if os.path.exists(file_path) == False:
-        print("The file does not exist!")
+        print("The file does not exist!\n\n")
         return None, None, None, None
     with open(file_path, 'r', encoding='utf-8') as file:
         data = json.load(file)
@@ -81,7 +81,7 @@ def extract_info_from_json(file_path):
         print("F1 score:\t", f1)
         print("Precision score:", precision)
         print("Recall score:\t", recall)
-        print(f"Mismatch percentage: {mismatch_percentage:2f}%")
+        print(f"Mismatch percentage: {mismatch_percentage:2f}%\n\n")
         return f1, precision, recall, mismatch_percentage
 
 
