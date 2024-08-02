@@ -22,8 +22,6 @@ model_name_list_zero = [i.name.split('.jso')[0] for i in list(model_name_list_ze
 model_name_list = list(set(model_name_list_few) | set(model_name_list_one) | set(model_name_list_zero))
 model_name_list = sorted(model_name_list)
 
-# model_name_list = [input("Please enter the model name: ")]
-
 directory = ["zeroshot", "oneshot", "fewshot"]
 
 eval_results = []
@@ -39,7 +37,6 @@ for model_name in model_name_list:
         row.append(cell)
     eval_results.append(row)
     with open(f'results/v{args.prompt}/short/{course}/{course}.csv', 'w') as file:
-    # with open(f'results/v{args.prompt}/short/{course}/{course}.csv', 'a') as file:
         writer = csv.writer(file)
         writer.writerow(["Model Name", "Zero-shot", "One-shot", "Few-shot"])
         writer.writerows(eval_results)
