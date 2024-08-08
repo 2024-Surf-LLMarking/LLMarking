@@ -1,0 +1,49 @@
+Model Name,Zero-shot,One-shot,Few-shot
+Athene-70B,"F1 score:                0.8864
+Precision score: 0.8171
+Recall score:        0.9684","F1 score:                0.8916
+Precision score: 0.8150
+Recall score:        0.9842","F1 score:                0.8932
+Precision score: 0.8130
+Recall score:        0.9910"
+Llama-3-70B,"F1 score:                0.8937
+Precision score: 0.8232
+Recall score:        0.9774","F1 score:                0.8985
+Precision score: 0.8233
+Recall score:        0.9887","F1 score:                0.8966
+Precision score: 0.8202
+Recall score:        0.9887"
+Llama-3-8B,Mismatched,Mismatched,"F1 score:                0.8758
+Precision score: 0.8088
+Recall score:        0.9549"
+Llama-3.1-70B,"F1 score:                0.8894
+Precision score: 0.8638
+Recall score:        0.9165","F1 score:                0.8920
+Precision score: 0.8476
+Recall score:        0.9413","F1 score:                0.8948
+Precision score: 0.8454
+Recall score:        0.9503"
+Mistral-Large-2,"F1 score:                0.9029
+Precision score: 0.8324
+Recall score:        0.9865","F1 score:                0.9072
+Precision score: 0.8349
+Recall score:        0.9932","F1 score:                0.9057
+Precision score: 0.8293
+Recall score:        0.9977"
+Qwen1.5-110B,Mismatched,Mismatched,"F1 score:                0.8831
+Precision score: 0.7921
+Recall score:        0.9977"
+Qwen1.5-32B,"F1 score:                0.8825
+Precision score: 0.7897
+Recall score:        1.0000","F1 score:                0.8825
+Precision score: 0.7897
+Recall score:        1.0000","F1 score:                0.8744
+Precision score: 0.7880
+Recall score:        0.9819"
+Qwen2-72B,"F1 score:                0.8923
+Precision score: 0.8115
+Recall score:        0.9910","F1 score:                0.8842
+Precision score: 0.7925
+Recall score:        1.0000","F1 score:                0.8851
+Precision score: 0.7939
+Recall score:        1.0000"

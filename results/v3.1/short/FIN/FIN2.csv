@@ -1,0 +1,53 @@
+Model Name,Zero-shot,One-shot,Few-shot
+Athene-70B,Mismatched,"F1 score:                0.8462
+Precision score: 0.7801
+Recall score:        0.9244",Mismatched
+Aya-23-8B,Mismatched,"F1 score:                0.6705
+Precision score: 0.5087
+Recall score:        0.9832",Mismatched
+DeepSeek-Coder-V2-Lite,Mismatched,"F1 score:                0.7955
+Precision score: 0.7241
+Recall score:        0.8824",Mismatched
+Internlm2-7B,Mismatched,"F1 score:                0.8043
+Precision score: 0.6975
+Recall score:        0.9496",Mismatched
+Llama-3-70B,"F1 score:                0.8438
+Precision score: 0.7883
+Recall score:        0.9076","F1 score:                0.8657
+Precision score: 0.7785
+Recall score:        0.9748","F1 score:                0.8467
+Precision score: 0.7484
+Recall score:        0.9748"
+Llama-3-8B,Mismatched,Mismatched,"F1 score:                0.7915
+Precision score: 0.8017
+Recall score:        0.7815"
+Llama-3.1-70B,"F1 score:                0.8525
+Precision score: 0.8320
+Recall score:        0.8739","F1 score:                0.8760
+Precision score: 0.8129
+Recall score:        0.9496","F1 score:                0.8571
+Precision score: 0.7929
+Recall score:        0.9328"
+Mistral-Large-2,"F1 score:                0.8605
+Precision score: 0.7986
+Recall score:        0.9328","F1 score:                0.8550
+Precision score: 0.7667
+Recall score:        0.9664","F1 score:                0.8519
+Precision score: 0.7616
+Recall score:        0.9664"
+Qwen1.5-32B,Mismatched,"F1 score:                0.7945
+Precision score: 0.6705
+Recall score:        0.9748","F1 score:                0.7931
+Precision score: 0.6725
+Recall score:        0.9664"
+Qwen2-72B,"F1 score:                0.8649
+Precision score: 0.8000
+Recall score:        0.9412","F1 score:                0.8649
+Precision score: 0.8000
+Recall score:        0.9412",Mismatched
+Qwen2-7B,Mismatched,"F1 score:                0.8175
+Precision score: 0.7744
+Recall score:        0.8655",Mismatched
+Yi-1.5-34B,Mismatched,"F1 score:                0.7572
+Precision score: 0.7419
+Recall score:        0.7731",Mismatched

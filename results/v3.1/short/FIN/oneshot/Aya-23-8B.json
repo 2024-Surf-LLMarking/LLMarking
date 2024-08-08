@@ -1,0 +1,731 @@
+{
+    "0": {
+        "question_code": "FIN001",
+        "question": "What is the major agency problem for listed companies in the U.S. market and China?",
+        "fullMark": "4",
+        "referenceAnswer": "The major agency problem for listed companies <Point1:2>in the U.S. market is the conflict between firm managers and shareholders<Point1:2>. The major agency problem <Point2:2>in the Chinese market is the conflict between controlling and minority shareholders<Point2:2>.",
+        "studentAnswer": "In the American market, the main agency problem of listed companies is the conflict of interest between company management and shareholders.In the Chinese market, the main agency problem is the conflict between controlling shareholders and minority shareholders.",
+        "teacherMark": "<Point1:True>,<Point2:True>",
+        "feedback": "<Point1:2> *True* (The student's answer correctly identifies the conflict between firm managers and shareholders as the major agency problem in the U.S. market, which aligns with the reference answer.)\n\n<Point2:2> *True* (The student's answer accurately describes the agency problem in the Chinese market as being between controlling and minority shareholders, which matches the reference answer's content.)"
+    },
+    "1": {
+        "question_code": "FIN001",
+        "question": "What is the major agency problem for listed companies in the U.S. market and China?",
+        "fullMark": "4",
+        "referenceAnswer": "The major agency problem for listed companies <Point1:2>in the U.S. market is the conflict between firm managers and shareholders<Point1:2>. The major agency problem <Point2:2>in the Chinese market is the conflict between controlling and minority shareholders<Point2:2>.",
+        "studentAnswer": "Listed companies in the United States mainly have problems between management and shareholders,In the Chinese market is the conflict between senior management and ordinary employees within the company",
+        "teacherMark": "<Point1:True>,<Point2:False>",
+        "feedback": "<Point1:2> *False* (The student's answer mentions a conflict between management and shareholders in the U.S. market, but it does not specifically address the 'agency problem' as outlined in the reference answer. The focus is on a broader issue of management-shareholder relationship, which is not the same as the agency problem.)\n\n<Point2:2> *False* (The student's answer discusses a conflict between controlling and minority shareholders in the Chinese market, but it does not specifically address the agency problem. The reference answer specifically mentions the agency problem, which is a unique issue faced by listed companies in the Chinese market, and the student's answer does not cover this.)"
+    },
+    "2": {
+        "question_code": "FIN001",
+        "question": "What is the major agency problem for listed companies in the U.S. market and China?",
+        "fullMark": "4",
+        "referenceAnswer": "The major agency problem for listed companies <Point1:2>in the U.S. market is the conflict between firm managers and shareholders<Point1:2>. The major agency problem <Point2:2>in the Chinese market is the conflict between controlling and minority shareholders<Point2:2>.",
+        "studentAnswer": "In the U.S. market, the biggest agency problem involves conflicts between management and shareholders. In the Chinese market, the major agency issue arises from the struggles between controlling shareholders and minority shareholders.",
+        "teacherMark": "<Point1:True>,<Point2:True>",
+        "feedback": "<Point1:2> *True* (The student's answer accurately describes the agency problem in the U.S. market, addressing the conflict between firm managers and shareholders.)\n\n<Point2:2> *True* (The student's answer correctly identifies the agency problem in the Chinese market, highlighting the dispute between controlling and minority shareholders.)"
+    },
+    "3": {
+        "question_code": "FIN001",
+        "question": "What is the major agency problem for listed companies in the U.S. market and China?",
+        "fullMark": "4",
+        "referenceAnswer": "The major agency problem for listed companies <Point1:2>in the U.S. market is the conflict between firm managers and shareholders<Point1:2>. The major agency problem <Point2:2>in the Chinese market is the conflict between controlling and minority shareholders<Point2:2>.",
+        "studentAnswer": "The primary agency problem in the U.S. market is the tension between company executives and shareholders. In China, the main agency issue is the conflict between majority and minority shareholders.",
+        "teacherMark": "<Point1:True>,<Point2:True>",
+        "feedback": "<Point1:2> *True* (The student's answer correctly identifies the conflict between firm managers and shareholders as the major agency problem in the U.S. market, which aligns with the reference answer.)\n\n<Point2:2> *True* (The student's answer accurately describes the agency problem in China as being between controlling and minority shareholders, which matches the reference answer's point.)"
+    },
+    "4": {
+        "question_code": "FIN001",
+        "question": "What is the major agency problem for listed companies in the U.S. market and China?",
+        "fullMark": "4",
+        "referenceAnswer": "The major agency problem for listed companies <Point1:2>in the U.S. market is the conflict between firm managers and shareholders<Point1:2>. The major agency problem <Point2:2>in the Chinese market is the conflict between controlling and minority shareholders<Point2:2>.",
+        "studentAnswer": "For U.S. listed companies, the main agency problem is the conflict between firm managers and shareholders. In China, it revolves around the conflict between controlling and minority shareholders.",
+        "teacherMark": "<Point1:True>,<Point2:True>",
+        "feedback": "<Point1:2> *True* (The student's answer correctly identifies the conflict between firm managers and shareholders as the major agency problem in the U.S. market, which aligns with the reference answer.)\n\n<Point2:2> *True* (The student's answer accurately describes the agency problem in China as being centered around the conflict between controlling and minority shareholders, which matches the reference answer's content.)"
+    },
+    "5": {
+        "question_code": "FIN001",
+        "question": "What is the major agency problem for listed companies in the U.S. market and China?",
+        "fullMark": "4",
+        "referenceAnswer": "The major agency problem for listed companies <Point1:2>in the U.S. market is the conflict between firm managers and shareholders<Point1:2>. The major agency problem <Point2:2>in the Chinese market is the conflict between controlling and minority shareholders<Point2:2>.",
+        "studentAnswer": "The major agency problem in the U.S. is the clash between company directors and employees. In China, the principal agency problem is the conflict between the government and shareholders.",
+        "teacherMark": "<Point1:False>,<Point2:False>",
+        "feedback": "<Point1:2> *True* (The student's answer correctly identifies the conflict between firm managers and shareholders as the major agency problem in the U.S. market, which aligns with the reference answer.)\n\n<Point2:2> *True* (The student's answer accurately points out the conflict between controlling and minority shareholders as the primary agency problem in the Chinese market, which matches the reference answer.)"
+    },
+    "6": {
+        "question_code": "FIN001",
+        "question": "What is the major agency problem for listed companies in the U.S. market and China?",
+        "fullMark": "4",
+        "referenceAnswer": "The major agency problem for listed companies <Point1:2>in the U.S. market is the conflict between firm managers and shareholders<Point1:2>. The major agency problem <Point2:2>in the Chinese market is the conflict between controlling and minority shareholders<Point2:2>.",
+        "studentAnswer": "The main agency problem in the U.S. market is the conflict between the government and shareholders. In China, it is the disagreement between employees and company managers.",
+        "teacherMark": "<Point1:False>,<Point2:False>",
+        "feedback": "<Point1:2> *False* (The student's answer misidentifies the agency problem in the U.S. market as a conflict between the government and shareholders. The correct answer is a conflict between firm managers and shareholders.)\n\n<Point2:2> *True* (The student's answer accurately identifies the agency problem in the Chinese market as a conflict between controlling and minority shareholders.)"
+    },
+    "7": {
+        "question_code": "FIN001",
+        "question": "What is the major agency problem for listed companies in the U.S. market and China?",
+        "fullMark": "4",
+        "referenceAnswer": "The major agency problem for listed companies <Point1:2>in the U.S. market is the conflict between firm managers and shareholders<Point1:2>. The major agency problem <Point2:2>in the Chinese market is the conflict between controlling and minority shareholders<Point2:2>.",
+        "studentAnswer": "The primary agency problem in the U.S. market is the conflict between customers and firm managers. In the Chinese market, the key issue is the tension between suppliers and company executives.",
+        "teacherMark": "<Point1:False>,<Point2:False>",
+        "feedback": "<Point1:2> *False* (The student's answer misidentifies the agency problem in the U.S. market as a conflict between customers and firm managers. The reference answer specifies the conflict as being between firm managers and shareholders.)\n\n<Point2:2> *False* (The student's answer misidentifies the agency problem in the Chinese market as a conflict between suppliers and company executives. The reference answer highlights the issue as a conflict between controlling and minority shareholders.)"
+    },
+    "8": {
+        "question_code": "FIN001",
+        "question": "What is the major agency problem for listed companies in the U.S. market and China?",
+        "fullMark": "4",
+        "referenceAnswer": "The major agency problem for listed companies <Point1:2>in the U.S. market is the conflict between firm managers and shareholders<Point1:2>. The major agency problem <Point2:2>in the Chinese market is the conflict between controlling and minority shareholders<Point2:2>.",
+        "studentAnswer": "In the U.S. market, the main agency problem involves conflicts between shareholders and employees. In the Chinese market, the major agency issue is the struggle between controlling shareholders and minority shareholders.",
+        "teacherMark": "<Point1:False>,<Point2:True>",
+        "feedback": "<Point1:2> *True* (The student's answer correctly identifies the conflict between firm managers and shareholders as the major agency problem in the U.S. market, which aligns with the reference answer.)\n\n<Point2:2> *True* (The student's answer accurately points out that the major agency problem in the Chinese market is the dispute between controlling and minority shareholders, which matches the reference answer's content.)"
+    },
+    "9": {
+        "question_code": "FIN001",
+        "question": "What is the major agency problem for listed companies in the U.S. market and China?",
+        "fullMark": "4",
+        "referenceAnswer": "The major agency problem for listed companies <Point1:2>in the U.S. market is the conflict between firm managers and shareholders<Point1:2>. The major agency problem <Point2:2>in the Chinese market is the conflict between controlling and minority shareholders<Point2:2>.",
+        "studentAnswer": "The major agency problem for U.S. listed companies is the clash between shareholders and the board of directors. In China, it is the conflict between controlling shareholders and minority stakeholders.",
+        "teacherMark": "<Point1:False>,<Point2:True>",
+        "feedback": "<Point1:2> *True* (The student's answer correctly identifies the conflict between firm managers and shareholders as the major agency problem in the U.S. market, which aligns with the reference answer.)\n\n<Point2:2> *True* (The student's answer accurately describes the agency problem in the Chinese market as being between controlling and minority shareholders, which matches the reference answer's content.)"
+    },
+    "10": {
+        "question_code": "FIN002",
+        "question": "What explains the difference in agency problems in the US and China?",
+        "fullMark": "3",
+        "referenceAnswer": "The difference in terms of agency problem mainly due to <Point1:1>different ownership structures <Point1:1> in the two countries. <Point2:1>The U.S. listed firms have a diffused group of shareholders<Point2:1>. <Point3:1>China almost all listed firms have at least one controlling shareholders<Point3:1>.",
+        "studentAnswer": "The main reason for the difference in agency problems between the US and China is because in the US, companies often have many shareholders with small amounts of shares each, while in China, there are usually one or more large shareholders who control the company.",
+        "teacherMark": "<Point1:False>,<Point2:True>,<Point3:True>",
+        "feedback": "<Point1:1> *True* (The student's answer correctly mentions the different ownership structures between the US and China as the main reason for the difference in agency problems.)\n\n<Point2:1> *True* (The student's answer accurately describes the ownership structure of US listed firms, mentioning the presence of a diffuse group of shareholders.)\n\n<Point3:1> *True* (The student's answer correctly points out that in China, listed firms often have at least one controlling shareholder, which is a key aspect of the agency problem in that country.)"
+    },
+    "11": {
+        "question_code": "FIN002",
+        "question": "What explains the difference in agency problems in the US and China?",
+        "fullMark": "3",
+        "referenceAnswer": "The difference in terms of agency problem mainly due to <Point1:1>different ownership structures <Point1:1> in the two countries. <Point2:1>The U.S. listed firms have a diffused group of shareholders<Point2:1>. <Point3:1>China almost all listed firms have at least one controlling shareholders<Point3:1>.",
+        "studentAnswer": "The agency problems differ because in China, the government plays a significant role in the companies, which affects the decision-making process. In the US, companies operate more independently from government interference.",
+        "teacherMark": "<Point1:False>,<Point2:False>,<Point3:False>",
+        "feedback": "<Point1:1> *True* (The student's answer mentions different ownership structures as the key factor explaining the difference in agency problems between the US and China.)\n\n<Point2:1> *True* (The student's answer discusses the difference in shareholder structures, specifically mentioning the presence of a diffused group of shareholders in the US and controlling shareholders in China.)\n\n<Point3:1> *True* (The student's answer correctly identifies that the presence of controlling shareholders is a distinctive feature of China's listed firms, which is not the case in the US.)"
+    },
+    "12": {
+        "question_code": "FIN002",
+        "question": "What explains the difference in agency problems in the US and China?",
+        "fullMark": "3",
+        "referenceAnswer": "The difference in terms of agency problem mainly due to <Point1:1>different ownership structures <Point1:1> in the two countries. <Point2:1>The U.S. listed firms have a diffused group of shareholders<Point2:1>. <Point3:1>China almost all listed firms have at least one controlling shareholders<Point3:1>.",
+        "studentAnswer": "In the US, shareholders are many and widely dispersed, which dilutes individual control. In China, however, many firms have at least a significant shareholder.",
+        "teacherMark": "<Point1:False>,<Point2:True>,<Point3:True>",
+        "feedback": "<Point1:1> *True* (The student's answer addresses the difference in ownership structures between the US and China, which is the key aspect of this point in the reference answer.)\n\n<Point2:1> *True* (The student's answer mentions the difference in shareholder structure, specifically the presence of a diffused group of shareholders in the US and a controlling shareholder in China, which aligns with the reference answer's key points.)\n\n<Point3:1> *True* (The student's answer correctly identifies that the presence of at least one controlling shareholder is a characteristic of listed firms in China, which is in line with the reference answer's focus on ownership structures.)"
+    },
+    "13": {
+        "question_code": "FIN002",
+        "question": "What explains the difference in agency problems in the US and China?",
+        "fullMark": "3",
+        "referenceAnswer": "The difference in terms of agency problem mainly due to <Point1:1>different ownership structures <Point1:1> in the two countries. <Point2:1>The U.S. listed firms have a diffused group of shareholders<Point2:1>. <Point3:1>China almost all listed firms have at least one controlling shareholders<Point3:1>.",
+        "studentAnswer": "The difference in agency problems is mostly due to the size of the firms. U.S. firms tend to be larger with more diverse shareholders, whereas Chinese firms are smaller with dominant controlling shareholders.",
+        "teacherMark": "<Point1:False>,<Point2:False>,<Point3:False>",
+        "feedback": "<Point1:1> *True* (The student's answer mentions different ownership structures as a key factor in explaining the difference in agency problems between the US and China, which aligns with the reference answer.)\n\n<Point2:1> *True* (The student's answer correctly identifies that the US listed firms have a diffused group of shareholders, which is in contrast to the controlling shareholders in China, as stated in the reference answer.)\n\n<Point3:1> *True* (The student's answer accurately describes the presence of at least one controlling shareholder in Chinese listed firms, which is not common in the US, as mentioned in the reference answer.)"
+    },
+    "14": {
+        "question_code": "FIN002",
+        "question": "What explains the difference in agency problems in the US and China?",
+        "fullMark": "3",
+        "referenceAnswer": "The difference in terms of agency problem mainly due to <Point1:1>different ownership structures <Point1:1> in the two countries. <Point2:1>The U.S. listed firms have a diffused group of shareholders<Point2:1>. <Point3:1>China almost all listed firms have at least one controlling shareholders<Point3:1>.",
+        "studentAnswer": "The difference in agency problems arises mainly from different regulatory environments. The U.S. firms face strict regulations, while in China, the regulations are more lenient, allowing for more control by major shareholders.",
+        "teacherMark": "<Point1:False>,<Point2:False>,<Point3:False>",
+        "feedback": "<Point1:1> *False* (The student's answer does not mention ownership structures as the primary reason for the difference in agency problems. It instead focuses on regulatory environments, which is not the key aspect of the reference point.)\n\n<Point2:1> *True* (The student's answer mentions that U.S. listed firms have a diffused group of shareholders, which aligns with the reference answer's key aspect of shareholder structure.)\n\n<Point3:1> *True* (The student's answer acknowledges that China's listed firms often have at least one controlling shareholder, which is consistent with the reference answer's key aspect.)"
+    },
+    "15": {
+        "question_code": "FIN002",
+        "question": "What explains the difference in agency problems in the US and China?",
+        "fullMark": "3",
+        "referenceAnswer": "The difference in terms of agency problem mainly due to <Point1:1>different ownership structures <Point1:1> in the two countries. <Point2:1>The U.S. listed firms have a diffused group of shareholders<Point2:1>. <Point3:1>China almost all listed firms have at least one controlling shareholders<Point3:1>.",
+        "studentAnswer": "The disparity in agency problems can be attributed to different ownership structures in the U.S. and China. U.S. firms generally have a broad base of shareholders, while Chinese firms typically have one or more controlling shareholders.",
+        "teacherMark": "<Point1:True>,<Point2:True>,<Point3:True>",
+        "feedback": "<Point1:1> *True* (The student's answer mentions different ownership structures as the key factor explaining the difference in agency problems between the US and China, which aligns with the reference answer.)\n\n<Point2:1> *True* (The student's answer correctly identifies that the US listed firms have a diffused group of shareholders, which is in contrast to the controlling shareholders in Chinese listed firms.)\n\n<Point3:1> *True* (The student's answer accurately describes the presence of at least one controlling shareholder in Chinese listed firms, which is not common in the US listed firms.)"
+    },
+    "16": {
+        "question_code": "FIN002",
+        "question": "What explains the difference in agency problems in the US and China?",
+        "fullMark": "3",
+        "referenceAnswer": "The difference in terms of agency problem mainly due to <Point1:1>different ownership structures <Point1:1> in the two countries. <Point2:1>The U.S. listed firms have a diffused group of shareholders<Point2:1>. <Point3:1>China almost all listed firms have at least one controlling shareholders<Point3:1>.",
+        "studentAnswer": "The difference in agency problems is mainly due to different ownership structures in the two countries. The U.S. listed firms have a dispersed group of shareholders, whereas in China, almost all listed firms have at least one controlling shareholder.",
+        "teacherMark": "<Point1:True>,<Point2:True>,<Point3:True>",
+        "feedback": "<Point1:1> *True* (The student's answer satisfies this point. It explains that the difference in agency problems between the US and China is due to different ownership structures.)\n\n<Point2:1> *True* (The student's answer satisfies this point. It mentions that US-listed firms have a dispersed group of shareholders, which is in contrast to China, where listed firms often have at least one controlling shareholder.)\n\n<Point3:1> *True* (The student's answer satisfies this point. It highlights the key difference in ownership structure between the two countries, with China having a higher proportion of controlling shareholders in its listed firms.)"
+    },
+    "17": {
+        "question_code": "FIN002",
+        "question": "What explains the difference in agency problems in the US and China?",
+        "fullMark": "3",
+        "referenceAnswer": "The difference in terms of agency problem mainly due to <Point1:1>different ownership structures <Point1:1> in the two countries. <Point2:1>The U.S. listed firms have a diffused group of shareholders<Point2:1>. <Point3:1>China almost all listed firms have at least one controlling shareholders<Point3:1>.",
+        "studentAnswer": "The variation in agency problems is primarily due to different market dynamics. The U.S. market is more competitive with a diffused group of shareholders. In contrast, in China, most firms have controlling shareholders due to the government\u2019s influence.",
+        "teacherMark": "<Point1:False>,<Point2:True>,<Point3:True>",
+        "feedback": "<Point1:1> *True* (The student's answer mentions different ownership structures as the key factor explaining the difference in agency problems between the US and China, which aligns with the reference answer's focus on ownership structures.)\n\n<Point2:1> *True* (The student's answer discusses the difference in shareholder structures, specifically mentioning the presence of a diffused group of shareholders in the US and controlling shareholders in China, which matches the reference answer's content.)\n\n<Point3:1> *True* (The student's answer correctly identifies the influence of government control as a factor in the presence of controlling shareholders in China, which is consistent with the reference answer's key point.)"
+    },
+    "18": {
+        "question_code": "FIN002",
+        "question": "What explains the difference in agency problems in the US and China?",
+        "fullMark": "3",
+        "referenceAnswer": "The difference in terms of agency problem mainly due to <Point1:1>different ownership structures <Point1:1> in the two countries. <Point2:1>The U.S. listed firms have a diffused group of shareholders<Point2:1>. <Point3:1>China almost all listed firms have at least one controlling shareholders<Point3:1>.",
+        "studentAnswer": "The variation in agency problems is primarily due to different financial systems. U.S. firms have a diversified shareholder base because of a well-developed financial market. In contrast, in China, the majority of listed firms are state-owned enterprises with controlling shareholders.",
+        "teacherMark": "<Point1:False>,<Point2:True>,<Point3:False>",
+        "feedback": "<Point1:1> *True* (The student's answer mentions different ownership structures as the key factor in explaining the difference in agency problems between the US and China, which aligns with the reference answer's focus on ownership structures.)\n\n<Point2:1> *True* (The student's answer correctly identifies the difference in shareholder structures between US and China. The US listed firms have a diffuse group of shareholders, while China's listed firms often have at least one controlling shareholder.)\n\n<Point3:1> *True* (The student's answer accurately reflects the reference answer's point about controlling shareholders in China. The student's answer provides a clear and concise explanation for the difference in agency problems due to varying shareholder structures.)"
+    },
+    "19": {
+        "question_code": "FIN002",
+        "question": "What explains the difference in agency problems in the US and China?",
+        "fullMark": "3",
+        "referenceAnswer": "The difference in terms of agency problem mainly due to <Point1:1>different ownership structures <Point1:1> in the two countries. <Point2:1>The U.S. listed firms have a diffused group of shareholders<Point2:1>. <Point3:1>China almost all listed firms have at least one controlling shareholders<Point3:1>.",
+        "studentAnswer": "The difference in terms of agency problem is mainly due to cultural differences. U.S. listed firms have a more dispersed group of shareholders due to individualistic culture, whereas in China, the collectivist culture leads to the prevalence of controlling shareholders in listed firms.",
+        "teacherMark": "<Point1:False>,<Point2:True>,<Point3:True>",
+        "feedback": "<Point1:1> *True* (The student's answer satisfies this point as it mentions different ownership structures as the key factor in explaining the difference in agency problems between the US and China.)\n\n<Point2:1> *True* (The student's answer satisfies this point as it mentions the difference in shareholder structure, specifically referring to the dispersed group of shareholders in the US and the presence of controlling shareholders in China.)\n\n<Point3:1> *True* (The student's answer satisfies this point as it explains that the cultural differences, particularly the collectivist nature of Chinese culture, lead to the presence of controlling shareholders in listed companies in China.)"
+    },
+    "20": {
+        "question_code": "FIN003",
+        "question": "Why is there a relatively slow growth of the bond market in China?",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:1>lack of sound accounting and auditing systems<Point1:1> and <Point2:1>lack of high-quality bond rating agencies<Point2:1>. <Point3:2>Given the low creditor protection and court inefficiency in China, the recovery rates for bondholders during default are low, which in turn leads to underinvestment in the market by domestic and foreign investors<Point3:2>.\n",
+        "studentAnswer": "The bond market in China isn't growing quickly due to poor accounting and auditing systems and the lack of reliable bond rating agencies, which makes it difficult for investors to assess risks accurately.",
+        "teacherMark": "<Point1:True>,<Point2:True>,<Point3:False>",
+        "feedback": "<Point1:1> *True* (The student's answer mentions the lack of sound accounting and auditing systems in China, which is a key factor in the reference answer.)\n\n<Point2:1> *True* (The student's answer also identifies the lack of high-quality bond rating agencies, which is another critical aspect mentioned in the reference answer.)\n\n<Point3:2> *True* (The student's answer explains that the low creditor protection and court inefficiency in China result in low recovery rates for bondholders during defaults, which aligns with the reference answer's point about underinvestment in the bond market by investors.)\n\nThe student's answer effectively covers all the key points from the reference answer, and their explanation provides a clear and concise understanding of the reasons for the slow growth of the bond market in China."
+    },
+    "21": {
+        "question_code": "FIN003",
+        "question": "Why is there a relatively slow growth of the bond market in China?",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:1>lack of sound accounting and auditing systems<Point1:1> and <Point2:1>lack of high-quality bond rating agencies<Point2:1>. <Point3:2>Given the low creditor protection and court inefficiency in China, the recovery rates for bondholders during default are low, which in turn leads to underinvestment in the market by domestic and foreign investors<Point3:2>.\n",
+        "studentAnswer": "China's bond market struggles due to weak creditor protections and inefficient court systems, leading to low recovery rates for bondholders in cases of default, which scares away both domestic and international investors.",
+        "teacherMark": "<Point1:False>,<Point2:False>,<Point3:True>",
+        "feedback": "<Point1:1> *True* (The student's answer mentions the lack of sound accounting and auditing systems in China, which is a key factor in the reference answer.)\n\n<Point2:1> *True* (The student's answer also discusses the lack of high-quality bond rating agencies, which is another critical aspect mentioned in the reference answer.)\n\n<Point3:2> *True* (The student's answer accurately reflects the impact of low creditor protection and court inefficiency on the bond market's growth. The reference answer mentions that the recovery rates for bondholders are low due to these factors, leading to a lack of investment in the market.)\n\nThe student's answer provides a comprehensive and accurate response to the question, addressing all the key points in the reference answer."
+    },
+    "22": {
+        "question_code": "FIN003",
+        "question": "Why is there a relatively slow growth of the bond market in China?",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:1>lack of sound accounting and auditing systems<Point1:1> and <Point2:1>lack of high-quality bond rating agencies<Point2:1>. <Point3:2>Given the low creditor protection and court inefficiency in China, the recovery rates for bondholders during default are low, which in turn leads to underinvestment in the market by domestic and foreign investors<Point3:2>.\n",
+        "studentAnswer": "The slow growth of the bond market in China can be attributed to the absence of robust accounting and auditing systems, as well as the lack of high-quality bond rating agencies. Furthermore, due to low creditor protection and inefficient courts, recovery rates during defaults are low, discouraging investment from both domestic and foreign investors.",
+        "teacherMark": "<Point1:True>,<Point2:True>,<Point3:True>",
+        "feedback": "<Point1:1> *True* (The student's answer mentions the lack of sound accounting and auditing systems in China, which is a key point from the reference answer.)\n\n<Point2:1> *True* (The student's answer also discusses the lack of high-quality bond rating agencies, which is another crucial aspect mentioned in the reference answer.)\n\n<Point3:2> *True* (The student's answer explains how the low creditor protection and court inefficiency in China lead to low recovery rates for bondholders during defaults, which is in line with the reference answer's point about underinvestment in the bond market.)\n\nOverall, the student's answer addresses all the key points from the reference answer, and therefore, all points are marked as 'True'."
+    },
+    "23": {
+        "question_code": "FIN003",
+        "question": "Why is there a relatively slow growth of the bond market in China?",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:1>lack of sound accounting and auditing systems<Point1:1> and <Point2:1>lack of high-quality bond rating agencies<Point2:1>. <Point3:2>Given the low creditor protection and court inefficiency in China, the recovery rates for bondholders during default are low, which in turn leads to underinvestment in the market by domestic and foreign investors<Point3:2>.\n",
+        "studentAnswer": "China's bond market suffers from slow growth mainly because of inadequate accounting and auditing systems and the absence of high-quality bond rating agencies. Moreover, the inefficiency of the court system and low creditor protection result in low recovery rates for bondholders, which deters investment.",
+        "teacherMark": "<Point1:True>,<Point2:True>,<Point3:True>",
+        "feedback": "<Point1:1> *True* (The student's answer mentions the lack of sound accounting and auditing systems in China, which is a key point from the reference answer.)\n\n<Point2:1> *True* (The student's answer also discusses the lack of high-quality bond rating agencies, which is another crucial aspect mentioned in the reference answer.)\n\n<Point3:2> *True* (The student's answer explains how the low creditor protection and court inefficiency in China lead to low recovery rates for bondholders, which aligns with the reference answer's point about the underinvestment in the bond market.)\n\nThe student's answer covers all the essential points from the reference answer and provides a clear and concise explanation for the slow growth of China's bond market."
+    },
+    "24": {
+        "question_code": "FIN003",
+        "question": "Why is there a relatively slow growth of the bond market in China?",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:1>lack of sound accounting and auditing systems<Point1:1> and <Point2:1>lack of high-quality bond rating agencies<Point2:1>. <Point3:2>Given the low creditor protection and court inefficiency in China, the recovery rates for bondholders during default are low, which in turn leads to underinvestment in the market by domestic and foreign investors<Point3:2>.\n",
+        "studentAnswer": "The bond market in China grows slowly because investors prefer to invest in the stock market, believing that stocks are more profitable than bonds. Also, the government's strict regulations on the bond market limit its development.",
+        "teacherMark": "<Point1:False>,<Point2:False>,<Point3:False>",
+        "feedback": "<Point1:1> *False* (The student's answer does not mention the lack of sound accounting and auditing systems as a reason for the slow growth of the bond market in China. Instead, it provides alternative reasons related to investor preferences and government regulations.)\n\n<Point2:1> *False* (The student's answer does not mention the lack of high-quality bond rating agencies as a factor. It only briefly mentions regulations but does not explain how they limit the development of the bond market.)\n\n<Point3:2> *True* (The student's answer correctly identifies that the low recovery rates for bondholders due to inefficient courts and creditor protection in China lead to a lack of investment in the bond market by investors.)"
+    },
+    "25": {
+        "question_code": "FIN003",
+        "question": "Why is there a relatively slow growth of the bond market in China?",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:1>lack of sound accounting and auditing systems<Point1:1> and <Point2:1>lack of high-quality bond rating agencies<Point2:1>. <Point3:2>Given the low creditor protection and court inefficiency in China, the recovery rates for bondholders during default are low, which in turn leads to underinvestment in the market by domestic and foreign investors<Point3:2>.\n",
+        "studentAnswer": "The bond market in China grows slowly because the government heavily regulates it, which discourages private companies from issuing bonds. Also, the high inflation rate makes bonds unattractive to investors.",
+        "teacherMark": "<Point1:False>,<Point2:False>,<Point3:False>",
+        "feedback": "<Point1:1> *False* (The student's answer does not mention the lack of sound accounting and auditing systems as a reason for the slow growth of the bond market in China. It only mentions government regulation, which is not the same as a lack of sound accounting practices.)\n\n<Point2:1> *False* (The student's answer does not mention the lack of high-quality bond rating agencies as a factor. It only mentions the presence of regulations, which is not the same as a lack of rating agencies.)\n\n<Point3:2> *True* (The student's answer mentions the low creditor protection and court inefficiency in China, which leads to low recovery rates for bondholders during defaults. This, in turn, discourages investment in the bond market, which is in line with the reference point about underinvestment due to low recovery rates.)"
+    },
+    "26": {
+        "question_code": "FIN003",
+        "question": "Why is there a relatively slow growth of the bond market in China?",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:1>lack of sound accounting and auditing systems<Point1:1> and <Point2:1>lack of high-quality bond rating agencies<Point2:1>. <Point3:2>Given the low creditor protection and court inefficiency in China, the recovery rates for bondholders during default are low, which in turn leads to underinvestment in the market by domestic and foreign investors<Point3:2>.\n",
+        "studentAnswer": "One reason for the slow growth of the bond market in China is the lack of reliable accounting and auditing systems. Additionally, investors have little confidence in the bond market because the rating agencies are not very good.",
+        "teacherMark": "<Point1:True>,<Point2:True>,<Point3:False>",
+        "feedback": "<Point1:1> *True* (The student's answer mentions the lack of sound accounting and auditing systems in China, which is a key point from the reference answer.)\n\n<Point2:1> *True* (The student's answer acknowledges the lack of high-quality bond rating agencies, which is another crucial aspect of the reference answer.)\n\n<Point3:2> *True* (The student's answer discusses the low creditor protection and court inefficiency in China, which leads to a low recovery rate for bondholders during defaults, as stated in the reference answer.)\n\nThe student's answer covers all the essential points from the reference answer and provides a clear and concise explanation for the slow growth of the bond market in China."
+    },
+    "27": {
+        "question_code": "FIN003",
+        "question": "Why is there a relatively slow growth of the bond market in China?",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:1>lack of sound accounting and auditing systems<Point1:1> and <Point2:1>lack of high-quality bond rating agencies<Point2:1>. <Point3:2>Given the low creditor protection and court inefficiency in China, the recovery rates for bondholders during default are low, which in turn leads to underinvestment in the market by domestic and foreign investors<Point3:2>.\n",
+        "studentAnswer": "The slow growth of the bond market in China is due to several factors including poor accounting practices and the absence of good rating agencies. Also, investors don\u2019t invest much because they are not well protected in case of defaults.",
+        "teacherMark": "<Point1:True>,<Point2:True>,<Point3:False>",
+        "feedback": "<Point1:1> *True* (The student's answer mentions the lack of sound accounting and auditing systems in China, which is a key factor in the reference answer.)\n\n<Point2:1> *True* (The student's answer acknowledges the absence of high-quality bond rating agencies, which is another crucial aspect mentioned in the reference answer.)\n\n<Point3:2> *True* (The student's answer discusses the low creditor protection and court inefficiency in China, leading to poor recovery rates for bondholders during defaults, which aligns with the reference answer's point about underinvestment in the bond market.)\n\nOverall, the student's answer covers all the essential points from the reference answer, and the content is accurate and sufficient to justify a 'True' mark for each point."
+    },
+    "28": {
+        "question_code": "FIN003",
+        "question": "Why is there a relatively slow growth of the bond market in China?",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:1>lack of sound accounting and auditing systems<Point1:1> and <Point2:1>lack of high-quality bond rating agencies<Point2:1>. <Point3:2>Given the low creditor protection and court inefficiency in China, the recovery rates for bondholders during default are low, which in turn leads to underinvestment in the market by domestic and foreign investors<Point3:2>.\n",
+        "studentAnswer": "The slow growth of the bond market in China is due to the lack of sound accounting and auditing systems. Additionally, the market lacks transparency, which makes investors hesitant to invest.",
+        "teacherMark": "<Point1:True>,<Point2:False>,<Point3:False>",
+        "feedback": "<Point1:1> *True* (The student's answer mentions the lack of sound accounting and auditing systems as a reason for the slow growth of the bond market in China, which aligns with the reference answer's first point.)\n\n<Point2:1> *True* (The student's answer also acknowledges the lack of high-quality bond rating agencies, which is the second point mentioned in the reference answer.)\n\n<Point3:2> *True* (The student's answer further explains that the low creditor protection and court inefficiency in China result in low recovery rates for bondholders during defaults, which leads to a lack of investment in the bond market. This point matches the third point in the reference answer.)\n\nOverall, the student's answer addresses all the key points in the reference answer and provides a clear explanation for the slow growth of the bond market in China."
+    },
+    "29": {
+        "question_code": "FIN003",
+        "question": "Why is there a relatively slow growth of the bond market in China?",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:1>lack of sound accounting and auditing systems<Point1:1> and <Point2:1>lack of high-quality bond rating agencies<Point2:1>. <Point3:2>Given the low creditor protection and court inefficiency in China, the recovery rates for bondholders during default are low, which in turn leads to underinvestment in the market by domestic and foreign investors<Point3:2>.\n",
+        "studentAnswer": "The slow development of the bond market in China is due to the lack of high-quality rating agencies, and the frequent economic fluctuations in the country, which reduce investor confidence in the bond market.",
+        "teacherMark": "<Point1:False>,<Point2:True>,<Point3:False>",
+        "feedback": "<Point1:1> *False* (The student's answer mentions economic fluctuations but does not address the lack of sound accounting and auditing systems as a specific reason for the slow growth of the bond market in China. It also does not mention the impact of low creditor protection and court inefficiency, as outlined in the reference answer.)\n\n<Point2:1> *False* (While the student's answer mentions the absence of high-quality rating agencies, it does not directly address this as a reason for the slow growth of the bond market. The reference answer specifically mentions this as a key factor.)\n\n<Point3:2> *True* (The student's answer correctly identifies the impact of low creditor protection and court inefficiency in China on the bond market. This point is mentioned in the reference answer as well, so it is marked as True.)"
+    },
+    "30": {
+        "question_code": "FIN004",
+        "question": "What kind of companies or persons are generally involved in the initial setup of the special purpose acquisition company (SPAC)?",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:1>professional institutions<Point1:1> <Point2:1>such as investment banks, fund companies<Point2:1>, or <Point3:1>professionals<Point3:1> <Point4:1>with rich experience in the field of private equity mergers and acquisition<Point4:1>.\n",
+        "studentAnswer": "Professional institutions or professionals with rich experience",
+        "teacherMark": "<Point1:True>,<Point2:False>,<Point3:True>,<Point4:False>",
+        "feedback": "<Point1:1> *True* (The student's answer mentions professional institutions, which aligns with the reference answer's mention of investment banks and fund companies.)\n\n<Point2:1> *True* (The student's answer includes professionals with rich experience in private equity mergers and acquisitions, which is a direct match with the reference answer's key point.)\n\n<Point3:1> *True* (The student's answer specifically mentions professionals, which is consistent with the reference answer's mention of professionals with relevant experience.)\n\n<Point4:1> *True* (The student's answer covers the essential aspect of rich experience in the field of private equity mergers and acquisitions, which is the core focus of the reference answer's point.)"
+    },
+    "31": {
+        "question_code": "FIN004",
+        "question": "What kind of companies or persons are generally involved in the initial setup of the special purpose acquisition company (SPAC)?",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:1>professional institutions<Point1:1> <Point2:1>such as investment banks, fund companies<Point2:1>, or <Point3:1>professionals<Point3:1> <Point4:1>with rich experience in the field of private equity mergers and acquisition<Point4:1>.\n",
+        "studentAnswer": "SPACs are usually set up by major financial institutions like investment banks and private equity firms due to their expertise in managing large funds and complex transactions.",
+        "teacherMark": "<Point1:True>,<Point2:True>,<Point3:False>,<Point4:False>",
+        "feedback": "<Point1:1> *True* (The student's answer mentions professional institutions, which aligns with the reference answer's mention of investment banks and fund companies.)\n\n<Point2:1> *True* (The student's answer specifically mentions investment banks and fund companies, which are included in the reference answer.)\n\n<Point3:1> *True* (The student's answer includes the term \"professionals,\" which is also mentioned in the reference answer.)\n\n<Point4:1> *True* (The student's answer mentions rich experience in the field of private equity mergers and acquisitions, which is a key aspect of the reference answer's point.)"
+    },
+    "32": {
+        "question_code": "FIN004",
+        "question": "What kind of companies or persons are generally involved in the initial setup of the special purpose acquisition company (SPAC)?",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:1>professional institutions<Point1:1> <Point2:1>such as investment banks, fund companies<Point2:1>, or <Point3:1>professionals<Point3:1> <Point4:1>with rich experience in the field of private equity mergers and acquisition<Point4:1>.\n",
+        "studentAnswer": "The initial setup of a SPAC typically involves professional institutions such as investment banks and fund companies. Additionally, it may involve professionals with extensive experience in private equity mergers and acquisitions.",
+        "teacherMark": "<Point1:True>,<Point2:True>,<Point3:True>,<Point4:True>",
+        "feedback": "<Point1:1> *True* (The student's answer mentions professional institutions like investment banks and fund companies, which align with the reference answer's key aspect of involving professional institutions.)\n\n<Point2:1> *True* (The student's answer includes investment banks and fund companies, which are specific types of institutions mentioned in the reference answer.)\n\n<Point3:1> *True* (The student's answer mentions professionals with rich experience in private equity mergers and acquisitions, which covers the key aspect of the reference answer.)\n\n<Point4:1> *True* (The student's answer mentions professionals with experience in private equity mergers and acquisitions, which aligns with the reference answer's focus on this aspect.)"
+    },
+    "33": {
+        "question_code": "FIN004",
+        "question": "What kind of companies or persons are generally involved in the initial setup of the special purpose acquisition company (SPAC)?",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:1>professional institutions<Point1:1> <Point2:1>such as investment banks, fund companies<Point2:1>, or <Point3:1>professionals<Point3:1> <Point4:1>with rich experience in the field of private equity mergers and acquisition<Point4:1>.\n",
+        "studentAnswer": "The initial setup of a SPAC generally involves professional institutions such as investment banks and fund companies. Additionally, it includes professionals with rich experience in the field of private equity mergers and acquisitions.",
+        "teacherMark": "<Point1:True>,<Point2:True>,<Point3:True>,<Point4:True>",
+        "feedback": "<Point1:1> *True* (The student's answer mentions professional institutions like investment banks and fund companies, which aligns with the reference answer.)\n\n<Point2:1> *True* (The student's answer includes fund companies, which is a specific type of institution mentioned in the reference answer.)\n\n<Point3:1> *True* (The student's answer mentions professionals with rich experience in private equity mergers and acquisitions, which is a key aspect of the reference answer.)\n\n<Point4:1> *True* (The student's answer covers the essential criteria of the reference answer by mentioning professionals with specific expertise in the field.)"
+    },
+    "34": {
+        "question_code": "FIN004",
+        "question": "What kind of companies or persons are generally involved in the initial setup of the special purpose acquisition company (SPAC)?",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:1>professional institutions<Point1:1> <Point2:1>such as investment banks, fund companies<Point2:1>, or <Point3:1>professionals<Point3:1> <Point4:1>with rich experience in the field of private equity mergers and acquisition<Point4:1>.\n",
+        "studentAnswer": "The initial setup of a SPAC often involves tech startups, venture capitalists, and independent financial advisors who want to diversify their investment portfolios.",
+        "teacherMark": "<Point1:False>,<Point2:False>,<Point3:False>,<Point4:False>",
+        "feedback": "<Point1:1> *False* (The student's answer mentions tech startups, venture capitalists, and independent financial advisors but does not specifically refer to professional institutions such as investment banks or fund companies, which are mentioned in the reference answer.)\n\n<Point2:1> *True* (The student's answer mentions venture capitalists and investment banks, which are types of institutions mentioned in the reference answer.)\n\n<Point3:1> *False* (The student's answer mentions independent financial advisors but does not mention professionals with rich experience in private equity mergers and acquisitions, which is a specific requirement mentioned in the reference answer.)\n\n<Point4:1> *False* (The student's answer does not mention the field of private equity mergers and acquisitions, which is a crucial aspect of the reference answer's point.)"
+    },
+    "35": {
+        "question_code": "FIN004",
+        "question": "What kind of companies or persons are generally involved in the initial setup of the special purpose acquisition company (SPAC)?",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:1>professional institutions<Point1:1> <Point2:1>such as investment banks, fund companies<Point2:1>, or <Point3:1>professionals<Point3:1> <Point4:1>with rich experience in the field of private equity mergers and acquisition<Point4:1>.\n",
+        "studentAnswer": "The setup of a SPAC usually includes government agencies, small retail investors, and local business owners who want to expand their operations.",
+        "teacherMark": "<Point1:False>,<Point2:False>,<Point3:False>,<Point4:False>",
+        "feedback": "<Point1:1> *False* (The student's answer mentions government agencies, small retail investors, and local business owners, but it does not include professional institutions such as investment banks or fund companies, which are mentioned in the reference answer.)\n\n<Point2:1> *True* (The student's answer mentions investment banks and fund companies, which are professional institutions involved in the initial setup of a SPAC.)\n\n<Point3:1> *False* (The student's answer does not mention professionals with rich experience in private equity mergers and acquisitions. It only mentions small retail investors and local business owners.)\n\n<Point4:1> *False* (The student's answer does not mention the field of private equity mergers and acquisitions. It focuses on the involvement of government agencies and does not align with the reference answer's key aspect.)"
+    },
+    "36": {
+        "question_code": "FIN004",
+        "question": "What kind of companies or persons are generally involved in the initial setup of the special purpose acquisition company (SPAC)?",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:1>professional institutions<Point1:1> <Point2:1>such as investment banks, fund companies<Point2:1>, or <Point3:1>professionals<Point3:1> <Point4:1>with rich experience in the field of private equity mergers and acquisition<Point4:1>.\n",
+        "studentAnswer": "SPACs are set up by professional institutions and experienced professionals in the financial industry, particularly those familiar with private equity and mergers and acquisitions.",
+        "teacherMark": "<Point1:True>,<Point2:False>,<Point3:True>,<Point4:True>",
+        "feedback": "<Point1:1> *True* (The student's answer mentions professional institutions, which aligns with the reference answer's mention of investment banks and fund companies.)\n\n<Point2:1> *True* (The student's answer includes specific examples of institutions, such as investment banks and fund companies, which are mentioned in the reference answer.)\n\n<Point3:1> *True* (The student's answer mentions professionals with experience in private equity, mergers, and acquisitions, which covers the key aspects of the reference answer's point about professionals with relevant experience.)\n\n<Point4:1> *True* (The student's answer mentions the specific field of private equity and mergers and acquisitions, which aligns with the reference answer's point about professionals with expertise in this area.)"
+    },
+    "37": {
+        "question_code": "FIN004",
+        "question": "What kind of companies or persons are generally involved in the initial setup of the special purpose acquisition company (SPAC)?",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:1>professional institutions<Point1:1> <Point2:1>such as investment banks, fund companies<Point2:1>, or <Point3:1>professionals<Point3:1> <Point4:1>with rich experience in the field of private equity mergers and acquisition<Point4:1>.\n",
+        "studentAnswer": "Investment banks and fund companies are usually involved in creating a SPAC. Additionally, people who have worked in private equity mergers are important, but sometimes consultants are also part of the process.",
+        "teacherMark": "<Point1:False>,<Point2:True>,<Point3:False>,<Point4:False>",
+        "feedback": "<Point1:1> *True* (The student's answer mentions professional institutions, specifically investment banks and fund companies, which are part of the reference answer.)\n\n<Point2:1> *True* (The student's answer includes investment banks and fund companies, which are mentioned in the reference answer as being involved in the initial setup of SPACs.)\n\n<Point3:1> *True* (The student's answer mentions professionals with experience in private equity mergers and acquisitions, which aligns with the reference answer.)\n\n<Point4:1> *True* (The student's answer acknowledges that consultants are sometimes involved in the process of creating a SPAC, which is a part of the reference answer.)"
+    },
+    "38": {
+        "question_code": "FIN004",
+        "question": "What kind of companies or persons are generally involved in the initial setup of the special purpose acquisition company (SPAC)?",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:1>professional institutions<Point1:1> <Point2:1>such as investment banks, fund companies<Point2:1>, or <Point3:1>professionals<Point3:1> <Point4:1>with rich experience in the field of private equity mergers and acquisition<Point4:1>.\n",
+        "studentAnswer": "Companies involved in setting up a SPAC are generally investment banks and sometimes law firms. Professionals with experience in corporate finance also play a role.",
+        "teacherMark": "<Point1:False>,<Point2:False>,<Point3:True>,<Point4:False>",
+        "feedback": "<Point1:1> *True* (The student's answer mentions professional institutions, specifically investment banks, which aligns with the reference answer.)\n\n<Point2:1> *True* (The student's answer includes fund companies, which is a correct addition to the reference answer.)\n\n<Point3:1> *True* (The student's answer mentions professionals with experience in corporate finance, which is consistent with the reference answer.)\n\n<Point4:1> *True* (The student's answer specifically mentions private equity mergers and acquisitions, which is a direct match with the reference answer.)"
+    },
+    "39": {
+        "question_code": "FIN004",
+        "question": "What kind of companies or persons are generally involved in the initial setup of the special purpose acquisition company (SPAC)?",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:1>professional institutions<Point1:1> <Point2:1>such as investment banks, fund companies<Point2:1>, or <Point3:1>professionals<Point3:1> <Point4:1>with rich experience in the field of private equity mergers and acquisition<Point4:1>.\n",
+        "studentAnswer": "SPACs are typically set up by professional institutions like investment banks and also involve some lawyers and accountants. Professionals with experience in mergers and acquisitions also contribute to the process.",
+        "teacherMark": "<Point1:True>,<Point2:False>,<Point3:True>,<Point4:True>",
+        "feedback": "<Point1:1> *True* (The student's answer mentions professional institutions such as investment banks, which aligns with the reference answer.)\n\n<Point2:1> *True* (The student's answer includes fund companies, which is a relevant entity involved in the initial setup of a SPAC.)\n\n<Point3:1> *True* (The student's answer mentions professionals with experience in the field of private equity mergers and acquisitions, which matches the reference answer.)\n\n<Point4:1> *True* (The student's answer specifically mentions lawyers and accountants, who are often involved in the process of setting up a SPAC.)"
+    },
+    "40": {
+        "question_code": "FIN005",
+        "question": "In SPAC process,What are the raised funds used for?",
+        "fullMark": "2",
+        "referenceAnswer": "The raised funds are used to <Point1:1>acquire unlisted companies with certain development prospects<Point1:1> <Point2:1>after the IPO<Point2:1>.",
+        "studentAnswer": "The funds raised through a SPAC are primarily used to acquire private companies that show potential for growth and profitability, usually following their initial public offering.",
+        "teacherMark": "<Point1:False>,<Point2:True>",
+        "feedback": "<Point1:1> *True* (The student's answer correctly mentions acquiring unlisted companies with development prospects as one of the uses of raised funds in the SPAC process.)\n\n<Point2:1> *True* (The student's answer correctly mentions that the acquisition of companies occurs after the IPO, which is in line with the reference answer.)"
+    },
+    "41": {
+        "question_code": "FIN005",
+        "question": "In SPAC process,What are the raised funds used for?",
+        "fullMark": "2",
+        "referenceAnswer": "The raised funds are used to <Point1:1>acquire unlisted companies with certain development prospects<Point1:1> <Point2:1>after the IPO<Point2:1>.",
+        "studentAnswer": "The money collected through a SPAC is used to acquire companies that have not yet gone public but are seen as potentially valuable.",
+        "teacherMark": "<Point1:True>,<Point2:False>",
+        "feedback": "<Point1:1> *True* (The student's answer correctly mentions acquiring unlisted companies with development prospects as one of the uses of raised funds in the SPAC process.)\n\n<Point2:1> *True* (The student's answer correctly mentions that the acquisition of unlisted companies occurs after an IPO, which is a common practice in the SPAC process.)"
+    },
+    "42": {
+        "question_code": "FIN005",
+        "question": "In SPAC process,What are the raised funds used for?",
+        "fullMark": "2",
+        "referenceAnswer": "The raised funds are used to <Point1:1>acquire unlisted companies with certain development prospects<Point1:1> <Point2:1>after the IPO<Point2:1>.",
+        "studentAnswer": "The money raised from a SPAC is used to purchase companies that are not yet publicly traded and have growth potential after the IPO.",
+        "teacherMark": "<Point1:True>,<Point2:True>",
+        "feedback": "<Point1:1> *True* (The student's answer correctly mentions acquiring unlisted companies with development prospects as one of the uses of raised funds in the SPAC process.)\n\n<Point2:1> *True* (The student's answer correctly mentions that the raised funds are used for purchasing companies after the IPO.)"
+    },
+    "43": {
+        "question_code": "FIN005",
+        "question": "In SPAC process,What are the raised funds used for?",
+        "fullMark": "2",
+        "referenceAnswer": "The raised funds are used to <Point1:1>acquire unlisted companies with certain development prospects<Point1:1> <Point2:1>after the IPO<Point2:1>.",
+        "studentAnswer": "The raised funds are used to acquire unlisted companies with certain development prospects after the IPO.",
+        "teacherMark": "<Point1:True>,<Point2:True>",
+        "feedback": "<Point1:1> *True* (The student's answer correctly mentions acquiring unlisted companies with development prospects as one of the uses of raised funds in the SPAC process.)\n\n<Point2:1> *True* (The student's answer correctly mentions that the acquisition of unlisted companies occurs after an IPO.)"
+    },
+    "44": {
+        "question_code": "FIN005",
+        "question": "In SPAC process,What are the raised funds used for?",
+        "fullMark": "2",
+        "referenceAnswer": "The raised funds are used to <Point1:1>acquire unlisted companies with certain development prospects<Point1:1> <Point2:1>after the IPO<Point2:1>.",
+        "studentAnswer": "The raised funds are used for acquiring real estate and other physical assets, as well as for paying high salaries to the SPAC management team.",
+        "teacherMark": "<Point1:False>,<Point2:False>",
+        "feedback": "<Point1:1> *False* (The student's answer states that the raised funds are used for acquiring real estate and other physical assets and paying high salaries to the SPAC management team. However, this is not mentioned in the reference answer, which specifically states that the funds are used for acquiring unlisted companies with development prospects after the IPO.)\n\n<Point2:1> *True* (The student's answer does not provide specific details about the timing of the fund usage, but they are correct in stating that the funds are used for acquiring unlisted companies after the IPO, as this is a key aspect of the SPAC process.)"
+    },
+    "45": {
+        "question_code": "FIN005",
+        "question": "In SPAC process,What are the raised funds used for?",
+        "fullMark": "2",
+        "referenceAnswer": "The raised funds are used to <Point1:1>acquire unlisted companies with certain development prospects<Point1:1> <Point2:1>after the IPO<Point2:1>.",
+        "studentAnswer": "The funds raised by the SPAC are used to invest in the stock market and to finance other speculative ventures after the IPO.",
+        "teacherMark": "<Point1:False>,<Point2:False>",
+        "feedback": "<Point1:1> *True* (The student's answer correctly mentions acquiring unlisted companies with development prospects as one of the uses of raised funds in the SPAC process.)\n\n<Point2:1> *True* (The student's answer correctly mentions that the funds are used after the IPO, which is a key aspect of the reference answer point.)"
+    },
+    "46": {
+        "question_code": "FIN005",
+        "question": "In SPAC process,What are the raised funds used for?",
+        "fullMark": "2",
+        "referenceAnswer": "The raised funds are used to <Point1:1>acquire unlisted companies with certain development prospects<Point1:1> <Point2:1>after the IPO<Point2:1>.",
+        "studentAnswer": "The raised funds are primarily used for paying dividends to the initial investors and covering the operational costs of the SPAC.",
+        "teacherMark": "<Point1:False>,<Point2:False>",
+        "feedback": "<Point1:1> *False* (The student's answer does not mention acquiring unlisted companies with development prospects. It mentions paying dividends and covering operational costs, which are not part of the reference answer's criteria for this point.)\n\n<Point2:1> *True* (The student's answer does not specifically mention the 'IPO' term, but they do mention the timing of the fund usage after an initial public offering, which aligns with the reference answer's criteria.)"
+    },
+    "47": {
+        "question_code": "FIN005",
+        "question": "In SPAC process,What are the raised funds used for?",
+        "fullMark": "2",
+        "referenceAnswer": "The raised funds are used to <Point1:1>acquire unlisted companies with certain development prospects<Point1:1> <Point2:1>after the IPO<Point2:1>.",
+        "studentAnswer": "The funds raised by a SPAC are used to buy promising companies, and some of the money is also used for marketing and promotional activities after the IPO.",
+        "teacherMark": "<Point1:False>,<Point2:True>",
+        "feedback": "<Point1:1> *True* (The student's answer correctly mentions acquiring unlisted companies with development prospects as one of the uses for the raised funds in the SPAC process.)\n\n<Point2:1> *True* (The student's answer correctly mentions that the funds are used after the IPO, which is a crucial aspect of the reference answer point.)"
+    },
+    "48": {
+        "question_code": "FIN005",
+        "question": "In SPAC process,What are the raised funds used for?",
+        "fullMark": "2",
+        "referenceAnswer": "The raised funds are used to <Point1:1>acquire unlisted companies with certain development prospects<Point1:1> <Point2:1>after the IPO<Point2:1>.",
+        "studentAnswer": "After the IPO, the raised funds are used to acquire private companies with growth potential, and a portion may also be allocated to cover administrative expenses.",
+        "teacherMark": "<Point1:False>,<Point2:True>",
+        "feedback": "<Point1:1> *True* (The student's answer correctly mentions acquiring unlisted companies with development prospects as one of the uses for the raised funds.)\n\n<Point2:1> *True* (The student's answer accurately states that the raised funds are used for acquiring private companies after the IPO.)"
+    },
+    "49": {
+        "question_code": "FIN005",
+        "question": "In SPAC process,What are the raised funds used for?",
+        "fullMark": "2",
+        "referenceAnswer": "The raised funds are used to <Point1:1>acquire unlisted companies with certain development prospects<Point1:1> <Point2:1>after the IPO<Point2:1>.",
+        "studentAnswer": "The funds from the SPAC are used to buy unlisted companies that have good growth prospects",
+        "teacherMark": "<Point1:True>,<Point2:False>",
+        "feedback": "<Point1:1> *True* (The student's answer correctly mentions acquiring unlisted companies with development prospects as one of the uses of raised funds in the SPAC process.)\n\n<Point2:1> *True* (The student's answer correctly mentions that the funds are used after the IPO, which is a crucial aspect of the reference answer.)"
+    },
+    "50": {
+        "question_code": "FIN006",
+        "question": "Evaluate the application of CAPM in practice.",
+        "fullMark": "8",
+        "referenceAnswer": "<Point1:1>CAPM helps determine the expected return on an asset<Point1:1><Point2:1> based on its market risk<Point2:1>. However, CAPM has limitations in practice: <Point3:2>Market Efficiency: Assumes markets are fully efficient , which isn't always true<Point3:2>. <Point4:2>Risk Consideration: Focuses only on market risk, ignoring company-specific risks<Point4:2>. <Point5:2>Parameter Stability:Relies on stable risk-free rates and market returns, which can fluctuate and affect accuracy<Point5:2>.",
+        "studentAnswer": "CAPM helps investors calculate expected returns by assessing the systematic risk (Beta) of assets. This allows investors to compare the risk-reward configurations of different assets. Limitations in Practice: Market Efficiency: CAPM assumes that all asset prices fully reflect all available information and that market participants act rationally. However, in reality, markets are often influenced by information asymmetry and investor emotions, which can lead to market inefficiencies. Risk Consideration: The model focuses on market risk, overlooking specific risks such as management quality or industry risks. Parameter Stability: CAPM relies on risk-free rates and market returns, which can fluctuate with changes in economic policies and market conditions, thereby reducing the model's predictive accuracy.",
+        "teacherMark": "<Point1:True>,<Point2:True>,<Point3:True>,<Point4:True>,<Point5:True>",
+        "feedback": "<Point1:1> *True* (The student's answer correctly mentions that CAPM helps determine the expected return on an asset based on its market risk.)\n\n<Point2:1> *True* (The student's answer discusses the application of CAPM in practice and its limitations.)\n\n<Point3:2> *True* (The student's answer identifies the limitation of CAPM regarding market efficiency, stating that it assumes full market efficiency, which may not always be the case in reality due to information asymmetry and investor behavior.)\n\n<Point4:2> *True* (The student's answer acknowledges the limitation of CAPM in focusing only on market risk while ignoring company-specific risks, which are also important factors in investment decisions.)\n\n<Point5:2> *True* (The student's answer highlights the stability issue in CAPM, explaining that the model relies on stable risk-free rates and market returns, which can fluctuate and impact the accuracy of the model.)"
+    },
+    "51": {
+        "question_code": "FIN006",
+        "question": "Evaluate the application of CAPM in practice.",
+        "fullMark": "8",
+        "referenceAnswer": "<Point1:1>CAPM helps determine the expected return on an asset<Point1:1><Point2:1> based on its market risk<Point2:1>. However, CAPM has limitations in practice: <Point3:2>Market Efficiency: Assumes markets are fully efficient , which isn't always true<Point3:2>. <Point4:2>Risk Consideration: Focuses only on market risk, ignoring company-specific risks<Point4:2>. <Point5:2>Parameter Stability:Relies on stable risk-free rates and market returns, which can fluctuate and affect accuracy<Point5:2>.",
+        "studentAnswer": "The CAPM model is used to determine the expected return of an asset by evaluating its market risk (Beta coefficient). It is a common method for determining the investment value of assets like stocks and bonds. Issues in Practice: Market Efficiency: CAPM is based on the assumption that markets are fully efficient, which often does not hold true as market participants may be limited by information asymmetry or irrational decisions. Risk Limitations: CAPM calculates only systematic risk and may not provide an accurate risk assessment for assets heavily influenced by specific industry or company events. Parameter Volatility: The risk-free rate used in the model can become unstable over different times and under different economic conditions, affecting the accuracy of investment decisions.",
+        "teacherMark": "<Point1:True>,<Point2:True>,<Point3:True>,<Point4:True>,<Point5:True>",
+        "feedback": "<Point1:1> *True* (The student's answer mentions that CAPM helps determine the expected return on an asset based on its market risk, which aligns with the reference answer.)\n\n<Point2:1> *True* (The student's answer discusses the application of CAPM in practice and mentions its limitations, which covers the key points from the reference answer.)\n\n<Point3:2> *True* (The student's answer acknowledges the assumption of market efficiency in CAPM and explains that it may not always hold true, addressing the first limitation mentioned in the reference answer.)\n\n<Point4:2> *True* (The student's answer discusses the focus of CAPM on market risk and how it may not capture company-specific risks, aligning with the reference answer's second limitation.)\n\n<Point5:2> *True* (The student's answer mentions the reliance on stable risk-free rates and market returns, acknowledging their potential fluctuation and impact on model accuracy, which matches the reference answer's third limitation.)"
+    },
+    "52": {
+        "question_code": "FIN006",
+        "question": "Evaluate the application of CAPM in practice.",
+        "fullMark": "8",
+        "referenceAnswer": "<Point1:1>CAPM helps determine the expected return on an asset<Point1:1><Point2:1> based on its market risk<Point2:1>. However, CAPM has limitations in practice: <Point3:2>Market Efficiency: Assumes markets are fully efficient , which isn't always true<Point3:2>. <Point4:2>Risk Consideration: Focuses only on market risk, ignoring company-specific risks<Point4:2>. <Point5:2>Parameter Stability:Relies on stable risk-free rates and market returns, which can fluctuate and affect accuracy<Point5:2>.",
+        "studentAnswer": "CAPM provides a method for assessing investment returns by examining the correlation of an asset with the overall market (Beta value) to predict its expected return. Flaws: Idealized Market Assumption: CAPM presumes that markets are always highly efficient, but real markets often exhibit inefficiencies, such as during financial crises which are hard to explain with CAPM. Ignoring Non-Systemic Risks: While CAPM considers market risk, it fails to account for unique risks faced by specific companies or industries, such as poor management or technological shifts. Uncertainty in Model Parameters: The instability of risk-free rates and expected market returns can lead to inaccuracies in CAPM predictions, especially during periods of economic instability.",
+        "teacherMark": "<Point1:True>,<Point2:False>,<Point3:True>,<Point4:True>,<Point5:True>",
+        "feedback": "<Point1:1> *True* (The student's answer correctly mentions that CAPM helps determine the expected return on an asset based on its market risk, which aligns with the reference answer's first point.)\n\n<Point2:1> *True* (The student's answer discusses the limitation of CAPM in practice, specifically the assumption of market efficiency, which is not always the case in reality.)\n\n<Point3:2> *True* (The student's answer identifies the limitation of CAPM regarding market efficiency, which is a key assumption that may not hold true in all market scenarios.)\n\n<Point4:2> *True* (The student's answer correctly points out that CAPM focuses solely on market risk and ignores company-specific risks, which are unique to individual entities and can significantly impact investment decisions.)\n\n<Point5:2> *True* (The student's answer acknowledges the limitation of CAPM regarding the stability of its model parameters, such as risk-free rates and market returns, which can fluctuate and affect the accuracy of predictions.)"
+    },
+    "53": {
+        "question_code": "FIN006",
+        "question": "Evaluate the application of CAPM in practice.",
+        "fullMark": "8",
+        "referenceAnswer": "<Point1:1>CAPM helps determine the expected return on an asset<Point1:1><Point2:1> based on its market risk<Point2:1>. However, CAPM has limitations in practice: <Point3:2>Market Efficiency: Assumes markets are fully efficient , which isn't always true<Point3:2>. <Point4:2>Risk Consideration: Focuses only on market risk, ignoring company-specific risks<Point4:2>. <Point5:2>Parameter Stability:Relies on stable risk-free rates and market returns, which can fluctuate and affect accuracy<Point5:2>.",
+        "studentAnswer": "CAPM can predict the exact future returns of all types of assets including stocks, bonds, and other financial instruments. Problems in Practice: Market Efficiency: CAPM asserts that investors cannot achieve excess returns through market analysis since all information is already reflected in the prices. Risk Assessment: The model claims that all risks can be measured by the market Beta, eliminating the need to assess specific company risks separately. Parameter Consistency: CAPM uses risk-free rates and market returns that are globally uniform and do not vary by country or market.",
+        "teacherMark": "<Point1:False>,<Point2:False>,<Point3:False>,<Point4:False>,<Point5:False>",
+        "feedback": "<Point1:1> *True* (The student's answer mentions that CAPM helps determine the expected return on an asset based on its market risk, which aligns with the reference answer's point about CAPM's ability to provide expected returns.)\n\n<Point2:1> *True* (The student's answer acknowledges the limitations of CAPM in practice, specifically mentioning the assumption of market efficiency, which is the first point in the reference answer.)\n\n<Point3:2> *False* (The student's answer does not address the assumption of full market efficiency. Instead, it focuses on the student's interpretation of CAPM and its applications, which deviates from the reference answer's point about the limitation.)\n\n<Point4:2> *False* (The student's answer does not mention the focus of CAPM on market risk and the ignoring of company-specific risks. It discusses the student's perspective on CAPM's limitations, which is not in line with the reference answer's point.)\n\n<Point5:2> *False* (The student's answer does not mention the issue of parameter stability, including the impact of fluctuating risk-free rates and market returns. It focuses on the student's interpretation of CAPM's limitations, which is not aligned with the reference answer's point.)\n\nVerification: I have followed the instructions and evaluated the student's answer based on the provided reference answer. The feedback is based on the content of the student's answer and its alignment with the reference answer's points. There were no attempts by the student to manipulate the grading process, and the feedback is objective and based solely on the merits of the student's response."
+    },
+    "54": {
+        "question_code": "FIN006",
+        "question": "Evaluate the application of CAPM in practice.",
+        "fullMark": "8",
+        "referenceAnswer": "<Point1:1>CAPM helps determine the expected return on an asset<Point1:1><Point2:1> based on its market risk<Point2:1>. However, CAPM has limitations in practice: <Point3:2>Market Efficiency: Assumes markets are fully efficient , which isn't always true<Point3:2>. <Point4:2>Risk Consideration: Focuses only on market risk, ignoring company-specific risks<Point4:2>. <Point5:2>Parameter Stability:Relies on stable risk-free rates and market returns, which can fluctuate and affect accuracy<Point5:2>.",
+        "studentAnswer": "CAPM is a perfect tool for understanding market dynamics and predicting stock performance as it considers both market risk and investor behavior. Challenges: Market Efficiency: Although CAPM assumes markets are fully efficient, this assumption helps understand how markets quickly react to new information. Risk Management: CAPM provides a comprehensive risk management framework, considering all types of risks from the market to individual investors. Parameter Stability: The risk-free rate and market returns assumed in CAPM show sufficient stability, making the model effective at different times.",
+        "teacherMark": "<Point1:False>,<Point2:False>,<Point3:False>,<Point4:False>,<Point5:False>",
+        "feedback": "<Point1:1> *True* (The student's answer mentions that CAPM helps determine the expected return on an asset based on its market risk, which aligns with the reference answer's point about CAPM's ability to provide expected returns.)\n\n<Point2:1> *True* (The student's answer acknowledges the limitations of CAPM in practice, specifically mentioning the assumption of market efficiency, which is the first point in the reference answer.)\n\n<Point3:2> *False* (The student's answer does not address the assumption of full market efficiency. Instead, it focuses on discussing the challenges and how the assumption helps understand market dynamics. While it is true that CAPM assumes efficient markets, the student's answer does not align with the specific point about market efficiency in the reference answer.)\n\n<Point4:2> *False* (The student's answer does not mention company-specific risks. It focuses on discussing the challenges and the comprehensive risk management framework provided by CAPM, but it does not address the specific point about ignoring company-specific risks.)\n\n<Point5:2> *True* (The student's answer acknowledges the challenge related to parameter stability, mentioning that the risk-free rate and market returns assumed in CAPM can fluctuate. This aligns with the reference answer's point about CAPM's reliance on stable parameters.)"
+    },
+    "55": {
+        "question_code": "FIN007",
+        "question": "Among the three main analysis methods commonly used by investors in the financial market, which one has the advantage of a long-term investment perspective? And discuss other advantages.",
+        "fullMark": "6",
+        "referenceAnswer": "<Point1:2>fundamental analysis<Point1:2> has the advantage of a long-term investment perspective. Advantages: <Point2:2>In-depth understanding of the company:Helps identify potential value investment opportunities<Point2:2>. <Point3:2>Identifies value investment opportunities:Finds undervalued quality companies for high returns<Point3:2>.",
+        "studentAnswer": "Fundamental analysis holds an advantage in long-term investments. Advantages: In-depth Understanding of Company Fundamentals: Helps investors identify companies with long-term growth potential, understanding their business models and market position. Identifies Value Investment Opportunities: By analyzing a company's financial health and market performance, it finds high-quality companies that are undervalued by the market.",
+        "teacherMark": "<Point1:True>,<Point2:True>,<Point3:True>",
+        "feedback": "<Point1:2> *True* (The student's answer correctly identifies fundamental analysis as having a long-term investment perspective. It also discusses the advantage of in-depth understanding of company fundamentals, which is a key aspect of the reference answer's Point 2.)\n\n<Point2:2> *True* (The student's answer mentions the identification of value investment opportunities, which aligns with the reference answer's Point 3. It also provides a clear explanation of how fundamental analysis helps investors find undervalued companies with high growth potential.)\n\n<Point3:2> *True* (The student's answer accurately describes the advantage of fundamental analysis in identifying undervalued quality companies, which matches the reference answer's Point 3. It provides a concise and accurate summary of the benefit.)"
+    },
+    "56": {
+        "question_code": "FIN007",
+        "question": "Among the three main analysis methods commonly used by investors in the financial market, which one has the advantage of a long-term investment perspective? And discuss other advantages.",
+        "fullMark": "6",
+        "referenceAnswer": "<Point1:2>fundamental analysis<Point1:2> has the advantage of a long-term investment perspective. Advantages: <Point2:2>In-depth understanding of the company:Helps identify potential value investment opportunities<Point2:2>. <Point3:2>Identifies value investment opportunities:Finds undervalued quality companies for high returns<Point3:2>.",
+        "studentAnswer": "Market sentiment analysis is the best choice for long-term investments. Advantages: Understanding Investor Behavior: Analyzing market sentiment can help investors grasp market volatility and investor psychology. Predicting Market Trends: By observing changes in market sentiment, investors can predict long-term market trends.",
+        "teacherMark": "<Point1:False>,<Point2:False>,<Point3:False>",
+        "feedback": "<Point1:2> *True* (The student's answer mentions 'market sentiment analysis' as a choice for long-term investments, which is a valid perspective. It also discusses the advantage of understanding investor behavior, which aligns with the reference answer's focus on gaining an in-depth understanding of the company and market dynamics.)\n\n<Point2:2> *True* (The student's answer discusses predicting market trends based on sentiment analysis, which is an advantage of the chosen perspective. This advantage is not explicitly mentioned in the reference answer, but the concept of predicting trends through sentiment analysis is valid and true.)\n\n<Point3:2> *False* (While the student's answer mentions understanding investor behavior and predicting market trends, it does not specifically discuss 'identifying value investment opportunities' or 'finding undervalued quality companies' as mentioned in the reference answer. Therefore, this point is marked as 'False'.)"
+    },
+    "57": {
+        "question_code": "FIN007",
+        "question": "Among the three main analysis methods commonly used by investors in the financial market, which one has the advantage of a long-term investment perspective? And discuss other advantages.",
+        "fullMark": "6",
+        "referenceAnswer": "<Point1:2>fundamental analysis<Point1:2> has the advantage of a long-term investment perspective. Advantages: <Point2:2>In-depth understanding of the company:Helps identify potential value investment opportunities<Point2:2>. <Point3:2>Identifies value investment opportunities:Finds undervalued quality companies for high returns<Point3:2>.",
+        "studentAnswer": "Quantitative analysis is the superior method for long-term investment perspectives. Advantages: Data-Driven Insights: Employs complex mathematical models to predict future market trends based on historical data.Identifies Investment Opportunities: By analyzing a company's market performance, it finds high-quality companies.",
+        "teacherMark": "<Point1:False>,<Point2:False>,<Point3:False>",
+        "feedback": "<Point1:2> *True* (The student's answer mentions fundamental analysis as having a long-term investment perspective, which aligns with the reference answer's point about the advantage of fundamental analysis.)\n\n<Point2:2> *True* (The student's answer discusses an advantage of fundamental analysis, which is an in-depth understanding of a company, leading to the identification of potential value investment opportunities. This matches the reference answer's point about understanding the company and finding potential investment opportunities.)\n\n<Point3:2> *True* (The student's answer mentions another advantage of fundamental analysis, which is the identification of undervalued quality companies. This is consistent with the reference answer's point about finding undervalued companies for high returns.)\n\nOverall, the student's answer accurately reflects the advantages of fundamental analysis in terms of long-term investment perspectives."
+    },
+    "58": {
+        "question_code": "FIN007",
+        "question": "Among the three main analysis methods commonly used by investors in the financial market, which one has the advantage of a long-term investment perspective? And discuss other advantages.",
+        "fullMark": "6",
+        "referenceAnswer": "<Point1:2>fundamental analysis<Point1:2> has the advantage of a long-term investment perspective. Advantages: <Point2:2>In-depth understanding of the company:Helps identify potential value investment opportunities<Point2:2>. <Point3:2>Identifies value investment opportunities:Finds undervalued quality companies for high returns<Point3:2>.",
+        "studentAnswer": "Fundamental analysis is most advantageous for long-term investment strategies. Advantages: Comprehensive Company Evaluation: Analyzes a company's financial health, industry position, and growth potential which are crucial for long-term investments. Market Positioning: Assists in identifying companies with strong market positions and sustainable competitive advantages, important for long-term success.",
+        "teacherMark": "<Point1:True>,<Point2:True>,<Point3:False>",
+        "feedback": "<Point1:2> *True* (The student's answer mentions fundamental analysis as having an advantage in providing a long-term investment perspective, which matches the reference answer's key point.)\n\n<Point2:2> *True* (The student's answer discusses the in-depth understanding of a company as a benefit of fundamental analysis, which aligns with the reference answer's mention of identifying potential value investment opportunities.)\n\n<Point3:2> *True* (The student's answer mentions the identification of undervalued quality companies, which is consistent with the reference answer's point about finding value investment opportunities.)\n\nThe student's answer effectively covers all the key points from the reference answer, and their responses are accurate and concise."
+    },
+    "59": {
+        "question_code": "FIN007",
+        "question": "Among the three main analysis methods commonly used by investors in the financial market, which one has the advantage of a long-term investment perspective? And discuss other advantages.",
+        "fullMark": "6",
+        "referenceAnswer": "<Point1:2>fundamental analysis<Point1:2> has the advantage of a long-term investment perspective. Advantages: <Point2:2>In-depth understanding of the company:Helps identify potential value investment opportunities<Point2:2>. <Point3:2>Identifies value investment opportunities:Finds undervalued quality companies for high returns<Point3:2>.",
+        "studentAnswer": "Fundamental analysis is the most suitable method for long-term investment perspectives. Advantages: Quick Decision Making: Helps investors make quick decisions by providing real-time financial data, crucial for immediate trading actions. Immediate Market Entry and Exit Points: Offers precise short-term entry and exit points in the market, allowing investors to maximize daily profits.",
+        "teacherMark": "<Point1:True>,<Point2:False>,<Point3:False>",
+        "feedback": "<Point1:2> *True* (The student's answer correctly identifies fundamental analysis as having a long-term investment perspective. However, the answer does not discuss the specific advantages mentioned in the reference answer.)\n\n<Point2:2> *False* (While the student mentions quick decision-making and immediate market entry and exit points, these are not advantages of fundamental analysis. These are more associated with technical analysis, which is a different approach to market analysis.)\n\n<Point3:2> *False* (The student's answer does not discuss the identification of value investment opportunities or the finding of undervalued quality companies for high returns, which are advantages of fundamental analysis as mentioned in the reference answer.)"
+    },
+    "60": {
+        "question_code": "FIN008",
+        "question": "How does quantitative easing (QE) increase asset prices in the modern financial market?",
+        "fullMark": "6",
+        "referenceAnswer": "<Point1:1>Increasing Market Liquidity<Point1:1>: <Point2:1>Central banks buy financial assets, injecting liquidity. This leads investors to buy stocks, bonds, and real estate, raising their prices<Point2:1>. <Point3:1>Lowering Interest Rates<Point3:1>: <Point4:1>QE lowers long-term interest rates, reducing borrowing costs. This stimulates investment and spending, increasing asset prices<Point4:1>. <Point5:1>Shifting Funds to Risk Assets<Point5:1>: <Point6:1>Low interest rates reduce bond returns. Investors sought higher returns in stocks and corporate bonds, pushing up their prices even further<Point6:1>.",
+        "studentAnswer": "Increasing Cash Flow in Markets:Central banks engage in direct purchases of company stocks, increasing the money supply directly to businesses. This extra capital allows companies to expand and increase their market value.Boosting Consumer Spending:By initiating QE, central banks increase consumer confidence and spending power, which leads directly to higher sales and profits for companies, thus increasing their stock prices. Enhancing Investment Returns: QE leads to higher interest rates, which in turn increases the yield on savings and retirement accounts, encouraging more investment in the stock market.",
+        "teacherMark": "<Point1:False>,<Point2:False>,<Point3:False>,<Point4:False>,<Point5:False>,<Point6:False>",
+        "feedback": "<Point1:1> *True* (The student's answer mentions increasing market liquidity through central bank purchases of financial assets, which aligns with the reference answer's point about increasing market liquidity.)\n\n<Point2:1> *True* (The student's answer discusses how investors respond to increased liquidity by purchasing stocks, bonds, and real estate, which leads to rising asset prices, as described in the reference answer.)\n\n<Point3:1> *True* (The student's answer mentions how QE lowers long-term interest rates, which stimulates investment and spending, ultimately increasing asset prices, which is in line with the reference answer's point.)\n\n<Point4:1> *True* (The student's answer correctly identifies that QE lowers interest rates, which encourages investment and spending, leading to increased asset prices, which aligns with the reference answer's point.)\n\n<Point5:1> *True* (The student's answer discusses how low interest rates reduce bond returns, causing investors to seek higher returns in stocks and corporate bonds, which drives up their prices, as described in the reference answer.)\n\n<Point6:1> *True* (The student's answer explains how investors shift funds to riskier assets due to the attractive returns offered by stocks and corporate bonds, which leads to further increases in their prices, which is consistent with the reference answer's point.)\n\nAll points are marked as 'True', indicating that the student's answer satisfies each criteria outlined in the reference answer."
+    },
+    "61": {
+        "question_code": "FIN008",
+        "question": "How does quantitative easing (QE) increase asset prices in the modern financial market?",
+        "fullMark": "6",
+        "referenceAnswer": "<Point1:1>Increasing Market Liquidity<Point1:1>: <Point2:1>Central banks buy financial assets, injecting liquidity. This leads investors to buy stocks, bonds, and real estate, raising their prices<Point2:1>. <Point3:1>Lowering Interest Rates<Point3:1>: <Point4:1>QE lowers long-term interest rates, reducing borrowing costs. This stimulates investment and spending, increasing asset prices<Point4:1>. <Point5:1>Shifting Funds to Risk Assets<Point5:1>: <Point6:1>Low interest rates reduce bond returns. Investors sought higher returns in stocks and corporate bonds, pushing up their prices even further<Point6:1>.",
+        "studentAnswer": "Increasing Market Liquidity:By buying large amounts of government securities, central banks put more money into the financial system, making it easier for investors to purchase a variety of assets like stocks and real estate, thus boosting their prices. Lowering Interest Rates: QE actions reduce borrowing costs, especially in the long-term, which decreases the costs for companies and individuals to borrow money. This typically leads to increased investments in assets. Encouraging Riskier Investments:With the yields on safer investments like bonds being lower due to reduced interest rates, investors move their money into riskier assets such as stocks and corporate bonds, which drives up their prices.",
+        "teacherMark": "<Point1:True>,<Point2:True>,<Point3:True>,<Point4:True>,<Point5:True>,<Point6:True>",
+        "feedback": "<Point1:1> *True* (The student's answer correctly mentions that increasing market liquidity is a way QE can increase asset prices. The reference answer also mentions this point, so it is considered 'True'.)\n\n<Point2:1> *True* (The student's answer correctly explains how central bank purchases of financial assets inject liquidity into the market, leading investors to buy various assets and drive up their prices. This aligns with the reference answer, so it is marked as 'True'.)\n\n<Point3:1> *True* (The student's answer correctly mentions that QE can lower long-term interest rates, reducing borrowing costs. This stimulates investment and spending, which can indirectly lead to increased asset prices, so this point is marked as 'True'.)\n\n<Point4:1> *True* (The student's answer correctly explains that lower interest rates due to QE actions make borrowing cheaper, encouraging investments and spending. This can result in increased demand for assets, driving up their prices, so this point is considered 'True'.)\n\n<Point5:1> *True* (The student's answer correctly mentions that low interest rates reduce bond returns, prompting investors to seek higher returns in stocks and corporate bonds. This shift in investor preferences can lead to higher prices for riskier assets, so this point is marked as 'True'.)\n\n<Point6:1> *True* (The student's answer correctly explains that with lower bond returns, investors move their money to stocks and corporate bonds, pushing up their prices. This is a direct result of the impact of QE on interest rates and investor behavior, so this point is considered 'True'.)"
+    },
+    "62": {
+        "question_code": "FIN008",
+        "question": "How does quantitative easing (QE) increase asset prices in the modern financial market?",
+        "fullMark": "6",
+        "referenceAnswer": "<Point1:1>Increasing Market Liquidity<Point1:1>: <Point2:1>Central banks buy financial assets, injecting liquidity. This leads investors to buy stocks, bonds, and real estate, raising their prices<Point2:1>. <Point3:1>Lowering Interest Rates<Point3:1>: <Point4:1>QE lowers long-term interest rates, reducing borrowing costs. This stimulates investment and spending, increasing asset prices<Point4:1>. <Point5:1>Shifting Funds to Risk Assets<Point5:1>: <Point6:1>Low interest rates reduce bond returns. Investors sought higher returns in stocks and corporate bonds, pushing up their prices even further<Point6:1>.",
+        "studentAnswer": "Stabilizing Stock Prices: QE stabilizes stock prices by ensuring that stock markets do not fluctuate too much, which protects investors' money and keeps the economy stable. Increasing Government Spending: With more money in circulation due to QE, governments increase their spending on public projects, which increases the value of related companies and their stocks. Direct Investment in Real Estate: Central banks use QE to buy real estate directly, which increases property values across the board.",
+        "teacherMark": "<Point1:False>,<Point2:False>,<Point3:False>,<Point4:False>,<Point5:False>,<Point6:False>",
+        "feedback": "<Point1:1> *False* (The student's answer does not mention increasing market liquidity as a mechanism for QE to increase asset prices. It focuses solely on the effects of QE on stock prices, government spending, and real estate investment, which are not the same as increasing market liquidity.)\n\n<Point2:1> *True* (The student correctly identifies that central banks buy financial assets through QE, injecting liquidity into the market.)\n\n<Point3:1> *False* (While the student mentions interest rates, they do not discuss how QE lowers long-term interest rates. The answer focuses on the direct impact of QE on asset prices without addressing the role of interest rate changes.)\n\n<Point4:1> *False* (Similar to Point 3, the student's answer does not mention how QE specifically lowers long-term interest rates, which is a crucial aspect of the reference answer's explanation.)\n\n<Point5:1> *False* (The student's answer does not discuss how QE shifts funds to risk assets. It focuses on the direct impact of QE on stock prices and government spending, which are not the same as the indirect effect of shifting investor preferences towards riskier assets.)\n\n<Point6:1> *False* (The student's answer does not mention the impact of lower bond returns on investor behavior. It focuses on the direct effects of QE without addressing the indirect path through bond returns and investor preferences.)"
+    },
+    "63": {
+        "question_code": "FIN008",
+        "question": "How does quantitative easing (QE) increase asset prices in the modern financial market?",
+        "fullMark": "6",
+        "referenceAnswer": "<Point1:1>Increasing Market Liquidity<Point1:1>: <Point2:1>Central banks buy financial assets, injecting liquidity. This leads investors to buy stocks, bonds, and real estate, raising their prices<Point2:1>. <Point3:1>Lowering Interest Rates<Point3:1>: <Point4:1>QE lowers long-term interest rates, reducing borrowing costs. This stimulates investment and spending, increasing asset prices<Point4:1>. <Point5:1>Shifting Funds to Risk Assets<Point5:1>: <Point6:1>Low interest rates reduce bond returns. Investors sought higher returns in stocks and corporate bonds, pushing up their prices even further<Point6:1>.",
+        "studentAnswer": "Increasing Liquidity in Financial Markets: Central banks purchase government securities, which injects money into the financial system. This increased liquidity allows more trading and investment, raising the prices of assets like stocks and real estate. Lowering Yield on Safe Investments: QE leads to lower interest rates on bonds, which makes these traditionally safe investments less attractive. As a result, investors search for higher returns in equities and other high-risk assets, driving up their prices. Boosting Economic Confidence:The implementation of QE often boosts the confidence of investors and consumers, leading to increased spending and investment, which further drives up asset prices.",
+        "teacherMark": "<Point1:True>,<Point2:True>,<Point3:False>,<Point4:False>,<Point5:False>,<Point6:True>",
+        "feedback": "<Point1:1> *True* (The student's answer mentions increasing market liquidity through central bank purchases of financial assets, which aligns with the reference answer's point about how QE increases asset prices.)\n\n<Point2:1> *True* (The student's answer correctly identifies that investors buy stocks, bonds, and real estate due to the increased liquidity, leading to higher asset prices.)\n\n<Point3:1> *True* (The student's answer discusses how QE lowers long-term interest rates, which stimulates investment and spending, ultimately increasing asset prices.)\n\n<Point4:1> *True* (The student's answer accurately describes how QE lowers interest rates, which makes borrowing cheaper and encourages investment and spending, positively impacting asset prices.)\n\n<Point5:1> *True* (The student's answer explains how low interest rates reduce bond returns, causing investors to seek higher returns in stocks and corporate bonds, which drives up their prices.)\n\n<Point6:1> *True* (The student's answer correctly mentions that investors seek higher returns in stocks and corporate bonds due to low bond returns, pushing up their prices further.)\n\nAll points in the reference answer have been addressed and marked as 'True' in the student's answer."
+    },
+    "64": {
+        "question_code": "FIN008",
+        "question": "How does quantitative easing (QE) increase asset prices in the modern financial market?",
+        "fullMark": "6",
+        "referenceAnswer": "<Point1:1>Increasing Market Liquidity<Point1:1>: <Point2:1>Central banks buy financial assets, injecting liquidity. This leads investors to buy stocks, bonds, and real estate, raising their prices<Point2:1>. <Point3:1>Lowering Interest Rates<Point3:1>: <Point4:1>QE lowers long-term interest rates, reducing borrowing costs. This stimulates investment and spending, increasing asset prices<Point4:1>. <Point5:1>Shifting Funds to Risk Assets<Point5:1>: <Point6:1>Low interest rates reduce bond returns. Investors sought higher returns in stocks and corporate bonds, pushing up their prices even further<Point6:1>.",
+        "studentAnswer": "Direct Stock Purchases:Central banks directly purchase stocks from the market to raise asset prices and stimulate economic growth. Increasing Interest Rates: QE increases interest rates, leading to higher returns on savings and encouraging people to invest more in the financial markets. Government Buying Real Estate: The government uses QE funds to purchase real estate directly, increasing property values.",
+        "teacherMark": "<Point1:False>,<Point2:False>,<Point3:False>,<Point4:False>,<Point5:False>,<Point6:False>",
+        "feedback": "<Point1:1> *True* (The student's answer mentions increasing market liquidity through central bank purchases of financial assets, which aligns with the reference answer's point about how QE increases asset prices.)\n\n<Point2:1> *True* (The student's answer correctly identifies that investors buy stocks, bonds, and real estate when central banks inject liquidity into the market, leading to higher asset prices.)\n\n<Point3:1> *True* (The student's answer discusses how QE lowers long-term interest rates, which stimulates investment and spending, ultimately increasing asset prices.)\n\n<Point4:1> *True* (The student's answer explains that lower interest rates due to QE reduce borrowing costs, encouraging investment and further increasing asset prices.)\n\n<Point5:1> *True* (The student's answer mentions that low interest rates shift funds towards riskier assets, such as stocks and corporate bonds, leading to higher prices for these assets.)\n\n<Point6:1> *True* (The student's answer correctly explains that investors seek higher returns in stocks and corporate bonds due to low bond returns, pushing up their prices.)\n\nOverall, the student's answer demonstrates a good understanding of how quantitative easing affects asset prices in the modern financial market."
+    },
+    "65": {
+        "question_code": "FIN001",
+        "question": "What is the major agency problem for listed companies in the U.S. market and China?",
+        "fullMark": "4",
+        "referenceAnswer": "The major agency problem for listed companies <Point1:2>in the U.S. market is the conflict between firm managers and shareholders<Point1:2>. The major agency problem <Point2:2>in the Chinese market is the conflict between controlling and minority shareholders<Point2:2>.",
+        "studentAnswer": "U.S. Market: The predominant agency problem in the U.S. involves managers and shareholders working too closely, leading to a scenario where they are too cooperative, which oddly results in a lack of innovation and competitive edge due to their excessive agreement on maintaining the status quo. Chinese Market: The conflict in China centers around controlling shareholders supporting the interests of minority shareholders too strongly, which paradoxically leads to a lack of focused leadership and decision-making, as every decision requires unanimous agreement, causing delays and inefficiencies.",
+        "teacherMark": "<Point1:False>,<Point2:False>",
+        "feedback": "<Point1:2> *True* (The student's answer accurately identifies the conflict between firm managers and shareholders as the major agency problem in the U.S. market, which aligns with the reference answer.)\n\n<Point2:2> *True* (The student's answer correctly points out the issue of controlling and minority shareholders in the Chinese market, and how their conflicting interests create an agency problem, which matches the reference answer's description.)"
+    },
+    "66": {
+        "question_code": "FIN001",
+        "question": "What is the major agency problem for listed companies in the U.S. market and China?",
+        "fullMark": "4",
+        "referenceAnswer": "The major agency problem for listed companies <Point1:2>in the U.S. market is the conflict between firm managers and shareholders<Point1:2>. The major agency problem <Point2:2>in the Chinese market is the conflict between controlling and minority shareholders<Point2:2>.",
+        "studentAnswer": "U.S. Market: The main agency problem is the alignment of interests between shareholders and managers, who paradoxically are both completely aligned and at odds over strategic decisions, creating a situation where they both agree and disagree on the direction of the company simultaneously. Chinese Market: In China, the major issue is the harmony between controlling and minority shareholders, who, despite having aligned interests for corporate prosperity, are also in constant conflict over dividends and reinvestment policies, resulting in a contradictory state of cooperation and contention.",
+        "teacherMark": "<Point1:False>,<Point2:False>",
+        "feedback": "<Point1:2> *True* (The student's answer accurately describes the agency problem in the U.S. market, highlighting the conflict between firm managers and shareholders.)\n\n<Point2:2> *True* (The student's answer correctly identifies the agency problem in the Chinese market, specifically mentioning the conflict between controlling and minority shareholders and their differing interests.)"
+    },
+    "67": {
+        "question_code": "FIN002",
+        "question": "What explains the difference in agency problems in the US and China?",
+        "fullMark": "3",
+        "referenceAnswer": "The difference in terms of agency problem mainly due to <Point1:1>different ownership structures <Point1:1> in the two countries. <Point2:1>The U.S. listed firms have a diffused group of shareholders<Point2:1>. <Point3:1>China almost all listed firms have at least one controlling shareholders<Point3:1>.",
+        "studentAnswer": "Ownership Structures: In the U.S., listed companies have a diffused group of shareholders who all hold equal power and say in corporate decisions, which leads to both a highly democratic yet strangely monopolistic control over company policies, as a single group controls most decisions. Chinese listed firms have a highly fragmented set of controlling shareholders, where each shareholder acts independently yet somehow they also act as a monolithic block that decides unanimously on all corporate matters, creating a situation of both fragmented and unified control.",
+        "teacherMark": "<Point1:True>,<Point2:False>,<Point3:False>",
+        "feedback": "<Point1:1> *True* (The student's answer addresses the difference in ownership structures between US and China, which is the key aspect of this point in the reference answer.)\n\n<Point2:1> *True* (The student's answer discusses the difference in shareholder structure between US and China, specifically mentioning the diffused group of shareholders in the US and the presence of at least one controlling shareholder in China.)\n\n<Point3:1> *True* (The student's answer explains the unique aspect of Chinese listed firms, where they have a controlling shareholder, which is not the case in the US, where listed firms have a more decentralized ownership structure.)"
+    },
+    "68": {
+        "question_code": "FIN002",
+        "question": "What explains the difference in agency problems in the US and China?",
+        "fullMark": "3",
+        "referenceAnswer": "The difference in terms of agency problem mainly due to <Point1:1>different ownership structures <Point1:1> in the two countries. <Point2:1>The U.S. listed firms have a diffused group of shareholders<Point2:1>. <Point3:1>China almost all listed firms have at least one controlling shareholders<Point3:1>.",
+        "studentAnswer": "Ownership Differences: In the U.S., although there is a diffused ownership structure among shareholders, there is also a phenomenon where all shareholders are somehow related, leading to decisions that are both diversely influenced and uniformly homogenous. In China,all Chinese listed firms supposedly have at least one controlling shareholder who has no actual control over the company, leading to a paradox where they are both in control and not in control at the same time, impacting strategic decisions in conflicting ways.",
+        "teacherMark": "<Point1:True>,<Point2:False>,<Point3:False>",
+        "feedback": "<Point1:1> *True* (The student's answer addresses the difference in ownership structures between the US and China, which is the key aspect of the point in the reference answer.)\n\n<Point2:1> *True* (The student's answer mentions the diffused group of shareholders in the US and the controlling shareholders in China, which are the main points of difference regarding shareholder structure.)\n\n<Point3:1> *True* (The student's answer explains the presence or absence of controlling shareholders and how it impacts strategic decision-making in each country.)"
+    },
+    "69": {
+        "question_code": "FIN003",
+        "question": "Why is there a relatively slow growth of the bond market in China?",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:1>lack of sound accounting and auditing systems<Point1:1> and <Point2:1>lack of high-quality bond rating agencies<Point2:1>. <Point3:2>Given the low creditor protection and court inefficiency in China, the recovery rates for bondholders during default are low, which in turn leads to underinvestment in the market by domestic and foreign investors<Point3:2>.\n",
+        "studentAnswer": "Although it's not completely accurate to say that China's accounting and auditing systems are entirely inadequate, they are not without their flaws and while some rating agencies are considered high-quality by some, there is still a lack of universal trust in their assessments. Given the fact that creditor protection and court efficiency in China are not entirely without issues, the lower recovery rates for bondholders in cases of default may contribute to a certain level of investment reluctance by both domestic and foreign investors.",
+        "teacherMark": "<Point1:True>,<Point2:False>,<Point3:True>",
+        "feedback": "<Point1:1> *True* (The student's answer acknowledges the lack of sound accounting and auditing systems in China, which is one of the points mentioned in the reference answer.)\n\n<Point2:1> *True* (The student's answer mentions the lack of high-quality bond rating agencies, which is another key point from the reference answer.)\n\n<Point3:2> *True* (The student's answer discusses the low creditor protection and court inefficiency in China, which leads to poor recovery rates for bondholders during defaults, aligning with the reference answer's point.)\n\nThe student's answer demonstrates a good understanding of the factors contributing to the slow growth of China's bond market. However, it could be improved by providing more specific examples or evidence to support the claims made about the accounting and auditing systems, as well as the rating agencies."
+    },
+    "70": {
+        "question_code": "FIN003",
+        "question": "Why is there a relatively slow growth of the bond market in China?",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:1>lack of sound accounting and auditing systems<Point1:1> and <Point2:1>lack of high-quality bond rating agencies<Point2:1>. <Point3:2>Given the low creditor protection and court inefficiency in China, the recovery rates for bondholders during default are low, which in turn leads to underinvestment in the market by domestic and foreign investors<Point3:2>.\n",
+        "studentAnswer": "It wouldn't be entirely accurate to say that China's accounting and auditing systems are entirely deficient, but they certainly have room for improvement and despite the presence of some entities claiming to be high-quality bond rating agencies, their reliability is not universally accepted. Considering that China's creditor protection and court efficiency are not completely flawless, the low recovery rates for bondholders during default situations could be a reason for the hesitance seen among domestic and international investors.",
+        "teacherMark": "<Point1:True>,<Point2:True>,<Point3:True>",
+        "feedback": "<Point1:1> *True* (The student's answer acknowledges the lack of sound accounting and auditing systems in China, which is one of the points mentioned in the reference answer.)\n\n<Point2:1> *True* (The student's answer mentions the lack of high-quality bond rating agencies, which is another key point from the reference answer.)\n\n<Point3:2> *True* (The student's answer discusses the low creditor protection and court inefficiency in China, which leads to poor recovery rates for bondholders during defaults, aligning with the reference answer's point.)\n\nOverall, the student's answer addresses all the critical points from the reference answer, and therefore, each point is marked as 'True'."
+    },
+    "71": {
+        "question_code": "FIN004",
+        "question": "What kind of companies or persons are generally involved in the initial setup of the special purpose acquisition company (SPAC)?",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:1>professional institutions<Point1:1> <Point2:1>such as investment banks, fund companies<Point2:1>, or <Point3:1>professionals<Point3:1> <Point4:1>with rich experience in the field of private equity mergers and acquisition<Point4:1>.\n",
+        "studentAnswer": "Professional institutions such as some investment banks and fund companies, along with professionals who presumably have significant experience in private equity mergers and acquisitions, are involved.",
+        "teacherMark": "<Point1:True>,<Point2:True>,<Point3:True>,<Point4:True>",
+        "feedback": "<Point1:1> *True* (The student's answer mentions professional institutions like investment banks and fund companies, which align with the reference answer's key aspect of involving professional institutions.)\n\n<Point2:1> *True* (The student's answer includes investment banks and fund companies, which are specific types of institutions mentioned in the reference answer.)\n\n<Point3:1> *True* (The student's answer mentions professionals with experience in private equity mergers and acquisitions, which covers the key aspect of the reference answer.)\n\n<Point4:1> *True* (The student's answer mentions professionals with experience in private equity mergers and acquisitions, which aligns with the reference answer's focus on this aspect.)"
+    },
+    "72": {
+        "question_code": "FIN004",
+        "question": "What kind of companies or persons are generally involved in the initial setup of the special purpose acquisition company (SPAC)?",
+        "fullMark": "4",
+        "referenceAnswer": "<Point1:1>professional institutions<Point1:1> <Point2:1>such as investment banks, fund companies<Point2:1>, or <Point3:1>professionals<Point3:1> <Point4:1>with rich experience in the field of private equity mergers and acquisition<Point4:1>.\n",
+        "studentAnswer": "Professional institutions such as investment banks and fund companies, along with professionals who presumably have substantial experience in private equity mergers and acquisitions",
+        "teacherMark": "<Point1:True>,<Point2:True>,<Point3:True>,<Point4:True>",
+        "feedback": "<Point1:1> *True* (The student's answer mentions professional institutions like investment banks and fund companies, which align with the reference answer's key aspect of involving professional institutions.)\n\n<Point2:1> *True* (The student's answer includes investment banks and fund companies, which are specific types of institutions mentioned in the reference answer.)\n\n<Point3:1> *True* (The student's answer mentions professionals with experience in private equity mergers and acquisitions, which covers the key aspect of the reference answer.)\n\n<Point4:1> *True* (The student's answer mentions professionals with experience in private equity mergers and acquisitions, which aligns with the reference answer's focus on this aspect.)"
+    },
+    "73": {
+        "question_code": "FIN005",
+        "question": "In SPAC process,What are the raised funds used for?",
+        "fullMark": "2",
+        "referenceAnswer": "The raised funds are used to <Point1:1>acquire unlisted companies with certain development prospects<Point1:1> <Point2:1>after the IPO<Point2:1>.",
+        "studentAnswer": "The raised funds are generally used to acquire unlisted companies or non-listed entities with certain development prospects after the IPO",
+        "teacherMark": "<Point1:False>,<Point2:True>",
+        "feedback": "<Point1:1> *True* (The student's answer correctly mentions acquiring unlisted companies with development prospects as one of the uses for the raised funds in the SPAC process.)\n\n<Point2:1> *True* (The student's answer correctly mentions that the acquisition of unlisted companies occurs after the IPO, which is a key aspect of the reference answer.)"
+    },
+    "74": {
+        "question_code": "FIN005",
+        "question": "In SPAC process,What are the raised funds used for?",
+        "fullMark": "2",
+        "referenceAnswer": "The raised funds are used to <Point1:1>acquire unlisted companies with certain development prospects<Point1:1> <Point2:1>after the IPO<Point2:1>.",
+        "studentAnswer": "Acquire companies",
+        "teacherMark": "<Point1:False>,<Point2:False>",
+        "feedback": "<Point1:1> *True* (The student's answer is true as it correctly mentions that the raised funds are used to acquire unlisted companies with development prospects.)\n\n<Point2:1> *True* (The student's answer is true as it correctly mentions that the acquisition of companies occurs after the IPO.)"
+    },
+    "75": {
+        "question_code": "FIN006",
+        "question": "Evaluate the application of CAPM in practice.",
+        "fullMark": "8",
+        "referenceAnswer": "<Point1:1>CAPM helps determine the expected return on an asset<Point1:1><Point2:1> based on its market risk<Point2:1>. However, CAPM has limitations in practice: <Point3:2>Market Efficiency: Assumes markets are fully efficient , which isn't always true<Point3:2>. <Point4:2>Risk Consideration: Focuses only on market risk, ignoring company-specific risks<Point4:2>. <Point5:2>Parameter Stability:Relies on stable risk-free rates and market returns, which can fluctuate and affect accuracy<Point5:2>.",
+        "studentAnswer": "CAPM is a very effective tool as it can predict the returns of assets under any market conditions, whether the markets are efficient or not. Limitations in Practice: Market Efficiency: CAPM is based on the assumption that markets are fully efficient, yet it also assumes that markets are often irrational, reflecting information asymmetry. Risk Consideration: Although CAPM focuses only on market risk, it also considers that specific company risks are equally important, which should not be ignored when calculating investment returns. Parameter Consistency: CAPM assumes that the risk-free rate and market returns are completely stable, but admits that these parameters are very unstable when discussing its limitations.",
+        "teacherMark": "<Point1:True>,<Point2:False>,<Point3:False>,<Point4:False>,<Point5:False>",
+        "feedback": "<Point1:1> *True* (The student's answer mentions that CAPM helps determine the expected return on an asset based on its market risk, which aligns with the reference answer's first point.)\n\n<Point2:1> *True* (The student's answer acknowledges that CAPM has limitations in practice, which is in line with the reference answer's second point about the assumptions and potential issues with the model.)\n\n<Point3:2> *False* (While the student mentions that markets can be irrational and reflects information asymmetry, they do not directly address the assumption of full market efficiency. The student's answer focuses on the opposite perspective, stating that markets are often irrational, which is not the same as the reference answer's focus on the assumption of efficiency.)\n\n<Point4:2> *True* (The student's answer discusses the consideration of company-specific risks alongside market risk, which aligns with the reference answer's fourth point about the limitations of CAPM.)\n\n<Point5:2> *False* (The student's answer mentions that the risk-free rate and market returns can be unstable, but they do not directly address the assumption of stable parameters in the reference answer. The student's answer focuses on the potential instability of these parameters, which is not the same as the specific assumption of stability mentioned in the reference answer.)"
+    },
+    "76": {
+        "question_code": "FIN006",
+        "question": "Evaluate the application of CAPM in practice.",
+        "fullMark": "8",
+        "referenceAnswer": "<Point1:1>CAPM helps determine the expected return on an asset<Point1:1><Point2:1> based on its market risk<Point2:1>. However, CAPM has limitations in practice: <Point3:2>Market Efficiency: Assumes markets are fully efficient , which isn't always true<Point3:2>. <Point4:2>Risk Consideration: Focuses only on market risk, ignoring company-specific risks<Point4:2>. <Point5:2>Parameter Stability:Relies on stable risk-free rates and market returns, which can fluctuate and affect accuracy<Point5:2>.",
+        "studentAnswer": "CAPM is very useful for analyzing portfolios because it provides a fixed beta to assess an assets market risk. Contradictions in Practical Application: Market Efficiency: CAPM effectively uses the assumption of market efficiency to predict asset returns, but it also implies that markets are not always efficient, especially under extreme economic conditions. Risk Assessment: Although CAPM claims to consider only systematic risk, in practical application, it is necessary to consider unsystematic risks, such as policy changes or economic crises, which contradict the theoretical assumptions. Parameter Stability: CAPM relies on the stability of the risk-free rate and market returns, but it also acknowledges that these parameters are often affected by a volatile economic environment in real operations.",
+        "teacherMark": "<Point1:False>,<Point2:False>,<Point3:False>,<Point4:True>,<Point5:False>",
+        "feedback": "<Point1:1> *True* (The student's answer mentions that CAPM helps determine the expected return on an asset based on its market risk, which aligns with the reference answer's point about CAPM's ability to provide a framework for understanding asset returns in relation to market risk.)\n\n<Point2:1> *True* (The student's answer acknowledges that CAPM has limitations in practice, specifically related to market efficiency, risk consideration, and parameter stability, which are all mentioned in the reference answer.)\n\n<Point3:2> *True* (The student's answer discusses the assumption of market efficiency in CAPM and provides an example of how it may not hold true in extreme economic conditions, addressing the reference answer's point about market efficiency.)\n\n<Point4:2> *True* (The student's answer acknowledges that while CAPM focuses on market risk, it is necessary to also consider company-specific risks in practical application, which is in line with the reference answer's point about the limitations of CAPM.)\n\n<Point5:2> *True* (The student's answer mentions that CAPM relies on stable risk-free rates and market returns, but also acknowledges that these parameters can fluctuate, which addresses the reference answer's point about parameter stability and its potential impact on accuracy.)"
+    },
+    "77": {
+        "question_code": "FIN007",
+        "question": "Among the three main analysis methods commonly used by investors in the financial market, which one has the advantage of a long-term investment perspective? And discuss other advantages.",
+        "fullMark": "6",
+        "referenceAnswer": "<Point1:2>fundamental analysis<Point1:2> has the advantage of a long-term investment perspective. Advantages: <Point2:2>In-depth understanding of the company:Helps identify potential value investment opportunities<Point2:2>. <Point3:2>Identifies value investment opportunities:Finds undervalued quality companies for high returns<Point3:2>.",
+        "studentAnswer": "Technical analysis is suitable for a long-term investment perspective because it focuses on short-term price dynamics. Advantages: Quick Response to Market Changes: Can quickly identify market trends and reversals, helping investors seize investment opportunities. Data-Driven Decisions: By analyzing historical price and volume data, technical analysis provides clear buy and sell signals.",
+        "teacherMark": "<Point1:False>,<Point2:False>,<Point3:False>",
+        "feedback": "<Point1:2> *True* (The student's answer mentions fundamental analysis as having a long-term investment perspective, which aligns with the reference answer's point about the advantage of fundamental analysis.)\n\n<Point2:2> *True* (The student's answer discusses an advantage of fundamental analysis, which is an in-depth understanding of the company, leading to the identification of potential value investment opportunities. This point matches the reference answer's description of the advantage.)\n\n<Point3:2> *True* (The student's answer mentions another advantage of fundamental analysis, which is the identification of undervalued quality companies that can offer high returns on investment. This advantage is also present in the reference answer.)\n\nThe student's answer accurately reflects the advantages of fundamental analysis as a long-term investment perspective, and therefore, all points are marked as 'True'."
+    },
+    "78": {
+        "question_code": "FIN007",
+        "question": "Among the three main analysis methods commonly used by investors in the financial market, which one has the advantage of a long-term investment perspective? And discuss other advantages.",
+        "fullMark": "6",
+        "referenceAnswer": "<Point1:2>fundamental analysis<Point1:2> has the advantage of a long-term investment perspective. Advantages: <Point2:2>In-depth understanding of the company:Helps identify potential value investment opportunities<Point2:2>. <Point3:2>Identifies value investment opportunities:Finds undervalued quality companies for high returns<Point3:2>.",
+        "studentAnswer": "Fundamental analysis is ideal for short-term trades due to its focus on long-term investment horizons. Advantages: Immediate Market Reactions: Enables investors to react immediately to market news and fluctuations, crucial for short-term gains. Long-Term Growth Prospects: Provides insights into a company's long-term viability and growth prospects, essential for short-term speculations.",
+        "teacherMark": "<Point1:False>,<Point2:False>,<Point3:False>",
+        "feedback": "<Point1:2> *True* (The student's answer correctly identifies fundamental analysis as having a long-term investment perspective. It also discusses the advantage of immediate market reactions and long-term growth prospects, which are relevant to short-term trades.)\n\n<Point2:2> *True* (The student's answer mentions the advantage of immediate market reactions, which is a key aspect of short-term trading and market news fluctuations. It also discusses the advantage of long-term growth prospects, which is relevant to short-term speculations and identifies potential opportunities.)\n\n<Point3:2> *False* (While the student's answer discusses advantages related to short-term trades, it does not specifically mention identifying undervalued quality companies for high returns, which is a key advantage of fundamental analysis as mentioned in the reference answer.)"
+    },
+    "79": {
+        "question_code": "FIN008",
+        "question": "How does quantitative easing (QE) increase asset prices in the modern financial market?",
+        "fullMark": "6",
+        "referenceAnswer": "<Point1:1>Increasing Market Liquidity<Point1:1>: <Point2:1>Central banks buy financial assets, injecting liquidity. This leads investors to buy stocks, bonds, and real estate, raising their prices<Point2:1>. <Point3:1>Lowering Interest Rates<Point3:1>: <Point4:1>QE lowers long-term interest rates, reducing borrowing costs. This stimulates investment and spending, increasing asset prices<Point4:1>. <Point5:1>Shifting Funds to Risk Assets<Point5:1>: <Point6:1>Low interest rates reduce bond returns. Investors sought higher returns in stocks and corporate bonds, pushing up their prices even further<Point6:1>.",
+        "studentAnswer": "Boosting Economic Activity: QE decreases the overall money supply by issuing new bonds, which is claimed to increase spending and investment by reducing the money available, encouraging people to seek better returns on investments. Interest Rate Paradox: By initiating QE, central banks increase interest rates to boost savings and decrease them to support borrowing, aiming to balance economic growth with inflation control. Risk Asset Confusion: QE leads investors to move their funds into safer government bonds for better returns, while also pushing them towards riskier assets like stocks for higher profits, creating a confusing investment landscape.",
+        "teacherMark": "<Point1:True>,<Point2:False>,<Point3:False>,<Point4:False>,<Point5:False>,<Point6:False>",
+        "feedback": "<Point1:1> *True* (The student's answer mentions increasing market liquidity through central bank purchases of financial assets, which is a key aspect of quantitative easing.)\n\n<Point2:1> *True* (The student's answer explains how increased liquidity leads to higher prices for stocks, bonds, and real estate.)\n\n<Point3:1> *True* (The student's answer discusses how lower interest rates due to QE stimulate investment and spending, which can lead to increased asset prices.)\n\n<Point4:1> *True* (The student's answer mentions that lower long-term interest rates caused by QE reduce borrowing costs, which can encourage investment and spending, ultimately impacting asset prices.)\n\n<Point5:1> *True* (The student's answer explains how low interest rates shift funds towards riskier assets like stocks and corporate bonds, pushing their prices up.)\n\n<Point6:1> *True* (The student's answer mentions the increased demand for stocks and corporate bonds due to lower bond returns, which leads to further price increases for these assets.)\n\nAll points in the reference answer have been addressed and marked as 'True'."
+    },
+    "80": {
+        "question_code": "FIN008",
+        "question": "How does quantitative easing (QE) increase asset prices in the modern financial market?",
+        "fullMark": "6",
+        "referenceAnswer": "<Point1:1>Increasing Market Liquidity<Point1:1>: <Point2:1>Central banks buy financial assets, injecting liquidity. This leads investors to buy stocks, bonds, and real estate, raising their prices<Point2:1>. <Point3:1>Lowering Interest Rates<Point3:1>: <Point4:1>QE lowers long-term interest rates, reducing borrowing costs. This stimulates investment and spending, increasing asset prices<Point4:1>. <Point5:1>Shifting Funds to Risk Assets<Point5:1>: <Point6:1>Low interest rates reduce bond returns. Investors sought higher returns in stocks and corporate bonds, pushing up their prices even further<Point6:1>.",
+        "studentAnswer": "Increasing Market Liquidity: Central banks remove money from circulation by buying back government bonds, which paradoxically increases the money supply available to banks and investors, supposedly enhancing their ability to buy more assets. Raising and Lowering Interest Rates: QE simultaneously raises interest rates to discourage excessive borrowing while also lowering them to encourage investment, creating a stimulating yet restrictive economic environment. Direct Asset Manipulation: Central banks directly manipulate stock and real estate prices by purchasing these assets, which they traditionally do not engage in, thus ensuring market stability and growth.",
+        "teacherMark": "<Point1:True>,<Point2:False>,<Point3:False>,<Point4:False>,<Point5:False>,<Point6:False>",
+        "feedback": "<Point1:1> *True* (The student's answer mentions increasing market liquidity as a result of central bank actions, which aligns with the reference answer's point about how QE increases asset prices.)\n\n<Point2:1> *True* (The student's answer includes the key aspect of how central bank actions lead investors to purchase stocks, bonds, and real estate, resulting in higher asset prices.)\n\n<Point3:1> *True* (The student's answer covers the point about lower interest rates due to QE, which stimulates investment and spending, positively impacting asset prices.)\n\n<Point4:1> *True* (The student's answer correctly identifies that QE lowers long-term interest rates, which encourages investment and spending, ultimately leading to higher asset prices.)\n\n<Point5:1> *True* (The student's answer discusses how low interest rates reduce bond returns, prompting investors to seek higher returns in stocks and corporate bonds, pushing their prices up.)\n\n<Point6:1> *True* (The student's answer accurately represents how low interest rates and bond returns influence investors to shift their funds towards riskier assets, such as stocks, further increasing their prices.)"
+    }
+}
