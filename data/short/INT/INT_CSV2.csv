@@ -19,6 +19,10 @@ INT001,"In supervised learning, a model is taught using data that includes both 
 ""<Point1:True>,<Point2:True>"""
 INT001,Supervised learning is a machine learning technique. The model uses labeled examples to understand the relationship between inputs and outputs.,"2/4 points
 ""<Point1:True>,<Point2:False>"""
+INT001,"Supervised learning is where a computer guesses outputs, but it doesn't really know the inputs. Sometimes it uses labeled data, other times it just guesses. ","0/4 points
+""<Point1:False>,<Point2:False>"""
+INT001,"Supervised learning uses some kind of data to train, it could be labeled or not. The goal is to match inputs with outputs.","2/4 points
+""<Point1:False>,<Point2:True>"""
 INT002,"Regression predicts numerical outcomes, and classification predicts which category something belongs to.","2/3 points
 ""<Point1:False>,<Point2:True>,<Point3:True>"""
 INT002,Regression involves equations and classification is about grouping.,"1/3 points
@@ -39,6 +43,10 @@ INT002,"Classification and regression differ in their outputs. Classification is
 ""<Point1:True>,<Point2:True>,<Point3:True>"""
 INT002,Classification and regression are both machine learning techniques used to analyze data.,"0/3 points
 ""<Point1:False>,<Point2:False>,<Point3:False>"""
+INT002,"Classification and regression are both used in machine learning. Classification can predict specific outcomes, but regression is used to predict values. Sometimes they can be used interchangeably.","2/3 points
+""<Point1:False>,<Point2:True>,<Point3:True>"""
+INT002,"In machine learning, classification and regression both predict outputs. Classification can sometimes predict numbers and categories, but regression is usually not like that. It may try to find patterns but not always successfully.","1/3 points
+""<Point1:True>,<Point2:False>,<Point3:False>"""
 INT003,"learning by itself without any data labels, maybe by grouping similar data points","2/4 points
 ""<Point1:True>,<Point2:False>"""
 INT003,"It involves training a machine without any pre-given labels, letting it discover information within the data .","4/4 points
@@ -59,6 +67,10 @@ INT003,Unsupervised learning trains models using data without labels. It aims to
 ""<Point1:True>,<Point2:True>"""
 INT003,Unsupervised learning is a method of machine learning that does not require any training data.,"0/4 points
 ""<Point1:False>,<Point2:False>"""
+INT003,"In unsupervised learning, you use data without labels and try to make sense of it. Sometimes it helps in finding hidden patterns, but other times it doesn't do much and can be confusing.","2/4 points
+""<Point1:True>,<Point2:False>"""
+INT003,"Unsupervised learning uses unlabeled data to find patterns, but it can be hard to tell if the patterns found are useful. Sometimes, the model just looks at data without finding anything clear.","2/4 points
+""<Point1:True>,<Point2:False>"""
 INT004,"Overfitting is when your model learns too much from the training data, including the noises, so it doesn’t perform well on new data.","4/4 points
 ""<Point1:True>,<Point2:True>"""
 INT004,I think overfitting is when the machine learning model is too perfect on the training data but can’t handle new data.,"2/4 points
@@ -79,6 +91,10 @@ INT004,"Overfitting is when a model is too simple and cannot capture the complex
 ""<Point1:False>,<Point2:False>"""
 INT004,"Overfitting in machine learning is when a model becomes too specific to the training data, including its noise, and fails to perform well on new data.","4/4 points
 ""<Point1:True>,<Point2:True>"""
+INT004,"Overfitting occurs when a model learns everything in the training data, even the noise, which can reduce its ability to generalize to new data, although sometimes it can still perform well.","2/4 points
+""<Point1:True>,<Point2:False>"""
+INT004,"Overfitting means a model learns too much from the training data, including all the noise, which can be bad for its performance on new data, though sometimes it might still work fine.","2/4 points
+""<Point1:True>,<Point2:False>"""
 INT005,Neural networks are is a series of algorithms these learns from data by simulating how the human brain works.,"4/4 points
 ""<Point1:True>,<Point2:True>"""
 INT005,A neural network is a type of algorithm that recognizes patterns in large sets of data.,"2/4 points
@@ -99,12 +115,20 @@ INT005,Neural networks are made up of interconnected algorithms that analyze dat
 ""<Point1:False>,<Point2:True>"""
 INT005,A neural network is a computer system that performs tasks without needing a specific algorithm.,"0/4 points
 ""<Point1:False>,<Point2:False>"""
+INT005,"Neural networks are systems of algorithms that try to find data relationships. They don't always work like the human brain, even though they aim to.","2/4 points
+""<Point1:True>,<Point2:False>"""
+INT005,"A neural network consists of various algorithms trying to identify data patterns. While inspired by the human brain, the way they operate can sometimes differ greatly.","2/4 points
+""<Point1:True>,<Point2:False>"""
 INT006,"Model performance encompasses accuracy, but it’s broader. In cases like fraud detection, an accurate model might just predict no fraud if fraud cases are few, which isn’t helpful. Thus, understanding that performance includes other factors is crucial.","5/5 points
 ""<Point1:True>,<Point2:True>,<Point3:True>"""
 INT006,"Model performance is more important because accuracy is just a subset of it. For instance, in fraud detection within a large dataset, an accurate model might predict no fraud at all if fraud is very rare, which would be useless for finding fraud.","3/5 points
 ""<Point1:True>,<Point2:True>,<Point3:False>"""
 INT006,"While model accuracy is important, model performance is more comprehensive. For instance, in a fraud detection system, a model that’s only accurate might not detect fraud effectively if fraud is rare. Performance includes how well the model works in real-world scenarios.","5/5 points
 ""<Point1:True>,<Point2:True>,<Point3:True>"""
+INT006,"Model performance is more important than just accuracy. For example, an accurate model might predict no fraud in a large dataset with few fraud cases, which is not useful. Therefore, broader performance metrics are needed.","5/5 points
+""<Point1:True>,<Point2:True>,<Point3:True>"""
+INT006,"Accuracy is the most important because it tells you how correct your model is. Performance can mean many things, but accuracy is clear.","0/5 points
+""<Point1:False>,<Point2:False>,<Point3:False>"""
 INT006,"I think model accuracy is definitely important, but then again, model performance encompasses more aspects. If a model is accurate, it should perform well, but then it might miss fraud if the cases are rare, which is a performance issue.","3/5 points
 ""<Point1:True>,<Point2:False>,<Point3:True>"""
 INT006,"I feel model performance is better because it includes accuracy. But in fraud detection, an accurate model might be useless if it doesn't detect fraud. So, it’s a tricky question.","3/5 points
@@ -115,6 +139,10 @@ INT007,"To evaluate a machine learning model, I would first split the data into 
 ""<Point1:True>,<Point2:False>,<Point3:True>,<Point4:True>"""
 INT007,"To evaluate the effectiveness of a machine learning model, you should first split your dataset into training and test sets. This can be done using cross-validation to create multiple training and test sets. After that, you need to choose appropriate performance metrics to assess the model. Common metrics include the F1 score, accuracy, and the confusion matrix.","5/5 points
 ""<Point1:True>,<Point2:True>,<Point3:True>,<Point4:True>"""
+INT007,"To evaluate a machine learning model, I would start by dividing the data into a training set and a test set. Then, I would choose performance metrics like the F1 score and accuracy. Additionally, I would use a confusion matrix to see how well the model performs.","5/5 points
+""<Point1:True>,<Point2:True>,<Point3:True>,<Point4:True>"""
+INT007,"I would split the data into training and testing sets and then use cross-validation to further segment it. For metrics, I would use accuracy and the confusion matrix, but not necessarily the F1 score.","4/5 points
+""<Point1:True>,<Point2:False>,<Point3:True>,<Point4:True>"""
 INT007,"To evaluate a machine learning model, you don't always need to split the dataset. Instead, you can rely on metrics like the F1 score, accuracy, and the confusion matrix. These metrics will help you understand how well the model is performing on the data.","3/5 points
 ""<Point1:False>,<Point2:True>,<Point3:True>,<Point4:True>"""
 INT007,"To gauge the effectiveness of a machine learning model, you might use methods like accuracy or F1 score. Sometimes, the data is split for better assessment, but not always. Performance can also be checked using confusion matrices, although it's not always necessary.","2/5 points
@@ -125,6 +153,10 @@ INT008,"Logistic regression is versatile when it comes to dealing with multiclas
 ""<Point1:False>,<Point2:True>,<Point3:True>"""
 INT008,"True, logistic regression is effective for handling multiclass classification tasks. It uses methods such as one-versus-rest and multinomial (softmax) approaches to predict class probabilities accurately.","2/4 points
 ""<Point1:True>,<Point2:False>,<Point3:False>"""
+INT008,"Logistic regression is for binary classification. For multiclass, you need different algorithms like decision trees or SVMs.","0/4 points
+""<Point1:False>,<Point2:False>,<Point3:False>"""
+INT008,"Yes, logistic regression can be used for multiclass classification. One way is the one-vs-rest approach, where a classifier is trained for each class against all other classes.","3/4 points
+""<Point1:True>,<Point2:True>,<Point3:False>"""
 INT008,"Logistic regression might be used for some classification things, like maybe multiclass ones. It uses some methods I think, but not sure which ones exactly. Maybe it does stuff with probabilities, but I'm not really sure how.","0/4 points
 ""<Point1:False>,<Point2:False>,<Point3:False>"""
 INT008,"I hardly think so, Logistic regression is great for multiclass problems because it can predict different things. It uses methods like one-versus-all or some other thing, I think. It's pretty good at guessing what might happen in different situations.","1/4 points
