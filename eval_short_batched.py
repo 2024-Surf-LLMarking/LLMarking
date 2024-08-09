@@ -1,5 +1,6 @@
 from prompt.prompt_template import prompt_list_v1, prompt_list_v3
 from concurrent.futures import ThreadPoolExecutor
+from utils.count_utils import count_points
 from tqdm import tqdm
 import threading
 import requests
@@ -82,7 +83,8 @@ def get_response(i, stream = False):
         full_mark = entry["fullMark"]
         ref_answer = entry["referenceAnswer"]
         stu_answer = entry["studentAnswer"]
-        query = prompt.format(question=question, ref_answer=ref_answer, stu_answer=stu_answer, full_mark=full_mark)
+        num_points = count_points(ref_answer)
+        query = prompt.format(question=question, ref_answer=ref_answer, stu_answer=stu_answer, full_mark=full_mark, num_points=num_points)
 
         response = requests.post(
             "http://100.65.8.31:8000/chat",
