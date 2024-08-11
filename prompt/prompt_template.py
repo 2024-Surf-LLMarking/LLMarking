@@ -261,7 +261,7 @@ Your output should be in the following format:
 No total score is needed.
 
 **Grading Criteria:**
-- The Grading Criteria are contained in the answer in the case of <Point:mark>answer point<Point:mark> in Reference Answer.
+- The Grading Criteria are contained in the answer in the case of <PointX:mark>answer point<PointX:mark> in Reference Answer.
 - Assess if the student's answer satisfies each point in the reference answer. A point is considered 'True' if the student's response aligns with the key aspect of that point.
 - The student's answer doesn't have to mirror the reference answer exactly but must cover the essential criteria of the point if it is judged as 'True'.
 - The student's answer that are vague, incomplete, or deviate from the point are judged as 'False'.
@@ -304,7 +304,7 @@ Your output should be in the following format:
 No total score is needed.
 
 **Grading Criteria:**
-- The Grading Criteria are contained in the answer in the case of <Point:mark>answer point<Point:mark> in Reference Answer.
+- The Grading Criteria are contained in the answer in the case of <PointX:mark>answer point<PointX:mark> in Reference Answer.
 - Assess if the student's answer satisfies each point in the reference answer. A point is considered 'True' if the student's response aligns with the key aspect of that point.
 - The student's answer doesn't have to mirror the reference answer exactly but must cover the essential criteria of the point if it is judged as 'True'.
 - The student's answer that are vague, incomplete, or deviate from the point are judged as 'False'.
@@ -357,7 +357,7 @@ Your output should be in the following format:
 No total score is needed.
 
 **Grading Criteria:**
-- The Grading Criteria are contained in the answer in the case of <Point:mark>answer point<Point:mark> in Reference Answer.
+- The Grading Criteria are contained in the answer in the case of <PointX:mark>answer point<PointX:mark> in Reference Answer.
 - Assess if the student's answer satisfies each point in the reference answer. A point is considered 'True' if the student's response aligns with the key aspect of that point.
 - The student's answer doesn't have to mirror the reference answer exactly but must cover the essential criteria of the point if it is judged as 'True'.
 - The student's answer that are vague, incomplete, or deviate from the point are judged as 'False'.
