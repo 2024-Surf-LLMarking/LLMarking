@@ -214,6 +214,73 @@ async def chat(request: Request):
     ret={"text":text, "model": model_names[arg.model]}
     return JSONResponse(ret)
 
+# chat对话接口
+@app.post("/chat/dynamic")
+async def chat(request: Request):
+    request=await request.json()
+    
+    query=request.get('query',None)
+    history=request.get('history',[])
+    system=request.get('system','You are a helpful assistant.') if model_dir != __all__[6] and model_dir != __all__[9] and model_dir != __all__[10] and model_dir != __all__[14] and model_dir != __all__[23] and model_dir != __all__[26] and model_dir != __all__[28] else None
+    # system=request.get('system','You are an impartial, objective AI grading assistant. Your task is to evaluate student answers based solely on their content and accuracy, comparing them to provided reference answers.') if model_dir != __all__[6] and model_dir != __all__[9] and model_dir != __all__[10] and model_dir != __all__[14] and model_dir != __all__[23] and model_dir != __all__[26] and model_dir != __all__[28] else None
+    stream=request.get("stream",False)
+    user_stop_words=request.get("user_stop_words",[])    # list[str]，用户自定义停止句，例如：['Observation: ', 'Action: ']定义了2个停止句，遇到任何一个都会停止
+    temperature=request.get("temperature", 1.0)
+    
+    if query is None:
+        return Response(status_code=502,content='query is empty')
+
+    # 用户停止词
+    user_stop_tokens=[]
+    for words in user_stop_words:
+        user_stop_tokens.append(tokenizer.encode(words))
+    
+    # 构造prompt
+    # prompt_text,prompt_tokens=_build_prompt(generation_config,tokenizer,query,history=history,system=system)
+
+    prompt_tokens=_build_prompt_self(generation_config,tokenizer,query,history=history,system=system)
+    # vLLM请求配置
+    sampling_params=SamplingParams(stop_token_ids=stop_words_ids, 
+                                    early_stopping=False,
+                                    top_p=0.8,
+                                    top_k=20,
+                                    temperature=temperature,
+                                    repetition_penalty=1,
+                                    max_tokens=generation_config.max_new_tokens
+                                   )
+    # vLLM异步推理（在独立线程中阻塞执行推理，主线程异步等待完成通知）
+    request_id=str(uuid.uuid4().hex)
+    results_iter=engine.generate(sampling_params=sampling_params,inputs=TokensPrompt(prompt_token_ids=prompt_tokens),request_id=request_id)
+    
+    # 流式返回，即迭代transformer的每一步推理结果并反复返回
+    if stream:
+        async def streaming_resp():
+            async for result in results_iter:
+                # 移除im_end,eos等系统停止词
+                token_ids=remove_stop_words(result.outputs[0].token_ids,stop_words_ids)
+                # 返回截止目前的tokens输出                
+                text=tokenizer.decode(token_ids)
+                yield (json.dumps({'text':text})+'\0').encode('utf-8')
+                # 匹配用户停止词,终止推理
+                if match_user_stop_words(token_ids,user_stop_tokens):
+                    await engine.abort(request_id)   # 终止vllm后续推理
+                    break
+        return StreamingResponse(streaming_resp())
+
+    # 整体一次性返回模式
+    async for result in results_iter:
+        # 移除im_end,eos等系统停止词
+        token_ids=remove_stop_words(result.outputs[0].token_ids,stop_words_ids)
+        # 返回截止目前的tokens输出                
+        text=tokenizer.decode(token_ids)
+        # 匹配用户停止词,终止推理
+        if match_user_stop_words(token_ids,user_stop_tokens):
+            await engine.abort(request_id)   # 终止vllm后续推理
+            break
+
+    ret={"text":text, "model": model_names[arg.model]}
+    return JSONResponse(ret)
+
 if __name__=='__main__':
     uvicorn.run(app,
                 host=None,
