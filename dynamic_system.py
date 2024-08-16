@@ -1,5 +1,6 @@
 from prompt.prompt_template import prompt_list_v3
 from utils.dynamic_utils import extract_info
+from utils.count_utils import count_points
 import concurrent.futures
 from tqdm import tqdm
 import requests
@@ -66,10 +67,11 @@ def get_single_response(entry, prompt):
     full_mark = entry["fullMark"]
     ref_answer = entry["referenceAnswer"]
     stu_answer = entry["studentAnswer"]
-    query = prompt.format(question=question, ref_answer=ref_answer, stu_answer=stu_answer, full_mark=full_mark)
+    num_points = count_points(ref_answer)
+    query = prompt.format(question=question, ref_answer=ref_answer, stu_answer=stu_answer, full_mark=full_mark, num_points=num_points)
 
     response = requests.post(
-        "http://192.168.0.72:8000/chat",
+        "http://192.168.0.72:8000/chat/dynamic",
         json={
             "query": query,
             "stream": False,
