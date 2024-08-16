@@ -11,6 +11,7 @@ import os
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--course", "-c", type=str, help="Course name", required=True)
+parser.add_argument("--thread", "-t", type=int, help="Number of threads", default=3)
 args = parser.parse_args()
 
 directory = ["zeroshot", "oneshot", "fewshot"]
@@ -85,8 +86,8 @@ def get_single_response(entry, prompt):
     return text, model_name
 
 def get_responses(entry, prompt):
-    with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
-        futures = [executor.submit(get_single_response, entry, prompt) for _ in range(3)]
+    with concurrent.futures.ThreadPoolExecutor(max_workers=args.thread) as executor:
+        futures = [executor.submit(get_single_response, entry, prompt) for _ in range(args.thread)]
         results = [future.result() for future in concurrent.futures.as_completed(futures)]
     
     for i, (text, model_name) in enumerate(results, 1):
@@ -104,13 +105,12 @@ def process_data(i):
         updated_entry = get_responses(entry.copy(), prompt)
         
         # Extract Model_Marklist and add it as 'feedback' to the entry
-        feedbacks = [updated_entry.get(f"feedback_{i}") for i in range(1, 4) if updated_entry.get(f"feedback_{i}")]
         Model_Marklist, _, _ = extract_info({index: updated_entry})
         updated_entry['feedback'] = Model_Marklist[0] if Model_Marklist else {}
         
         return index, updated_entry
 
-    with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=args.thread) as executor:
         futures = [executor.submit(process_entry, (index, entry)) for index, entry in enumerate(data)]
         
         for future in tqdm(concurrent.futures.as_completed(futures), total=len(data), desc=f"Processing {directory[i]}"):
