@@ -104,7 +104,6 @@ def process_data(i):
         index, entry = index_entry
         updated_entry = get_responses(entry.copy(), prompt)
         
-        # Extract Model_Marklist and add it as 'feedback' to the entry
         Model_Marklist, _, _ = extract_info({index: updated_entry})
         updated_entry['feedback'] = Model_Marklist[0] if Model_Marklist else {}
         
