@@ -1,5 +1,6 @@
-import json
 from sklearn.metrics import f1_score, precision_score, recall_score
+from .dynamic_utils import extract_info as dynamic_extract_info
+import json
 import re
 import os
 
@@ -73,6 +74,25 @@ def extract_info_from_json(file_path):
         ModelMark, TeacherMark, mismatch_percentage = extract_info(data)
         # print("ModelMark\t", ModelMark)
         # print("TeacherMark\t", TeacherMark)
+        model_points = extract_points(ModelMark)
+        teacher_points = extract_points(TeacherMark)
+        model_labels = [1 if point == 'True' else 0 for point in model_points]
+        teacher_labels = [1 if point == 'True' else 0 for point in teacher_points]
+        f1, precision, recall = get_score(teacher_labels, model_labels)
+        print("F1 score:\t", f1)
+        print("Precision score:", precision)
+        print("Recall score:\t", recall)
+        print(f"Mismatch percentage: {mismatch_percentage:2f}%\n\n")
+        return f1, precision, recall, mismatch_percentage
+    
+def extract_dynamic_info_from_json(file_path):
+    # Read the JSON file
+    if os.path.exists(file_path) == False:
+        print("The file does not exist!\n\n")
+        return None, None, None, None
+    with open(file_path, 'r', encoding='utf-8') as file:
+        data = json.load(file)
+        ModelMark, TeacherMark, mismatch_percentage = dynamic_extract_info(data)
         model_points = extract_points(ModelMark)
         teacher_points = extract_points(TeacherMark)
         model_labels = [1 if point == 'True' else 0 for point in model_points]
