@@ -30,7 +30,7 @@ def build_diction_from_model(input_str, length, teacher_mark):
     # 正则表达式模式来匹配 Point 和 类型
     points_dict = {}
     mismatch_count = 0
-    pattern = re.compile(r'<(Point\d+)\s*:\w+\s*>\s*\*?(True|False)\*?\s*\n?\(?([^)]*?)\)?')
+    pattern = re.compile(r'<(Point\d+)\s*:\w+\s*>\s*\*?(True|False)\*?\s*\n?\(?([^)]*)\)?')
     original_input_str_list = re.findall(pattern, input_str)
     original_input_str_list_length = len(original_input_str_list)
     if original_input_str_list_length != length:
