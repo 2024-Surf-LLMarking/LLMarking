@@ -23,8 +23,8 @@ INT001,"Supervised learning is where a computer guesses outputs, but it doesn't 
 ""<Point1:False>,<Point2:False>"""
 INT001,"Supervised learning uses some kind of data to train, it could be labeled or not. The goal is to match inputs with outputs.","2/4 points
 ""<Point1:False>,<Point2:True>"""
-INT002,"Regression predicts numerical outcomes, and classification predicts which category something belongs to.","2/3 points
-""<Point1:False>,<Point2:True>,<Point3:True>"""
+INT002,"Regression predicts numerical outcomes, and classification predicts which category something belongs to.","3/3 points
+""<Point1:True>,<Point2:True>,<Point3:True>"""
 INT002,Regression involves equations and classification is about grouping.,"1/3 points
 ""<Point1:False>,<Point2:True>,<Point3:False>"""
 INT002,"Classification and regression are different in terms of their outputs. Classification involves predicting categories or classes, while regression is used to predict numerical values.","3/3 points
