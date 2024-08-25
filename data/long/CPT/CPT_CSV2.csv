@@ -1,0 +1,218 @@
+﻿QuestionCode,StudentAns,ManualScore,User
+CPTA1a,"In the waterfall model, documents are generated at each stage. This makes the process visible so that managers can design based on Development Plan to monitor progress.","2/2 points
+""<Point1_case1:False>,<Point1_case2:False>,<Point1_case3:True>""",H1
+CPTA1a,An autonomous vehicle system is a safety-critical system so requires a lot of up-front analysis before implementation. It certainly needs a plan-driven approach to development with the requirements carefully analyzed. A waterfall model is therefore the most appropriate approach to use. perhaps with formal transformations between the different development stages.,"2/2 points
+""<Point1_case1:True>,<Point1_case2:False>,<Point1_case3:True>""",H2
+CPTA1a,"One reason for using the waterfall model in software development for autonomous vehicles is that it allows for clear and distinct phases of development, which can be helpful in managing the complexity of such systems. Since in the waterfall model, documentation is produced at each phase.","2/2 points
+""<Point1_case1:False>,<Point1_case2:False>,<Point1_case3:True>""",H3
+CPTA1a,"Like the factory assembly line, the software development process is divided into various processes and each process can be subdivided into more detailed process.","1/2 points
+""<Point2_case1:True>,<Point1_case2:False>,<Point1_case3:False>""",M1
+CPTA1a,"Waterfall model is a step by step model, the steam must complete the previous stage before moving on to the next stage. This means waterfall model has a clear structure and the base of the project will be nicely built.  ","0/2 points
+""<Point1_case1:False>,<Point1_case2:False>,<Point1_case3:False>""",M2
+CPTA1a,"Each stage of the assessment is passed before the next stage begins,ensure the quality. ","0/2 points
+""<Point1_case1:False>,<Point1_case2:False>,<Point1_case3:False>""",M3
+CPTA1a,"One reason to use the Waterfall model is that it can be a useful approach for projects that have well-defined requirements and deliverables, and where the scope of the project is not expected to change significantly. In this case, Waterfall model can provide a clear and structed process.","0/2 points
+""<Point1_case1:False>,<Point1_case2:False>,<Point1_case3:False>""",L9
+CPTA1a,Documentation is produced at each phase. This makes the process visible so managers can monitor process against the development plan.,"2/2 points
+""<Point1_case1:False>,<Point1_case2:False>,<Point1_case3:True>""",L8
+CPTA1a,"Every stage of waterfall model needs documentation to be approved and ""sign off"", which makes the process visible.","2/2 points
+""<Point1_case1:False>,<Point1_case2:False>,<Point1_case3:True>""",L7
+CPTA1b,"Considering of the costs of reproducing documents and more time and energy spent on communication to do adjustments, revisiting the software specification stage can be costly and involve significant rework.","2/2 points
+""<Point1_case1: False>,<Point1_case2:True>,<Point1_case3:False>,<Point1_case4:False>,<Point1_case5: False>,<Point1_case6:False>,<Point1_case7:False>,<Point1_case8:False>""",H1
+CPTA1b,"Since in waterfall model, commitments must be made at an early stage in the process.Hence, If the project team decides to revisit the software specification phase during the software design and implementation phase, it seems that this could lead to a delay in the project timeline and an increase in project costs.","2/2 points
+""<Point1_case1: False>,<Point1_case2:False>,<Point1_case3:False>,<Point1_case4:False>,<Point1_case5:  True>,<Point1_case6:False>,<Point1_case7:False>,<Point1_case8:False>""",H2
+CPTA1b,"If the specification document needs to be modified, the scope of the modification can be large, as refinements may affect other areas of the software. The review, inspection and approval processes would have to be redone, which would consume a great deal of time and cost.","2/2 points
+""<Point1_case1: False>,<Point1_case2: True>,<Point1_case3:False>,<Point1_case4:False>,<Point1_case5:  True>,<Point1_case6:False>,<Point1_case7:False>,<Point1_case8:False>""",H3
+CPTA1b,It may cause project delays and unnecessary loss of property in the implementation process,"2/2 points
+""<Point1_case1: True>,<Point1_case2:False>,<Point1_case3:False>,<Point1_case4:False>,<Point1_case5: False>,<Point1_case6:False>,<Point1_case7:False>,<Point1_case8:False>""",M1
+CPTA1b,"One possible consequence for revisiting the software specification stage is increase of cost. As the team revisit soft ware specification stage the team may find out mistakes and changes will me made. Changes in projects costs lost of time and human power so the cost increases.
+","2/2 points
+""<Point1_case1:False>,<Point1_case2:False>,<Point1_case3:False>,<Point1_case4:False>,<Point1_case5: True>,<Point1_case6:False>,<Point1_case7:False>,<Point1_case8:False>""",M2
+CPTA1b,Systems and software may be redesigned. ,"0/2 points
+""<Point1_case1:False>, <Point1_case2:False>,<Point1_case3:False>,<Point1_case4:False>,<Point1_case5: False>,<Point1_case6:False>,<Point1_case7:False>,<Point1_case8:False>""",M3
+CPTA1b,"In this situation, it could result in delays to the overall project timeline. This is becaus going back to the specification stage means that the team will need to spend time reviewing and potentially revising the original specifications which could take away from other tasks that need o be completed. Moreover, that will cause additional costs.and time on this phase.","2/2 points
+""<Point1_case1:False>, <Point1_case2:False>,<Point1_case3:False>,<Point1_case4:False>,<Point1_case5: True>,<Point1_case6:False>,<Point1_case7:False>,<Point1_case8:False>""",L9
+CPTA1b,"Become the costs of producing and approving documents, iterations can be costly and involve significant rework.","2/2 points
+""<Point1_case1:False>, <Point1_case2:False>,<Point1_case3:False>,<Point1_case4:False>,<Point1_case5: True>,<Point1_case6:False>,<Point1_case7:False>,<Point1_case8:False>""",L8
+CPTA1b,It will cost a lot of time and money to revisit the Software Specification stage.,"2/2 points
+""<Point1_case1:False>, <Point1_case2:True>,<Point1_case3:False>,<Point1_case4:False>,<Point1_case5: False>,<Point1_case6:False>,<Point1_case7:True>,<Point1_case8:False>""",L7
+CPTA1c,"1. reuse good parts of the previous documentation, don' t reproduce completely.2. make the approving process quicker.3. get more feedback from users to make sure that they do not need to revisit it three times.","2/3 points
+""<Point1_case1:False>,<Point1_case2:True><Point1_case3: False>,<Point2_case1:True>,<Point3_case1:False>,<Point3_case2:False>,<Point3_case3:False>""",H1
+CPTA1c,1.Minimize the scope of the changes being made.2.Manage any changes to the project and budget carefully.3. Document the reason for revisiting the specification phase and communicate it to relevant stakeholders,"2/3 points
+""<Point1_case1:True>,<Point1_case2:False><Point1_case3: False>,<Point2_case1:True>,<Point3_case1:False>,<Point3_case2:False>,<Point3_case3:False>""",H2
+CPTA1c,"1. Do small number of iterations2. After a small number of iterations, it is normal to freeze the specification, and to continue with the later development stages.3. Problems are left for later resolution, ignored, or programmed.","2/3 points
+""<Point1_case1:True>,<Point1_case2:False><Point1_case3: False>,<Point2_case1:True>,<Point3_case1:False>,<Point3_case2:False>,<Point3_case3:False>""",H3
+CPTA1c,1. 2. 3.,"0/3 points
+""<Point1_case1:False>,<Point1_case2:False><Point1_case3: False>,<Point2_case1:False>,<Point3_case1:False>,<Point3_case2:False>,<Point3_case3:False>""",M1
+CPTA1c,"1.Limit the changes that could be made on the project.
+2. Make sure this is the last time revisiting the stage.
+3. The team can split into half, some revisit some continue working.","2/3 points
+""""<Point1_case1:True>,<Point1_case2:False><Point1_case3: False>,<Point2_case1:True>,<Point3_case1:False>,<Point3_case2:False>,<Point3_case3:False>""""",M2
+CPTA1c,"1.Freeze parts of the development, such as the specification. 
+2.Continue with the later development stages.
+3.Problems are left for later resolution, ignored,or programmed around. ","0/3 points
+""<Point1_case1:False>,<Point1_case2:False><Point1_case3: False>,<Point2_case1:False>,<Point3_case1:False>,<Point3_case2:False>,<Point3_case3:False>""",M3
+CPTA1c,clearly communicate the reasons for revisiting the specification stage. identify any potential risks. develop a revised project plan. keep stakeholders informed.,"1/3 points
+""<Point1_case1:False>,<Point1_case2:False><Point1_case3: True>,<Point2_case1:False>,<Point3_case1:False>,<Point3_case2:False>,<Point3_case3:False>""",L9
+CPTA1c,"the project team should ensure the accuracy of the results and pay attention to the quality of the project at all times. integrating these components into a system rather than developing them from scratch. Since the reshaping of the waterfall model requires a lot of manpower,material and financial resources, the number of backtraces should be limited","1/3 points
+""<Point1_case1:False>,<Point1_case2:False><Point1_case3: True>,<Point2_case1:False>,<Point3_case1:False>,<Point3_case2:False>,<Point3_case3:False>""",L8
+CPTA1c,1. 2. 3.,"0/3 points
+""<Point1_case1:False>,<Point1_case2:False><Point1_case3: False>,<Point2_case1:False>,<Point3_case1:False>,<Point3_case2:False>,<Point3_case3:False>""",L7
+CPTA2a,"There is a Product Owner from the customer company to join the Scrum team, so development team can reach to the customer quickly.","3/3 points
+""<Point1_case1: True>,<Point2_case1:False>,<Point3_case1:False>""",H1
+CPTA2a,"One obvious evidence of this is that it involves frequent interaction and collaboration between the Scrum team and the customer during the development process. This is reflected in the Scrum framework, such as daily stand-up meetings where the team discusses progress and impediments. and review and retrospective meetings.","2/3 points
+""<Point1_case1: False>,<Point2_case1:True>,<Point3_case1:False>""",H2
+CPTA2a,"In the Scrum framework, the customer is invited to join the entire project, work with the development team, and negotiate with them from time to time to ensure that all requirements are met and the most valuable work is performed.","2/3 points
+""<Point1_case1: False>,<Point2_case1:True>,<Point3_case1:False>""",H3
+CPTA2a,,"0/3 points
+""<Point1_case1: False>,<Point2_case1:False>,<Point3_case1:False>""",M1
+CPTA2a,"Scrum framework includes Scrum review and Scrum planning, these process are repeated daily before or after their daily scrum and in the review and planning process, scrum team can include customer feedbacks and change their daily scrum and prioritize according to customer feedbacks. This shows ""Customer collaboration over contract negotiation"". ","2/3 points
+""""<Point1_case1: False>,<Point2_case1:True>,<Point3_case1:False>""",M2
+CPTA2a,"The client is involved in the whole process of the project, in the acceptance of each iteration, anc is customer oriented. ","0/3 points
+""<Point1_case1: False>,<Point2_case1:False>,<Point3_case1:False>""",M3
+CPTA2a,"One obvious evidence of` the Scrum framework complying with the principle above is the fact that it places a strong emphasis on collaboration between the develop team and the customer. In scrum, the product owner is responsible for defining and prioritizing the features to be included in the product, and the development team is responsible for delivering those features.","3/3 points
+""<Point1_case1: True>,<Point2_case1:False>,<Point3_case1:False>""",L9
+CPTA2a,Scrum Framework is impossible to derive a complete set of stable software requirements. The initial requirements inevitably change.,"0/3 points
+""<Point1_case1: False>,<Point2_case1:False>,<Point3_case1:False>""",L8
+CPTA2a,"Contract negotiation may not reflect what the customer's real needs are, but customer collaboration involves customer's work and thus can satisfy the need.","0/3 points
+""<Point1_case1: False>,<Point2_case1:False>,<Point3_case1:False>""",L7
+CPTA2b,"I. It needs a ""Get that...
+"" to show that the user has entered the system. (show the status).2.It needs a ""Then..."" to show that the user chooses a language and the language will change.","2/3 points
+""<Point1_case1:False>,<Point2_case1:True>,<Point3_case1: True>",H1
+CPTA2b,"The acceptance criteria do not indicate what action the user should take to close the change language dialog. The acceptance criteria should include a requirement that the user be able to close the dialog box, for example by clicking a ""Cancel"" or ""Close"" button.","1/3 points
+""<Point1_case1:False>,<Point2_case1:True>,<Point3_case1:False>""",H2
+CPTA2b,The 'Given that...' precondition is missing. The page of user currently in is not specified in this PBI.,"1/3 points
+""<Point1_case1: True>,<Point2_case1:False>,<Point3_case1: False>",H3
+CPTA2b,The exceptions about acceptance criteria is missing,"0/3 points
+""<Point1_case1:False>,<Point2_case1:False>,<Point3_case1:False>""",M1
+CPTA2b,"The choosing language part and the part after it is missing. The complete Acceptance criteria should be “....center of the screen. After the user clicks on the language the would like to change to on the list The webpage refreshes  and the UI displays in the chosen language.""
+","0/3 points
+""<Point1_case1:False>,<Point2_case1:False>,<Point3_case1:False>""",M2
+CPTA2b,"Whether the user is able to select a new language from the available languages and ultimately change the language of the interface. This is an important aspect in this criterion and should be included. 
+Details are missing, for example it is not clear how to close the change language dialog or what happens if a new language is not selected. 
+","0/3 points
+""<Point1_case1:False>,<Point2_case1:False>,<Point3_case1:False>""",M3
+CPTA2b,It is not clear from the provide Acceptance Criteria whether the user should be able to select a new language from the list of available languages and have the user interface change to that language. Moreover if users do not select the new language in the list.what should happen?,"0/3 points
+""<Point1_case1:False>,<Point2_case1:False>,<Point3_case1:False>""",L9
+CPTA2b,"As a user, I want to be able to register online, so that I can perform online shopping.As a marketing manager, I would like to search for customers, so that I can call them.","0/3 points
+""<Point1_case1:False>,<Point2_case1:False>,<Point3_case1:False>""",L8
+CPTA2b,"Given that the user is in the ""Change Language"" page. Then, the user can select the preferred language.","2/3 points
+""<Point1_case1: True>,<Point2_case1:False>,<Point3_case1: True>""",L7
+CPTA3a,Exception. Post-condition,"4/4 points
+""<Point1_case1:True>,<Point2_case1:False>,<Point3_case1:True>,<Point3_case2:False>""",H1
+CPTA3a,‘Exception’ row. ‘Main Scenario’ row,"2/4 points
+""<Point1_case1:True>,<Point2_case1:False>,<Point3_case1:False>,<Point3_case2:False>""",H2
+CPTA3a,6th row. 6th row,"0/4 points
+""<Point1_case1:False>,<Point2_case1:False>,<Point3_case1:False>,<Point3_case2:False>""",H3
+CPTA3a,,"0/4 points
+""<Point1_case1:False>,<Point2_case1:False>,<Point3_case1:False>,<Point3_case2:False>""",M1
+CPTA3a,"“If the user enters an invalid personal identifier for the credit card, the system will prompt the user and terminate the transaction."" ""When the credit transaction is validated by the credit card center, the ticket is issued.""","0/4 points
+""<Point1_case1:False>,<Point2_case1:False>,<Point3_case1:False>,<Point3_case2:False>""",M2
+CPTA3a,Post condition. Main scenario ,"2/4 points
+""<Point1_case1:False>,<Point2_case1:False>,<Point3_case1:True>,<Point3_case2:False>""",M3
+CPTA3a,post condition. Main scenario,"0/4 points
+""<Point1_case1:False>,<Point2_case1:False>,<Point3_case1:False>,<Point3_case2:False>""",L9
+CPTA3a,User account requlrements.System requlrements.  Hardware requlrements,"0/4 points
+""<Point1_case1:False>,<Point2_case1:False>,<Point3_case1:False>,<Point3_case2:False>""",L8
+CPTA3a,"It should be recorded in Row ""Main scenario"".  It should be recorded in Row""Post-condition""","2/4 points
+""<Point1_case1:False>,<Point2_case1:False>,<Point3_case1:True>,<Point3_case2:False>""",L7
+CPTA3b,credit card center,"3/3 points
+""<Point1_case1:True>,<Point1_case2:False>,<Point2_case1:False>,<Point2_case2:False>,<Point2_case3:False>,<Point2_case4:False>""",H1
+CPTA3b,The system,"0/3 points
+""<Point1_case1:False>,<Point1_case2:False>,<Point2_case1:False>,<Point2_case2:False>,<Point2_case3:False>,<Point2_case4:False>""",H2
+CPTA3b,The automated ticket-issuing system,"0/3 points
+""<Point1_case1:False>,<Point1_case2:False>,<Point2_case1:False>,<Point2_case2:False>,<Point2_case3:False>,<Point2_case4:False>""",H3
+CPTA3b,manager,"0/3 points
+""<Point1_case1:False>,<Point1_case2:False>,<Point2_case1:False>,<Point2_case2:False>,<Point2_case3:False>,<Point2_case4:False>""",M1
+CPTA3b,The second actor is the ticket issuing system. User interacts with the bank and chooses. ,"0/3 points
+""<Point1_case1:False>,<Point1_case2:False>,<Point2_case1:False>,<Point2_case2:False>,<Point2_case3:False>,<Point2_case4:False>""",M2
+CPTA3b,Credit card ,"2/3 points
+""<Point1_case1:False>,<Point1_case2:False>,<Point2_case1:False>,<Point2_case2:False>,<Point2_case3:True>,<Point2_case4:False>""",M3
+CPTA3b,credit card,"2/3 points
+""<Point1_case1:False>,<Point1_case2:False>,<Point2_case1:False>,<Point2_case2:False>,<Point2_case3:True>,<Point2_case4:False>""",L9
+CPTA3b,System interface designCategy:system constraints,"0/3 points
+""<Point1_case1:False>,<Point1_case2:False>,<Point2_case1:False>,<Point2_case2:False>,<Point2_case3:False>,<Point2_case4:False>""",L8
+CPTA3b,Credit card center.,"3/3 points
+""<Point1_case1:True>,<Point1_case2:False>,<Point2_case1:False>,<Point2_case2:False>,<Point2_case3:False>,<Point2_case4:False>""",L7
+CPTA4,"1. Risk identification: This step involves identifying and recording all potential risks that could affect the project, such as business risks, and alerting the user.2. Risk Analysis: In this step, the likelihood and impact of each identified risk is assessed and ranked according to its potential impact on the project.3. Risk Planning: Plans to address the risk, minimizing its effects or even avoiding it.4. Monitoring and controlling risks: This step involves continuously monitoring the identified risks and making any necessary changes to the risk response plan as the project progresses.","12/12 points
+""<Point1_case1: True>,<Point2_case1: True>,<Point3_case1: True>,<Point4_case1: True>,<Point5_case1: True>,<Point6_case1: True>,<Point7_case1: True>,<Point8_case1: True>""",H1
+CPTA4,"1. Risk identification: It means identifying the possible project, product, and business risks. It is the first stage of the risk management process, concerning with identifying major risks. It can be a team process and can solely rely on managers' experiences.
+2. Risk analysis: It means assessing the likelihood and consequences of these risks.
+3. Risk planning: on the project. It means planning to address the risk, either by avoiding it or minimizing its effects4. Risk monitoring: It means regularly assessing the risk and your plans for risk mitigation and revising these when you learn more about the risk.","10/12 points
+""<Point1_case1: True>,<Point2_case1: True>,<Point3_case1: True>,<Point4_case1: True>,<Point5_case1: True>,<Point6_case1: True>,<Point7_case1: True>,<Point8_case1: False>""",H2
+CPTA4,"1.Risk identification: identifying possible product risks, business risks and project risks.2. Risk analysis: Assess the similarities and consequences of these risks.3. Risk plan: Plan to address risks by avoiding risks or minimizing their impact on the project.4. Risk monitoring: Regularly visit risks, risk mitigation plans, and modify these plans as more risks are learned.","10/12 points
+""<Point1_case1: True>,<Point2_case1: True>,<Point3_case1: True>,<Point4_case1: True>,<Point5_case1: True>,<Point6_case1: True>,<Point7_case1: True>,<Point8_case1: False>""",H3
+CPTA4,"1.Risk identification: Identify and describe potential risks.
+2.Risk analysis: Determine the possibilities of new risks emerging by analyzing risk factrs and documenting potential consequences.
+3.Risk response: make response to the risks.
+4.Risk monitoring: continue monitor risks.","9/12 points
+""<Point1_case1: True>,<Point2_case1: True>,<Point3_case1: True>,<Point4_case1: True>,<Point5_case1: False>,<Point6_case1: False>,<Point7_case1: True>,<Point8_case1: True>""",M1
+CPTA4,"1.Risk identification. The first step is identify all risk and opportunities of the project and what may  cause negative or positive impact. All risks and opportunities must be well defined and specific.
+ 2.Risk assessment. The second step is to assess the risks and opportunities and classify them into  two different kinds, Quantitative and Qualitative. Quantitative is about the financial risks and  benefits and qualitative is about the probability of risks happening and the impact.
+ 3.Risk treatment. The third step is to identify strategies against the risks they may face by creating  a treatment plan. The main theme of the plan focuses on how to reduce the probability of risks events happening and how to reduce their impact, for opportunity is plan to increase the chance and increase the positive impact.
+4.Risk monitoring and reporting. The fourth step is to report about the risks and opportunities listed on the treatment plan. The frequency of reporting depends on how big the risk is. Monitoring and reporting can make sure the project team is informed and can deal with the problem at the fastest speed before things get any worse. 
+","9/12 points
+""<Point1_case1: True>,<Point2_case1: True>,<Point3_case1: True>,<Point4_case1: True>,<Point5_case1: False>,<Point6_case1: False>,<Point7_case1: True>,<Point8_case1: True>""",M2
+CPTA4,"1.Risk identification: identify possible project, product and business risks 
+ 2.risk analysis: assess the likelihood and consequences of these risks
+ 3. risk planning: plans to address the risk, either by avoiding it or minimizing its effects
+4.risk monitoring: regularly assess the risk and your plans for risk mitigation and revice these when you learn more about risk 
+","10/12 points
+""<Point1_case1: True>,<Point2_case1: True>,<Point3_case1: True>,<Point4_case1: True>,<Point5_case1: True>,<Point6_case1: True>,<Point7_case1: True>,<Point8_case1: False>""",M3
+CPTA4,"Risk ldentification: this is the process of identifying documenting the risks that could potentially impact the project. Risk Analysis: This can involve quantifying the risks in terms of their probability of occurrence and the potential consequences if they do occur. Risk Response Planning: After steps above, this step may involve implementing controls or mitigation measures to reduce the likelihood ofthe risks occurring, or developing contingency plans in case the risks do occur. Risk monitoring and control: This is the process continuously monitoring their dentified risks and implementing the planned responses as needed. This may involve regularly reviewing the status of identified risks and updating the risk response plans as necessary.","9/12 points
+""<Point1_case1: True>,<Point2_case1: True>,<Point3_case1: True>,<Point4_case1: True>,<Point5_case1: True>,<Point6_case1: True>,<Point7_case1: False>,<Point8_case1: False>""",L9
+CPTA4,"risk identification:identify possible project, project, and business risks. risk analysis:assess the likelihood and consequences ofthese risks. risk planning: plan to address the risk, either by avoiding it or minimizing its effectson the project. risk monitoring:regularly assess the risk and your plans for risk mitigation and revise these when you learn more about the risk","10/12 points
+""<Point1_case1: True>,<Point2_case1: True>,<Point3_case1: True>,<Point4_case1: True>,<Point5_case1: True>,<Point6_case1: True>,<Point7_case1: True>,<Point8_case1: False>""",L8
+CPTA4,"Risk identification, Risk identification is to identify possible project, product, and business risks. Risk analysis. Risk analysis is to consider each identified risk and make a judgment about the probability and seriousness of that risk. Risk planning:Risk planning is to address the risk, either by avoiding it or minimizing its effects on the project. Risk monitoring:Risk monitoring is to regularly assess the risk and your plans for risk mitigation and revise these when you learn more about the risk.","10/12 points
+""<Point1_case1: True>,<Point2_case1: True>,<Point3_case1: True>,<Point4_case1: True>,<Point5_case1: True>,<Point6_case1: True>,<Point7_case1: True>,<Point8_case1: False>""",L7
+CPTA5a,"1. High cohesion: cohesion is the degree to which the elements of a module are related to each other. The elements in a highly cohesive system module have strong correlation. All its attributes and behaviors should be closely related to the concepts it represents, and should jointly achieve a single, well-defined purpose. This facilitates the modular construction of the system.2. low coupling: Coupling refers to how focused a class or a module is. A low coupling system. A low-coupling system facilitates debugging, modification, and increment.3. Complete and sufficient: A well-formed design class should contain all the attributes and behavior necessary to fully represent the concept it is intended to model. It should not be missing any necessary characteristics or behavior, nor should it contain extraneous elements that are not relevant to the concept it represents.","6/6 points
+""<Point1_case1: True>,<Point2_case1: True>,<Point3_case1: True>""",H1
+CPTA5a,"1. Complete and sufficient. A design class should be the complete encapsulation of all attributes and methods that can reasonably be expected (based on a knowledgeable interpretation of the class name) to exist for the class. Sufficiency ensures that the design class contains only those methods that are sufficient to achieve the intent of the class, no more and no less.2. Primitiveness. Methods associated with a design class should be focused on accomplishing one service for the class.3. High cohesion. A cohesive design class has a small, focused set of responsibilities and single-mindedly apply attributes and methods to implement those responsibilities.","6/6 points
+""<Point1_case1: True>,<Point2_case1: True>,<Point3_case1: True>""",H2
+CPTA5a,"1.High cohesion: A cohesive design class has a small and centralized set of responsibilities, and applies properties and methods wholeheartedly to realize these responsibilities.2.Primitivity: Methods related to designing classes should focus on completing a service for the class.3.Low coupling: In the design model, design classes must cooperate with each other.However, cooperation should be kept to an acceptable minimum.","6/6 points
+""<Point1_case1: True>,<Point2_case1: True>,<Point3_case1: True>""",H3
+CPTA5a,"1.high cohesion: The code realizes only one well-designed task.
+2.low coupling: The further the link between the modules, the more independent the modules are.
+3.primitiveness: A method related to a design class should focus on a service of implementing class.","2/6 points
+""<Point3_case1: True>,<Point2_case1: False>,<Point3_case1: False>""",M1
+CPTA5a,"1.High cohesion, high cohesion means that the elements in the class are related to each other, a code with high cohesion is often easier to understand.
+2.Low coupling, low coupling means that unrelated parts in a class are separated into other classes or methods. A good class should not contain useless or unrelated information in it.
+3.Primitiveness, primitiveness means only creating blocks of codes that are inevitable, keeps the class straight forward and easy to understand.
+","4/6 points
+""<Point1_case1: False>,<Point2_case1: True>,<Point3_case1: True>""",M2
+CPTA5a,"1.Complete and sufficient. A design class should be the complete encapsulation ofall attributes and methods that can reasonably be expecteo based on a knowledgeable interpretation of the class name) to exist for the class.Sufficiency ensures that the
+ design class contains only those methods that are sufficient to achieve the intent of the class, no more and no less.
+ 2.Primitiveness.Methods associated with a design class should be focused on  accomplishing one service for the class.
+3.Highcohesion. A cohesive design class has a small, focused set of responsibilities  and single-mindedly applies attributes and methods to implement those responsibilities. 
+","6/6 points
+""<Point1_case1: True>,<Point2_case1: True>,<Point3_case1: True>""",M3
+CPTA5a,"Complete and sufficient: A well-formed design class should contain all of the necessary attributes ad behaviors required to fulfill its responsibilities and meet the needs of the system. It should not missing any essential components or have any unnecessary elements. High cohesion: Which means that all of its attributes and behaviors should be closely related and work toward a single well-defined purpose. This helps to ensure that the class is focused and efficient, and makes it easier to understand andmaintain. Low coupling: Which means that it should have minimal dependencies on other classes in the system. This helps to ensure that the class is flexible and can be easily modified or replace without impacting other parts of the system.","6/6 points
+""<Point1_case1: True>,<Point3_case1: True>,<Point4_case1: True>""",L9
+CPTA5a,"Complete and suffcient:A design class should be complete encapsulation of allattributes and method that can be reasonably be expected to exist for class. Primitiveness:Method associate with design class should be focused onaccomplishing one service for class.Once service implemented with the method. theclass should not provide another way to accomplish the same thing. High cohesion: A cohesion design class has a small, concentrated set of authority and single applies attributes and methods to implement those responsibilities.","6/6 points
+""<Point1_case1: True>,<Point2_case1: True>,<Point3_case1: True>""",L8
+CPTA5a,1.2.3.,"0/6 points
+""<Point1_case1: False>,<Point2_case1: False>,<Point3_case1: False>""",L7
+CPTA6a,"1.development testing: including unit, component, system tests.2.release testing: test the software with the develop team and users.3.acceptance testing: test the software whether it can used for business","6/6 points
+""<Point1_case1:True>,<Point2_case1:True>,<Point3_case1:True>,<Point4_case1:True>,<Point5_case1:True>,<Point6_case1:True>""",H1
+CPTA6a,1.Unit test: This includes testing each unit or component of the software to ensure their normal operation.2. Component testing: This includes testing the integration of different units or components of software to ensure that they work together correctly.3 .System test: This includes testing the entire software to ensure that it meets the requirements and is suitable for use.,"4/6 points
+""<Point1_case1:True>,<Point2_case1:Flase>,<Point3_case1:Flase>,<Point4_case1:True>,<Point5_case1:True>,<Point6_case1:True>""",H2
+CPTA6a,"1.development testing: the test holded by development team. To teat the function of the software before it is released to users.2.release testing: the test holded by a group to test if the software fit the requirement of the stokeholder before it is released to the market.3.user testing: includes alpha testing, beta testing and acceptance testing.It is the test holded by real users to teat if the software fit the requirement of the bussiness. Get feedback from users and do the further evolution.","5/6 points
+""<Point1_case1:True>,<Point2_case1:Flase>,<Point3_case1:True>,<Point4_case1:True>,<Point5_case1:True>,<Point6_case1:True>""",H3
+CPTA6a,"1.Unit testing: test modules separately
+2.Intergration testing: test project as a integration
+3.Validation testing: verify whether all functions of the project with user's requirement","0/6 points
+""<Point1_case1:False>,<Point2_case1:False>,<Point3_case1:False>,<Point4_case1:False>,<Point5_case1:False>,<Point6_case1:False>""",M1
+CPTA6a,"1.Unit testing, unit testing is testing of individual components of the software. By testing components individually when an error occurs the team can know which exact  part went wrong
+2.Integration test, integration test is testing on component groups, testing the codes group by group can make sure which groups are good when error occurs.
+3.System test, system test is testing on the whole integrated system. When an error  occurs the team has to find out which component causes the problem. ","0/6 points
+""<Point1_case1:False>,<Point2_case1:False>,<Point3_case1:False>,<Point4_case1:False>,<Point5_case1:False>,<Point6_case1:False>""",M2
+CPTA6a,"1.Development testing, where the system is tested during development to discover bugs and defects.
+ 2.Release testing, where a separate testing team test a complete version of the svstem before it is released to users.
+3. User testing, where users or potential users of a system test the system in their own environment. ","6/6 points
+""<Point1_case1:True>,<Point2_case1:True>,<Point3_case1:True>,<Point4_case1:True>,<Point5_case1:True>,<Point6_case1:True>""",M3
+CPTA6a,"Development testing: during the development coder start to test and discover bugs and defects. Release testing, a separate testing team test a complete version of the system before release like pressure test. User testing, where users or potential users of a system test the system in their owe equipment The company will release some opportunities for users and let them use this alpha version first.","6/6 points
+""<Point1_case1:True>,<Point2_case1:True>,<Point3_case1:True>,<Point4_case1:True>,<Point5_case1:True>,<Point6_case1:True>""",L9
+CPTA6a,"Development testing, where the system is tested during development to discoverbugs and defects. release testing, where a separate testing team test a complete version of the systembefore it is released to users. user testing, where users or potential users of a system test the system in their own environment.","6/6 points
+""<Point1_case1:True>,<Point2_case1:True>,<Point3_case1:True>,<Point4_case1:True>,<Point5_case1:True>,<Point6_case1:True>""",L8
+CPTA6a,Development testing. Release testing. User testing,"3/6 points
+""<Point1_case1:True>,<Point2_case1:False>,<Point3_case1:True>,<Point4_case1:False>,<Point5_case1:True>,<Point6_case1:False>""",L7
