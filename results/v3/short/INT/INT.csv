@@ -4,11 +4,33 @@ Precision score: 0.7682
 Recall score:        0.8855","F1 score:                0.8123
 Precision score: 0.7346
 Recall score:        0.9084",Mismatched
+ChatGLM4-9B,"F1 score:                0.8641
+Precision score: 0.7949
+Recall score:        0.9466","F1 score:                0.8561
+Precision score: 0.8286
+Recall score:        0.8855","F1 score:                0.8705
+Precision score: 0.8231
+Recall score:        0.9237","F1 score:                0.9025
+Precision score: 0.8562
+Recall score:        0.9542"
+Gemma-1.1-7B,Mismatched,Mismatched,"F1 score:                0.8512
+Precision score: 0.7785
+Recall score:        0.9389",Mismatched
+Gemma-2-9B,Mismatched,"F1 score:                0.8306
+Precision score: 0.8803
+Recall score:        0.7863","F1 score:                0.8880
+Precision score: 0.8984
+Recall score:        0.8779","F1 score:                0.8471
+Precision score: 0.8710
+Recall score:        0.8244"
 Internlm2-7B,Mismatched,"F1 score:                0.8502
 Precision score: 0.7821
 Recall score:        0.9313","F1 score:                0.8403
 Precision score: 0.7707
 Recall score:        0.9237",Mismatched
+Internlm2.5-7B,Mismatched,Mismatched,"F1 score:                0.8581
+Precision score: 0.7697
+Recall score:        0.9695",Mismatched
 Llama-3-8B,"F1 score:                0.8108
 Precision score: 0.8203
 Recall score:        0.8015",Mismatched,Mismatched,Mismatched
@@ -20,6 +42,11 @@ Precision score: 0.8288
 Recall score:        0.9237","F1 score:                0.8791
 Precision score: 0.8451
 Recall score:        0.9160",Mismatched
+Qwen2-7B,Mismatched,"F1 score:                0.8142
+Precision score: 0.8443
+Recall score:        0.7863","F1 score:                0.8538
+Precision score: 0.8605
+Recall score:        0.8473",Mismatched
 Yi-1.5-34B,Mismatched,"F1 score:                0.8379
 Precision score: 0.8689
 Recall score:        0.8092","F1 score:                0.8455
