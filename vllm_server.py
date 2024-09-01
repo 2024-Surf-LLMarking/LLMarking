@@ -57,10 +57,10 @@ def load_vllm():
     global generation_config, tokenizer, stop_words_ids, engine
     # For cluster
     if arg.model >= 15:
-        os.environ["NCCL_P2P_DISABLE"] = "1"
         if arg.server == "delta":
             os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3"
         else:
+            os.environ["NCCL_P2P_DISABLE"] = "1"
             os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2"
     if arg.model == 28:
         os.environ["VLLM_ATTENTION_BACKEND"] = "FLASHINFER"
