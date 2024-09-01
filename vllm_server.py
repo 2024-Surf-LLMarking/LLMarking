@@ -19,11 +19,18 @@ app = FastAPI()
 parser = argparse.ArgumentParser()
 
 parser.add_argument("-m", "--model", type=int, default=0)
+parser.add_argument("-s", "--server", choices=["delta", "forward"], default="delta")
 arg = parser.parse_args()
 
 # vLLM参数
 model_dir = __all__[arg.model]
-tensor_parallel_size = 1 if arg.model < 15 else 3
+if arg.model < 15:
+    tensor_parallel_size = 1
+else:
+    if arg.server == "delta":
+        tensor_parallel_size = 4
+    else:
+        tensor_parallel_size = 3
 gpu_memory_utilization = 0.95
 if model_dir == __all__[0] or model_dir == __all__[20] or model_dir == __all__[23]:
     quantization = "gptq"
@@ -51,7 +58,10 @@ def load_vllm():
     # For cluster
     if arg.model >= 15:
         os.environ["NCCL_P2P_DISABLE"] = "1"
-        os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2"
+        if arg.server == "delta":
+            os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3"
+        else:
+            os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2"
     if arg.model == 28:
         os.environ["VLLM_ATTENTION_BACKEND"] = "FLASHINFER"
     # 模型下载
