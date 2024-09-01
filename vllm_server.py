@@ -50,7 +50,7 @@ def load_vllm():
     global generation_config, tokenizer, stop_words_ids, engine
     # For cluster
     if arg.model >= 15:
-        os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3"
+        os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2"
     if arg.model == 28:
         os.environ["VLLM_ATTENTION_BACKEND"] = "FLASHINFER"
     # 模型下载
