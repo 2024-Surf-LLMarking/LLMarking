@@ -19,7 +19,7 @@ parser.add_argument(
     type=int,
     help="Prompt type to use.",
     required=True,
-    choices=[1, 3],
+    choices=[3],
 )
 args = parser.parse_args()
 
