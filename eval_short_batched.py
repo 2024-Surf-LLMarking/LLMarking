@@ -169,7 +169,8 @@ def get_response(i, stream=False):
             )
 
         response = requests.post(
-            "http://192.168.0.72:8000/chat",
+            "http://localhost:8888/chat",
+            # "http://Osprey1.csl.illinois.edu:8000/chat",
             json={
                 "query": query,
                 "stream": stream,
