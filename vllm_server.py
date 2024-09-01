@@ -292,7 +292,7 @@ async def chat(request: Request):
 
 # chat对话接口
 @app.post("/chat/dynamic")
-async def chat(request: Request):
+async def chat_dynamic(request: Request):
     request = await request.json()
 
     query = request.get("query", None)
