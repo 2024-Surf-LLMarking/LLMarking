@@ -2,17 +2,20 @@ from prompt.prompt_template_long import prompt_list_v1
 import requests
 import json
 
+
 def clear_lines():
     print("\033[2J")
 
+
 directory = ["zeroshot", "oneshot", "fewshot"]
 
-with open('data/example_long.json', 'r') as file:
+with open("data/example_long.json", "r") as file:
     data = json.load(file)
 
 example_list = data["examples"]
 
-def get_response(i, stream = False):
+
+def get_response(i, stream=False):
     global prompt
     index = 0
     results = {}
@@ -20,7 +23,9 @@ def get_response(i, stream = False):
         question = example_list[index]["question"]
         full_mark = example_list[index]["fullMark"]
         stu_answer = example_list[index]["studentAnswer"]
-        query = prompt.format(question=question, stu_answer=stu_answer, full_mark=full_mark)
+        query = prompt.format(
+            question=question, stu_answer=stu_answer, full_mark=full_mark
+        )
 
         response = requests.post(
             "http://100.65.8.31:8000/chat",
@@ -43,28 +48,29 @@ def get_response(i, stream = False):
 
                     # 打印最新内容
                     clear_lines()
-                    print("Question:", question, '\n')
-                    print("Student Answer:", stu_answer, '\n')
-                    print("Feedback:", text, '\n\n')
+                    print("Question:", question, "\n")
+                    print("Student Answer:", stu_answer, "\n")
+                    print("Feedback:", text, "\n\n")
             example_list[index]["feedback"] = text
             results[index] = example_list[index]
         else:
             text = json.loads(response.text)["text"]
-            print("Question:", question, '\n')
-            print("Student Answer:", stu_answer, '\n')
-            print("Feedback:", text, '\n\n')
+            print("Question:", question, "\n")
+            print("Student Answer:", stu_answer, "\n")
+            print("Feedback:", text, "\n\n")
             example_list[index]["feedback"] = text
             results[index] = example_list[index]
             model_name = json.loads(response.text)["model"]
         index += 1
 
     if stream:
-        with open('results/results.json', 'w') as file:
+        with open("results/results.json", "w") as file:
             json.dump(results, file, indent=4)
     else:
-        with open(f'results/long/{directory[i]}/{model_name}.json', 'w') as file:
+        with open(f"results/long/{directory[i]}/{model_name}.json", "w") as file:
             json.dump(results, file, indent=4)
-    
+
+
 for i in range(len(directory)):
     prompt = prompt_list_v1[i]
     get_response(i, False)

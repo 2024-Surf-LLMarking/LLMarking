@@ -7,13 +7,12 @@ columns = ["Subject", "Question", "Total number of points", "Student answer"]
 rows = []
 
 for course in course_name:
-    with open(f'data/short/{course}/{course}_CSV1.csv', 'r') as file:
+    with open(f"data/short/{course}/{course}_CSV1.csv", "r") as file:
         csv_reader = csv.reader(file)
         header = next(csv_reader)
         question_num = len(list(csv_reader))
-        
 
-    with open(f'data/short/{course}/{course}_CSV2.csv', 'r') as file:
+    with open(f"data/short/{course}/{course}_CSV2.csv", "r") as file:
         csv_reader = csv.reader(file)
         header = next(csv_reader)
         data_rows = list(csv_reader)
@@ -30,8 +29,7 @@ for course in course_name:
         print(course_db)
     rows.append([course, question_num, total_points, student_answer_num])
 
-with open('data/short/stats.csv', 'w', newline='') as file:
+with open("data/short/stats.csv", "w", newline="") as file:
     writer = csv.writer(file)
     writer.writerow(columns)
     writer.writerows(rows)
-            

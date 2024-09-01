@@ -4,18 +4,41 @@ import json
 import argparse
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-p", "--prompt", type=int, default=1, help="Prompt type to use.", required=True, choices=[1, 2])
-parser.add_argument("-s", "--stream", action="store_true", help="Whether or not to print the response in a streaming way.")
-parser.add_argument("-n", "--shots", type=int, default=0, help="Number of shots to run.", required=True, choices=[0, 1, 2])
+parser.add_argument(
+    "-p",
+    "--prompt",
+    type=int,
+    default=1,
+    help="Prompt type to use.",
+    required=True,
+    choices=[1, 2],
+)
+parser.add_argument(
+    "-s",
+    "--stream",
+    action="store_true",
+    help="Whether or not to print the response in a streaming way.",
+)
+parser.add_argument(
+    "-n",
+    "--shots",
+    type=int,
+    default=0,
+    help="Number of shots to run.",
+    required=True,
+    choices=[0, 1, 2],
+)
 
 args = parser.parse_args()
+
 
 def clear_lines():
     print("\033[2J")
 
+
 directory = ["zeroshot", "oneshot", "fewshot"]
 
-with open('data/example.json', 'r') as file:
+with open("data/example.json", "r") as file:
     data = json.load(file)
 
 example_list = data["examples"]
@@ -28,14 +51,20 @@ elif args.prompt == 2:
     prompt_list = prompt_list_v2
 prompt = prompt_list[args.shots]
 
-def get_response(stream = False):
+
+def get_response(stream=False):
     global index, results, prompt
     while index < len(example_list):
         question = example_list[index]["question"]
         full_mark = example_list[index]["fullMark"]
         ref_answer = example_list[index]["referenceAnswer"]
         stu_answer = example_list[index]["studentAnswer"]
-        query = prompt.format(question=question, ref_answer=ref_answer, stu_answer=stu_answer, full_mark=full_mark)
+        query = prompt.format(
+            question=question,
+            ref_answer=ref_answer,
+            stu_answer=stu_answer,
+            full_mark=full_mark,
+        )
 
         response = requests.post(
             "http://100.65.8.31:8000/chat",
@@ -58,28 +87,31 @@ def get_response(stream = False):
 
                     # 打印最新内容
                     clear_lines()
-                    print("Question:", question, '\n')
-                    print("Reference Answer:", ref_answer, '\n')
-                    print("Student Answer:", stu_answer, '\n')
-                    print("Feedback:", text, '\n\n')
+                    print("Question:", question, "\n")
+                    print("Reference Answer:", ref_answer, "\n")
+                    print("Student Answer:", stu_answer, "\n")
+                    print("Feedback:", text, "\n\n")
             example_list[index]["feedback"] = text
             results[index] = example_list[index]
         else:
             text = json.loads(response.text)["text"]
-            print("Question:", question, '\n')
-            print("Reference Answer:", ref_answer, '\n')
-            print("Student Answer:", stu_answer, '\n')
-            print("Feedback:", text, '\n\n')
+            print("Question:", question, "\n")
+            print("Reference Answer:", ref_answer, "\n")
+            print("Student Answer:", stu_answer, "\n")
+            print("Feedback:", text, "\n\n")
             example_list[index]["feedback"] = text
             results[index] = example_list[index]
             model_name = json.loads(response.text)["model"]
         index += 1
 
     if stream:
-        with open('results/results.json', 'w') as file:
+        with open("results/results.json", "w") as file:
             json.dump(results, file, indent=4)
     else:
-        with open(f'results/v{args.prompt}/{directory[args.shots]}/{model_name}.json', 'w') as file:
+        with open(
+            f"results/v{args.prompt}/{directory[args.shots]}/{model_name}.json", "w"
+        ) as file:
             json.dump(results, file, indent=4)
-    
+
+
 get_response(args.stream)

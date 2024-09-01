@@ -1,5 +1,6 @@
 import sqlite3 as sql
 
+
 def create_connection(db_file):
     conn = None
     try:
@@ -11,6 +12,7 @@ def create_connection(db_file):
         if conn:
             conn.close()
 
+
 def create_table(db_file, table_name, columns):
     conn = sql.connect(db_file)
     c = conn.cursor()
@@ -18,12 +20,14 @@ def create_table(db_file, table_name, columns):
     conn.commit()
     conn.close()
 
+
 def insert_data(db_file, table_name, data):
     conn = sql.connect(db_file)
     c = conn.cursor()
     c.execute(f"INSERT INTO {table_name} VALUES ({data})")
     conn.commit()
     conn.close()
+
 
 def select_data(db_file, table_name):
     conn = sql.connect(db_file)
@@ -33,13 +37,17 @@ def select_data(db_file, table_name):
     conn.close()
     return rows
 
+
 def select_question(db_file, table_name, question_code):
     conn = sql.connect(db_file)
     c = conn.cursor()
-    c.execute(f"SELECT question FROM {table_name} WHERE question_code = '{question_code}'")
+    c.execute(
+        f"SELECT question FROM {table_name} WHERE question_code = '{question_code}'"
+    )
     rows = c.fetchall()
     conn.close()
     return rows
+
 
 def update_data(db_file, table_name, data):
     conn = sql.connect(db_file)
@@ -48,12 +56,14 @@ def update_data(db_file, table_name, data):
     conn.commit()
     conn.close()
 
+
 def delete_data(db_file, table_name, data):
     conn = sql.connect(db_file)
     c = conn.cursor()
     c.execute(f"DELETE FROM {table_name} WHERE {data}")
     conn.commit()
     conn.close()
+
 
 def drop_table(db_file, table_name):
     conn = sql.connect(db_file)
@@ -62,12 +72,14 @@ def drop_table(db_file, table_name):
     conn.commit()
     conn.close()
 
+
 def is_number(s):
     try:
         float(s)
         return True
     except ValueError:
         return False
+
 
 def list_to_string(data_list):
     result = []
@@ -76,7 +88,8 @@ def list_to_string(data_list):
             result.append(item)
         else:
             result.append(f"'{item}'")
-    return ', '.join(result)
+    return ", ".join(result)
+
 
 def main():
     db_file = "data/INT204.db"
@@ -96,6 +109,7 @@ def main():
     # db_file = "data/CCT.db"
     # table_name = "CCT"
     # select_data(db_file, table_name)
+
 
 if __name__ == "__main__":
     main()

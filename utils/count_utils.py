@@ -1,14 +1,15 @@
 import re
 
+
 def count_points(text):
     # Regular expression to match point patterns
-    pattern = r'<Point\d+:\d+>'
-    
+    pattern = r"<Point\d+:\d+>"
+
     # Find all matches in the text
     matches = re.findall(pattern, text)
 
     # Count unique point numbers
-    unique_points = set(match.split(':')[0] for match in matches)
+    unique_points = set(match.split(":")[0] for match in matches)
     return len(unique_points)
 
 
