@@ -136,6 +136,9 @@ def load_vllm():
         or model_dir == __all__[20]
         or model_dir == __all__[21]
         or model_dir == __all__[27]
+        or model_dir == __all__[29]
+        or model_dir == __all__[30]
+        or model_dir == __all__[31]
     ):
         generation_config.max_window_size = 8192
 
@@ -159,6 +162,9 @@ def load_vllm():
         or model_dir == __all__[20]
         or model_dir == __all__[21]
         or model_dir == __all__[27]
+        or model_dir == __all__[29]
+        or model_dir == __all__[30]
+        or model_dir == __all__[31]
     ):
         stop_words_ids = [tokenizer.eos_token_id]
     else:
