@@ -28,9 +28,9 @@ __all__ = [
     "casperhansen/mistral-large-instruct-2407-awq",
     "casperhansen/deepseek-coder-v2-instruct-awq",  # todo: wait for vLLM to be updated
     "google/gemma-2-27b-it",
-    "microsoft/Phi-3.5-MoE-instruct",
     "ai21labs/AI21-Jamba-1.5-Mini",
-    "CohereForAI/c4ai-command-r-08-2024"
+    "CohereForAI/c4ai-command-r-08-2024",
+    "microsoft/Phi-3.5-MoE-instruct",
 ]
 
 model_names = [
@@ -65,5 +65,6 @@ model_names = [
     "Gemma-2-27B",
     "Phi3.5-MoE",
     "Jamba-1.5-Mini",
-    "CommandR-08-2024"
+    "CommandR-08-2024",
+    "Phi3.5-MoE",
 ]
