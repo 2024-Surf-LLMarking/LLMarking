@@ -34,6 +34,16 @@ Mismatch percentage: 0.99%",Matched,"F1 score:                0.8958
 Precision score: 0.8217
 Recall score:        0.9847
 Mismatch percentage: 1.32%"
+Jamba-1.5-Mini,"F1 score:                0.8000
+Precision score: 0.7403
+Recall score:        0.8702
+Mismatch percentage: 2.48%","F1 score:                0.7935
+Precision score: 0.8448
+Recall score:        0.7481
+Mismatch percentage: 5.45%","F1 score:                0.7510
+Precision score: 0.8070
+Recall score:        0.7023
+Mismatch percentage: 1.49%",None
 Llama-3-8B,Matched,"F1 score:                0.7829
 Precision score: 0.7953
 Recall score:        0.7710
@@ -83,6 +93,13 @@ Mismatch percentage: 0.50%","F1 score:                0.8561
 Precision score: 0.8095
 Recall score:        0.9084
 Mismatch percentage: 2.48%"
+Qwen1.5-110B,"F1 score:                0.7770
+Precision score: 0.6970
+Recall score:        0.8779
+Mismatch percentage: 16.34%",Matched,"F1 score:                0.8830
+Precision score: 0.8731
+Recall score:        0.8931
+Mismatch percentage: 1.49%",Matched
 Qwen1.5-14B,"F1 score:                0.8310
 Precision score: 0.7712
 Recall score:        0.9008
@@ -100,6 +117,16 @@ Mismatch percentage: 4.46%",Matched,Matched,"F1 score:                0.8768
 Precision score: 0.8345
 Recall score:        0.9237
 Mismatch percentage: 0.17%"
+Qwen1.5-72B,"F1 score:                0.8306
+Precision score: 0.7353
+Recall score:        0.9542
+Mismatch percentage: 1.49%","F1 score:                0.8623
+Precision score: 0.8207
+Recall score:        0.9084
+Mismatch percentage: 1.98%","F1 score:                0.8732
+Precision score: 0.8105
+Recall score:        0.9466
+Mismatch percentage: 0.50%",None
 Qwen2-7B,"F1 score:                0.7381
 Precision score: 0.7686
 Recall score:        0.7099

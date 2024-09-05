@@ -41,6 +41,16 @@ Mismatch percentage: 4.51%",Matched,Matched,"F1 score:                0.8156
 Precision score: 0.7055
 Recall score:        0.9664
 Mismatch percentage: 0.75%"
+Jamba-1.5-Mini,"F1 score:                0.7239
+Precision score: 0.6510
+Recall score:        0.8151
+Mismatch percentage: 3.38%","F1 score:                0.7640
+Precision score: 0.6892
+Recall score:        0.8571
+Mismatch percentage: 3.01%","F1 score:                0.7631
+Precision score: 0.7308
+Recall score:        0.7983
+Mismatch percentage: 1.13%",None
 Llama-3-8B,"F1 score:                0.8033
 Precision score: 0.8000
 Recall score:        0.8067
@@ -57,7 +67,7 @@ Recall score:        0.4790
 Mismatch percentage: 54.14%","F1 score:                0.6481
 Precision score: 0.5122
 Recall score:        0.8824
-Mismatch percentage: 5.26%","F1 score:                0.6813
+Mismatch percentage: 5.26%","F1 score:                0.6812
 Precision score: 0.5423
 Recall score:        0.9160
 Mismatch percentage: 19.17%","F1 score:                0.7439
@@ -87,6 +97,13 @@ Mismatch percentage: 2.63%",Matched,"F1 score:                0.8090
 Precision score: 0.7297
 Recall score:        0.9076
 Mismatch percentage: 3.38%"
+Qwen1.5-110B,None,None,"F1 score:                0.8487
+Precision score: 0.7566
+Recall score:        0.9664
+Mismatch percentage: 7.14%","F1 score:                0.8661
+Precision score: 0.8148
+Recall score:        0.9244
+Mismatch percentage: 9.15%"
 Qwen1.5-14B,"F1 score:                0.7823
 Precision score: 0.6974
 Recall score:        0.8908
@@ -104,6 +121,16 @@ Qwen1.5-32B,"F1 score:                0.8195
 Precision score: 0.7415
 Recall score:        0.9160
 Mismatch percentage: 0.75%",Matched,Matched,Matched
+Qwen1.5-72B,"F1 score:                0.6931
+Precision score: 0.5707
+Recall score:        0.8824
+Mismatch percentage: 23.68%","F1 score:                0.8333
+Precision score: 0.7586
+Recall score:        0.9244
+Mismatch percentage: 4.14%","F1 score:                0.7872
+Precision score: 0.6810
+Recall score:        0.9328
+Mismatch percentage: 10.53%",None
 Qwen2-7B,"F1 score:                0.6141
 Precision score: 0.6066
 Recall score:        0.6218

@@ -11,6 +11,15 @@ Precision score: 0.7032
 Recall score:        0.9160","F1 score:                0.8271
 Precision score: 0.7483
 Recall score:        0.9244",Mismatched
+CommandR-08-2024,"F1 score:                0.7655
+Precision score: 0.6491
+Recall score:        0.9328","F1 score:                0.8405
+Precision score: 0.7826
+Recall score:        0.9076","F1 score:                0.8296
+Precision score: 0.7417
+Recall score:        0.9412","F1 score:                0.8405
+Precision score: 0.7826
+Recall score:        0.9076"
 Gemma-2-9B,Mismatched,"F1 score:                0.8220
 Precision score: 0.8291
 Recall score:        0.8151","F1 score:                0.8458
@@ -31,6 +40,24 @@ Recall score:        0.9664",Mismatched
 Llama-3-8B,Mismatched,Mismatched,"F1 score:                0.8516
 Precision score: 0.7956
 Recall score:        0.9160",Mismatched
+Llama-3.1-70B,"F1 score:                0.8696
+Precision score: 0.8209
+Recall score:        0.9244","F1 score:                0.8787
+Precision score: 0.8750
+Recall score:        0.8824","F1 score:                0.8810
+Precision score: 0.8346
+Recall score:        0.9328","F1 score:                0.8787
+Precision score: 0.8750
+Recall score:        0.8824"
+Mistral-Large-2,"F1 score:                0.8760
+Precision score: 0.8129
+Recall score:        0.9496","F1 score:                0.8617
+Precision score: 0.8134
+Recall score:        0.9160","F1 score:                0.8647
+Precision score: 0.7823
+Recall score:        0.9664","F1 score:                0.8617
+Precision score: 0.8134
+Recall score:        0.9160"
 Phi3-small,Mismatched,Mismatched,"F1 score:                0.8327
 Precision score: 0.7467
 Recall score:        0.9412",Mismatched
@@ -41,6 +68,15 @@ Precision score: 0.7847
 Recall score:        0.9496","F1 score:                0.8372
 Precision score: 0.7770
 Recall score:        0.9076"
+Qwen2-72B,"F1 score:                0.8496
+Precision score: 0.7687
+Recall score:        0.9496","F1 score:                0.8638
+Precision score: 0.8043
+Recall score:        0.9328","F1 score:                0.8745
+Precision score: 0.7986
+Recall score:        0.9664","F1 score:                0.8638
+Precision score: 0.8043
+Recall score:        0.9328"
 Qwen2-7B,Mismatched,"F1 score:                0.8136
 Precision score: 0.8205
 Recall score:        0.8067","F1 score:                0.8061
