@@ -148,3 +148,11 @@ Yi-1.5-9B,"F1 score:                0.7101
 Precision score: 0.7596
 Recall score:        0.6667
 Mismatch percentage: 47.65%",Matched,Matched,Matched
+gpt-4o,Matched,Matched,Matched,None
+gpt-4o-mini,"F1 score:                0.8709
+Precision score: 0.8014
+Recall score:        0.9536
+Mismatch percentage: 1.88%",Matched,"F1 score:                0.8731
+Precision score: 0.8021
+Recall score:        0.9578
+Mismatch percentage: 2.82%",None
