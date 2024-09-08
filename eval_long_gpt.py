@@ -1,14 +1,17 @@
 from prompt.prompt_template import dynamic_prompt
 from utils.dynamic_utils import build_diction_from_model
-from utils.count_utils import count_points
+from utils.count_utils import count_cases
 import concurrent.futures
+from openai import OpenAI
 from tqdm import tqdm
-import requests
 import argparse
 import json
 import csv
 import os
 import re
+
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+model = "gpt-4o-mini"
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--course", "-c", type=str, help="Course name", required=True)
@@ -22,14 +25,14 @@ data = None
 prompt = None
 example_dict = {}
 
-if not os.path.exists("results/dynamic/short"):
-    print("Creating results/dynamic/short directory...")
-    os.makedirs("results/dynamic/short")
-if not os.path.exists(f"results/dynamic/short/{course}"):
-    print(f"Creating results/dynamic/short/{course} directory...")
-    os.makedirs(f"results/dynamic/short/{course}")
+if not os.path.exists("results/dynamic/long"):
+    print("Creating results/dynamic/long directory...")
+    os.makedirs("results/dynamic/long")
+if not os.path.exists(f"results/dynamic/long/{course}"):
+    print(f"Creating results/dynamic/long/{course} directory...")
+    os.makedirs(f"results/dynamic/long/{course}")
 
-with open(f"data/short/{course}/{course}_CSV1.csv", "r") as file:
+with open(f"data/long/{course}/{course}_CSV1.csv", "r") as file:
     csv_reader = csv.reader(file)
     header = next(csv_reader)
     rows = list(csv_reader)
@@ -47,10 +50,10 @@ with open(f"data/short/{course}/{course}_CSV1.csv", "r") as file:
             "question": row[1],
             "fullMark": row[2],
             "referenceAnswer": row[3],
-            "num_points": count_points(row[3]),
+            "num_points": count_cases(row[3]),
         }
 
-with open(f"data/short/{course}/{course}_CSV2.csv", "r") as file:
+with open(f"data/long/{course}/{course}_CSV2.csv", "r") as file:
     csv_reader = csv.reader(file)
     header = next(csv_reader)
     rows = list(csv_reader)
@@ -88,15 +91,19 @@ def get_single_response(entry, prompt):
         example_feedback=example_feedback,
     )
 
-    response = requests.post(
-        # "http://192.168.0.72:8000/chat/dynamic",
-        "http://localhost:8888/chat",
-        json={"query": query, "stream": False, "history": None, "temperature": 1.0},
-        stream=False,
-    )
-    text = json.loads(response.text)["text"]
-    model_name = json.loads(response.text)["model"]
-    return text, model_name
+    completion = client.chat.completions.create(
+            model=model,
+            messages=[
+                {
+                    "role": "system",
+                    "content": "You are an impartial, objective AI grading assistant.",
+                },
+                {"role": "user", "content": query},
+            ],
+            temperature=0.0,
+        )
+    text = completion.choices[0].message.content
+    return text, model
 
 
 def get_responses(entry, prompt):
@@ -161,8 +168,7 @@ def process_data():
             index, updated_entry = future.result()
             results[index] = updated_entry
 
-    model_name = results[0]["model_name"]
-    with open(f"results/dynamic/short/{course}/{model_name}.json", "w") as file:
+    with open(f"results/dynamic/long/{course}/{model}.json", "w") as file:
         json.dump(results, file, indent=4)
 
 

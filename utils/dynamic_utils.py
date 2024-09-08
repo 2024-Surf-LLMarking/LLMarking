@@ -28,9 +28,10 @@ def extract_dynamic_info(data):
 
 
 def build_diction_from_model(
-    feedbacks, length, teacher_mark, thread, question, ref_answer, stu_answer
+    feedbacks, length, teacher_mark, thread, question, ref_answer, stu_answer, long=False
 ):
-    teacher_mark_dict = build_diction_from_teacher(teacher_mark)
+    # print(feedbacks)
+    teacher_mark_dict = build_diction_from_teacher(teacher_mark, long=long)
     points_dict = {point: [] for point in teacher_mark_dict}
     points_dict_value = {}
     mismatch_count = 0
@@ -39,6 +40,11 @@ def build_diction_from_model(
     pattern = re.compile(
         r"<(Point\d+)\s*:(\w+)\s*>\s*\*?(True|False)\*?\s*\n?\(?([^)]*)\)?"
     )
+
+    if long:
+        pattern = re.compile(
+            r"<\s*([^>]+)\s*:\s*(\d+)\s*>\s*\*?(True|False)\*\s*\(?(.*)\)?"
+        )
 
     for feedback, model_name in feedbacks:
         matches = list(re.finditer(pattern, feedback))
@@ -123,7 +129,8 @@ def build_diction_from_model(
             teacher_mark=teacher_mark,
         )
         response = requests.post(
-            "http://192.168.0.72:8000/chat",
+            # "http://192.168.0.72:8000/chat",
+            "http://localhost:8888/chat",
             json={
                 "query": query,
                 "stream": False,
@@ -141,9 +148,11 @@ def build_diction_from_model(
     )
 
 
-def build_diction_from_teacher(input_str):
+def build_diction_from_teacher(input_str, long=False):
     points_dict = {}
     pattern = re.compile(r"<(Point\d+):(\w+)>")
+    if long:
+        pattern = re.compile(r"<(Point\d+_case\d+):(\w+)>")
     for match in re.finditer(pattern, input_str):
         point, type_ = match.groups()
         points_dict[point] = type_

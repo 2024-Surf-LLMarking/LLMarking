@@ -63,7 +63,6 @@ model_names = [
     "Mistral-Large-2",
     "DeepSeek-Coder-V2",  # todo: wait for vLLM to be updated
     "Gemma-2-27B",
-    "Phi3.5-MoE",
     "Jamba-1.5-Mini",
     "CommandR-08-2024",
     "Phi3.5-MoE",

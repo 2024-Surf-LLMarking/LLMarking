@@ -12,10 +12,20 @@ def count_points(text):
     unique_points = set(match.split(":")[0] for match in matches)
     return len(unique_points)
 
+def count_cases(text):
+    # Regular expression to match case patterns
+    pattern = r"<Point\d+_case\d+:\d+>"
+
+    # Find all matches in the text
+    matches = re.findall(pattern, text)
+
+    # Count unique case numbers
+    unique_cases = set(matches)
+    return len(unique_cases)
+
 
 if __name__ == "__main__":
     # Example usage
-    text = """The key phases of the SDLC are: <Point1:1>Requirement Gathering<Point1:1>: <Point2:1>Collecting requirements from stakeholders to understand what needs to be developed<Point2:1>. <Point3:1>System Analysis and Design<Point3:1>: <Point4:1>Analyzing the requirements and creating a blueprint of the system<Point4:1>. <Point5:1>Implementation (Coding) <Point5:1>: <Point6:1>Writing the code as per the design documents<Point6:1>. <Point7:1>Testing<Point7:1>: <Point8:1>Verifying the system against the requirements to identify and fix defects<Point8:1>. <Point9:1>Deployment<Point9:1>: <Point10:1>Releasing the software to the production environment for users<Point10:1>. <Point11:1>Maintenance<Point11:1>: <Point12:1>Ongoing support and enhancement of the software post-deployment<Point12:1>."""
-
-    num_points = count_points(text)
-    print(f"Number of points detected: {num_points}")
+    text = """<Point1_case1:1>Development testing<Point1_case1:1> <Point2_case1:1>where the system is tested during development to discover bugs and defects.<Point2_case1:1> <Point3_case1:1>Release testing<Point3_case1:1> <Point4_case1:1>where a separate testing team test a complete version of the system before it is released to users.<Point4_case1:1> <Point5_case1:1>User testing<Point5_case1:1> <Point5_case2:1>where users or potential users of a system test the system in their own environment.<Point5_case2:1>"""
+    num_cases = count_cases(text)
+    print(f"Number of cases detected: {num_cases}")

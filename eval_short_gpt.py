@@ -26,7 +26,7 @@ parser.add_argument(
 )
 args = parser.parse_args()
 
-directory = ["fewshot"]
+directory = ["zeroshot", "oneshot", "fewshot"]
 course = args.course
 model_name = None
 num_thread = args.thread

@@ -2,13 +2,17 @@ from prompt.prompt_template import dynamic_prompt
 from utils.dynamic_utils import build_diction_from_model
 from utils.count_utils import count_points
 import concurrent.futures
+from openai import OpenAI
 from tqdm import tqdm
-import requests
 import argparse
 import json
+import time
 import csv
 import os
 import re
+
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+model = "gpt-4o-mini"
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--course", "-c", type=str, help="Course name", required=True)
@@ -88,15 +92,19 @@ def get_single_response(entry, prompt):
         example_feedback=example_feedback,
     )
 
-    response = requests.post(
-        # "http://192.168.0.72:8000/chat/dynamic",
-        "http://localhost:8888/chat",
-        json={"query": query, "stream": False, "history": None, "temperature": 1.0},
-        stream=False,
+    completion = client.chat.completions.create(
+        model=model,
+        messages=[
+            {
+                "role": "system",
+                "content": "You are an impartial, objective AI grading assistant.",
+            },
+            {"role": "user", "content": query},
+        ],
+        temperature=1,
     )
-    text = json.loads(response.text)["text"]
-    model_name = json.loads(response.text)["model"]
-    return text, model_name
+    text = completion.choices[0].message.content
+    return text, model
 
 
 def get_responses(entry, prompt):
@@ -160,9 +168,9 @@ def process_data():
         ):
             index, updated_entry = future.result()
             results[index] = updated_entry
+            time.sleep(30)
 
-    model_name = results[0]["model_name"]
-    with open(f"results/dynamic/short/{course}/{model_name}.json", "w") as file:
+    with open(f"results/dynamic/short/{course}/{model}.json", "w") as file:
         json.dump(results, file, indent=4)
 
 

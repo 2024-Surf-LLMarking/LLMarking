@@ -1,5 +1,6 @@
-from prompt.prompt_template_long import prompt_template_long
+from prompt.prompt_template_long import prompt_list
 from concurrent.futures import ThreadPoolExecutor
+from utils.count_utils import count_cases
 from tqdm import tqdm
 import threading
 import requests
@@ -7,13 +8,19 @@ import argparse
 import json
 import csv
 import os
+import re
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--course", "-c", type=str, help="Course name", required=True)
-parser.add_argument(
-    "--prompt", "-p", type=int, help="Prompt version", required=True, choices=[3]
-)
 parser.add_argument("--thread", "-t", type=int, help="Number of threads", default=10)
+parser.add_argument(
+    "--prompt",
+    "-p",
+    type=int,
+    help="Prompt type to use.",
+    required=True,
+    choices=[3],
+)
 args = parser.parse_args()
 
 directory = ["zeroshot", "oneshot", "fewshot"]
@@ -21,8 +28,9 @@ course = args.course
 model_name = None
 num_thread = args.thread
 
-global data
+global data, question_code_to_example_dict
 data = None
+question_code_to_example_dict = {}
 
 if not os.path.exists("results"):
     print("Creating results directory...")
@@ -52,11 +60,32 @@ with open(f"data/long/{course}/{course}_CSV1.csv", "r") as file:
     rows = list(csv_reader)
     db_data = {}
     for row in rows:
+        example_text_1 = row[5]
+        example_text_2 = row[6]
+        example_text_3 = row[7]
+        parts_1 = re.split(r"\n(?=<Point)", example_text_1, maxsplit=1)
+        parts_2 = re.split(r"\n(?=<Point)", example_text_2, maxsplit=1)
+        parts_3 = re.split(r"\n(?=<Point)", example_text_3, maxsplit=1)
+        example_stu_answer_1 = parts_1[0].strip()
+        example_feedback_1 = parts_1[1].strip() if len(parts_1) > 1 else ""
+        example_stu_answer_2 = parts_2[0].strip()
+        example_feedback_2 = parts_2[1].strip() if len(parts_2) > 1 else ""
+        example_stu_answer_3 = parts_3[0].strip()
+        example_feedback_3 = parts_3[1].strip() if len(parts_3) > 1 else ""
         db_data[row[0]] = {
             "question": row[1],
             "fullMark": row[2],
             "referenceAnswer": row[3],
-            "note": row[4].strip("\n"),
+            "note": row[4],
+            "num_points": count_cases(row[3]),
+        }
+        question_code_to_example_dict[row[0]] = {
+            "example_stu_answer_1": example_stu_answer_1,
+            "example_feedback_1": example_feedback_1,
+            "example_stu_answer_2": example_stu_answer_2,
+            "example_feedback_2": example_feedback_2,
+            "example_stu_answer_3": example_stu_answer_3,
+            "example_feedback_3": example_feedback_3,
         }
 
 with open(f"data/long/{course}/{course}_CSV2.csv", "r") as file:
@@ -70,6 +99,7 @@ with open(f"data/long/{course}/{course}_CSV2.csv", "r") as file:
                 "question_code": row[0],
                 "question": db_data[row[0]]["question"],
                 "fullMark": db_data[row[0]]["fullMark"],
+                "num_points": db_data[row[0]]["num_points"],
                 "referenceAnswer": db_data[row[0]]["referenceAnswer"],
                 "note": db_data[row[0]]["note"],
                 "studentAnswer": row[1],
@@ -79,7 +109,7 @@ with open(f"data/long/{course}/{course}_CSV2.csv", "r") as file:
 
 
 def get_response(i, stream=False):
-    global prompt, data, model_name
+    global prompt, data, model_name, question_code_to_example_dict
     results = {}
     pbar = tqdm(total=len(data), desc=f"Processing {directory[i]}")
 
@@ -90,17 +120,64 @@ def get_response(i, stream=False):
         full_mark = entry["fullMark"]
         ref_answer = entry["referenceAnswer"]
         stu_answer = entry["studentAnswer"]
+        num_points = entry["num_points"]
         note = entry["note"]
-        query = prompt.format(
-            question=question,
-            ref_answer=ref_answer,
-            stu_answer=stu_answer,
-            full_mark=full_mark,
-            note=note,
-        )
+        if i == 0:
+            query = prompt.format(
+                question=question,
+                ref_answer=ref_answer,
+                stu_answer=stu_answer,
+                full_mark=full_mark,
+                num_points=num_points,
+                note=note,
+            )
+        elif i == 1:
+            query = prompt.format(
+                question=question,
+                ref_answer=ref_answer,
+                stu_answer=stu_answer,
+                full_mark=full_mark,
+                num_points=num_points,
+                note=note,
+                example_stu_answer_1=question_code_to_example_dict[
+                    entry["question_code"]
+                ]["example_stu_answer_1"],
+                example_feedback_1=question_code_to_example_dict[
+                    entry["question_code"]
+                ]["example_feedback_1"],
+            )
+        elif i == 2:
+            query = prompt.format(
+                question=question,
+                ref_answer=ref_answer,
+                stu_answer=stu_answer,
+                full_mark=full_mark,
+                num_points=num_points,
+                note=note,
+                example_stu_answer_1=question_code_to_example_dict[
+                    entry["question_code"]
+                ]["example_stu_answer_1"],
+                example_feedback_1=question_code_to_example_dict[
+                    entry["question_code"]
+                ]["example_feedback_1"],
+                example_stu_answer_2=question_code_to_example_dict[
+                    entry["question_code"]
+                ]["example_stu_answer_2"],
+                example_feedback_2=question_code_to_example_dict[
+                    entry["question_code"]
+                ]["example_feedback_2"],
+                example_stu_answer_3=question_code_to_example_dict[
+                    entry["question_code"]
+                ]["example_stu_answer_3"],
+                example_feedback_3=question_code_to_example_dict[
+                    entry["question_code"]
+                ]["example_feedback_3"],
+            )
 
         response = requests.post(
-            "http://192.168.0.72:8000/chat",
+            "http://localhost:8888/chat",
+            # "http://192.168.0.72:8000/chat",
+            # "http://Osprey1.csl.illinois.edu:8000/chat",
             json={
                 "query": query,
                 "stream": stream,
@@ -134,6 +211,6 @@ def get_response(i, stream=False):
         json.dump(sorted_results, file, indent=4)
 
 
-prompt = prompt_template_long
 for i in range(len(directory)):
+    prompt = prompt_list[i]
     get_response(i, False)

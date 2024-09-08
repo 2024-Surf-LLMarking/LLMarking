@@ -1,6 +1,6 @@
-from prompt.prompt_template import dynamic_prompt
+from prompt.prompt_template_long import dynamic_prompt
 from utils.dynamic_utils import build_diction_from_model
-from utils.count_utils import count_points
+from utils.count_utils import count_cases
 import concurrent.futures
 from tqdm import tqdm
 import requests
@@ -22,20 +22,20 @@ data = None
 prompt = None
 example_dict = {}
 
-if not os.path.exists("results/dynamic/short"):
-    print("Creating results/dynamic/short directory...")
-    os.makedirs("results/dynamic/short")
-if not os.path.exists(f"results/dynamic/short/{course}"):
-    print(f"Creating results/dynamic/short/{course} directory...")
-    os.makedirs(f"results/dynamic/short/{course}")
+if not os.path.exists("results/dynamic/long"):
+    print("Creating results/dynamic/long directory...")
+    os.makedirs("results/dynamic/long")
+if not os.path.exists(f"results/dynamic/long/{course}"):
+    print(f"Creating results/dynamic/long/{course} directory...")
+    os.makedirs(f"results/dynamic/long/{course}")
 
-with open(f"data/short/{course}/{course}_CSV1.csv", "r") as file:
+with open(f"data/long/{course}/{course}_CSV1.csv", "r") as file:
     csv_reader = csv.reader(file)
     header = next(csv_reader)
     rows = list(csv_reader)
     db_data = {}
     for row in rows:
-        example_text = row[4]
+        example_text = row[5]
         parts = re.split(r"\n(?=<Point)", example_text, maxsplit=1)
         example_stu_answer = parts[0].strip()
         example_feedback = parts[1].strip() if len(parts) > 1 else ""
@@ -47,10 +47,11 @@ with open(f"data/short/{course}/{course}_CSV1.csv", "r") as file:
             "question": row[1],
             "fullMark": row[2],
             "referenceAnswer": row[3],
-            "num_points": count_points(row[3]),
+            "num_points": count_cases(row[3]),
+            "note": row[4],
         }
 
-with open(f"data/short/{course}/{course}_CSV2.csv", "r") as file:
+with open(f"data/long/{course}/{course}_CSV2.csv", "r") as file:
     csv_reader = csv.reader(file)
     header = next(csv_reader)
     rows = list(csv_reader)
@@ -63,6 +64,7 @@ with open(f"data/short/{course}/{course}_CSV2.csv", "r") as file:
                 "fullMark": db_data[row[0]]["fullMark"],
                 "num_points": db_data[row[0]]["num_points"],
                 "referenceAnswer": db_data[row[0]]["referenceAnswer"],
+                "note": db_data[row[0]]["note"],
                 "studentAnswer": row[1],
                 "teacherMark": row[2].split("\n")[1].strip('"'),
             }
@@ -74,6 +76,7 @@ def get_single_response(entry, prompt):
     question = entry["question"]
     full_mark = entry["fullMark"]
     ref_answer = entry["referenceAnswer"]
+    note = entry["note"]
     stu_answer = entry["studentAnswer"]
     num_points = entry["num_points"]
     example_stu_answer = example_dict[entry["question_code"]]["example_stu_answer"]
@@ -84,6 +87,7 @@ def get_single_response(entry, prompt):
         stu_answer=stu_answer,
         full_mark=full_mark,
         num_points=num_points,
+        note=note,
         example_stu_answer=example_stu_answer,
         example_feedback=example_feedback,
     )
@@ -122,6 +126,7 @@ def get_responses(entry, prompt):
             entry["question"],
             entry["referenceAnswer"],
             entry["studentAnswer"],
+            long=True
         )
     )
     if has_diff:
@@ -162,7 +167,7 @@ def process_data():
             results[index] = updated_entry
 
     model_name = results[0]["model_name"]
-    with open(f"results/dynamic/short/{course}/{model_name}.json", "w") as file:
+    with open(f"results/dynamic/long/{course}/{model_name}.json", "w") as file:
         json.dump(results, file, indent=4)
 
 
