@@ -5,14 +5,14 @@ import json
 import re
 
 
-def extract_dynamic_info(data):
+def extract_dynamic_info(data, long=False):
     Teacher_Marklist = []
     Model_Marklist = []
     mismatch_count = 0
     total = 0
 
     for key, value in data.items():
-        teacher_mark = build_diction_from_teacher(value.get("teacherMark"))
+        teacher_mark = build_diction_from_teacher(value.get("teacherMark"), long=long)
         model_mark = value.get("feedback_dict")
         total += value.get("num_of_total_points")
         mismatch_count += value.get("mismatch_count")
@@ -28,9 +28,15 @@ def extract_dynamic_info(data):
 
 
 def build_diction_from_model(
-    feedbacks, length, teacher_mark, thread, question, ref_answer, stu_answer, long=False
+    feedbacks,
+    length,
+    teacher_mark,
+    thread,
+    question,
+    ref_answer,
+    stu_answer,
+    long=False,
 ):
-    # print(feedbacks)
     teacher_mark_dict = build_diction_from_teacher(teacher_mark, long=long)
     points_dict = {point: [] for point in teacher_mark_dict}
     points_dict_value = {}
@@ -65,7 +71,9 @@ def build_diction_from_model(
                     points_dict[point].append(type_)
                 points_dict_value[point] = point_value
         except:
-            print(f"Error!")
+            print(
+                f"Error! points_dict: {points_dict}, points_dict_value: {points_dict_value}, teacher_mark_dict: {teacher_mark_dict}, feedback: {feedback}"
+            )
 
         for point in teacher_mark_dict:
             if point not in points_matched_per_feedback:
@@ -97,9 +105,9 @@ def build_diction_from_model(
                 final_feedback += f"<{point}:{points_dict_value[point]}> "
             except:
                 print(
-                    f"Error! teacher_mark: {teacher_mark}, points_dict_value: {points_dict_value}"
+                    f"Point values not found! point: {point}, points_dict_value: {points_dict_value}, feedbacks: {feedbacks} | using default value 2"
                 )
-                final_feedback += f"<{point}:1> "
+                final_feedback += f"<{point}:2> "
             if final_points_dict[point] == "True":
                 final_feedback += "*True* "
             else:
@@ -152,7 +160,7 @@ def build_diction_from_teacher(input_str, long=False):
     points_dict = {}
     pattern = re.compile(r"<(Point\d+):(\w+)>")
     if long:
-        pattern = re.compile(r"<(Point\d+_case\d+):(\w+)>")
+        pattern = re.compile(r"<\s*([^>]+)\s*:\s*(\w+)\s*>")
     for match in re.finditer(pattern, input_str):
         point, type_ = match.groups()
         points_dict[point] = type_

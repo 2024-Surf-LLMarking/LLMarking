@@ -1,0 +1,14 @@
+Model Name,Zero-shot,One-shot,Few-shot,Dynamic
+Jamba-1.5-Mini,Mismatched,"F1 score:                0.7146
+Precision score: 0.6115
+Recall score:        0.8595",Mismatched,"F1 score:                0.7130
+Precision score: 0.6092
+Recall score:        0.8595"
+Mistral-Large-2,"F1 score:                0.8011
+Precision score: 0.7865
+Recall score:        0.8162",Mismatched,Mismatched,Mismatched
+Qwen2-72B,Mismatched,"F1 score:                0.7989
+Precision score: 0.7824
+Recall score:        0.8162",Mismatched,"F1 score:                0.8105
+Precision score: 0.7897
+Recall score:        0.8324"

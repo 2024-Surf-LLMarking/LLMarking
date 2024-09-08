@@ -6,7 +6,7 @@ CPTA1a,An autonomous vehicle system is a safety-critical system so requires a lo
 CPTA1a,"One reason for using the waterfall model in software development for autonomous vehicles is that it allows for clear and distinct phases of development, which can be helpful in managing the complexity of such systems. Since in the waterfall model, documentation is produced at each phase.","2/2 points
 ""<Point1_case1:False>,<Point1_case2:False>,<Point1_case3:True>""",H3,,
 CPTA1a,"Like the factory assembly line, the software development process is divided into various processes and each process can be subdivided into more detailed process.","1/2 points
-""<Point2_case1:True>,<Point1_case2:False>,<Point1_case3:False>""",M1,
+""<Point1_case1:True>,<Point1_case2:False>,<Point1_case3:False>""",M1,
 CPTA1a,"Waterfall model is a step by step model, the steam must complete the previous stage before moving on to the next stage. This means waterfall model has a clear structure and the base of the project will be nicely built.  ","0/2 points
 ""<Point1_case1:False>,<Point1_case2:False>,<Point1_case3:False>""",M2,
 CPTA1a,"Each stage of the assessment is passed before the next stage begins,ensure the quality. ","0/2 points
@@ -64,7 +64,7 @@ CPTA2a,"One obvious evidence of this is that it involves frequent interaction an
 ""<Point1_case1: False>,<Point2_case1:True>,<Point3_case1:False>""",H2,,
 CPTA2a,"In the Scrum framework, the customer is invited to join the entire project, work with the development team, and negotiate with them from time to time to ensure that all requirements are met and the most valuable work is performed.","2/3 points
 ""<Point1_case1: False>,<Point2_case1:True>,<Point3_case1:False>""",H3,,
-CPTA2a,,"0/3 points
+CPTA2a,I don't know this one.,"0/3 points
 ""<Point1_case1: False>,<Point2_case1:False>,<Point3_case1:False>""",M1,,
 CPTA2a,"Scrum framework includes Scrum review and Scrum planning, these process are repeated daily before or after their daily scrum and in the review and planning process, scrum team can include customer feedbacks and change their daily scrum and prioritize according to customer feedbacks. This shows ""Customer collaboration over contract negotiation"". ","2/3 points
 """"<Point1_case1: False>,<Point2_case1:True>,<Point3_case1:False>""",M2,,
@@ -104,11 +104,11 @@ CPTA3a,‘Exception’ row. ‘Main Scenario’ row,"2/4 points
 ""<Point1_case1:True>,<Point2_case1:False>,<Point3_case1:False>,<Point3_case2:False>""",H2,,
 CPTA3a,6th row. 6th row,"0/4 points
 ""<Point1_case1:False>,<Point2_case1:False>,<Point3_case1:False>,<Point3_case2:False>""",H3,,
-CPTA3a,,"0/4 points
+CPTA3a,I don't know this one.,"0/4 points
 ""<Point1_case1:False>,<Point2_case1:False>,<Point3_case1:False>,<Point3_case2:False>""",M1,,
 CPTA3a,"“If the user enters an invalid personal identifier for the credit card, the system will prompt the user and terminate the transaction."" ""When the credit transaction is validated by the credit card center, the ticket is issued.""","0/4 points
 ""<Point1_case1:False>,<Point2_case1:False>,<Point3_case1:False>,<Point3_case2:False>""",M2,,
-CPTA3a,Post condition. Main scenario ,"2/4 points
+CPTA3a,Post condition. Main scenario ,"0/4 points
 ""<Point1_case1:False>,<Point2_case1:False>,<Point3_case1:True>,<Point3_case2:False>""",M3,,
 CPTA3a,post condition. Main scenario,"0/4 points
 ""<Point1_case1:False>,<Point2_case1:False>,<Point3_case1:False>,<Point3_case2:False>""",L9,,
@@ -159,33 +159,33 @@ CPTA4,"1.Risk identification: identify possible project, product and business ri
 4.risk monitoring: regularly assess the risk and your plans for risk mitigation and revice these when you learn more about risk 
 ","10/12 points
 ""<Point1_case1: True>,<Point2_case1: True>,<Point3_case1: True>,<Point4_case1: True>,<Point5_case1: True>,<Point6_case1: True>,<Point7_case1: True>,<Point8_case1: False>""",M3,,
-CPTA4,"Risk ldentification: this is the process of identifying documenting the risks that could potentially impact the project. Risk Analysis: This can involve quantifying the risks in terms of their probability of occurrence and the potential consequences if they do occur. Risk Response Planning: After steps above, this step may involve implementing controls or mitigation measures to reduce the likelihood ofthe risks occurring, or developing contingency plans in case the risks do occur. Risk monitoring and control: This is the process continuously monitoring their dentified risks and implementing the planned responses as needed. This may involve regularly reviewing the status of identified risks and updating the risk response plans as necessary.","9/12 points
-""<Point1_case1: True>,<Point2_case1: True>,<Point3_case1: True>,<Point4_case1: True>,<Point5_case1: True>,<Point6_case1: True>,<Point7_case1: False>,<Point8_case1: False>""",L9,,
+CPTA4,"Risk ldentification: this is the process of identifying documenting the risks that could potentially impact the project. Risk Analysis: This can involve quantifying the risks in terms of their probability of occurrence and the potential consequences if they do occur. Risk Response Planning: After steps above, this step may involve implementing controls or mitigation measures to reduce the likelihood ofthe risks occurring, or developing contingency plans in case the risks do occur. Risk monitoring and control: This is the process continuously monitoring their dentified risks and implementing the planned responses as needed. This may involve regularly reviewing the status of identified risks and updating the risk response plans as necessary.","10/12 points
+""<Point1_case1: True>,<Point2_case1: True>,<Point3_case1: True>,<Point4_case1: True>,<Point5_case1: True>,<Point6_case1: True>,<Point7_case1:True>,<Point8_case1: False>""",L9,,
 CPTA4,"risk identification:identify possible project, project, and business risks. risk analysis:assess the likelihood and consequences ofthese risks. risk planning: plan to address the risk, either by avoiding it or minimizing its effectson the project. risk monitoring:regularly assess the risk and your plans for risk mitigation and revise these when you learn more about the risk","10/12 points
 ""<Point1_case1: True>,<Point2_case1: True>,<Point3_case1: True>,<Point4_case1: True>,<Point5_case1: True>,<Point6_case1: True>,<Point7_case1: True>,<Point8_case1: False>""",L8,,
 CPTA4,"Risk identification, Risk identification is to identify possible project, product, and business risks. Risk analysis. Risk analysis is to consider each identified risk and make a judgment about the probability and seriousness of that risk. Risk planning:Risk planning is to address the risk, either by avoiding it or minimizing its effects on the project. Risk monitoring:Risk monitoring is to regularly assess the risk and your plans for risk mitigation and revise these when you learn more about the risk.","10/12 points
 ""<Point1_case1: True>,<Point2_case1: True>,<Point3_case1: True>,<Point4_case1: True>,<Point5_case1: True>,<Point6_case1: True>,<Point7_case1: True>,<Point8_case1: False>""",L7,,
 CPTA5a,"1. High cohesion: cohesion is the degree to which the elements of a module are related to each other. The elements in a highly cohesive system module have strong correlation. All its attributes and behaviors should be closely related to the concepts it represents, and should jointly achieve a single, well-defined purpose. This facilitates the modular construction of the system.2. low coupling: Coupling refers to how focused a class or a module is. A low coupling system. A low-coupling system facilitates debugging, modification, and increment.3. Complete and sufficient: A well-formed design class should contain all the attributes and behavior necessary to fully represent the concept it is intended to model. It should not be missing any necessary characteristics or behavior, nor should it contain extraneous elements that are not relevant to the concept it represents.","6/6 points
-""<Point1_case1: True>,<Point2_case1: True>,<Point3_case1: True>""",H1,,
+""<Point1_case1: True>,<Point2_case1: True>,<Point3_case1: False>,<Point4_case1: False>,<Point5_case1: True>,<Point6_case1: True>,<Point7_case1: True>,<Point8_case1: True>""",H1,,
 CPTA5a,"1. Complete and sufficient. A design class should be the complete encapsulation of all attributes and methods that can reasonably be expected (based on a knowledgeable interpretation of the class name) to exist for the class. Sufficiency ensures that the design class contains only those methods that are sufficient to achieve the intent of the class, no more and no less.2. Primitiveness. Methods associated with a design class should be focused on accomplishing one service for the class.3. High cohesion. A cohesive design class has a small, focused set of responsibilities and single-mindedly apply attributes and methods to implement those responsibilities.","6/6 points
-""<Point1_case1: True>,<Point2_case1: True>,<Point3_case1: True>""",H2,,
+""<Point1_case1: True>,<Point2_case1: True>,<Point3_case1: True>,<Point4_case1: True>,<Point5_case1: True>,<Point6_case1: True>,<Point7_case1: False>,<Point8_case1: False>""",H2,,
 CPTA5a,"1.High cohesion: A cohesive design class has a small and centralized set of responsibilities, and applies properties and methods wholeheartedly to realize these responsibilities.2.Primitivity: Methods related to designing classes should focus on completing a service for the class.3.Low coupling: In the design model, design classes must cooperate with each other.However, cooperation should be kept to an acceptable minimum.","6/6 points
-""<Point1_case1: True>,<Point2_case1: True>,<Point3_case1: True>""",H3,,
+""<Point1_case1: False>,<Point2_case1: False>,<Point3_case1: True>,<Point4_case1: True>,<Point5_case1: True>,<Point6_case1: True>,<Point7_case1: True>,<Point8_case1: True>""",H3,,
 CPTA5a,"1.high cohesion: The code realizes only one well-designed task.
 2.low coupling: The further the link between the modules, the more independent the modules are.
 3.primitiveness: A method related to a design class should focus on a service of implementing class.","2/6 points
-""<Point3_case1: True>,<Point2_case1: False>,<Point3_case1: False>""",M1,,
+""<Point1_case1: False>,<Point2_case1: False>,<Point3_case1: False>,<Point4_case1: False>,<Point5_case1: True>,<Point6_case1: False>,<Point7_case1: True>,<Point8_case1: False>""",M1,,
 CPTA5a,"1.High cohesion, high cohesion means that the elements in the class are related to each other, a code with high cohesion is often easier to understand.
 2.Low coupling, low coupling means that unrelated parts in a class are separated into other classes or methods. A good class should not contain useless or unrelated information in it.
 3.Primitiveness, primitiveness means only creating blocks of codes that are inevitable, keeps the class straight forward and easy to understand.
 ","4/6 points
-""<Point1_case1: False>,<Point2_case1: True>,<Point3_case1: True>""",M2,,
+""<Point1_case1: False>,<Point2_case1: False>,<Point3_case1: True>,<Point4_case1: False>,<Point5_case1: True>,<Point6_case1: False>,<Point7_case1: True>,<Point8_case1: True>""",M2,,
 CPTA5a,"1.Complete and sufficient. A design class should be the complete encapsulation ofall attributes and methods that can reasonably be expecteo based on a knowledgeable interpretation of the class name) to exist for the class.Sufficiency ensures that the
  design class contains only those methods that are sufficient to achieve the intent of the class, no more and no less.
  2.Primitiveness.Methods associated with a design class should be focused on  accomplishing one service for the class.
 3.Highcohesion. A cohesive design class has a small, focused set of responsibilities  and single-mindedly applies attributes and methods to implement those responsibilities. 
 ","6/6 points
-""<Point1_case1: True>,<Point2_case1: True>,<Point3_case1: True>""",M3,,
+""<Point1_case1: True>,<Point2_case1: True>,<Point3_case1: True>,<Point4_case1: True>,<Point5_case1: True>,<Point6_case1: True>,<Point7_case1: False>,<Point8_case1: False>""",M3,,
 CPTA5a,"Complete and sufficient: A well-formed design class should contain all of the necessary attributes ad behaviors required to fulfill its responsibilities and meet the needs of the system. It should not missing any essential components or have any unnecessary elements. High cohesion: Which means that all of its attributes and behaviors should be closely related and work toward a single well-defined purpose. This helps to ensure that the class is focused and efficient, and makes it easier to understand andmaintain. Low coupling: Which means that it should have minimal dependencies on other classes in the system. This helps to ensure that the class is flexible and can be easily modified or replace without impacting other parts of the system.","6/6 points
 ""<Point1_case1: True>,<Point2_case1: True>,<Point3_case1: False>,<Point4_case1: False>,<Point5_case1: True>,<Point6_case1: True>,<Point7_case1: True>,<Point8_case1: True>""",L9, 
 CPTA5a,"Complete and suffcient:A design class should be complete encapsulation of allattributes and method that can be reasonably be expected to exist for class. Primitiveness:Method associate with design class should be focused onaccomplishing one service for class.Once service implemented with the method. theclass should not provide another way to accomplish the same thing. High cohesion: A cohesion design class has a small, concentrated set of authority and single applies attributes and methods to implement those responsibilities.","6/6 points
@@ -194,8 +194,8 @@ CPTA5a,1.2.3.,"0/6 points
 ""<Point1_case1: False>,<Point2_case1: False>,<Point3_case1: False>,<Point4_case1: False>,<Point5_case1: False>,<Point6_case1: False>,<Point7_case1: False>,<Point8_case1: False>""",L7,
 CPTA6a,"1.development testing: including unit, component, system tests.2.release testing: test the software with the develop team and users.3.acceptance testing: test the software whether it can used for business","6/6 points
 ""<Point1_case1:True>,<Point2_case1:True>,<Point3_case1:True>,<Point4_case1:True>,<Point5_case1:True>,<Point6_case1:True>""",H1,,
-CPTA6a,1.Unit test: This includes testing each unit or component of the software to ensure their normal operation.2. Component testing: This includes testing the integration of different units or components of software to ensure that they work together correctly.3 .System test: This includes testing the entire software to ensure that it meets the requirements and is suitable for use.,"4/6 points
-""<Point1_case1:True>,<Point2_case1:Flase>,<Point3_case1:Flase>,<Point4_case1:True>,<Point5_case1:True>,<Point6_case1:True>""",H2,,
+CPTA6a,1.Unit test: This includes testing each unit or component of the software to ensure their normal operation.2. Component testing: This includes testing the integration of different units or components of software to ensure that they work together correctly.3 .System test: This includes testing the entire software to ensure that it meets the requirements and is suitable for use.,"2/6 points
+""<Point1_case1:False>,<Point2_case1:Flase>,<Point3_case1:Flase>,<Point4_case1:True>,<Point5_case1:False>,<Point6_case1:True>""",H2,,
 CPTA6a,"1.development testing: the test holded by development team. To teat the function of the software before it is released to users.2.release testing: the test holded by a group to test if the software fit the requirement of the stokeholder before it is released to the market.3.user testing: includes alpha testing, beta testing and acceptance testing.It is the test holded by real users to teat if the software fit the requirement of the bussiness. Get feedback from users and do the further evolution.","5/6 points
 ""<Point1_case1:True>,<Point2_case1:Flase>,<Point3_case1:True>,<Point4_case1:True>,<Point5_case1:True>,<Point6_case1:True>""",H3,,
 CPTA6a,"1.Unit testing: test modules separately

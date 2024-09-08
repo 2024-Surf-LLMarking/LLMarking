@@ -1,0 +1,119 @@
+Model Name,Zero-shot,One-shot,Few-shot,Dynamic
+Gemma-2-9B,None,"F1 score:                0.5333
+Precision score: 0.4766
+Recall score:        0.6054
+Mismatch percentage: 33.73%","F1 score:                0.3469
+Precision score: 0.3285
+Recall score:        0.3676
+Mismatch percentage: 48.21%",None
+Internlm2-7B,"F1 score:                0.4537
+Precision score: 0.4133
+Recall score:        0.5027
+Mismatch percentage: 21.03%",None,None,None
+Internlm2.5-7B,"F1 score:                0.4880
+Precision score: 0.3462
+Recall score:        0.8270
+Mismatch percentage: 54.96%","F1 score:                0.3211
+Precision score: 0.2500
+Recall score:        0.4486
+Mismatch percentage: 54.56%","F1 score:                0.3192
+Precision score: 0.2548
+Recall score:        0.4270
+Mismatch percentage: 53.17%",None
+Jamba-1.5-Mini,"F1 score:                0.2472
+Precision score: 0.2090
+Recall score:        0.3027
+Mismatch percentage: 57.14%",Matched,"F1 score:                0.7564
+Precision score: 0.6626
+Recall score:        0.8811
+Mismatch percentage: 0.99%",Matched
+Llama-3.1-70B,"F1 score:                0.7093
+Precision score: 0.8672
+Recall score:        0.6000
+Mismatch percentage: 0.60%","F1 score:                0.7586
+Precision score: 0.7448
+Recall score:        0.7730
+Mismatch percentage: 5.75%","F1 score:                0.7093
+Precision score: 0.8672
+Recall score:        0.6000
+Mismatch percentage: 0.60%","F1 score:                0.7374
+Precision score: 0.7240
+Recall score:        0.7514
+Mismatch percentage: 5.75%"
+Mistral-Large-2,Matched,"F1 score:                0.7332
+Precision score: 0.6423
+Recall score:        0.8541
+Mismatch percentage: 11.31%","F1 score:                0.3598
+Precision score: 0.3523
+Recall score:        0.3676
+Mismatch percentage: 47.62%","F1 score:                0.7324
+Precision score: 0.6473
+Recall score:        0.8432
+Mismatch percentage: 10.65%"
+Phi3.5-MoE,None,"F1 score:                0.3038
+Precision score: 0.2358
+Recall score:        0.4270
+Mismatch percentage: 82.14%","F1 score:                0.2930
+Precision score: 0.2294
+Recall score:        0.4054
+Mismatch percentage: 82.14%","F1 score:                0.1190
+Precision score: 0.0923
+Recall score:        0.1676
+Mismatch percentage: 82.14%"
+Qwen1.5-110B,"F1 score:                0.3688
+Precision score: 0.2845
+Recall score:        0.5243
+Mismatch percentage: 51.98%","F1 score:                0.5738
+Precision score: 0.5920
+Recall score:        0.5568
+Mismatch percentage: 12.50%","F1 score:                0.5274
+Precision score: 0.5101
+Recall score:        0.5459
+Mismatch percentage: 25.40%","F1 score:                0.5455
+Precision score: 0.5749
+Recall score:        0.5189
+Mismatch percentage: 13.03%"
+Qwen1.5-14B,"F1 score:                0.2040
+Precision score: 0.1889
+Recall score:        0.2216
+Mismatch percentage: 45.24%","F1 score:                0.4941
+Precision score: 0.4407
+Recall score:        0.5622
+Mismatch percentage: 22.02%","F1 score:                0.4785
+Precision score: 0.4292
+Recall score:        0.5405
+Mismatch percentage: 29.76%",None
+Qwen1.5-32B,"F1 score:                0.0583
+Precision score: 0.0475
+Recall score:        0.0757
+Mismatch percentage: 88.89%","F1 score:                0.6455
+Precision score: 0.5893
+Recall score:        0.7135
+Mismatch percentage: 7.74%","F1 score:                0.3521
+Precision score: 0.3112
+Recall score:        0.4054
+Mismatch percentage: 45.04%",None
+Qwen1.5-72B,"F1 score:                0.0488
+Precision score: 0.0391
+Recall score:        0.0649
+Mismatch percentage: 91.07%","F1 score:                0.6303
+Precision score: 0.5612
+Recall score:        0.7189
+Mismatch percentage: 14.88%","F1 score:                0.0649
+Precision score: 0.0542
+Recall score:        0.0811
+Mismatch percentage: 82.94%","F1 score:                0.5972
+Precision score: 0.5316
+Recall score:        0.6811
+Mismatch percentage: 14.62%"
+Qwen2-72B,"F1 score:                0.6787
+Precision score: 0.7635
+Recall score:        0.6108
+Mismatch percentage: 1.39%",Matched,"F1 score:                0.7399
+Precision score: 0.7340
+Recall score:        0.7459
+Mismatch percentage: 8.33%",Matched
+Yi-1.5-9B,"F1 score:                0.0000
+Precision score: 0.0000
+Recall score:        0.0000
+Mismatch percentage: 100.00%",None,None,None

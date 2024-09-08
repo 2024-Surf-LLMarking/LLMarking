@@ -13,26 +13,36 @@ parser.add_argument(
     required=True,
     choices=[1, 3],
 )
+parser.add_argument(
+    "--type",
+    "-t",
+    type=str,
+    help="Type of results to generate",
+    required=True,
+    choices=["short", "long"],
+)
 args = parser.parse_args()
 
 course = args.course
+type = args.type
+long = args.type == "long"
 
-model_name_list_few = pl.Path(f"results/v{args.prompt}/short/{course}/fewshot").glob(
+model_name_list_few = pl.Path(f"results/v{args.prompt}/{type}/{course}/fewshot").glob(
     "*"
 )
 model_name_list_few = [i.name.split(".jso")[0] for i in list(model_name_list_few)]
 
-model_name_list_one = pl.Path(f"results/v{args.prompt}/short/{course}/oneshot").glob(
+model_name_list_one = pl.Path(f"results/v{args.prompt}/{type}/{course}/oneshot").glob(
     "*"
 )
 model_name_list_one = [i.name.split(".jso")[0] for i in list(model_name_list_one)]
 
-model_name_list_zero = pl.Path(f"results/v{args.prompt}/short/{course}/zeroshot").glob(
+model_name_list_zero = pl.Path(f"results/v{args.prompt}/{type}/{course}/zeroshot").glob(
     "*"
 )
 model_name_list_zero = [i.name.split(".jso")[0] for i in list(model_name_list_zero)]
 
-model_name_list_dynamic = pl.Path(f"results/dynamic/short/{course}").glob("*")
+model_name_list_dynamic = pl.Path(f"results/dynamic/{type}/{course}").glob("*")
 model_name_list_dynamic = [
     i.name.split(".jso")[0] for i in list(model_name_list_dynamic)
 ]
@@ -56,11 +66,11 @@ for model_name in model_name_list:
         print(f"Processing {d} for {model_name}")
         if d == "dynamic":
             f1, precision, recall, mismatch_percentage = extract_info_from_json(
-                f"results/dynamic/short/{course}/{model_name}.json", dynamic=True
+                f"results/dynamic/{type}/{course}/{model_name}.json", dynamic=True, long=long
             )
         else:
             f1, precision, recall, mismatch_percentage = extract_info_from_json(
-                f"results/v{args.prompt}/short/{course}/{d}/{model_name}.json"
+                f"results/v{args.prompt}/{type}/{course}/{d}/{model_name}.json", long=long
             )
 
         if f1 is None:
@@ -85,12 +95,12 @@ for model_name in model_name_list:
             mismatched_eval_results.append(mismatched_row)
             break
 
-    with open(f"results/v{args.prompt}/short/{course}/{course}.csv", "w") as file:
+    with open(f"results/v{args.prompt}/{type}/{course}/{course}.csv", "w") as file:
         writer = csv.writer(file)
         writer.writerow(["Model Name", "Zero-shot", "One-shot", "Few-shot", "Dynamic"])
         writer.writerows(eval_results)
     with open(
-        f"results/v{args.prompt}/short/{course}/{course}_mismatched.csv", "w"
+        f"results/v{args.prompt}/{type}/{course}/{course}_mismatched.csv", "w"
     ) as file:
         writer = csv.writer(file)
         writer.writerow(["Model Name", "Zero-shot", "One-shot", "Few-shot", "Dynamic"])
